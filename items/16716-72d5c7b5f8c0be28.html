@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16716,"sourceLabel":"2020 교육청 고3 수리가형 7월 21번","adminYear":2020,"grade":3,"month":7,"number":21,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"양의 실수 전체의 집합에서 정의된 함수 $f\\, \\left( x \\right) = \\frac{4x ^{2}}{x ^{2} +3} \\,$에 대하여 $f\\, \\left( x \\right) \\,$의 역함수를 $g\\, \\left( x \\right) \\,$라 할 때, 함수 $h\\,(x)\\,$를\n $h\\, \\left( x \\right) =f\\, \\left( x \\right) -g\\, \\left( x \\right) \\, \\left( 0\u003cx\u003c4 \\right)$\n라 하자. \u003c보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]\n\u003c보기>\nㄱ. $h\\, \\left( 1 \\right) =0$\nㄴ. 두 양수 $a\\,$, $b\\, \\left( a\u003cb\u003c4\\, \\right) \\,$에 대하여 $\\int _{a} ^{b} {h\\, \\left( x \\right) dx} \\,$의 값이 최대일 때, $b-a=2\\,$이다.\nㄷ. $h\\, \\left( x \\right) \\,$의 도함수 $h' \\left( x \\right) \\,$의 최댓값은 $\\frac{7}{6} \\,$이다.\n① ㄱ ② ㄱ, ㄴ ③ ㄱ, ㄷ ④ ㄴ, ㄷ ⑤ ㄱ, ㄴ, ㄷ","answer":"②","sourceHash":"aeea1ee28ca303c62f2dcdcc3bcec759ad55bcdb5ccf9483f8ef121057fd5aa2","steps":[{"id":"s1","latex":"f'(x)=\\frac{24x}{(x^2+3)^2}>0,\\quad g=f^{-1},\\quad f(1)=g(1)=1"},{"id":"s2","latex":"f(x)>x\\iff1\u003cx\u003c3\\Rightarrow h(x)>0\\iff1\u003cx\u003c3"},{"id":"s3","latex":"\\max_{0\u003ca\u003cb\u003c4}\\int_a^bh(x)\\,dx=\\int_1^3h(x)\\,dx\\Rightarrow b-a=2"},{"id":"s4","latex":"f'(x)\\le f'(1)=\\frac32"},{"id":"s5","latex":"g'(x)=\\frac1{f'(g(x))}\\ge\\frac23,\\quad g'(1)=\\frac23"},{"id":"s6","latex":"h'(x)=f'(x)-g'(x)\\le\\frac32-\\frac23=\\frac56"},{"id":"s7","latex":"h'(1)=\\frac56\\Rightarrow\\max h'=\\frac56\\ne\\frac76"},{"id":"s8","latex":"\\therefore\\ \\text{첫째, 둘째 명제만 참}"}],"diagram":null,"contentHash":"e6f131aa73401603cc4c99f98b55ae79e2d2a0c321eda83ea9ce2c0bc798df63","questionHtml":"\u003cp class=\"hp htall\">양의 실수 전체의 집합에서 정의된 함수 \u003cspan class=\"heq\">\\(f\\, \\left( x \\right) = \\dfrac{4x^{2}}{x^{2} +3} \\,\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(f\\, \\left( x \\right) \\,\\)\u003c/span>의 역함수를 \u003cspan class=\"heq\">\\(g\\, \\left( x \\right) \\,\\)\u003c/span>라 할 때, 함수 \u003cspan class=\"heq\">\\(h\\,(x)\\,\\)\u003c/span>를\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(h\\, \\left( x \\right) =f\\, \\left( x \\right) -g\\, \\left( x \\right) \\, \\left( 0\\lt x\\lt 4 \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하자. &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp htall\">\u003cdiv class=\"hbox\">\u003cp class=\"hp\">&lt; 보 기 &gt;\u003c/p>\u003cp class=\"hp\">ㄱ. \u003cspan class=\"heq\">\\(h\\, \\left( 1 \\right) =0\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">ㄴ. 두 양수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\,\\)\u003c/span>\u003cspan class=\"heq\">\\(\\left( a\\lt b\\lt 4\\, \\right) \\,\\)\u003c/span>에 대하여 \u003cbr>\u003cspan class=\"heq\">\\(\\int_{a}^{b} {h\\, \\left( x \\right) dx} \\,\\)\u003c/span>의 값이 최대일 때, \u003cspan class=\"heq\">\\(b-a=2\\,\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp htall\">ㄷ. \u003cspan class=\"heq\">\\(h\\, \\left( x \\right) \\,\\)\u003c/span>의 도함수 \u003cspan class=\"heq\">\\(h' \\left( x \\right) \\,\\)\u003c/span>의 최댓값은 \u003cspan class=\"heq\">\\(\\dfrac{7}{6} \\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp\">① ㄱ&emsp;② ㄱ, ㄴ&emsp;③ ㄱ, ㄷ\u003cbr>④ ㄴ, ㄷ&emsp;⑤ ㄱ, ㄴ, ㄷ\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"72d5c7b5f8c0be2893f5f5cd165c1dbf783004616d63eed40cd64d5dfc6409b7"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

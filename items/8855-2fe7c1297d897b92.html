@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8855,"sourceLabel":"2022 교육청 고2 수학 6월 29번","adminYear":2022,"grade":2,"month":6,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"자연수 $m\\,$$\\left( m \\geq 2 \\right) \\,$에 대하여 집합 $A_m\\,$을\n $A _{m} = \\left\\{ \\,\\log _{\\,m} \\,x\\, \\left| \\,x\\,는\\,100\\,이하의\\,자연수\\, \\right\\} \\, RIGHT .$\n라 하고, 집합 $B\\,$를\n $B\\,= \\left\\{ \\,2 ^{k} \\, \\left| \\,k\\,는\\,10\\,이하의\\,자연수\\, \\right\\} \\, RIGHT .$\n라 하자. 집합 $B\\,$의 원소 $b\\,$에 대하여 $n \\left( A _{4} \\cap A _{b} \\right) =4\\,$가 되도록 하는 모든 $b\\,$의 값의 합을 구하시오. [4점]","answer":"72","sourceHash":"a1bdf4cdc8b6710393e550061253fc687889834def73fd0b2372ed9e0b8a9d7e","steps":[{"id":"s1","latex":"b=2^k,\\quad\\log_4x=\\log_{2^k}y\\Rightarrow y=x^{k/2},\\quad x,y\\in\\{1,\\ldots,100\\}"},{"id":"s2","latex":"k=2j:\\quad\\#=\\lfloor100^{1/j}\\rfloor=4\\Rightarrow j=3,\\ k=6"},{"id":"s3","latex":"k\\text{는 홀수}:\\quad x=s^2,\\ y=s^k,\\quad\\#=\\lfloor\\min(10,100^{1/k})\\rfloor"},{"id":"s4","latex":"k=1:\\ \\#=10,\\quad k=3:\\ \\#=4,\\quad k\\ge5:\\ \\#\\le2"},{"id":"s5","latex":"b=2^3,2^6\\Rightarrow\\sum b=8+64=72"}],"diagram":null,"contentHash":"75326dcb704fce1e3b761fc1b54ffcc64780b607d698eca63c86ee5a1464395d","questionHtml":"\u003cp class=\"hp\">자연수 \u003cspan class=\"heq\">\\(m\\,\\)\u003c/span>\u003cspan class=\"heq\">\\(\\left( m \\geq 2 \\right) \\,\\)\u003c/span>에 대하여 집합 \u003cspan class=\"heq\">\\(A_{m}\\,\\)\u003c/span>을\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(A_{m} = \\left\\{ \\,\\log_{\\,m} \\,x\\, \\mid \\,x\\,\\text{는}\\,100\\,\\text{이하의}\\,\\text{자연수}\\, \\right\\} \\, \\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하고, 집합 \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>를\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(B\\,= \\left\\{ \\,2^{k} \\, \\mid \\,k\\,\\text{는}\\,10\\,\\text{이하의}\\,\\text{자연수}\\, \\right\\} \\, \\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하자. 집합 \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>의 원소 \u003cspan class=\"heq\">\\(b\\,\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(n \\left( A_{4} \\cap A_{b} \\right) =4\\,\\)\u003c/span>가 되도록 하는 모든 \u003cspan class=\"heq\">\\(b\\,\\)\u003c/span>의 값의 합을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"2fe7c1297d897b92242f59c518bb613e1d8fde3514f49e49b8a0a1e5607a8173"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

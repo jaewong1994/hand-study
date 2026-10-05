@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16221,"sourceLabel":"2019 교육청 고3 수리가형 10월 29번","adminYear":2019,"grade":3,"month":10,"number":29,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"좌표공간의 세 점 $A \\left( -1,\\,0,\\,6 \\right)$, $B \\left( 2,\\,- \\sqrt{3} ,\\,0 \\right)$, $C \\left( 3,\\,0,\\,0 \\right)$에 대하여 두 점 $P$, $Q$가\n $\\left| {\\vec{AP}} \\right| =2\\,$, $\\left| {\\vec{CQ}} \\right| =2 \\sqrt{3}$, ${\\vec{BC}} \\cdot {\\vec{CQ}} =6$\n을 만족시킨다. $\\left| {\\vec{PQ}} \\right|$의 최댓값을 구하시오. [4점]","answer":"12","sourceHash":"2e2022afbfe2c6db2bb51d05a3ccac93073f805e9d7ea71c12d208e631990aca","steps":[{"id":"s1","latex":"\\vec{BC}=(1,\\sqrt3,0),\\quad|\\vec{BC}|=2,\\quad|\\vec{CQ}|=2\\sqrt3"},{"id":"s2","latex":"\\vec{BC}\\cdot\\vec{CQ}=6\\Rightarrow\\cos\\theta=\\frac{\\sqrt3}{2}"},{"id":"s3","latex":"D=C+\\frac{6}{|\\vec{BC}|^2}\\vec{BC}=(9/2,3\\sqrt3/2,0)"},{"id":"s4","latex":"Q:\\quad\\text{중심 }D,\\ \\text{반지름 }\\sqrt3,\\ \\vec{BC}\\text{에 수직인 평면 위의 원}"},{"id":"s5","latex":"\\vec{AD}=\\left(\\frac{11}{2},\\frac{3\\sqrt3}{2},-6\\right),\\quad|\\vec{AD}|^2=73"},{"id":"s6","latex":"H=A\\text{에서 }Q\\text{가 움직이는 원의 평면에 내린 수선의 발}"},{"id":"s7","latex":"AH=\\left|\\vec{AD}\\cdot\\frac{\\vec{BC}}{|\\vec{BC}|}\\right|=5,\\quad HD=\\sqrt{73-25}=4\\sqrt3"},{"id":"s8","latex":"\\max AQ=\\sqrt{AH^2+(HD+\\sqrt3)^2}=\\sqrt{25+75}=10"},{"id":"s9","latex":"\\max PQ=\\max AQ+AP=10+2=\\boxed{12}"}],"diagram":null,"contentHash":"29636fb891f772d84ac0a101d3e3b2491f920e81daf3f41fef15a45e9440bc4d","questionHtml":"\u003cp class=\"hp\">좌표공간의 세 점 \u003cspan class=\"heq\">\\(A \\left( -1,\\,0,\\,6 \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(B \\left( 2,\\,- \\sqrt{3} ,\\,0 \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(C \\left( 3,\\,0,\\,0 \\right)\\)\u003c/span>에 대하여 두 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>, \u003cspan class=\"heq\">\\(Q\\)\u003c/span>가\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(\\left| {\\overrightarrow{AP}} \\right| =2\\,\\)\u003c/span>,  \u003cspan class=\"heq\">\\(\\left| {\\overrightarrow{CQ}} \\right| =2 \\sqrt{3}\\)\u003c/span>,  \u003cspan class=\"heq\">\\({\\overrightarrow{BC}} \\cdot {\\overrightarrow{CQ}} =6\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">을 만족시킨다. \u003cspan class=\"heq\">\\(\\left| {\\overrightarrow{PQ}} \\right|\\)\u003c/span>의 최댓값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"a840629db1fd3a55cdcae2c75a189652c729725f21fc0f07b8545c01829f1c5f"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

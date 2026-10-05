@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":25019,"sourceLabel":"2026 평가원 고3 수학확통 6월 28번","adminYear":2026,"grade":3,"month":6,"number":28,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"앞면에 숫자 $1\\,$, $2\\,$, $3\\,$, $4\\,$, $5\\,$, $6\\,$이 하나씩 적혀 있는 카드 $6\\,$장이 있다. 각 카드의 뒷면에는 앞면에 적힌 숫자와 같은 숫자가 적혀 있다. 이 $6\\,$장의 카드가 다음과 같이 놓여 있다.\n숫자 $1\\,$, $6\\,$이 적힌 카드는 뒷면이 보이도록 놓여 있고, 숫자 $2\\,$, $3\\,$, $4\\,$, $5\\,$가 적힌 카드는 앞면이 보이도록 놓여 있다.\n이 $6\\,$장의 카드와 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $k\\,$일 때, $k\\,$가 홀수이면 $k$ 이하의 수가 적힌 카드를 모두 한 번씩 뒤집고, $k\\,$가 짝수이면 $k$ 이상의 수가 적힌 카드를 모두 한 번씩 뒤집는다.\n이 시행을 $4\\,$번 반복한 후 $6\\,$장의 카드가 모두 앞면이 보이도록 놓여 있을 확률은?\n① $\\frac{19}{162}\\,$ ② $\\frac{13}{108}\\,$ ③ $\\frac{10}{81}\\,$\n④ $\\frac{41}{324}\\,$ ⑤ $\\frac{7}{54}$","answer":"③","sourceHash":"1c20a8553a62eb0784a6c3c0137ee0dd9c010a634cff5fb2505f438ff5c93b21","steps":[{"id":"s1","latex":"\\text{뒤집은 횟수의 홀짝}=(1,0,0,0,0,1)\\pmod2"},{"id":"s2","latex":"\\begin{array}{c|rrrrrr}\\text{눈}&1&2&3&4&5&6\\\\\\hline\\text{뒤집는 카드}&1&2\\sim6&1\\sim3&4\\sim6&1\\sim5&6\\end{array}"},{"id":"s3","latex":"\\text{카드 }1,6\\text{의 뒤집힘 횟수 홀수}\\Rightarrow\\text{홀수 눈, 짝수 눈 횟수 모두 홀수}"},{"id":"s4","latex":"(\\text{홀수 횟수},\\text{짝수 횟수})=(1,3),\\ (3,1)"},{"id":"s5","latex":"\\begin{array}{c|c|c}\\text{홀수 눈}&\\text{짝수 눈 세 개}&\\text{경우의 수}\\\\\\hline1&(6,6,6),(6,4,4),(6,2,2)&4+12+12\\\\3&(2,4,6)&24\\\\5&(2,2,2),(2,4,4),(2,6,6)&4+12+12\\end{array}"},{"id":"s6","latex":"\\text{홀수 }1:\\ (6,6,6),(6,4,4),(6,2,2)\\Rightarrow\\frac{4!}{3!},\\frac{4!}{2!},\\frac{4!}{2!}"},{"id":"s7","latex":"\\text{홀수 }3:\\ (2,4,6)\\Rightarrow4!,\\qquad\\text{홀수 }5:\\ (2,2,2),(2,4,4),(2,6,6)"},{"id":"s8","latex":"1\\leftrightarrow6,\\ 2\\leftrightarrow5,\\ 3\\leftrightarrow4:\\quad(1,3)\\leftrightarrow(3,1)"},{"id":"s9","latex":"\\frac{2(28+24+28)}{6^4}=\\frac{10}{81}"}],"diagram":null,"contentHash":"cb39dcc50fe8c77d70f924e8c35eee01e26f8cad0902de7ad51be0fafa5ad8a4","questionHtml":"\u003cdiv>앞면에 숫자 $1\\,$, $2\\,$, $3\\,$, $4\\,$, $5\\,$, $6\\,$이 하나씩 적혀 있는 카드 $6\\,$장이 있다. 각 카드의 뒷면에는 앞면에 적힌 숫자와 같은 숫자가 적혀 있다. 이 $6\\,$장의 카드가 다음과 같이 놓여 있다.\u003cbr>숫자 $1\\,$, $6\\,$이 적힌 카드는 뒷면이 보이도록 놓여 있고, 숫자 $2\\,$, $3\\,$, $4\\,$, $5\\,$가 적힌 카드는 앞면이 보이도록 놓여 있다.\u003cbr>이 $6\\,$장의 카드와 한 개의 주사위를 사용하여 다음 시행을 한다.\u003cbr>주사위를 한 번 던져 나온 눈의 수가 $k\\,$일 때, $k\\,$가 홀수이면 $k$ 이하의 수가 적힌 카드를 모두 한 번씩 뒤집고, $k\\,$가 짝수이면 $k$ 이상의 수가 적힌 카드를 모두 한 번씩 뒤집는다.\u003cbr>이 시행을 $4\\,$번 반복한 후 $6\\,$장의 카드가 모두 앞면이 보이도록 놓여 있을 확률은?\u003cbr>① $\\frac{19}{162}\\,$ ② $\\frac{13}{108}\\,$ ③ $\\frac{10}{81}\\,$\u003cbr>④ $\\frac{41}{324}\\,$ ⑤ $\\frac{7}{54}$\u003c/div>\u003cp>\u003cimg src=\"../assets/figures/603cb9efc540ca81a170091b.png\" alt=\"문항 도형\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"ea7d7e91db8e79e9a334a485bd5434d4fa32428ba1b1ac7e7cc088d353725dea"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":25021,"sourceLabel":"2026 평가원 고3 수학확통 6월 30번","adminYear":2026,"grade":3,"month":6,"number":30,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"노란색 공 $4\\,$개, 보라색 공 $4\\,$개, 검은색 공 $4\\,$개가 있다. 이 $12\\,$개의 공을 모두 일렬로 나열할 때, 노란색 공이 보라색 공과 이웃하지 않게 나열하는 경우의 수를 구하시오. (단, 같은 색 공끼리는 서로 구별하지 않는다.)","answer":"780","sourceHash":"676ed525e4c204b00aea12f8d471f4a79dc9c21fd1f398fc838a61c7e084d776","steps":[{"id":"s1","latex":"\\square\\ \\bullet\\ \\square\\ \\bullet\\ \\square\\ \\bullet\\ \\square\\ \\bullet\\ \\square\\qquad\\bullet:\\text{검정}"},{"id":"s2","latex":"a:\\text{노랑이 있는 칸 수},\\quad a=1,2,3,4"},{"id":"s3","latex":"\\text{한 칸에 노랑, 보라 동시 배치}\\quad\\times"},{"id":"s4","latex":"x_1+\\cdots+x_a=4,\\ x_i\\ge1\\Rightarrow{}_3\\mathrm C_{a-1}"},{"id":"s5","latex":"y_1+\\cdots+y_{5-a}=4,\\ y_i\\ge0\\Rightarrow{}_{8-a}\\mathrm C_4"},{"id":"s6","latex":"\\text{노랑 칸 선택}\\ {}_5\\mathrm C_a\\quad\\times\\quad\\text{노랑 분배}\\quad\\times\\quad\\text{보라 분배}"},{"id":"s7","latex":"{}_5\\mathrm C_a\\cdot{}_3\\mathrm C_{a-1}\\cdot{}_{8-a}\\mathrm C_4"},{"id":"s8","latex":"\\begin{array}{c|rrrr}a&1&2&3&4\\\\\\hline\\text{경우의 수}&175&450&150&5\\end{array}"},{"id":"s9","latex":"175+450+150+5=780"}],"diagram":null,"contentHash":"9febb9f6cf84018e551e963e714ab406f3a535ea7d58a26d20ff3936a247e3dc","questionHtml":"\u003cdiv>노란색 공 $4\\,$개, 보라색 공 $4\\,$개, 검은색 공 $4\\,$개가 있다. 이 $12\\,$개의 공을 모두 일렬로 나열할 때, 노란색 공이 보라색 공과 이웃하지 않게 나열하는 경우의 수를 구하시오. (단, 같은 색 공끼리는 서로 구별하지 않는다.)\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"88b58519bb5d4d1d42feac3f42463fcf91504b7a8405e95681d80ef5d9ae07ab"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

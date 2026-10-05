@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":27044,"sourceLabel":"2026 평가원 고3 수학미적분 9월 29번","adminYear":2026,"grade":3,"month":9,"number":29,"track":"미적분","points":4,"scoreStatus":"confirmed_4_direct","questionText":"수열 $\\left\\{a_{n} \\right\\}\\,$은 등비수열이고, 수열 $\\left\\{b_{n} \\right\\}\\,$을 모든 자연수 $n\\,$에 대하여\n$b_{n}= \\begin{cases}\\,a_{n}-a_{1} & & \\left( \\left|\\, a_{n}\\,\\right| \\geq 10 \\right) \\\\ \\, \\left(a_{n} \\right)^{2} & & \\left( \\left|\\, a_{n}\\,\\right| \u003c 10 \\right)\\end{cases}$\n이라 하자. 수열 $\\left\\{b_{n} \\right\\}\\,$은 다음 조건을 만족시킨다.\n(가) $\\left(b_{2} \\right)^{2}=36b_{3}$\n(나) 급수 $\\sum_{n=1}^{ \\infty }b_{n}\\,$은 수렴하고 그 합은 $12\\,$이다.\n$a_{1} > 0\\,$이고 $a_{2} \u003c 0\\,$일 때, $36 \\times a_{4} \\times a_{6}\\,$의 값을 구하시오. [4점]","answer":"81","sourceHash":"7f893bb1a6a8de1f45060f1468c49d7777645e5d3e6f6310cdb7a4e55e909dbd","steps":[{"id":"s1","latex":"a_n=ar^{n-1},\\quad a>0,\\ r\u003c0,\\quad b_n\\to0\\Rightarrow-1\u003cr\u003c0"},{"id":"s2","latex":"r=-1:\\quad b_n=\\begin{cases}a^2&(a\u003c10)\\\\0\\ (n\\text{ 홀수}),\\ -2a\\ (n\\text{ 짝수})&(a\\ge10)\\end{cases}\\Rightarrow b_n\\not\\to0"},{"id":"s3","latex":"r\u003c-1:\\quad n\\text{이 충분히 크면 }|a_n|\\ge10,\\quad b_{2n}=ar^{2n-1}-a\\to-\\infty\\quad\\times"},{"id":"s4","latex":"b_3\\ge0,\\quad|a_3|\\ge10\\Rightarrow b_3=a(r^2-1)\u003c0\\quad\\times"},{"id":"s5","latex":"|a_3|\u003c10\\Rightarrow b_n=a^2r^{2n-2}\\quad(n\\ge3)"},{"id":"s6","latex":"\\text{(I)}\\ |a_2|\u003c10:\\quad a^4r^4=36a^2r^4\\Rightarrow a=6"},{"id":"s7","latex":"a=6\u003c10\\Rightarrow b_1=a^2,\\quad b_n=a^2r^{2n-2}\\ (n\\ge1)"},{"id":"s8","latex":"\\sum b_n=\\frac{36}{1-r^2}>36\\quad\\times"},{"id":"s9","latex":"\\text{(II)}\\ |a_2|\\ge10:\\quad b_1=0,\\ b_2=a(r-1)"},{"id":"s10","latex":"(r-1)^2=36r^4\\Rightarrow(2r+1)(3r-1)=0\\Rightarrow r=-\\frac12"},{"id":"s11","latex":"-\\frac32a+\\frac{a^2}{12}=12\\Rightarrow(a-24)(a+6)=0\\Rightarrow a=24"},{"id":"s12","latex":"|a_2|=12\\ge10,\\quad|a_3|=6\u003c10\\quad\\checkmark"},{"id":"s13","latex":"36a_4a_6=36(-3)\\left(-\\frac34\\right)=81"}],"diagram":null,"contentHash":"4ec7b27c9aa9c004defcd1e1cd5d021a1264f128fadca79d405696b2bca4afd6","questionHtml":"\u003cdiv>수열 $\\left\\{a_{n} \\right\\}\\,$은 등비수열이고, 수열 $\\left\\{b_{n} \\right\\}\\,$을 모든 자연수 $n\\,$에 대하여\u003cbr>$b_{n}= \\begin{cases}\\,a_{n}-a_{1} &amp; &amp; \\left( \\left|\\, a_{n}\\,\\right| \\geq 10 \\right) \\\\ \\, \\left(a_{n} \\right)^{2} &amp; &amp; \\left( \\left|\\, a_{n}\\,\\right| &lt; 10 \\right)\\end{cases}$\u003cbr>이라 하자. 수열 $\\left\\{b_{n} \\right\\}\\,$은 다음 조건을 만족시킨다.\u003cbr>(가) $\\left(b_{2} \\right)^{2}=36b_{3}$\u003cbr>(나) 급수 $\\sum_{n=1}^{ \\infty }b_{n}\\,$은 수렴하고 그 합은 $12\\,$이다.\u003cbr>$a_{1} &gt; 0\\,$이고 $a_{2} &lt; 0\\,$일 때, $36 \\times a_{4} \\times a_{6}\\,$의 값을 구하시오. [4점]\u003c/div>","preview":false,"graphPlan":{"version":1,"itemId":27044,"sourceHash":"7f893bb1a6a8de1f45060f1468c49d7777645e5d3e6f6310cdb7a4e55e909dbd","contentHash":"4ec7b27c9aa9c004defcd1e1cd5d021a1264f128fadca79d405696b2bca4afd6","title":"2026 평가원 고3 수학미적분 9월 29번 · 정확 점열","bounds":[0.0,7.0,-40.0,40.0],"aspect":"free","stages":[{"stepId":"s12","title":"|aₙ|=10 경계와 두 수열","layers":[{"id":"axis-x","type":"polyline","points":[[0.0,0.0],[7.0,0.0]],"text":"","color":"muted"},{"id":"axis-y","type":"polyline","points":[[0.0,-40.0],[0.0,40.0]],"text":"","color":"muted"},{"id":"p10","type":"polyline","points":[[0.0,10.0],[7.0,10.0]],"color":"muted","text":"+10"},{"id":"m10","type":"polyline","points":[[0.0,-10.0],[7.0,-10.0]],"color":"muted","text":"-10"},{"id":"aseq","type":"polyline","points":[[1.0,24.0],[2.0,-12.0],[3.0,6.0],[4.0,-3.0],[5.0,1.5],[6.0,-0.75]],"color":"navy","text":""},{"id":"a1","type":"point","x":1.0,"y":24.0,"text":"a1","color":"navy"},{"id":"a2","type":"point","x":2.0,"y":-12.0,"text":"a2","color":"navy"},{"id":"a3","type":"point","x":3.0,"y":6.0,"text":"a3","color":"navy"},{"id":"a4","type":"point","x":4.0,"y":-3.0,"text":"a4","color":"navy"},{"id":"a5","type":"point","x":5.0,"y":1.5,"text":"a5","color":"navy"},{"id":"a6","type":"point","x":6.0,"y":-0.75,"text":"a6","color":"navy"},{"id":"bseq","type":"polyline","points":[[1.0,0.0],[2.0,-36.0],[3.0,36.0],[4.0,9.0],[5.0,2.25],[6.0,0.5625]],"color":"teal","text":""},{"id":"b1","type":"point","x":1.0,"y":0.0,"text":"b1","color":"teal"},{"id":"b2","type":"point","x":2.0,"y":-36.0,"text":"b2","color":"teal"},{"id":"b3","type":"point","x":3.0,"y":36.0,"text":"b3","color":"teal"},{"id":"b4","type":"point","x":4.0,"y":9.0,"text":"b4","color":"teal"},{"id":"b5","type":"point","x":5.0,"y":2.25,"text":"b5","color":"teal"},{"id":"b6","type":"point","x":6.0,"y":0.5625,"text":"b6","color":"teal"},{"id":"vals","type":"label","x":0.2,"y":38.0,"text":"aₙ=24(-1/2)ⁿ⁻¹, b=(0,-36,36,9,9/4,9/16)","color":"muted"}]},{"stepId":"s13","title":"요구 곱","layers":[{"id":"axis-x","type":"polyline","points":[[0.0,0.0],[7.0,0.0]],"text":"","color":"muted"},{"id":"axis-y","type":"polyline","points":[[0.0,-40.0],[0.0,40.0]],"text":"","color":"muted"},{"id":"p10","type":"polyline","points":[[0.0,10.0],[7.0,10.0]],"color":"muted","text":"+10"},{"id":"m10","type":"polyline","points":[[0.0,-10.0],[7.0,-10.0]],"color":"muted","text":"-10"},{"id":"aseq","type":"polyline","points":[[1.0,24.0],[2.0,-12.0],[3.0,6.0],[4.0,-3.0],[5.0,1.5],[6.0,-0.75]],"color":"navy","text":""},{"id":"a1","type":"point","x":1.0,"y":24.0,"text":"a1","color":"navy"},{"id":"a2","type":"point","x":2.0,"y":-12.0,"text":"a2","color":"navy"},{"id":"a3","type":"point","x":3.0,"y":6.0,"text":"a3","color":"navy"},{"id":"a4","type":"point","x":4.0,"y":-3.0,"text":"a4","color":"navy"},{"id":"a5","type":"point","x":5.0,"y":1.5,"text":"a5","color":"navy"},{"id":"a6","type":"point","x":6.0,"y":-0.75,"text":"a6","color":"navy"},{"id":"bseq","type":"polyline","points":[[1.0,0.0],[2.0,-36.0],[3.0,36.0],[4.0,9.0],[5.0,2.25],[6.0,0.5625]],"color":"teal","text":""},{"id":"b1","type":"point","x":1.0,"y":0.0,"text":"b1","color":"teal"},{"id":"b2","type":"point","x":2.0,"y":-36.0,"text":"b2","color":"teal"},{"id":"b3","type":"point","x":3.0,"y":36.0,"text":"b3","color":"teal"},{"id":"b4","type":"point","x":4.0,"y":9.0,"text":"b4","color":"teal"},{"id":"b5","type":"point","x":5.0,"y":2.25,"text":"b5","color":"teal"},{"id":"b6","type":"point","x":6.0,"y":0.5625,"text":"b6","color":"teal"},{"id":"vals","type":"label","x":0.2,"y":38.0,"text":"aₙ=24(-1/2)ⁿ⁻¹, b=(0,-36,36,9,9/4,9/16)","color":"muted"},{"id":"ans","type":"label","x":3.8,"y":-38.0,"text":"a₄=-3, a₆=-3/4, 36a₄a₆=81","color":"amber"}]}],"graphHash":"6a3b25c0ad5b2a93af01266c02b0ecc886e619896c1bc13debd7867275146ad0"},"graphHash":"6a3b25c0ad5b2a93af01266c02b0ecc886e619896c1bc13debd7867275146ad0","editionHash":"10d5b4e4da10754bae9eab0ea1b5356f4ba6a473272ee7a92fb3b69ce4cb7576"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

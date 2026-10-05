@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16548,"sourceLabel":"2019 평가원 고3 수리가형 9월 28번","adminYear":2019,"grade":3,"month":9,"number":28,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"연필 $7$자루와 볼펜 $4$자루를 다음 조건을 만족시키도록 여학생 $3$명과 남학생 $2$명에게 남김없이 나누어 주는 경우의 수를 구하시오. (단, 연필끼리는 서로 구별하지 않고, 볼펜끼리도 서로 구별하지 않는다.) [4점]\n(가) 여학생이 각각 받는 연필의 개수는 서로 같고, 남학생이 각각 받는 볼펜의 개수도 서로 같다.(나) 여학생은 연필을 $1$자루 이상 받고, 볼펜을 받지 못하는 여학생이 있을 수 있다.(다) 남학생은 볼펜을 $1$자루 이상 받고, 연필을 받지 못하는 남학생이 있을 수 있다.","answer":"49","sourceHash":"c9aa9fd29ebd8dd5c02cca13a78668496a278f7f226c7c4c783a8d834efe92fd","steps":[{"id":"s1","latex":"\\text{여학생의 연필 수 }p:\\quad p\\in\\{1,2\\}"},{"id":"s2","latex":"p=1:\\ 7-3p=4\\Rightarrow4+1=5,\\qquad p=2:\\ 7-3p=1\\Rightarrow1+1=2"},{"id":"s3","latex":"N_{\\mathrm{pencil}}=5+2=7"},{"id":"s4","latex":"\\text{남학생의 볼펜 수 }q:\\quad q\\in\\{1,2\\}"},{"id":"s5","latex":"q=1:\\ 4-2q=2\\Rightarrow{2+3-1\\choose3-1}=6,\\qquad q=2:\\ 4-2q=0\\Rightarrow1"},{"id":"s6","latex":"N_{\\mathrm{pen}}=6+1=7"},{"id":"s7","latex":"N=7\\cdot7=\\boxed{49}"}],"diagram":null,"contentHash":"8f8bfbafde302f3652d60ec1c384b4cccc77190c508d2716d6a81432fce545ac","questionHtml":"\u003cp class=\"hp\">연필 \u003cspan class=\"heq\">\\(7\\)\u003c/span>자루와 볼펜 \u003cspan class=\"heq\">\\(4\\)\u003c/span>자루를 다음 조건을 만족시키도록 여학생 \u003cspan class=\"heq\">\\(3\\)\u003c/span>명과 남학생 \u003cspan class=\"heq\">\\(2\\)\u003c/span>명에게 남김없이 나누어 주는 경우의 수를 구하시오. (단, 연필끼리는 서로 구별하지 않고, 볼펜끼리도 서로 구별하지 않는다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 여학생이 각각 받는 연필의 개수는 서로 같고, 남학생이 각각 받는 볼펜의 개수도 서로 같다.\u003c/p>\u003cp class=\"hp\">(나) 여학생은 연필을 \u003cspan class=\"heq\">\\(1\\)\u003c/span>자루 이상 받고, 볼펜을 받지 못하는 여학생이 있을 수 있다.\u003c/p>\u003cp class=\"hp\">(다) 남학생은 볼펜을 \u003cspan class=\"heq\">\\(1\\)\u003c/span>자루 이상 받고, 연필을 받지 못하는 남학생이 있을 수 있다.\u003c/p>\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"9b57bd8c4d3a10fba87673d0f959b47adc7fd338e938d6901c570c32e5b49d62"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

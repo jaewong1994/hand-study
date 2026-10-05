@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":25011,"sourceLabel":"2026 평가원 고3 수학공통 6월 20번","adminYear":2026,"grade":3,"month":6,"number":20,"track":"공통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 $1\\,$보다 큰 실수 $b\\,$에 대하여 두 함수 $f \\left(x \\right)=b^{x}\\,$과 $g \\left(x \\right)=\\,- \\log\\,_{b}\\,x\\,$의 그래프가 제$1\\,$사분면에서 만나는 점 ${{P}}\\,$의 좌표를 $\\left( \\alpha ,\\, \\beta \\right)\\,$라 하자.\n다음은 $\\alpha \\beta\\,^{3}=1\\,$일 때, 직선 ${{OP}}\\,$의 기울기 $m\\,$에 대하여 $g \\left(m \\right)\\,$의 값을 구하는 과정이다. (단, ${{O}}\\,$는 원점이다.)\n제$1\\,$사분면에 있는 점 ${{P}} \\left( \\alpha ,\\, \\beta \\right)\\,$는 두 곡선\n$y=f \\left(x \\right)\\,$, $y=g \\left(x \\right)\\,$\n위의 점이므로, 두 양수 $\\alpha\\,$, $\\beta\\,$가\n$\\beta =b^{ \\alpha }\\,$, $\\beta =\\,- \\log\\,_{b}\\, \\alpha\\,$\n를 만족시킨다.\n$\\alpha \\beta\\,^{3}=1\\,$이고 $\\alpha = \\log\\,_{b}\\, \\beta\\,$, $\\beta =\\,- \\log\\,_{b}\\, \\alpha\\,$이므로\n$3 \\alpha - \\beta =3\\log\\, _{b} \\, \\beta +\\log\\, _{b} \\, \\alpha =\\log\\, _{b} \\, \\left( \\alpha \\beta \\, ^{3} \\right) =0\\,$\n이다. 그러므로 $m= \\frac{\\beta }{\\alpha } = {\\boxed{\\, \\left( 가 \\right) \\,}} \\,$이다.\n$\\beta\\,^{4}=m \\alpha \\beta\\,^{3}=m\\,$이므로 $\\beta = \\boxed{\\, \\left(나 \\right)\\,}\\,$이다.\n$b= \\alpha^{-\\frac{1}{ \\beta }}\\,$이고 $\\alpha =\\frac{ \\beta }{m}\\,$이므로\n$g \\left(m \\right)=\\,- \\log\\,_{b}\\,m=\\frac{ \\beta }{ \\log\\,_{m}\\, \\alpha }=\\frac{ \\beta }{-1+ \\log\\,_{m}\\, \\beta }= \\boxed{\\, \\left(다 \\right)\\,}\\,$\n이다.\n위의 (가), (나), (다)에 알맞은 수를 각각 $p\\,$, $q\\,$, $r\\,$이라 할 때, $\\left(p \\times q \\times r \\right)^{2}\\,$의 값을 구하시오.","answer":"48","sourceHash":"dd66aac55fa5b97440b389c2a92eff0f9e974b97f302674b355e525a13fbb2d7","steps":[{"id":"s1","latex":"\\alpha=\\log_b\\beta,\\quad\\beta=-\\log_b\\alpha"},{"id":"s2","latex":"3\\alpha-\\beta=\\log_b(\\alpha\\beta^3)=0\\Rightarrow m=3"},{"id":"s3","latex":"\\beta^4=m\\alpha\\beta^3=3\\Rightarrow\\beta=3^{1/4}"},{"id":"s4","latex":"g(m)=\\frac{\\beta}{-1+\\log_m\\beta}=-\\frac43\\,3^{1/4}"},{"id":"s5","latex":"(p,q,r)=\\left(3,3^{1/4},-\\frac43\\,3^{1/4}\\right)"},{"id":"s6","latex":"(pqr)^2=(-4\\sqrt3)^2=48"}],"diagram":null,"contentHash":"ea0ecba216192ed812b3f4ce26acf67430d031ca6f129208d272035b62d88b51","questionHtml":"\u003cdiv>그림과 같이 $1\\,$보다 큰 실수 $b\\,$에 대하여 두 함수 $f \\left(x \\right)=b^{x}\\,$과 $g \\left(x \\right)=\\,- \\log_{b}\\,x\\,$의 그래프가 제$1\\,$사분면에서 만나는 점 ${{P}}\\,$의 좌표를 $\\left( \\alpha ,\\, \\beta \\right)\\,$라 하자.\u003cbr>다음은 $\\alpha \\beta^{3}=1\\,$일 때, 직선 ${{OP}}\\,$의 기울기 $m\\,$에 대하여 $g \\left(m \\right)\\,$의 값을 구하는 과정이다. (단, ${{O}}\\,$는 원점이다.)\u003cbr>제$1\\,$사분면에 있는 점 ${{P}} \\left( \\alpha ,\\, \\beta \\right)\\,$는 두 곡선\u003cbr>$y=f \\left(x \\right)\\,$, $y=g \\left(x \\right)\\,$\u003cbr>위의 점이므로, 두 양수 $\\alpha\\,$, $\\beta\\,$가\u003cbr>$\\beta =b^{ \\alpha }\\,$, $\\beta =\\,- \\log_{b}\\, \\alpha\\,$\u003cbr>를 만족시킨다.\u003cbr>$\\alpha \\beta^{3}=1\\,$이고 $\\alpha = \\log_{b}\\, \\beta\\,$, $\\beta =\\,- \\log_{b}\\, \\alpha\\,$이므로\u003cbr>$3 \\alpha - \\beta =3\\log_{b} \\, \\beta +\\log_{b} \\, \\alpha =\\log_{b} \\, \\left( \\alpha \\beta ^{3} \\right) =0\\,$\u003cbr>이다. 그러므로 $m= \\frac{\\beta }{\\alpha } = {\\boxed{\\, \\left( 가 \\right) \\,}} \\,$이다.\u003cbr>$\\beta^{4}=m \\alpha \\beta^{3}=m\\,$이므로 $\\beta = \\boxed{\\, \\left(나 \\right)\\,}\\,$이다.\u003cbr>$b= \\alpha^{-\\frac{1}{ \\beta }}\\,$이고 $\\alpha =\\frac{ \\beta }{m}\\,$이므로\u003cbr>$g \\left(m \\right)=\\,- \\log_{b}\\,m=\\frac{ \\beta }{ \\log_{m}\\, \\alpha }=\\frac{ \\beta }{-1+ \\log_{m}\\, \\beta }= \\boxed{\\, \\left(다 \\right)\\,}\\,$\u003cbr>이다.\u003cbr>위의 (가), (나), (다)에 알맞은 수를 각각 $p\\,$, $q\\,$, $r\\,$이라 할 때, $\\left(p \\times q \\times r \\right)^{2}\\,$의 값을 구하시오.\u003c/div>\u003cp>\u003cimg src=\"../assets/figures/ef5f6aa999be6e879ed15d0e.png\" alt=\"문항 도형\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"05b6efe40baa498468db7eabd992154b1850f2f044f240c54e0fde0d6c1ef8b7"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

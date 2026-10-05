@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16219,"sourceLabel":"2019 교육청 고3 수리가형 10월 27번","adminYear":2019,"grade":3,"month":10,"number":27,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 선분 $A B\\,$를 지름으로 하는 원 위의 점 $P\\,$에서의 접선과 직선 $A B\\,$가 만나는 점을 $Q\\,$라 하자. 점 $Q\\,$가 선분 $A B\\,$를 $5\\,:\\,1\\,$로 외분하는 점이고, ${\\overline{BQ}} = \\sqrt{3} \\,$일 때, ${\\vec{AP}} \\cdot {\\vec{AQ}} \\,$의 값을 구하시오. [4점]","answer":"50","sourceHash":"8388e32fd4f58a264400c1408d5d1e8c9396986420269fdff389ffe27bd3823f","steps":[{"id":"s1","latex":"BQ=\\sqrt3,\\quad AQ:BQ=5:1\\Rightarrow AQ=5\\sqrt3,\\ AB=4\\sqrt3"},{"id":"s2","latex":"O=\\text{원 중심}=AB\\text{의 중점}"},{"id":"s3","latex":"R=OP=2\\sqrt3,\\qquad OQ=3\\sqrt3"},{"id":"s4","latex":"OP\\perp PQ\\Rightarrow\\vec{OP}\\cdot(\\vec{OQ}-\\vec{OP})=0"},{"id":"s5","latex":"\\vec{OP}\\cdot\\vec{OQ}=|\\vec{OP}|^2=12"},{"id":"s6","latex":"\\vec{AO}=\\frac25\\vec{AQ},\\qquad\\vec{AQ}=\\frac53\\vec{OQ}"},{"id":"s7","latex":"\\vec{AP}\\cdot\\vec{AQ}=(\\vec{AO}+\\vec{OP})\\cdot\\vec{AQ}"},{"id":"s8","latex":"=\\frac25|\\vec{AQ}|^2+\\frac53\\vec{OP}\\cdot\\vec{OQ}=30+20=\\boxed{50}"}],"diagram":null,"contentHash":"56d341d8a50475d736a4043196f013d581616a7e51100209a2c1f72a57211e35","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 선분 \u003cspan class=\"heq\">\\(A B\\,\\)\u003c/span>를 지름으로 하는 원 위의 점 \u003cspan class=\"heq\">\\(P\\,\\)\u003c/span>에서의 접선과 직선 \u003cspan class=\"heq\">\\(A B\\,\\)\u003c/span>가 만나는 점을 \u003cspan class=\"heq\">\\(Q\\,\\)\u003c/span>라 하자. 점 \u003cspan class=\"heq\">\\(Q\\,\\)\u003c/span>가 선분 \u003cspan class=\"heq\">\\(A B\\,\\)\u003c/span>를 \u003cspan class=\"heq\">\\(5\\,:\\,1\\,\\)\u003c/span>로 외분하는 점이고, \u003cspan class=\"heq\">\\({\\overline{BQ}} = \\sqrt{3} \\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\({\\overrightarrow{AP}} \\cdot {\\overrightarrow{AQ}} \\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig hfigr\" src=\"../assets/figures/6cd427196dfb658f9602ffc4.png\" style=\"float:right;margin:4px 0 8px 12px;width:416px;max-width:45%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"635ee91b2effd431e922605bfb6df22fe7662f38e53a378ad8e31dca185c38e4"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

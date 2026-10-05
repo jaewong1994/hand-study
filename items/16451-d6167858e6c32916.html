@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16451,"sourceLabel":"2019 교육청 고3 수리나형 5월 20번","adminYear":2019,"grade":3,"month":5,"number":20,"track":"수리나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 ${\\overline{A _{1} B _{1}}} =1+ \\sqrt{3}$, ${\\overline{B _{1} C}} =3+ \\sqrt{3}$인 직사각형 $A _{1} B _{1} CD _{1} \\,$이 있다. 직사각형 $A _{1} B _{1} CD _{1} \\,$의 내부에 점 $A _{1}$을 중심으로 하고 반지름의 길이가 $\\left( \\sqrt{3} -1 \\right) {\\overline{A _{1} B _{1}}}$인 사분원을 그릴 때, 이 사분원이 두 선분 $A_1 B_1$, $A _{1} D _{1}$과 만나는 점을 각각 $E _{1}$, $F_1$이라 하고, 호 $E_1 F_1$의 길이를 3등분하는 점 중에서 점 $E _{1}$에 가까운 점을 $G_1$이라 하자. 사분원 $A _{1} E _{1} F _{1} \\,$의 내부와 세 점 $G_1$, $C$, $F_1$을 지나는 원의 내부의 공통부분에 색칠하여 얻은 그림을 $R_1$이라 하자. 그림 $R_1$에서 점 $F_1$을 지나고 선분 $A _{1} D _{1}$에 수직인 직선이 선분 $B _{1} C$와 만나는 점을 $B _{2}$라 하고, 선분 $F _{1} B _{2}$와 선분 $A _{1} C$의 교점을 $A _{2}$, 점 $A _{2}$에서 선분 $D _{1} C$에 내린 수선의 발을 $D _{2}$라 하자. 직사각형 $A _{2} B _{2} CD _{2} \\,$의 내부에 점 $A _{2}$을 중심으로 하고 반지름의 길이가 $\\left( \\sqrt{3} -1 \\right) {\\overline{A _{2} B _{2}}}$인 사분원을 그릴 때, 이 사분원이 두 선분 $A _{2} B _{2}$, $A _{2} D _{2}$과 만나는 점을 각각 $E _{2}$, $F _{2}$라 하고, 호 $E _{2} F _{2}$의 길이를 3등분하는 점 중에서 점 $E _{2}$에 가까운 점을 $G _{2}$라 하자. 사분원 $A _{2} E _{2} F _{2} \\,$의 내부와 세 점 $G _{2}$, $C$, $F _{2}$을 지나는 원의 내부의 공통부분에 색칠하여 얻은 그림을 $R _{2}$라 하자. 이와 같은 과정을 계속하여 $n$번째 얻은 그림 $R _{n}$에 색칠되어 있는 부분의 넓이를 $S_n$이라 할 때, $\\lim _{n -> \\infty } {} S _{n}$의 값은? [4점]\n① $\\pi- \\sqrt{ 3}$ ② $2\\pi-3 \\sqrt{ 3}$ ③ $2\\pi-2 \\sqrt{ 3}$\n④ $2\\pi- \\sqrt{ 3}$ ⑤ $3\\pi-2 \\sqrt{ 3}$","answer":"②","sourceHash":"fdb311e41a7130a34180f570cef8f039e66e22ab30f833be5ac9e38488dd177d","steps":[{"id":"s1","latex":"a_n=S_n-S_{n-1},\\quad S_0=0\\quad\\text{(이번 단계에서 더해진 넓이)}"},{"id":"s2","latex":"A_1=(0,0),\\quad F_1=(0,2),\\quad G_1=(\\sqrt3,1),\\quad C=(1+\\sqrt3,3+\\sqrt3)"},{"id":"s3","latex":"O_1=(\\sqrt3,3)\\Rightarrow O_1F_1=O_1G_1=O_1C=2"},{"id":"s4","latex":"A_1F_1=A_1G_1=F_1G_1=2,\\quad O_1F_1=O_1G_1=F_1G_1=2"},{"id":"s5","latex":"\\angle F_1A_1G_1=\\angle F_1O_1G_1=\\dfrac{\\pi}{3}"},{"id":"s6","latex":"S_1=2\\left(\\dfrac{2^2}{2}\\cdot\\dfrac{\\pi}{3}-\\dfrac{\\sqrt3}{4}\\cdot2^2\\right)=\\dfrac{4\\pi}{3}-2\\sqrt3"},{"id":"s7","latex":"A_2=(2/\\sqrt3,2),\\quad A_2B_2=1+1/\\sqrt3"},{"id":"s8","latex":"\\dfrac{A_2B_2}{A_1B_1}=\\dfrac1{\\sqrt3}\\Rightarrow\\dfrac{a_{n+1}}{a_n}=\\dfrac13"},{"id":"s9","latex":"\\lim_{n\\to\\infty}S_n=\\dfrac{a_1}{1-1/3}=2\\pi-3\\sqrt3"}],"diagram":null,"contentHash":"d66c92f18179fcddec0762a8babc207eeb312b6347cd677f924b6de9ddd1511c","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 \u003cspan class=\"heq\">\\({\\overline{A_{1} B_{1}}} =1+ \\sqrt{3}\\)\u003c/span>, \u003cspan class=\"heq\">\\({\\overline{B_{1} C}} =3+ \\sqrt{3}\\)\u003c/span>인 직사각형\u003cbr>\u003cspan class=\"heq\">\\(A_{1} B_{1} CD_{1} \\,\\)\u003c/span>이 있다. 직사각형 \u003cspan class=\"heq\">\\(A_{1} B_{1} CD_{1} \\,\\)\u003c/span>의 내부에 점 \u003cspan class=\"heq\">\\(A_{1}\\)\u003c/span>을 중심으로 하고 반지름의 길이가 \u003cspan class=\"heq\">\\(\\left( \\sqrt{3} -1 \\right) {\\overline{A_{1} B_{1}}}\\)\u003c/span>인 사분원을 그릴 때, 이 사분원이 두 선분 \u003cspan class=\"heq\">\\(A_{1}\tB_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(A_{1} D_{1}\\)\u003c/span>과 만나는 점을 각각 \u003cspan class=\"heq\">\\(E_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(F_{1}\\)\u003c/span>이라 하고, 호 \u003cspan class=\"heq\">\\(E_{1}\tF_{1}\\)\u003c/span>의 길이를 3등분하는 점 중에서 점 \u003cspan class=\"heq\">\\(E_{1}\\)\u003c/span>에 가까운 점을 \u003cspan class=\"heq\">\\(G_{1}\\)\u003c/span>이라 하자. 사분원 \u003cspan class=\"heq\">\\(A_{1} E_{1} F_{1} \\,\\)\u003c/span>의 내부와 세 점 \u003cspan class=\"heq\">\\(G_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(C\\)\u003c/span>, \u003cspan class=\"heq\">\\(F_{1}\\)\u003c/span>을 지나는 원의 내부의 공통부분에 색칠하여 얻은 그림을 \u003cspan class=\"heq\">\\(R_{1}\\)\u003c/span>이라 하자.\u003cbr>그림 \u003cspan class=\"heq\">\\(R_{1}\\)\u003c/span>에서 점 \u003cspan class=\"heq\">\\(F_{1}\\)\u003c/span>을 지나고 선분 \u003cspan class=\"heq\">\\(A_{1} D_{1}\\)\u003c/span>에 수직인 직선이 선분 \u003cspan class=\"heq\">\\(B_{1} C\\)\u003c/span>와 만나는 점을 \u003cspan class=\"heq\">\\(B_{2}\\)\u003c/span>라 하고, 선분 \u003cspan class=\"heq\">\\(F_{1} B_{2}\\)\u003c/span>와 선분 \u003cspan class=\"heq\">\\(A_{1} C\\)\u003c/span>의 교점을 \u003cspan class=\"heq\">\\(A_{2}\\)\u003c/span>, 점 \u003cspan class=\"heq\">\\(A_{2}\\)\u003c/span>에서 선분 \u003cspan class=\"heq\">\\(D_{1} C\\)\u003c/span>에 내린 수선의 발을 \u003cspan class=\"heq\">\\(D_{2}\\)\u003c/span>라 하자. 직사각형 \u003cspan class=\"heq\">\\(A_{2} B_{2} CD_{2} \\,\\)\u003c/span>의 내부에 점 \u003cspan class=\"heq\">\\(A_{2}\\)\u003c/span>을 중심으로 하고 반지름의 길이가 \u003cspan class=\"heq\">\\(\\left( \\sqrt{3} -1 \\right) {\\overline{A_{2} B_{2}}}\\)\u003c/span>인 사분원을 그릴 때, 이 사분원이 두 선분 \u003cspan class=\"heq\">\\(A_{2} B_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(A_{2} D_{2}\\)\u003c/span>과 만나는 점을 각각 \u003cspan class=\"heq\">\\(E_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(F_{2}\\)\u003c/span>라 하고, 호 \u003cspan class=\"heq\">\\(E_{2} F_{2}\\)\u003c/span>의 길이를 3등분하는 점 중에서 점 \u003cspan class=\"heq\">\\(E_{2}\\)\u003c/span>에 가까운 점을 \u003cspan class=\"heq\">\\(G_{2}\\)\u003c/span>라 하자. 사분원 \u003cspan class=\"heq\">\\(A_{2} E_{2} F_{2} \\,\\)\u003c/span>의 내부와 세 점 \u003cspan class=\"heq\">\\(G_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(C\\)\u003c/span>, \u003cspan class=\"heq\">\\(F_{2}\\)\u003c/span>을 지나는 원의 내부의 공통부분에 색칠하여 얻은 그림을 \u003cspan class=\"heq\">\\(R_{2}\\)\u003c/span>라 하자.\u003cbr>이와 같은 과정을 계속하여 \u003cspan class=\"heq\">\\(n\\)\u003c/span>번째 얻은 그림 \u003cspan class=\"heq\">\\(R_{n}\\)\u003c/span>에 색칠되어 있는 부분의 넓이를 \u003cspan class=\"heq\">\\(S_{n}\\)\u003c/span>이라 할 때, \u003cspan class=\"heq\">\\(\\lim\\limits_{n \\to  \\infty } {} S_{n}\\)\u003c/span>의 값은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig hfigr\" src=\"../assets/figures/9b4a73d8b5a46bf028a5fd0a.png\" style=\"float:right;margin:4px 0 8px 12px;width:299px;max-width:45%\">\u003c/p>\u003cp class=\"hp\">① \u003cspan class=\"heq\">\\(\\pi- \\sqrt{ 3}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(2\\pi-3 \\sqrt{ 3}\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(2\\pi-2 \\sqrt{ 3}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">④ \u003cspan class=\"heq\">\\(2\\pi- \\sqrt{ 3}\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(3\\pi-2 \\sqrt{ 3}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"d6167858e6c329163c5fa8a51d115b5156822a02555f980bf6fa3c279050eb13"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

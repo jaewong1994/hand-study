@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16519,"sourceLabel":"2019 평가원 고3 수리가형 6월 29번","adminYear":2019,"grade":3,"month":6,"number":29,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"좌표평면에서 곡선 $C\\,:\\,y= \\sqrt{8-x ^{2}} (2 \\leq x \\leq 2 \\sqrt{2} )$ 위의 점 ${P}$에 대하여 $\\overline{{O Q}} = 2$, $∠{P O Q} = \\frac{ \\pi}{4}$를 만족시키고 직선 ${O P}$의 아랫부분에 있는 점을 ${Q}$라 하자. 점 ${P}$가 곡선 $C$ 위를 움직일 때, 선분 ${O P}$ 위를 움직이는 점 ${X}$와 선분 ${O Q}$ 위를 움직이는 점 ${Y}$에 대하여 \n $\\vec{OZ}=\\vec{OP}+\\vec{OX}+\\vec{OY}$\n를 만족시키는 점 ${Z}$가 나타내는 영역을 $D$라 하자. 영역 $D$에 속하는 점 중에서 $y$축과의 거리가 최소인 점을 ${R}$라 할 때, 영역 $D$에 속하는 점 ${Z}$에 대하여 $\\vec{{O R}} \\cdot \\vec{{O Z}}$의 최댓값과 최솟값의 합이 $a+b \\sqrt{2}$이다. $a+ b$의 값을 구하시오. (단, ${O}$는 원점이고, $a$와 $b$는 유리수이다.) [4점]","answer":"24","sourceHash":"6d8cd386e01728a5440b5254b6e7cc22fc60d89c756ccd79cdcf2703ec5fc041","steps":[{"id":"s1","latex":"\\overrightarrow{OX}=s\\overrightarrow{OP},\\quad\\overrightarrow{OY}=t\\overrightarrow{OQ}\\quad(0\\le s,t\\le1)"},{"id":"s2","latex":"\\overrightarrow{OP}=2\\sqrt2(\\cos\\theta,\\sin\\theta),\\quad0\\le\\theta\\le\\dfrac\\pi4"},{"id":"s3","latex":"\\overrightarrow{OQ}=2\\left(\\cos\\!\\left(\\theta-\\dfrac\\pi4\\right),\\sin\\!\\left(\\theta-\\dfrac\\pi4\\right)\\right)"},{"id":"s4","latex":"\\overrightarrow{OZ}=(1+s)\\overrightarrow{OP}+t\\overrightarrow{OQ}"},{"id":"s5","latex":"\\min x_Z=2\\Rightarrow R=(2,2)"},{"id":"s6","latex":"\\overrightarrow{OR}\\cdot\\overrightarrow{OZ}=8(1+s)\\cos\\!\\left(\\theta-\\dfrac\\pi4\\right)+4\\sqrt2\\,t\\sin\\theta"},{"id":"s7","latex":"\\max=20\\ (\\theta=\\tfrac\\pi4,s=t=1),\\qquad\\min=4\\sqrt2\\ (\\theta=0,s=t=0)"},{"id":"s8","latex":"a+b=20+4=24"}],"diagram":null,"contentHash":"e4c1216c3daf401224467c376633b06ab8601a171272a79d521e67ca9bac662a","questionHtml":"\u003cp class=\"hp htall\">좌표평면에서 곡선 \u003cspan class=\"heq\">\\(C\\,:\\,y= \\sqrt{8-x^{2}} (2 \\leq x \\leq 2 \\sqrt{2} )\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\({P}\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(\\overline{{O Q}} = 2\\)\u003c/span>, \u003cspan class=\"heq\">\\(∠{P O Q} = \\dfrac{ \\pi}{4}\\)\u003c/span>를 만족시키고 직선 \u003cspan class=\"heq\">\\({O P}\\)\u003c/span>의 아랫부분에 있는 점을 \u003cspan class=\"heq\">\\({Q}\\)\u003c/span>라 하자. \u003cbr>점 \u003cspan class=\"heq\">\\({P}\\)\u003c/span>가 곡선 \u003cspan class=\"heq\">\\(C\\)\u003c/span> 위를 움직일 때, 선분 \u003cspan class=\"heq\">\\({O P}\\)\u003c/span> 위를 움직이는 점 \u003cspan class=\"heq\">\\({X}\\)\u003c/span>와 선분 \u003cspan class=\"heq\">\\({O Q}\\)\u003c/span> 위를 움직이는 점 \u003cspan class=\"heq\">\\({Y}\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(\\overrightarrow{OZ}=\\overrightarrow{OP}+\\overrightarrow{OX}+\\overrightarrow{OY}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">를 만족시키는 점 \u003cspan class=\"heq\">\\({Z}\\)\u003c/span>가 나타내는 영역을 \u003cspan class=\"heq\">\\(D\\)\u003c/span>라 하자. \u003cbr>영역 \u003cspan class=\"heq\">\\(D\\)\u003c/span>에 속하는 점 중에서 \u003cspan class=\"heq\">\\(y\\)\u003c/span>축과의 거리가 최소인 점을 \u003cspan class=\"heq\">\\({R}\\)\u003c/span>라 할 때, 영역 \u003cspan class=\"heq\">\\(D\\)\u003c/span>에 속하는 점 \u003cspan class=\"heq\">\\({Z}\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(\\vec{{O R}} \\cdot \\vec{{O Z}}\\)\u003c/span>의 최댓값과 최솟값의 합이 \u003cspan class=\"heq\">\\(a+b \\sqrt{2}\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(a+ b\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\({O}\\)\u003c/span>는 원점이고, \u003cspan class=\"heq\">\\(a\\)\u003c/span>와 \u003cspan class=\"heq\">\\(b\\)\u003c/span>는 유리수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"356fd39e764a2e7b1ebfffc57e17796b5299d3b440f106faa02cba03137ba46c"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

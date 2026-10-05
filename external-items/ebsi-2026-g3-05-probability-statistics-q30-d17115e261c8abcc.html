@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=bf41b07fdc22efdd">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.ExternalHandStudyRecord={"sourceKey":"ebsi:2026:g3:05:probability-statistics:q30","sourceHash":"eecfe09f23f3d409725c494c8eed9220bcf9a6e3e09f7633d9ad14684efecc12","contentHash":"5890dd3b44a05c8737d3f8c8962ca59049c29eb914cfd35ee4f33aef968014ea","sourceLabel":"경기도교육청 2026-05-07","adminYear":2026,"grade":3,"month":5,"number":30,"track":"확률과통계","answer":"398","questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-05-probability-statistics-q30-dbb99ff407ee2ad7.png\" alt=\"2026년 5월 30번 문제\">\u003c/figure>","steps":[{"id":"s1","latex":"\\text{조건에 따라 }8\\text{이 적힌 카드는 }8\\text{번 상자에 고정}"},{"id":"s2","latex":"2\\text{번 상자에 }2\\text{의 배수 카드}:\\quad2\\cdot2!=4"},{"id":"s3","latex":"\\text{공은 }4\\text{번 상자에 }4\\text{개를 먼저 넣고 나머지 }4\\text{개를 배분}:\\quad{}_4H_4=35"},{"id":"s4","latex":"N_1=4\\cdot35=140"},{"id":"s5","latex":"4\\text{번 상자에 }4\\text{의 배수 카드}:\\quad2!,\\qquad\\text{남은 공 }6\\text{개 배분}:\\ {}_4H_6=84"},{"id":"s6","latex":"N_2=2\\cdot84=168"},{"id":"s7","latex":"2,4\\text{번 상자에 공을 각각 }2,4\\text{개 고정}:\\quad{}_4H_2=10"},{"id":"s8","latex":"8\\text{번 상자의 카드가 }2\\text{장일 때 }6\\text{가지},\\quad3\\text{장일 때 }3\\text{가지}"},{"id":"s9","latex":"N_3=10(6+3)=90,\\quad N=140+168+90=398"}],"diagram":null,"preview":false,"graphPlan":null,"graphHash":""};</script>
+  <script defer src="../assets/hand-typography.js?v=bf41b07fdc22efdd"></script>
+  <script defer src="../assets/hand-structure.js?v=bf41b07fdc22efdd"></script>
+  <script defer src="../assets/hand-graph.js?v=bf41b07fdc22efdd"></script>
+  <script defer src="../assets/external-hand-study.js?v=bf41b07fdc22efdd"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

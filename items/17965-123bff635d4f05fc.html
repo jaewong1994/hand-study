@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17965,"sourceLabel":"2024 교육청 고3 수학미적분 5월 30번","adminYear":2024,"grade":3,"month":5,"number":30,"track":"미적분","points":4,"scoreStatus":"confirmed_4_direct","questionText":"수열 $\\left\\{ a_{n} \\right\\}$은 공비가 $0$이 아닌 등비수열이고, 수열 $\\left\\{ b_{n} \\right\\}$을 모든 자연수 $n$에 대하여\n $b _{n} = {\\begin{cases}a _{n}&& \\left( \\left| a _{n} \\right| \u003c \\alpha \\right) \\\\ - \\frac{5}{a _{n}}&& \\left( \\left| a _{n} \\right| \\geq \\alpha \\right)\\end{cases}}$ ($\\alpha$는 양의 상수$\\left. \\right)$\n라 할 때, 두 수열 $\\left\\{ a_{n} \\right\\}$, $\\left\\{ b_{n} \\right\\}$과 자연수 $p$ 가 다음 조건을 만족시킨다.\n$($가$)$ $\\sum_{n=1}^{ \\infty } a_{n}=4$ (나) $\\sum_{n=1}^{m} \\frac{a_{n}}{b_{n}}$의 값이 최소가 되도록 하는 자연수 $m$은 $p$이고, $\\sum_{n=1}^{p} b_{n}=51$, $\\sum_{n=p+1}^{ \\infty } b_{n}=\\frac{1}{64}$이다. \n$32 \\times \\left(a_{3}+p \\right)$의 값을 구하시오. [4점]","answer":"138","sourceHash":"1ebba4cf06e78fb872cdfdb71b6390a895846b6e641124e8432159c1538273d4","steps":[{"id":"s1","latex":"a_n=ar^{n-1},\\quad\\frac{a}{1-r}=4"},{"id":"s2","latex":"|a_n|\\ge\\alpha\\ (n\\le p),\\quad |a_n|\u003c\\alpha\\ (n\\ge p+1)"},{"id":"s3","latex":"\\sum_{n=p+1}^{\\infty}b_n=\\frac{ar^p}{1-r}=\\frac1{64}\\Rightarrow r^p=\\frac1{256}"},{"id":"s4","latex":"\\sum_{n=1}^{p}-\\frac5{a_n}=51\\Rightarrow a(r-1)=25r"},{"id":"s5","latex":"4r^2+17r+4=0,\\ |r|\u003c1\\Rightarrow r=-\\frac14,\\ a=5,\\ p=4"},{"id":"s6","latex":"32(a_3+p)=32\\left(\\frac5{16}+4\\right)=138"}],"diagram":null,"contentHash":"1add152c5b91a958d5c70198273697bd5c6f863980259df43d7cb4f86a6e3092","questionHtml":"\u003cp class=\"hp\">수열 \u003cspan class=\"heq\">\\(\\left\\{ a_{n} \\right\\}\\)\u003c/span>은 공비가 \u003cspan class=\"heq\">\\(0\\)\u003c/span>이 아닌 등비수열이고, 수열 \u003cspan class=\"heq\">\\(\\left\\{ b_{n} \\right\\}\\)\u003c/span>을 모든 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(b_{n} = {\\begin{cases}a_{n}&& \\left( \\left| a_{n} \\right| \\lt  \\alpha \\right) \\\\ - \\dfrac{5}{a_{n}}&& \\left( \\left| a_{n} \\right| \\geq \\alpha \\right)\\end{cases}}\\)\u003c/span> (\u003cspan class=\"heq\">\\(\\alpha\\)\u003c/span>는 양의 상수\u003cspan class=\"heq\">\\(\\left. \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 할 때, 두 수열 \u003cspan class=\"heq\">\\(\\left\\{ a_{n} \\right\\}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\left\\{ b_{n} \\right\\}\\)\u003c/span>과 자연수 \u003cspan class=\"heq\">\\(p\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cp class=\"hp htall\">\u003cdiv class=\"hbox\">\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\((\\)\u003c/span>가\u003cspan class=\"heq\">\\()\\)\u003c/span> \u003cspan class=\"heq\">\\(\\sum\\limits_{n=1}^{ \\infty } a_{n}=4\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">(나) \u003cspan class=\"heq\">\\(\\sum\\limits_{n=1}^{m} \\dfrac{a_{n}}{b_{n}}\\)\u003c/span>의 값이 최소가 되도록 하는 자연수 \u003cspan class=\"heq\">\\(m\\)\u003c/span>은 \u003cspan class=\"heq\">\\(p\\)\u003c/span>이고, \u003cspan class=\"heq\">\\(\\sum\\limits_{n=1}^{p} b_{n}=51\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\sum\\limits_{n=p+1}^{ \\infty } b_{n}=\\dfrac{1}{64}\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(32 \\times \\left(a_{3}+p \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"123bff635d4f05fcf90748ac50e0a74d877bd3a082af304fc90151ffc06b39d5"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

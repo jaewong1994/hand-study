@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16785,"sourceLabel":"2020 교육청 고3 수리나형 3월 30번","adminYear":2020,"grade":3,"month":3,"number":30,"track":"수리나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"닫힌구간 $\\left[-1,\\,1\\right]\\,$에서 정의된 연속함수 $f(x)\\,$는 정의역에서 증가하고 모든 실수 $x\\,$에 대하여 $f(-x)=-f(x)\\,$가 성립할 때, 함수 $g(x)$가 다음 조건을 만족시킨다.\n(가) 닫힌구간 $\\left[-1,\\,1 \\right]\\,$에서 $g(x)=f(x)\\,$이다.(나) 닫힌구간 $\\left[2n-1,\\,2n+1 \\right]\\,$에서 함수 $y=g(x)\\,$의 그래프는 함수 $y=f(x)\\,$의 그래프를 $x\\,$축의 방향으로 $2n\\,$만큼, $y\\,$축의 방향으로 $6n\\,$만큼 평행이동한 그래프이다. (단, $n\\,$은 자연수이다.)\n$f(1)= 3\\,$이고 $\\int_0 ^1 f(x) dx = 1\\,$일 때, $\\int _{3} ^{6} {} g(x)dx\\,$의 값을 구하시오.\n[4점]","answer":"41","sourceHash":"27cafb880d309d93f0c6a4a28cc86f96129db600cdad5afdcee946e715f05c82","steps":[{"id":"s1","latex":"3\\le x\\le5:\\quad g(x)=f(x-4)+12"},{"id":"s2","latex":"5\\le x\\le6:\\quad g(x)=f(x-6)+18"},{"id":"s3","latex":"f(-x)=-f(x)\\Rightarrow\\int_{-1}^{1}f(t)\\,dt=0,\\quad\\int_{-1}^{0}f(t)\\,dt=-1"},{"id":"s4","latex":"\\int_3^5g(x)\\,dx=\\int_{-1}^{1}f(t)\\,dt+24=24"},{"id":"s5","latex":"\\int_5^6g(x)\\,dx=\\int_{-1}^{0}f(t)\\,dt+18=17"},{"id":"s6","latex":"\\int_3^6g(x)\\,dx=24+17=\\boxed{41}"}],"diagram":null,"contentHash":"82954ecc5340bf3eb8c3b5f7486e2f1c083bb89ff08f332f2bbb1f7fbd7b3dc2","questionHtml":"\u003cp class=\"hp\">닫힌구간 \u003cspan class=\"heq\">\\(\\left[-1,\\,1\\right]\\,\\)\u003c/span>에서 정의된 연속함수 \u003cspan class=\"heq\">\\(f(x)\\,\\)\u003c/span>는 정의역에서 증가하고 모든 실수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(f(-x)=-f(x)\\,\\)\u003c/span>가 성립할 때, 함수 \u003cspan class=\"heq\">\\(g(x)\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가)닫힌구간 \u003cspan class=\"heq\">\\(\\left[-1,\\,1 \\right]\\,\\)\u003c/span>에서 \u003cspan class=\"heq\">\\(g(x)=f(x)\\,\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">(나)닫힌구간 \u003cspan class=\"heq\">\\(\\left[2n-1,\\,2n+1 \\right]\\,\\)\u003c/span>에서 함수 \u003cspan class=\"heq\">\\(y=g(x)\\,\\)\u003c/span>의 그래프는 함수 \u003cspan class=\"heq\">\\(y=f(x)\\,\\)\u003c/span>의 그래프를 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>축의 방향으로 \u003cspan class=\"heq\">\\(2n\\,\\)\u003c/span>만큼, \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>축의 방향으로 \u003cspan class=\"heq\">\\(6n\\,\\)\u003c/span>만큼 평행이동한 그래프이다. \u003cbr>(단, \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>은 자연수이다.)\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(f(1)= 3\\,\\)\u003c/span>이고 \u003cspan class=\"heq\">\\(\\int_{0}^{1} f(x) dx = 1\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(\\int_{3}^{6} {} g(x)dx\\,\\)\u003c/span>의 값을 구하시오.\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/6dda487792d937f276702b0b.png\" style=\"width:416px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"057d2e764b15ebe1e4f372fa868ceed6ad68d3415b1b272300c8e53872ba512d"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

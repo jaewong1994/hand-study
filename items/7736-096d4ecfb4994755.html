@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":7736,"sourceLabel":"2019 교육청 고2 수학가형 11월 19번","adminYear":2019,"grade":2,"month":11,"number":19,"track":"수학가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 길이가 $2$인 선분 $AB$를 지름으로 하는 반원과 선분 $AB$의 중점 $O$가 있다. 호 $AB$ 위의 점 $P$에 대하여 점 $P$를 지나고 직선 $AB$와 평행한 직선과 점 $B$를 지나고 직선 $OP$와 평행한 직선이 만나는 점을 $Q$라 하자. ${\\overline{BP}} =t$라 할 때, $\\lim _{t\\, -> \\,0+} {\\frac{3- {\\overline{ AQ }}}{t ^{2}}}$의 값은? (단, $0\u003ct\u003c \\sqrt{2}$) [4점]\n$A$$O$$B$$Q$$P$\n① $\\frac{1}{6}$ ② $\\frac{1}{3}$ ③ $\\frac{1}{2}$ ④ $\\frac{2}{3}$ ⑤ $\\frac{5}{6}$","answer":"②","sourceHash":"9ffe210af08dff81f2282f32c71ce920695c0402ecfa6ef9fe904b02ec7ecb88","steps":[{"id":"s1","latex":"A=(-1,0),\\ O=(0,0),\\ B=(1,0),\\ P=(u,v)\\quad(v>0)"},{"id":"s2","latex":"BP^2=(u-1)^2+v^2=2-2u=t^2\\Rightarrow u=1-\\frac{t^2}{2},\\quad v=\\frac t2\\sqrt{4-t^2}"},{"id":"s3","latex":"PQ\\parallel AB,\\ BQ\\parallel OP\\Rightarrow Q=(1+u,v)"},{"id":"s4","latex":"AQ^2=(2+u)^2+v^2=\\left(3-\\frac{t^2}{2}\\right)^2+\\frac{t^2}{4}(4-t^2)=9-2t^2"},{"id":"s5","latex":"\\lim_{t\\to0+}\\frac{3-AQ}{t^2}=\\lim_{t\\to0+}\\frac{2}{3+\\sqrt{9-2t^2}}=\\frac13"}],"diagram":null,"contentHash":"175e93c020936d4cbbcc21ab4ec631d81cadb8844e12f3b6712e8224c7a22ede","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 길이가 \u003cspan class=\"heq\">\\(2\\)\u003c/span>인 선분 \u003cspan class=\"heq\">\\(A B\\)\u003c/span>를 지름으로 하는 반원과 선분 \u003cspan class=\"heq\">\\(A B\\)\u003c/span>의 중점 \u003cspan class=\"heq\">\\(O\\)\u003c/span>가 있다. 호 \u003cspan class=\"heq\">\\(A B\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>에 대하여 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>를 지나고 직선 \u003cspan class=\"heq\">\\(A B\\)\u003c/span>와 평행한 직선과 점 \u003cspan class=\"heq\">\\(B\\)\u003c/span>를 지나고 직선 \u003cspan class=\"heq\">\\(O P\\)\u003c/span>와 평행한 직선이 만나는 점을 \u003cspan class=\"heq\">\\(Q\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\({\\overline{B P}} =t\\)\u003c/span>라 할 때,\u003cbr>\u003cspan class=\"heq\">\\(\\lim\\limits_{t\\, \\to  \\,0+} {\\dfrac{3- {\\overline{AQ }}}{t^{2}}}\\)\u003c/span>의 값은? (단, \u003cspan class=\"heq\">\\(0\\lt t\\lt  \\sqrt{2}\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hfigwrap\" style=\"position:relative;display:inline-block;width:330px;aspect-ratio:24754/10449;max-width:100%;vertical-align:middle\">\u003cimg class=\"hfig\" src=\"../assets/figures/eee62623c912c38273cb8c34.png\" style=\"width:100%;height:100%;object-fit:fill;display:block\">\u003cspan style=\"position:absolute;left:-4.14%;top:78.11%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:31.33%;top:78.82%;line-height:1\">\u003cspan class=\"heq\">\\(O\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:66.16%;top:78.29%;line-height:1\">\u003cspan class=\"heq\">\\(B\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:89.44%;top:6.78%;line-height:1\">\u003cspan class=\"heq\">\\(Q\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:56.29%;top:7.83%;line-height:1\">\u003cspan class=\"heq\">\\(P\\)\u003c/span>\u003c/span>\u003c/span>\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\dfrac{1}{6}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\dfrac{1}{3}\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\dfrac{1}{2}\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(\\dfrac{2}{3}\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(\\dfrac{5}{6}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"096d4ecfb4994755918ac11049543377b0365bbf716b54f8ab6792f90f8d6bd3"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

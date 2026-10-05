@@ -1,19 +1,19 @@
 (function (root, factory) {
-  const api = factory(typeof module === 'object' && module.exports ? require('./hand-typography.js') : root.HandStudyTypography);
+  const api = factory(typeof module === 'object' && module.exports ? require('./hand-typography.js') : root.HandStudyTypography, typeof module === 'object' && module.exports ? require('./hand-structure.js') : root.HandStudyStructure);
   if (typeof module === 'object' && module.exports) module.exports = api;
   else {
     root.ExternalHandStudyUI = Object.freeze(api);
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => api.mount(root.ExternalHandStudyRecord));
     else api.mount(root.ExternalHandStudyRecord);
   }
-})(typeof window === 'object' ? window : globalThis, function (typography) {
+})(typeof window === 'object' ? window : globalThis, function (typography, structure) {
   'use strict';
 
   const HASH = /^[a-f0-9]{64}$/;
   const SOURCE_KEY = /^ebsi:(?:2026:g[12]:\d{2}:q(?:[1-9]|[1-9]\d)|(?:2019|202[0-5]):g1:03:q(?:[1-9]|[1-9]\d)|2026:g3:(?:03|05|07):(?:common|probability-statistics|calculus|geometry):q(?:[1-9]|[1-9]\d))$/;
   const BLOCKED_LATEX = /\\(?:href|url|includegraphics|html\w*|def|gdef|newcommand|renewcommand|require)\b|<\/?(?:script|iframe)/i;
   const ALLOWED_TAGS = new Set(['P', 'DIV', 'SPAN', 'BR', 'STRONG', 'EM', 'B', 'I', 'U', 'UL', 'OL', 'LI', 'TABLE', 'THEAD', 'TBODY', 'TR', 'TH', 'TD', 'SUP', 'SUB', 'IMG', 'FIGURE', 'FIGCAPTION', 'SECTION']);
-  const QUESTION_CLASSES = new Set(['hp', 'htall', 'hbox', 'htbl', 'hfig', 'hfigr', 'hfigwrap', 'hfiglayer', 'hfiglabel', 'heq', 'hscore']);
+  const QUESTION_CLASSES = new Set(['hp', 'htall', 'hbox', 'htbl', 'hfig', 'hfigr', 'hfigwrap', 'hfiglayer', 'hfiglabel', 'heq', 'hscore', 'hbogi', 'hbogit', 'hcond', 'hcondr', 'hchoices', 'hch', 'nchoices', 'nchoice', 'ncnum', 'hchoice', 'hchoicegrid', 'htblh', 'htbld', 'hnotice', 'hpic']);
   const SAFE_BORDER = /^(?:none|1px solid #333)$/;
   const SAFE_ASPECT = /^(?:\d{1,5}(?:\.\d{1,4})?|\d{1,5}\/\d{1,5})$/;
 
@@ -187,8 +187,10 @@
         out.setAttribute('decoding', 'async');
       }
       if (node.tagName === 'TH' || node.tagName === 'TD') {
-        const span = Number(node.getAttribute('colspan'));
-        if (Number.isInteger(span) && span >= 1 && span <= 12) out.setAttribute('colspan', String(span));
+        for (const key of ['colspan','rowspan']) {
+          const span = Number(node.getAttribute(key));
+          if (Number.isInteger(span) && span >= 1 && span <= 12) out.setAttribute(key, String(span));
+        }
       }
       for (const child of node.childNodes) copy(child, out, overlay);
       parent.append(out);
@@ -261,7 +263,7 @@
       const question = byId('hs-question-body');
       const questionHtml = cleanText(record.questionHtml, 200000);
       const questionText = cleanText(record.questionText, 100000);
-      if (questionHtml) appendSanitized(question, questionHtml, doc);
+      if (questionHtml) appendSanitized(question, structure.prepare(questionHtml, {itemId:record.itemId}), doc);
       else if (questionText) question.textContent = questionText;
       else {
         const empty = doc.createElement('p');
@@ -285,6 +287,10 @@
           });
         } catch (_) { error.textContent = '문항의 일부 수식은 원문으로 표시됩니다.'; }
       }
+
+      structure.layoutChoices(question);
+      if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(() => structure.layoutChoices(question));
+      window.addEventListener('resize', () => structure.layoutChoices(question));
 
       const steps = byId('hs-steps');
       for (const step of record.steps) {

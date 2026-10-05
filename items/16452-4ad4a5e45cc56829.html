@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16452,"sourceLabel":"2019 교육청 고3 수리나형 5월 21번","adminYear":2019,"grade":3,"month":5,"number":21,"track":"수리나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 함수\n $f(x)=\\begin{cases} \\left| x \\right|-1 & (x \\ne 0) \\\\ 1 & (x=0) \\end{cases}$ , $g(x)=\\begin{cases} x^{2}-1 & (x\u003c0) \\\\ 0 & (x=0) \\\\ -x^{2}+1 & (x>0) \\end{cases}$\n에 대하여 \u003c보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]\n\u003c보기>\nㄱ. 함수 $\\left| f(x) \\right|$는 실수 전체의 집합에서 연속이다.\nㄴ. 함수 $\\left| g(x ^{2} )- \\frac{1}{2} \\right| \\,$은 $x=0$에서 불연속이다.\nㄷ. 함수 $f(x)g( \\left| x \\right| -k)\\,$가 $x=k\\,$에서 연속이 되도록 하는 양수 $k$의 개수는 1이다.\n① ㄱ ② ㄱ, ㄴ ③ ㄱ, ㄷ\n④ ㄴ, ㄷ ⑤ ㄱ, ㄴ, ㄷ","answer":"③","sourceHash":"c0137b64c83442777268c171b27d3eefafa74eb49278682d931faef152ad6c7f","steps":[{"id":"s1","latex":"x\\ne0:\\quad|f(x)|=\\big||x|-1\\big|"},{"id":"s2","latex":"\\lim_{x\\to0}|f(x)|=1=|f(0)|\\Rightarrow\\text{첫째는 참}"},{"id":"s3","latex":"x\\ne0:\\quad g(x^2)=-x^4+1"},{"id":"s4","latex":"\\lim_{x\\to0}\\left|g(x^2)-\\dfrac12\\right|=\\dfrac12=\\left|g(0)-\\dfrac12\\right|\\Rightarrow\\text{둘째는 거짓}"},{"id":"s5","latex":"x\\to k-:\\ g(|x|-k)\\to-1,\\qquad x\\to k+:\\ g(|x|-k)\\to1"},{"id":"s6","latex":"f(k)g(0)=0,\\quad\\text{양쪽 극한 일치}\\Leftrightarrow f(k)=0\\Leftrightarrow k=1"},{"id":"s7","latex":"\\therefore\\text{첫째와 셋째가 참}"}],"diagram":null,"contentHash":"4791f0d1fec78ae80ee67a2dbac2d51d9149d2b6c9e1627f99290a735e6ce7d0","questionHtml":"\u003cp class=\"hp\">두 함수\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(f(x)= {\\begin{cases}\\left| x \\right| -1\\,&(x  \\neq  0) \\\\ 1&(x=0)\\end{cases}}\\)\u003c/span> ,  \u003cspan class=\"heq\">\\(g(x)= {\\begin{cases}\\,x^{2} -1_{_{}}&^{^{}} (x\\lt 0)_{_{}} \\\\^{^{}} 0_{_{}}&^{^{}} (x=0)_{_{}} \\\\ \\, -x^{2} +1_{_{}}&^{^{}} (x\\gt 0)_{_{}}\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">에 대하여 &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은?\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003ctable class=\"htbl\">\u003ctr>\u003ctd style=\"width:164px;border-top:none;border-bottom:1px solid #333;border-left:none;border-right:none\">&nbsp;\u003c/td>\u003ctd rowspan=\"2\" style=\"width:89px;border-top:none;border-bottom:none;border-left:none;border-right:none\">\u003cp class=\"hp\">&lt;보 기&gt;\u003c/p>\u003c/td>\u003ctd style=\"width:164px;border-top:none;border-bottom:1px solid #333;border-left:none;border-right:none\">&nbsp;\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:164px;border-top:1px solid #333;border-bottom:none;border-left:1px solid #333;border-right:none\">&nbsp;\u003c/td>\u003ctd style=\"width:164px;border-top:1px solid #333;border-bottom:none;border-left:none;border-right:1px solid #333\">&nbsp;\u003c/td>\u003c/tr>\u003ctr>\u003ctd colspan=\"3\" style=\"width:417px;border-top:none;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">ㄱ. 함수 \u003cspan class=\"heq\">\\(\\left| f(x) \\right|\\)\u003c/span>는 실수 전체의 집합에서 연속이다.\u003c/p>\u003cp class=\"hp htall\">ㄴ. 함수 \u003cspan class=\"heq\">\\(\\left| g(x^{2} )- \\dfrac{1}{2} \\right| \\,\\)\u003c/span>은 \u003cspan class=\"heq\">\\(x=0\\)\u003c/span>에서 불연속이다.\u003c/p>\u003cp class=\"hp\">ㄷ. 함수 \u003cspan class=\"heq\">\\(f(x)g( \\left| x \\right| -k)\\,\\)\u003c/span>가 \u003cspan class=\"heq\">\\(x=k\\,\\)\u003c/span>에서 연속이 되도록 하는 양수 \u003cspan class=\"heq\">\\(k\\)\u003c/span>의 개수는 1이다.\u003c/p>\u003c/td>\u003c/tr>\u003c/table>\u003cp class=\"hp\">① ㄱ&emsp;② ㄱ, ㄴ&emsp;③ ㄱ, ㄷ\u003c/p>\u003cp class=\"hp\">④ ㄴ, ㄷ&emsp;⑤ ㄱ, ㄴ, ㄷ\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig hfigr\" src=\"../assets/figures/72be125be43017a3c019fe70.png\" style=\"float:right;margin:4px 0 8px 12px;width:352px;max-width:45%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"4ad4a5e45cc568294ab9ba1fb5e2f2673a78e92601b2f05748d38b2dd7b78af1"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

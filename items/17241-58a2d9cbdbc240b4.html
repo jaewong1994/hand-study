@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17241,"sourceLabel":"2021 평가원 고3 수학확통 9월 29번","adminYear":2021,"grade":3,"month":9,"number":29,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 이산확률변수 $X,\\,Y$의 확률분포를 표로 나타내면 각각 다음과 같다.\n$X$$1\\,$$3\\,$$5\\,$$7\\,$$9\\,$$P (X= x)$$a$$b$$c$$b$$a$$1$\n$X$$1\\,$$3\\,$$5\\,$$7\\,$$9\\,$$P (Y=y)$$a$$+ \\frac{1}{20}$$b$$c$$- \\frac{1}{10}$$b$$a$$+ \\frac{1}{20}$$1$\n$V \\left( X \\right)$$= \\frac{31}{5}$일 때, $10 \\times V \\left( Y \\right)$의 값을 구하시오. [4점]","answer":"78","sourceHash":"c4b2e1aed30ee77e12d8112880583cb7ac30dbf9b1771851f56743badf092898","steps":[{"id":"s1","latex":"X,Y\\text{의 분포는 }x=5\\text{ 대칭}\\Rightarrow E(X)=E(Y)=5"},{"id":"s2","latex":"V(X)=2a\\cdot4^2+2b\\cdot2^2=32a+8b=\\frac{31}5"},{"id":"s3","latex":"X\\to Y\\text{에서 }x=5\\text{의 확률 변화는 분산에 기여하지 않음}"},{"id":"s4","latex":"V(Y)-V(X)=32\\cdot\\frac1{20}=\\frac85"},{"id":"s5","latex":"V(Y)=\\frac{39}5\\Rightarrow10V(Y)=78"}],"diagram":null,"contentHash":"c346b63255992669b730378dbd003af6cbabb69dc5de0950194d23cb0128a2f4","questionHtml":"\u003cp class=\"hp\">두 이산확률변수 \u003cspan class=\"heq\">\\(X,\\,Y\\)\u003c/span>의 확률분포를 표로 나타내면 각각 다음과 같다.\u003c/p>\u003ctable class=\"htbl\">\u003ctr>\u003ctd style=\"width:73px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(X\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(5\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(7\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(9\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:45px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">합계\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:73px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(P (X= x)\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(a\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(b\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(c\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(b\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(a\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:45px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003c/table>\u003ctable class=\"htbl\">\u003ctr>\u003ctd style=\"width:73px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(X\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(5\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(7\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(9\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:45px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">합계\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:73px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(P (Y=y)\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(a\\)\u003c/span>\u003cspan class=\"heq\">\\(+ \\dfrac{1}{20}\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(b\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(c\\)\u003c/span>\u003cspan class=\"heq\">\\(- \\dfrac{1}{10}\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(b\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:59px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:1px solid #333\">\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(a\\)\u003c/span>\u003cspan class=\"heq\">\\(+ \\dfrac{1}{20}\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:45px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003c/table>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(V \\left( X \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(= \\dfrac{31}{5}\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(10 \\times V \\left( Y \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"58a2d9cbdbc240b4abda4fc6fdd07b8eafe1117c92f1c58d5a405332b9d40008"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

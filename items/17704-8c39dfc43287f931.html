@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17704,"sourceLabel":"2023 교육청 고3 수학확통 3월 30번","adminYear":2023,"grade":3,"month":3,"number":30,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"집합 $X= \\left\\{ 1,\\,2,\\,3,\\,4,\\,5 \\right\\} \\,$에 대하여 다음 조건을 만족시키는 함수 $f\\,:\\,X\\, \\rightarrow \\,X\\,$의 개수를 구하시오. [4점]\n(가) 집합 $X\\,$의 임의의 두 원소 $x _{1}$, $x _{2} \\,$에 대하여 $x _{1} \u003cx _{2} \\,$이면 $f \\left( x _{1} \\right) \\leq f \\left( x _{2} \\right) \\,$이다.(나) $f ( 2 ) != 1\\,$이고 $f(4) \\times f(5)\u003c20\\,$이다.","answer":"45","sourceHash":"00b426bc57ae44ef9319d26d284c8ead9ba8a8dd217ac2e610e267284eece932","steps":[{"id":"s1","latex":"f(1)\\le f(2)\\le f(3)\\le f(4)\\le f(5)"},{"id":"s2","latex":"\\#\\{f\\}={}_5H_5={}_9C_5=126"},{"id":"s3","latex":"f(2)=1\\Rightarrow f(1)=1,\\quad \\#={}_5H_3={}_7C_3=35"},{"id":"s4","latex":"f(2)\\ne1:\\quad 126-35=91"},{"id":"s5","latex":"f(4)f(5)\\ge20\\Rightarrow (f(4),f(5))=(4,5),(5,5)"},{"id":"s6","latex":"(4,5):\\quad {}_4H_3-4=20-4=16"},{"id":"s7","latex":"(5,5):\\quad {}_5H_3-5=35-5=30"},{"id":"s8","latex":"91-16-30=\\boxed{45}"}],"diagram":null,"contentHash":"a11d0146c8b4daa65b2e1fc07537b8d66cb9a5255a5598cbd889d08f402a5ce3","questionHtml":"\u003cp class=\"hp\">집합 \u003cspan class=\"heq\">\\(X= \\left\\{ 1,\\,2,\\,3,\\,4,\\,5 \\right\\} \\,\\)\u003c/span>에 대하여 다음 조건을 만족시키는 함수 \u003cspan class=\"heq\">\\(f\\,:\\,X\\, \\rightarrow \\,X\\,\\)\u003c/span>의 개수를 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가)집합 \u003cspan class=\"heq\">\\(X\\,\\)\u003c/span>의 임의의 두 원소 \u003cspan class=\"heq\">\\(x_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{2} \\,\\)\u003c/span>에 대하여\u003cbr>\u003cspan class=\"heq\">\\(x_{1} \\lt x_{2} \\,\\)\u003c/span>이면 \u003cspan class=\"heq\">\\(f \\left( x_{1} \\right) \\leq f \\left( x_{2} \\right) \\,\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">(나)\u003cspan class=\"heq\">\\(f ( 2 )  \\neq  1\\,\\)\u003c/span>이고 \u003cspan class=\"heq\">\\(f(4) \\times f(5)\\lt 20\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"8c39dfc43287f931345612ce45ca2dd2863572d1018677e540554d8c4c1ba6c9"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

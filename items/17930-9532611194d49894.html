@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17930,"sourceLabel":"2024 교육청 고3 수학기하 7월 22번","adminYear":2024,"grade":3,"month":7,"number":22,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 자연수 $a$, $b \\, \\left( a\u003cb\u003c8 \\right)$에 대하여 함수 $f \\left( x \\right)$는\n $f \\left( x \\right) = {\\begin{cases}\\, \\left| x+3 \\right| -1&&\\left( x\u003ca \\right) \\\\ \\,x-10&&\\left( a \\leq x\u003cb \\right) \\\\ \\, \\left| x-9 \\right| -1&&\\left( x \\geq b \\right)\\end{cases}}$\n이다. 함수 $f \\left( x \\right)$와 양수 $k$는 다음 조건을 만족시킨다.\n(가) 함수 $f \\left( x \\right) f \\left( x+k \\right)$는 실수 전체의 집합에서 연속이다.(나) $f \\left( k \\right) \u003c0$\n$f \\left( a \\right) \\times f \\left( b \\right) \\times f \\left( k \\right)$의 값을 구하시오. [4점]\n 사각형입니다. 2024년 7월 고3 모의고사 문제지제 2 교시 수학 영역(기하) \n5 지선다형","answer":"96","sourceHash":"dab5fa3a5ac6f1a9304611a8e66d1277ef6a24017b3bdd897d6345cbe083f452","steps":[{"id":"s1","latex":"f\\text{의 불연속점은 }a,b"},{"id":"s2","latex":"f(x)f(x+k)\\text{가 연속}\\Rightarrow x=a,b\\text{에서 두 인수의 점프가 맞물림}"},{"id":"s3","latex":"k=b-a"},{"id":"s4","latex":"f(k)\u003c0\\text{와 }a\u003cb\u003c8\\text{을 함께 만족하는 자연수 해}"},{"id":"s5","latex":"(a,b,k)=(2,6,4)"},{"id":"s6","latex":"f(a)f(b)f(k)=(-8)\\cdot2\\cdot(-6)=96"}],"diagram":null,"contentHash":"2666855fc3e7a0c086cf71049ca5a1e8c847028aa18a50612cf3d607049ef3a9","questionHtml":"\u003cp class=\"hp\">두 자연수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b \\, \\left( a\\lt b\\lt 8 \\right)\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>는\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = {\\begin{cases}\\, \\left| x+3 \\right| -1&&\\left( x\\lt a \\right) \\\\ \\,x-10&&\\left( a \\leq x\\lt b \\right) \\\\ \\, \\left| x-9 \\right| -1&&\\left( x \\geq b \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이다. 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>와 양수 \u003cspan class=\"heq\">\\(k\\)\u003c/span>는 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right) f \\left( x+k \\right)\\)\u003c/span>는 실수 전체의 집합에서 연속이다.\u003c/p>\u003cp class=\"hp\">(나) \u003cspan class=\"heq\">\\(f \\left( k \\right) \\lt 0\\)\u003c/span>\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(f \\left( a \\right) \\times f \\left( b \\right) \\times f \\left( k \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"9532611194d498942a8e1aa872add169f87bd37da3f173f1026a5f1cc4fd1529"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

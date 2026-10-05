@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17696,"sourceLabel":"2023 교육청 고3 수학확통 3월 22번","adminYear":2023,"grade":3,"month":3,"number":22,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"최고차항의 계수가 $1\\,$인 사차함수 $f(x)\\,$가 있다. 실수 $t\\,$에 대하여 함수 $g(x)\\,$를 $g(x)= \\left| f(x)-t \\right| \\,$라 할 때, $\\lim _{x\\, \\rightarrow \\,k} {\\frac{g(x)-g(k)}{\\left| x-k \\right|}} \\,$의 값이 존재하는 서로 다른 실수 $k\\,$의 개수를 $h(t)\\,$라 하자. 함수 $h(t)\\,$는 다음 조건을 만족시킨다.\n(가) $\\lim _{t\\, \\rightarrow \\,4+} {h(t)} =5$ (나) 함수 $h(t)\\,$는 $t= -60\\,$과 $t=4\\,$에서만 불연속이다.\n$f(2)=4\\,$이고 $f'(2)>0\\,$일 때, $f(4)+h(4)\\,$의 값을 구하시오.\n[4점]\n 사각형입니다. 2023년 3월 고3 모의고사 문제지제 2 교시 수학 영역(확률과 통계) \n5 지선다형","answer":"729","sourceHash":"d4b8e0c8205b471e1c38ec86656d06580d4eff30ea7a27e7c2c83cdcc949b743","steps":[{"id":"s1","latex":"L_k=\\lim_{x\\to k}\\frac{|f(x)-t|-|f(k)-t|}{|x-k|}"},{"id":"s2","latex":"L_k\\text{ 존재}\\Longleftrightarrow f(k)=t\\ \\text{ 또는 }\\ f'(k)=0"},{"id":"s3","latex":"h(t)=\\#\\bigl(\\{f=t\\}\\cup\\{f'=0\\}\\bigr)"},{"id":"s4","latex":"\\lim_{t\\to4+}h(t)=5,\\quad h\\text{의 불연속점}=-60,4"},{"latex":"h(4+)=5\\Rightarrow f^{\\prime}\\text{는 서로 다른 세 근, }f\\text{는 두 극소와 한 극대}","id":"s5"},{"latex":"\\text{불연속 높이가 둘}\\Rightarrow\\text{두 극솟값은 }-60,\\quad\\text{극댓값은 }4","id":"s6"},{"id":"s7","latex":"f(x)+60=(x-\\alpha)^2(x-\\beta)^2=\\left((x-\\gamma)^2-d\\right)^2"},{"id":"s8","latex":"f(\\gamma)=4\\Rightarrow d^2-60=4\\Rightarrow d=8"},{"id":"s9","latex":"f(2)=4\\Rightarrow (2-\\gamma)^2\\in\\{0,16\\}"},{"id":"s10","latex":"f'(2)>0\\Rightarrow 2-\\gamma=4\\Rightarrow \\gamma=-2"},{"id":"s11","latex":"f(x)=\\left((x+2)^2-8\\right)^2-60,\\quad f(4)=724"},{"id":"s12","latex":"\\{f=4\\}=\\{-6,-2,2\\},\\quad \\{f'=0\\}=\\{-2-2\\sqrt2,-2,-2+2\\sqrt2\\}"},{"id":"s13","latex":"h(4)=5\\Rightarrow f(4)+h(4)=\\boxed{729}"}],"diagram":null,"contentHash":"73c9a568eefa92254c52f722171cb352947ea19690d5c22e00987ef9e28b91a6","questionHtml":"\u003cp class=\"hp htall\">최고차항의 계수가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>인 사차함수 \u003cspan class=\"heq\">\\(f(x)\\,\\)\u003c/span>가 있다.\u003cbr>실수 \u003cspan class=\"heq\">\\(t\\,\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(g(x)\\,\\)\u003c/span>를 \u003cspan class=\"heq\">\\(g(x)= \\left| f(x)-t \\right| \\,\\)\u003c/span>라 할 때,\u003cbr>\u003cspan class=\"heq\">\\(\\lim\\limits_{x\\, \\rightarrow \\,k} {\\dfrac{g(x)-g(k)}{\\left| x-k \\right|}} \\,\\)\u003c/span>의 값이 존재하는 서로 다른 실수 \u003cspan class=\"heq\">\\(k\\,\\)\u003c/span>의 개수를\u003cbr>\u003cspan class=\"heq\">\\(h(t)\\,\\)\u003c/span>라 하자. 함수 \u003cspan class=\"heq\">\\(h(t)\\,\\)\u003c/span>는 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) \u003cspan class=\"heq\">\\(\\lim\\limits_{t\\, \\rightarrow \\,4+} {h(t)} =5\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">(나) 함수 \u003cspan class=\"heq\">\\(h(t)\\,\\)\u003c/span>는 \u003cspan class=\"heq\">\\(t= -60\\,\\)\u003c/span>과 \u003cspan class=\"heq\">\\(t=4\\,\\)\u003c/span>에서만 불연속이다.\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(f(2)=4\\,\\)\u003c/span>이고 \u003cspan class=\"heq\">\\(f'(2)\\gt 0\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(f(4)+h(4)\\,\\)\u003c/span>의 값을 구하시오.\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"d04257790dd0729d3288b5a755bc9678ecf0cdaccd725509956a771f78851866"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

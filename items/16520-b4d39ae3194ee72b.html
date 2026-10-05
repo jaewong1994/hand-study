@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16520,"sourceLabel":"2019 평가원 고3 수리가형 6월 30번","adminYear":2019,"grade":3,"month":6,"number":30,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"상수 $a ,\\, b$에 대하여 함수 $f(x)=a\\,\\sin^{3} x+b\\,\\sin\\,x$가 $f \\left(\\frac{ \\pi }{4}\\right) = 3 \\sqrt{2}$, $f \\left(\\frac{ \\pi }{3}\\right) = 5 \\sqrt{3}$ 을 만족시킨다. 실수 $t\\,(1\u003ct\u003c14)$에 대하여 함수 $y= f(x)$의 그래프와 직선 $y= t$가 만나는 점의 $x$좌표 중 양수인 것을 작은 수부터 크기순으로 모두 나열할 때, $n$번째 수를 $x_{n}$이라 하고 $c_{n}= \\int _{3 \\sqrt{2}}^{5 \\sqrt{3}}\\frac{t}{f'(x_{n})}dt$ 라 하자. $\\sum _{n= 1}^{101}c_{n}= p+ q \\sqrt{2}$일 때, $q- p$의 값을 구하시오. (단, $p$와 $q$는 유리수이다.) [4점]","answer":"12","sourceHash":"0ff5fd86877ed6ca9c7a9840eb64d7a6a4ae86a3d36c1338630c1c2985d212fc","steps":[{"id":"s1","latex":"\\dfrac a4+\\dfrac b2=3,\\quad\\dfrac{3a}{8}+\\dfrac b2=5\\Rightarrow f(x)=16\\sin^3x-2\\sin x"},{"id":"s2","latex":"t=2s(8s^2-1),\\quad\\dfrac12\u003cs\u003c1\\Rightarrow\\text{각 }t\\text{에 대한 }s\\text{는 유일}"},{"id":"s3","latex":"\\sin\\alpha=s\\Rightarrow x_{2j-1}=2(j-1)\\pi+\\alpha,\\quad x_{2j}=(2j-1)\\pi-\\alpha"},{"id":"s4","latex":"f'(x_n)\\text{의 부호가 번갈아 바뀌므로 }c_{2j}=-c_{2j-1}"},{"id":"s5","latex":"\\sum_{n=1}^{101}c_n=c_1"},{"id":"s6","latex":"dt=(48s^2-2)ds,\\quad f'(x_1)=(48s^2-2)\\sqrt{1-s^2}"},{"id":"s7","latex":"c_1=\\int_{\\sqrt2/2}^{\\sqrt3/2}\\dfrac{16s^3-2s}{\\sqrt{1-s^2}}\\,ds=-\\dfrac{19}{3}+\\dfrac{17\\sqrt2}{3}"},{"id":"s8","latex":"q-p=\\dfrac{17}{3}+\\dfrac{19}{3}=12"}],"diagram":null,"contentHash":"67223baba0956d0750afa733dc461075d035ce1aae14c2fbffa1773c4781af0c","questionHtml":"\u003cp class=\"hp htall\">상수 \u003cspan class=\"heq\">\\(a ,\\, b\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f(x)=a\\,\\sin^{3} x+b\\,\\sin\\,x\\)\u003c/span>가 \u003cbr>&emsp;&emsp;\u003cspan class=\"heq\">\\(f \\left(\\dfrac{ \\pi }{4}\\right) = 3 \\sqrt{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(f \\left(\\dfrac{ \\pi }{3}\\right) = 5 \\sqrt{3}\\)\u003c/span>\u003cbr>을 만족시킨다. 실수 \u003cspan class=\"heq\">\\(t\\,(1\\lt t\\lt 14)\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(y= f(x)\\)\u003c/span>의 그래프와 직선 \u003cspan class=\"heq\">\\(y= t\\)\u003c/span>가 만나는 점의 \u003cspan class=\"heq\">\\(x\\)\u003c/span>좌표 중 양수인 것을 작은 수부터 크기순으로 모두 나열할 때, \u003cspan class=\"heq\">\\(n\\)\u003c/span>번째 수를 \u003cspan class=\"heq\">\\(x_{n}\\)\u003c/span>이라 하고 \u003cbr>&emsp;&emsp;\u003cspan class=\"heq\">\\(c_{n}= \\int_{3 \\sqrt{2}}^{5 \\sqrt{3}}\\dfrac{t}{f' (x_{n})}dt\\)\u003c/span>\u003cbr>라 하자. \u003cspan class=\"heq\">\\(\\sum\\limits_{n= 1}^{101}c_{n}= p+ q \\sqrt{2}\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(q- p\\)\u003c/span>의 값을 구하시오. \u003cbr>(단, \u003cspan class=\"heq\">\\(p\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\)\u003c/span>는 유리수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/a06fb504c7bd1e929d526f1d.png\" style=\"width:211px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"b4d39ae3194ee72bbafcf0638edfc34206134d5472754bee4dbe72a2abed874d"};</script>
+  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
+  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+
