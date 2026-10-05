@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17166,"sourceLabel":"2021 평가원 고3 수학기하 6월 20번","adminYear":2021,"grade":3,"month":6,"number":20,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"실수 $a$와 함수 $f \\left( x \\right)$$=x ^{3} -12x ^{2} +45x+3$에 대하여 함수\n $g \\left( x \\right)$$= \\int _{a} ^{x} {} \\left\\{ f \\left( x \\right) -f \\left( t \\right) \\right\\} \\times \\left\\{ f \\left( t \\right) \\right\\} ^{4} \\,dt$\n가 오직 하나의 극값을 갖도록 하는 모든 $a$의 값의 합을 구하시오. [4점]","answer":"8","sourceHash":"d81c7d5e68a086368fa662fcb3eca54ed0021b1911133508dea42df97c2d5997","steps":[{"id":"s1","latex":"g'(x)=f'(x)\\int_a^x\\{f(t)\\}^4dt"},{"id":"s2","latex":"h(x)=\\int_a^x\\{f(t)\\}^4dt:\\quad x\u003ca\\Rightarrow h\u003c0,\\ x>a\\Rightarrow h>0"},{"id":"s3","latex":"f'(x)=3(x-3)(x-5)"},{"id":"s4","latex":"g'(x)=3(x-3)(x-5)h(x)"},{"id":"s5","latex":"a\\notin\\{3,5\\}\\Rightarrow\\text{극값은 }3\\text{개}"},{"id":"s6","latex":"a=3\\Rightarrow\\text{극값은 }x=5\\text{에서만}"},{"id":"s7","latex":"a=5\\Rightarrow\\text{극값은 }x=3\\text{에서만}"},{"id":"s8","latex":"\\sum a=3+5=8"}],"diagram":null,"contentHash":"c2e1dee78140a1f09128463f0e58d220199e287cdf2eeac850d0e29ffe357aa7","questionHtml":"\u003cp class=\"hp\">실수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>와 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(=x^{3} -12x^{2} +45x+3\\)\u003c/span>에 대하여 함수\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(= \\int_{a}^{x} {} \\left\\{ f \\left( x \\right) -f \\left( t \\right) \\right\\} \\times \\left\\{ f \\left( t \\right) \\right\\}^{4} \\,dt\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">가 오직 하나의 극값을 갖도록 하는 모든 \u003cspan class=\"heq\">\\(a\\)\u003c/span>의 값의 합을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"67e558f7ecc44eaa25901f9435a80bd2f39c6af723d8b782a10e699531f00761"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

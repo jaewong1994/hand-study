@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16402,"sourceLabel":"2019 교육청 고3 수리나형 3월 30번","adminYear":2019,"grade":3,"month":3,"number":30,"track":"수리나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"자연수 $n\\,$에 대하여 다음 조건을 만족시키는 정사각형의 개수를 $S _{n}$이라 하자.\n(가) 정사각형은 한 변의 길이가 $1\\,$이고 꼭짓점의 $x\\,$좌표와 $y\\,$좌표가 모두 정수이다.(나) 연립부등식 $\\frac{1}{2} x ^{\\,2} \u003cy\u003cx ^{\\,2}$, $0\u003cx\u003c2n-1 \\,$을 만족시키는 점 $(x,\\,y)\\,$ 중에는 정사각형의 내부에 있는 점이 있다.\n$\\lim _{n \\,-> \\, \\infty } {\\frac{S _{n+1}- S_{n}}{n ^{\\,2}}} \\,$의 값을 구하시오. [4점]","answer":"4","sourceHash":"440ef6b86316373d2f711a5a907ab6f078bcfa3490a160c0943a10ba77712539","steps":[{"id":"s1","latex":"f(x)=x^2,\\quad g(x)=\\dfrac{x^2}{2}"},{"id":"s2","latex":"S_{n+1}-S_n\\text{은 }i=2n-1,2n\\text{인 두 세로띠의 정사각형 수}"},{"id":"s3","latex":"i=2n-1:\\quad2n^2-2n\\le j\\le4n^2-1"},{"id":"s4","latex":"\\#=2n^2+2n"},{"id":"s5","latex":"i=2n:\\quad2n^2\\le j\\le4n^2+4n"},{"id":"s6","latex":"\\#=2n^2+4n+1"},{"id":"s7","latex":"S_{n+1}-S_n=4n^2+6n+1"},{"id":"s8","latex":"\\lim_{n\\to\\infty}\\dfrac{S_{n+1}-S_n}{n^2}=4"}],"diagram":null,"contentHash":"d4fd3dd464fad28a64da25f874cdd76923761fa4d60fa2dfa54f5f388892bd49","questionHtml":"\u003cp class=\"hp\">자연수 \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>에 대하여 다음 조건을 만족시키는 정사각형의 개수를 \u003cspan class=\"heq\">\\(S_{n}\\)\u003c/span>이라 하자.\u003c/p>\u003cp class=\"hp htall\">\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가)정사각형은 한 변의 길이가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>이고 꼭짓점의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표와 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>좌표가 모두 정수이다.\u003c/p>\u003cp class=\"hp htall\">(나)연립부등식 \u003cspan class=\"heq\">\\(\\dfrac{1}{2} x^{\\,2} \\lt y\\lt x^{\\,2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(0\\lt x\\lt 2n-1 \\,\\)\u003c/span>을 만족시키는 점 \u003cspan class=\"heq\">\\((x,\\,y)\\,\\)\u003c/span> 중에는 정사각형의 내부에 있는 점이 있다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(\\lim\\limits_{n \\,\\to  \\, \\infty } {\\dfrac{S_{n+1}- S_{n}}{n^{\\,2}}} \\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"c817322a8256f6884865a3ca0aca597101bb4cad7e673f8afb55bce7d8fe7fa7"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

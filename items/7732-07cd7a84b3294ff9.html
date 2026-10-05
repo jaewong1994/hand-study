@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":7732,"sourceLabel":"2019 교육청 고2 수학가형 11월 15번","adminYear":2019,"grade":2,"month":11,"number":15,"track":"수학가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 자연수 $n$에 대하여 함수 $y=a ^{x} -1$$\\left( a>1 \\right)$의 그래프가 두 직선 $y=n$, $y=n+1$과 만나는 점을 각각 $A _{n}$, $A _{n+1}$이라 하자. 선분 $A _{n} A _{n+1}$을 대각선으로 하고, 각 변이 $x$축 또는 $y$축과 평행한 직사각형의 넓이를 $S _{n}$이라 하자. $\\sum _{n=1} ^{14} S _{n} =6$일 때, 상수 $a$의 값은? [4점]\n$O$$x$$y$$y=n+1$$y=n$$y=a ^{x} -1$$A _{ n+1 }$$A _{n}$\n① $\\sqrt{2}$ ② $\\sqrt{3}$ ③ $2$ ④ $\\sqrt{5}$ ⑤ $\\sqrt{6}$","answer":"①","sourceHash":"bbe6176de0bd436f184a99cbe7ae0e12b81b3dd9b023fe03bb864465563effd1","steps":[{"id":"s1","latex":"A_n=\\left(\\log_a(n+1),n\\right),\\quad A_{n+1}=\\left(\\log_a(n+2),n+1\\right)"},{"id":"s2","latex":"S_n=1\\cdot\\left\\{\\log_a(n+2)-\\log_a(n+1)\\right\\}=\\log_a\\frac{n+2}{n+1}"},{"id":"s3","latex":"\\sum_{n=1}^{14}S_n=\\log_a\\left(\\frac32\\cdot\\frac43\\cdots\\frac{16}{15}\\right)=\\log_a8"},{"id":"s4","latex":"\\log_a8=6\\Rightarrow a^6=8,\\quad a>1\\Rightarrow a=\\sqrt2"}],"diagram":null,"contentHash":"785c8bac0a9619fdd6a88d99ed86495cef6801ed2052b45795b44ded9f79768e","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(y=a^{x} -1\\)\u003c/span>\u003cspan class=\"heq\">\\(\\left( a\\gt 1 \\right)\\)\u003c/span>의 그래프가 두 직선 \u003cspan class=\"heq\">\\(y=n\\)\u003c/span>, \u003cspan class=\"heq\">\\(y=n+1\\)\u003c/span>과 만나는 점을 각각 \u003cspan class=\"heq\">\\(A_{n}\\)\u003c/span>, \u003cspan class=\"heq\">\\(A_{n+1}\\)\u003c/span>이라 하자. 선분 \u003cspan class=\"heq\">\\(A_{n} A_{n+1}\\)\u003c/span>을 대각선으로 하고, 각 변이 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축 또는 \u003cspan class=\"heq\">\\(y\\)\u003c/span>축과 평행한 직사각형의 넓이를 \u003cspan class=\"heq\">\\(S_{n}\\)\u003c/span>이라 하자.\u003cbr>\u003cspan class=\"heq\">\\(\\sum\\limits_{n=1}^{14} S_{n} =6\\)\u003c/span>일 때, 상수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>의 값은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hfigwrap\" style=\"position:relative;display:inline-block;width:349px;aspect-ratio:26239/22752;max-width:100%;vertical-align:middle\">\u003cimg class=\"hfig\" src=\"../assets/figures/4916e94d5ae694f3010b44d3.png\" style=\"width:100%;height:100%;object-fit:fill;display:block\">\u003cspan style=\"position:absolute;left:12.00%;top:81.00%;line-height:1\">\u003cspan class=\"heq\">\\(O\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:75.86%;top:76.14%;line-height:1\">\u003cspan class=\"heq\">\\(x\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:8.94%;top:-2.73%;line-height:1\">\u003cspan class=\"heq\">\\(y\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:77.53%;top:39.32%;line-height:1\">\u003cspan class=\"heq\">\\(y=n+1\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:77.39%;top:50.44%;line-height:1\">\u003cspan class=\"heq\">\\(y=n\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:64.59%;top:-5.56%;line-height:1\">\u003cspan class=\"heq\">\\(y=a^{x} -1\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:43.50%;top:36.00%;line-height:1\">\u003cspan class=\"heq\">\\(A_{ n+1 }\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:39.00%;top:48.80%;line-height:1\">\u003cspan class=\"heq\">\\(A_{n}\\)\u003c/span>\u003c/span>\u003c/span>\u003c/p>\u003cp class=\"hp\">① \u003cspan class=\"heq\">\\(\\sqrt{2}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\sqrt{3}\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(2\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(\\sqrt{5}\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(\\sqrt{6}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"07cd7a84b3294ff913cb96b8d5e1335a7de6334a8645519a378223b74e9db397"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

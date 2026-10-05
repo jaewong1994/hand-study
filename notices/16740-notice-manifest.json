@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "itemId": 16740,
+  "sourceHash": "e02d182626905d938c58c8665a14797a62ef9d475ce0716d5eca029903674587",
+  "status": "notice_only",
+  "excludedFromLearningCount": true,
+  "reason": "공식 문제도 X∈{1,2,3,4}, E(X)=6으로 모순. 공식 해설은 2020-10-30 결정으로 15번 전원 정답 처리 명시; 추측 복원 불가",
+  "noticePath": "notices/16740-official-error.html",
+  "officialEvidence": {
+    "officialProvider": "EBSi 기출문제",
+    "examKey": "2020g3m10b",
+    "questionPdfPath": "output/hand-study-8y-20261005/source-repair-final/official-pdf/2020g3m10b-question.pdf",
+    "questionPdfSha256": "916a2f7ab8debaeb7d3ff1fb2d8231c1768bb1cdaf69646a5b8906e52c9c76da",
+    "questionPage": 6,
+    "solutionPdfPath": "output/hand-study-8y-20261005/source-repair-final/official-pdf/2020g3m10b-solution.pdf",
+    "solutionPdfSha256": "aef2af2f892148d969fec87bf545f1d382893a9a39756c102f98aa086cff5ab9",
+    "questionCropPath": "output/hand-study-8y-20261005/source-repair-final/official-crops/16740.png",
+    "questionCropSha256": "3f3e9add5ef18faee41406012a6f0a7083476b11656eaf5843a87811be38e98c",
+    "solutionPage": 1,
+    "officialDisposition": "15번 전원 정답 처리(서울시교육청 2020-10-30 결정)"
+  },
+  "publishedEvidence": [
+    {
+      "path": "notices/evidence/2020-g3-october-q15-official-question.pdf",
+      "sha256": "916a2f7ab8debaeb7d3ff1fb2d8231c1768bb1cdaf69646a5b8906e52c9c76da",
+      "page": 6
+    },
+    {
+      "path": "notices/evidence/2020-g3-october-q15-official-disposition.pdf",
+      "sha256": "aef2af2f892148d969fec87bf545f1d382893a9a39756c102f98aa086cff5ab9",
+      "page": 1
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8076,"sourceLabel":"2021 교육청 고2 수학 6월 29번","adminYear":2021,"grade":2,"month":6,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"$\\overline{DA}=2\\overline{AB}$, $\\angle {DAB}= \\frac{2}{3} \\pi$이고 반지름의 길이가 $1$인 원에 내접하는 사각형 $ABCD$가 있다. 두 대각선 $AC$, $BD$의 교점을 $E$라 할 때, 점 $E$는 선분 $BD$를 $3:4$로 내분한다. 사각형 $ABCD$의 넓이가 $\\frac{q}{p} \\sqrt{3}$일 때, $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]","answer":"13","sourceHash":"8649d68963fc417047cdfde36ec712c996b3795735e257dd3c326b4adb7d9f03","steps":[{"id":"s1","latex":"AB=s,\\quad DA=2s,\\quad\\angle DAB=\\frac{2\\pi}{3}"},{"id":"s2","latex":"BD^2=s^2+4s^2-4s^2\\cos\\frac{2\\pi}{3}=7s^2"},{"id":"s3","latex":"\\frac{BE}{ED}=\\frac{AB\\cdot BC}{AD\\cdot DC}=\\frac34\\Rightarrow BC:DC=3:2"},{"id":"s4","latex":"BC=3t,\\quad DC=2t,\\quad\\angle DCB=\\frac\\pi3"},{"id":"s5","latex":"BD^2=(3t)^2+(2t)^2-12t^2\\cos\\frac\\pi3=7t^2\\Rightarrow t=s"},{"id":"s6","latex":"2R=2=\\frac{BD}{\\sin(2\\pi/3)}\\Rightarrow s=\\frac{\\sqrt{21}}7"},{"id":"s7","latex":"[ABCD]=\\frac12(s)(2s)\\sin\\frac{2\\pi}{3}+\\frac12(3s)(2s)\\sin\\frac\\pi3=\\frac{6\\sqrt3}{7}"},{"id":"s8","latex":"p+q=7+6=13"}],"diagram":null,"contentHash":"7089d87b6346decb5afab790dd9aeb0f2655863febe2d7c81addb07cbd34dce2","questionHtml":"\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(\\overline{D A}=2\\overline{A B}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\angle {D A B}= \\dfrac{2}{3} \\pi\\)\u003c/span>이고 반지름의 길이가 \u003cspan class=\"heq\">\\(1\\)\u003c/span>인 원에 내접하는 사각형 \u003cspan class=\"heq\">\\(A B C D\\)\u003c/span>가 있다. 두 대각선 \u003cspan class=\"heq\">\\(A C\\)\u003c/span>, \u003cspan class=\"heq\">\\(B D\\)\u003c/span>의 교점을 \u003cspan class=\"heq\">\\(E\\)\u003c/span>라 할 때, 점 \u003cspan class=\"heq\">\\(E\\)\u003c/span>는 선분 \u003cspan class=\"heq\">\\(B D\\)\u003c/span>를 \u003cspan class=\"heq\">\\(3:4\\)\u003c/span>로 내분한다. 사각형 \u003cspan class=\"heq\">\\(A B C D\\)\u003c/span>의 넓이가 \u003cspan class=\"heq\">\\(\\dfrac{q}{p} \\sqrt{3}\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(p+q\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(p\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\)\u003c/span>는 서로소인 자연수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/8f27e6c49c2af86d91bf333b.png\" style=\"width:282px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"4e711f464dfc842cf1fcb5fa08f3d3762729e57fc913b8d39557c0062c93e682"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

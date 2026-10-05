@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17590,"sourceLabel":"2023 교육청 고3 수학기하 3월 30번","adminYear":2023,"grade":3,"month":3,"number":30,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 두 초점이 $F ( c,\\,0 )$, $F' ( -c,\\,0 ) \\,$$( c>0 )\\,$인 타원 $C\\,$가 있다. 타원 $C\\,$가 두 직선 $x=c$, $x= -c\\,$와 만나는 점 중 $y\\,$좌표가 양수인 점을 각각 $A$, $B\\,$라 하자. 두 초점이 $A$, $B\\,$이고 점 $F\\,$를 지나는 쌍곡선이 직선 $x=c\\,$와 만나는 점 중 $F\\,$가 아닌 점을 $P\\,$라 하고, 이 쌍곡선이 두 직선 $B F$, $B P\\,$와 만나는 점 중 $x\\,$좌표가 음수인 점을 각각 $Q$, $R\\,$라 하자. 세 점 $P$, $Q$, $R\\,$가 다음 조건을 만족시킨다.\n(가) 삼각형 $P\\,$는 정삼각형이다. (나) 타원 $C\\,$의 장축의 길이와 삼각형 $BQR\\,$의 둘레의 길이의 차는 $3\\,$이다.\n$60 \\times \\overline{ AF} \\,$의 값을 구하시오. [4점]","answer":"100","sourceHash":"60ac07853258755dae903310e604931386a7302f00c6690717839fedf4a1adb5","steps":[{"id":"s1","latex":"AF=a,\\quad BQ=b"},{"id":"s2","latex":"A\\text{는 }PF\\text{의 중점},\\quad BF=PF=2a"},{"id":"s3","latex":"\\text{타원의 장축}=BF+BF'=BF+AF=3a"},{"id":"s4","latex":"\\text{직선 }AB\\text{에 대칭}:\\ BQ=BR,\\quad \\angle QBR=60^\\circ\\Rightarrow BQ=QR=RB"},{"id":"s5","latex":"\\triangle BQR\\text{의 둘레}=3b,\\quad 3a-3b=3\\Rightarrow b=a-1"},{"id":"s6","latex":"AQ-BQ=BF-AF=a\\Rightarrow AQ=a+b=2a-1"},{"id":"s7","latex":"QF=BF-BQ=2a-b=a+1"},{"id":"s8","latex":"\\angle AFQ=60^\\circ"},{"id":"s9","latex":"(2a-1)^2=a^2+(a+1)^2-2a(a+1)\\cos60^\\circ"},{"id":"s10","latex":"a(3a-5)=0\\Rightarrow a=\\frac53"},{"id":"s11","latex":"60\\,AF=60a=\\boxed{100}"}],"diagram":null,"contentHash":"e4680b33116240a14a9dfa1fdc41d3360de2a047c926cb275179c960d741146d","questionHtml":"\u003cp class=\"hp\">그림과 같이 두 초점이 \u003cspan class=\"heq\">\\(F ( c,\\,0 )\\)\u003c/span>, \u003cspan class=\"heq\">\\(F' ( -c,\\,0 ) \\,\\)\u003c/span>\u003cspan class=\"heq\">\\(( c\\gt 0 )\\,\\)\u003c/span>인 타원 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>가 있다. 타원 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>가 두 직선 \u003cspan class=\"heq\">\\(x=c\\)\u003c/span>, \u003cspan class=\"heq\">\\(x= -c\\,\\)\u003c/span>와 만나는 점 중 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>좌표가 양수인 점을 각각 \u003cspan class=\"heq\">\\(A\\)\u003c/span>, \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>라 하자.\u003cbr>두 초점이 \u003cspan class=\"heq\">\\(A\\)\u003c/span>, \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>이고 점 \u003cspan class=\"heq\">\\(F\\,\\)\u003c/span>를 지나는 쌍곡선이 직선 \u003cspan class=\"heq\">\\(x=c\\,\\)\u003c/span>와 만나는 점 중 \u003cspan class=\"heq\">\\(F\\,\\)\u003c/span>가 아닌 점을 \u003cspan class=\"heq\">\\(P\\,\\)\u003c/span>라 하고, 이 쌍곡선이 두 직선 \u003cspan class=\"heq\">\\(B F\\)\u003c/span>, \u003cspan class=\"heq\">\\(B P\\,\\)\u003c/span>와 만나는 점 중 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표가 음수인 점을 각각 \u003cspan class=\"heq\">\\(Q\\)\u003c/span>, \u003cspan class=\"heq\">\\(R\\,\\)\u003c/span>라 하자.\u003cbr>세 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>, \u003cspan class=\"heq\">\\(Q\\)\u003c/span>, \u003cspan class=\"heq\">\\(R\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 삼각형 \u003cspan class=\"heq\">\\(BFP\\,\\)\u003c/span>는 정삼각형이다.\u003c/p>\u003cp class=\"hp\">(나)타원 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>의 장축의 길이와 삼각형 \u003cspan class=\"heq\">\\(BQR\\,\\)\u003c/span>의 둘레의 길이의 차는 \u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(60 \\times \\overline{AF} \\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/caa6237edaff7df061933e99.png\" style=\"width:416px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":{"itemId":17590,"sourceHash":"60ac07853258755dae903310e604931386a7302f00c6690717839fedf4a1adb5","contentHash":"e4680b33116240a14a9dfa1fdc41d3360de2a047c926cb275179c960d741146d","version":1,"title":"타원 초점선과 정삼각형 BQR의 실제 배치","bounds":[-2,2,-0.5,4],"aspect":"equal","stages":[{"stepId":"s4","title":"대칭에서 BQR이 정삼각형","layers":[{"id":"BQR-unit","type":"polygon","points":[[0,1],[0.8660254037844386,0.5],[0.8660254037844386,1.5]],"color":"teal"},{"id":"B-unit","type":"point","x":0,"y":1,"text":"B","color":"teal"},{"id":"Q-unit","type":"point","x":0.8660254037844386,"y":0.5,"text":"Q","color":"teal"},{"id":"R-unit","type":"point","x":0.8660254037844386,"y":1.5,"text":"R","color":"teal"},{"id":"unit","type":"label","x":-0.2,"y":2.1,"text":"정삼각형 BQR 정규화","color":"navy"}]},{"stepId":"s10","title":"AF=5/3, BQ=2/3을 반영","layers":[{"id":"AB","type":"polyline","points":[[1.4433756729740643,1.6666666666666667],[-1.4433756729740643,1.6666666666666667]],"color":"muted"},{"id":"PF","type":"polyline","points":[[1.4433756729740643,3.3333333333333335],[1.4433756729740643,0]],"color":"navy"},{"id":"PQ","type":"polyline","points":[[1.4433756729740643,3.3333333333333335],[-0.8660254037844386,1.3333333333333333]],"color":"teal"},{"id":"PR","type":"polyline","points":[[1.4433756729740643,3.3333333333333335],[-0.8660254037844386,2]],"color":"teal"},{"id":"BQR","type":"polygon","points":[[-1.4433756729740643,1.6666666666666667],[-0.8660254037844386,1.3333333333333333],[-0.8660254037844386,2]],"color":"amber"},{"id":"BF","type":"polyline","points":[[-1.4433756729740643,1.6666666666666667],[1.4433756729740643,0]],"color":"navy"},{"id":"F","type":"point","x":1.4433756729740643,"y":0,"text":"F","color":"teal"},{"id":"F1","type":"point","x":-1.4433756729740643,"y":0,"text":"F'","color":"teal"},{"id":"A","type":"point","x":1.4433756729740643,"y":1.6666666666666667,"text":"A","color":"teal"},{"id":"B","type":"point","x":-1.4433756729740643,"y":1.6666666666666667,"text":"B","color":"teal"},{"id":"P","type":"point","x":1.4433756729740643,"y":3.3333333333333335,"text":"P","color":"teal"},{"id":"Q","type":"point","x":-0.8660254037844386,"y":1.3333333333333333,"text":"Q","color":"teal"},{"id":"R","type":"point","x":-0.8660254037844386,"y":2,"text":"R","color":"teal"}]}],"graphHash":"5c4551d72a0cc91e221bda1522b948ab4d63d07e623c3f39322b4e16a5b546e9"},"graphHash":"5c4551d72a0cc91e221bda1522b948ab4d63d07e623c3f39322b4e16a5b546e9","editionHash":"2deac78ac43ebbed07cee4d186cab6a09884d42a02e30a87f0c011b85230b99a"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

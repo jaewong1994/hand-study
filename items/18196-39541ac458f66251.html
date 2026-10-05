@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":18196,"sourceLabel":"2025 교육청 고3 수학기하 5월 30번","adminYear":2025,"grade":3,"month":5,"number":30,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 ${ \\overline{{AD}}}=8 \\sqrt{3}\\,$인 직사각형 ${{ABCD}}\\,$가 있다. 두 점 ${{E}}$, ${{F}}\\,$가 점 ${{E}}\\,$는 선분 ${{AD}}$ 위를, 점 ${{F}}\\,$는 선분 ${{BC}}$ 위를 $\\angle {{CFE}}=60 ^{\\circ} \\,$를 만족시키며 움직인다. 선분 ${{EF}}\\,$를 $1\\,:\\,2\\,$로 내분하는 점을 ${{G}}\\,$라 할 때, 점 ${{G}}\\,$가 다음 조건을 만족시킨다.\n$\\left|\\, { \\vec{{GA}}}+{ \\vec{{GC}}}\\,\\right| \\,$의 최댓값을 $M\\,$, 최솟값을 $m\\,$이라 할 때, $M\\,:\\,m= \\sqrt{13} \\,:\\,1\\,$이다.\n$\\left|\\, { \\vec{{GA}}}+{ \\vec{{GC}}}\\,\\right| \\,$의 값이 최대일 때의 점 ${{G}}\\,$를 ${{G}}_{1}$, 최소일 때의 점 ${{G}}\\,$를 ${{G}}_{2}\\,$라 하자. 삼각형 ${{BG}}_{1}{{G}}_{2}\\,$의 넓이를 $S\\,$라 할 때, $S^{2}\\,$의 값을 구하시오. (단, ${ \\overline{{AB}}} \\leq 18$) [4점]","answer":"243","sourceHash":"57e65ee18a7ea156c4ff7461caef33a3402a499024a80e2b785a50b67c6fe445","steps":[{"id":"s1","latex":"B=(0,0),\\ C=(8\\sqrt3,0),\\ A=(0,h),\\ E=(e,h),\\ F=(f,0)"},{"id":"s2","latex":"e-f=h/\\sqrt3,\\quad G=(g,2h/3),\\quad g=f+2h/(3\\sqrt3)"},{"id":"s3","latex":"0\\le f\\le8\\sqrt3-h/\\sqrt3\\Rightarrow\\frac{2h}{3\\sqrt3}\\le g\\le8\\sqrt3-\\frac h{3\\sqrt3}"},{"id":"s4","latex":"\\vec{GA}+\\vec{GC}=(8\\sqrt3-2g,-h/3),\\quad h\\le18\\Rightarrow4\\sqrt3\\text{는 }g\\text{의 범위 안}"},{"id":"s5","latex":"m=h/3,\\quad M^2=\\left(8\\sqrt3-\\frac{2h}{3\\sqrt3}\\right)^2+h^2/9=13m^2"},{"id":"s6","latex":"h=9,\\quad G_1=(7\\sqrt3,6),\\ G_2=(4\\sqrt3,6)"},{"id":"s7","latex":"S=\\tfrac12\\cdot3\\sqrt3\\cdot6=9\\sqrt3\\Rightarrow S^2=243"}],"diagram":null,"contentHash":"a4dcf89f940332eba33b238e03465fe991e592559c6a4a1eb33a39e5e3dcb0fb","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 \u003cspan class=\"heq\">\\({ \\overline{{AD}}}=8 \\sqrt{3}\\,\\)\u003c/span>인 직사각형 \u003cspan class=\"heq\">\\({{ABCD}}\\,\\)\u003c/span>가 있다. 두 점 \u003cspan class=\"heq\">\\({{E}}\\)\u003c/span>, \u003cspan class=\"heq\">\\({{F}}\\,\\)\u003c/span>가 점 \u003cspan class=\"heq\">\\({{E}}\\,\\)\u003c/span>는 선분 \u003cspan class=\"heq\">\\({{AD}}\\)\u003c/span> 위를, 점 \u003cspan class=\"heq\">\\({{F}}\\,\\)\u003c/span>는 선분 \u003cspan class=\"heq\">\\({{BC}}\\)\u003c/span> 위를 \u003cbr>\u003cspan class=\"heq\">\\(\\angle {{CFE}}=60^{\\circ} \\,\\)\u003c/span>를 만족시키며 움직인다. 선분 \u003cspan class=\"heq\">\\({{EF}}\\,\\)\u003c/span>를 \u003cspan class=\"heq\">\\(1\\,:\\,2\\,\\)\u003c/span>로 내분하는 점을 \u003cspan class=\"heq\">\\({{G}}\\,\\)\u003c/span>라 할 때, 점 \u003cspan class=\"heq\">\\({{G}}\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(\\left|\\, { \\vec{{GA}}}+{ \\vec{{GC}}}\\,\\right| \\,\\)\u003c/span>의 최댓값을 \u003cspan class=\"heq\">\\(M\\,\\)\u003c/span>, 최솟값을 \u003cspan class=\"heq\">\\(m\\,\\)\u003c/span>이라 할 때, \u003cbr>\u003cspan class=\"heq\">\\(M\\,:\\,m= \\sqrt{13} \\,:\\,1\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(\\left|\\, { \\vec{{GA}}}+{ \\vec{{GC}}}\\,\\right| \\,\\)\u003c/span>의 값이 최대일 때의 점 \u003cspan class=\"heq\">\\({{G}}\\,\\)\u003c/span>를 \u003cspan class=\"heq\">\\({{G}}_{1}\\)\u003c/span>, 최소일 때의 점 \u003cspan class=\"heq\">\\({{G}}\\,\\)\u003c/span>를 \u003cspan class=\"heq\">\\({{G}}_{2}\\,\\)\u003c/span>라 하자. 삼각형 \u003cspan class=\"heq\">\\({{BG}}_{1}{{G}}_{2}\\,\\)\u003c/span>의 넓이를 \u003cspan class=\"heq\">\\(S\\,\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(S^{2}\\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\({ \\overline{{AB}}} \\leq 18\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/d8aa8f76f5c94f33a8e543a9.png\" style=\"width:315px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"39541ac458f662516ff8446f04e3d7e0a9bfb520205791245a2452029d0ed38c"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

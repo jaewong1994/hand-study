@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17083,"sourceLabel":"2021 교육청 고3 수학미적분 10월 30번","adminYear":2021,"grade":3,"month":10,"number":30,"track":"미적분","points":4,"scoreStatus":"confirmed_4_direct","questionText":"서로 다른 두 양수 $a$, $b$에 대하여 함수 $f(x)$를 \n $f(x)= -\\frac{ax^{3}+bx}{x^{2}+1}$\n라 하자. 모든 실수 $x$에 대하여 $f'(x)\\ne 0$이고, 두 함수 $g(x)=f(x)-f^{\\, -1}(x)$, $h(x)=(g\\circ f)(x)$가 다음 조건을 만족시킨다.\n(가) $g(2)=h(0)$ (나) $g '(2)= -5h '(2)$\n$4(b-a)$의 값을 구하시오. [4점]","answer":"10","sourceHash":"b038ea9301c229086decc3094e0dd2dd0206da31277b64f7a64bae6eb11aea6f","steps":[{"id":"s1","latex":"f\\prime(x)=-\\frac{ax^4+(3a-b)x^2+b}{(x^2+1)^2},\\quad f\\prime(0)=-b\u003c0"},{"id":"s2","latex":"f\\prime(x)\\ne0\\ (\\forall x)\\Rightarrow f\\prime(x)\u003c0\\ (\\forall x)"},{"id":"s3","latex":"h(0)=g(0)=0,\\quad g(2)=0\\Rightarrow f(2)=f^{-1}(2)"},{"id":"s4","latex":"f\\text{는 감소하는 기함수}\\Rightarrow f(2)=-2"},{"id":"s5","latex":"-\\frac{8a+2b}{5}=-2\\Rightarrow4a+b=5"},{"id":"s6","latex":"g\\prime(2)=f\\prime(2)-\\frac1{f\\prime(f^{-1}(2))}=f\\prime(2)-\\frac1{f\\prime(2)}"},{"id":"s7","latex":"h\\prime(2)=g\\prime(f(2))f\\prime(2)=g\\prime(-2)f\\prime(2)=g\\prime(2)f\\prime(2)"},{"id":"s8","latex":"g\\prime(2)=-5h\\prime(2)\\Rightarrow g\\prime(2)\\{1+5f\\prime(2)\\}=0"},{"id":"s9","latex":"g\\prime(2)=0\\Rightarrow f\\prime(2)=-1\\Rightarrow a=b=1\\quad\\text{모순}"},{"id":"s10","latex":"f\\prime(2)=-\\frac15\\Rightarrow28a-3b=5"},{"id":"s11","latex":"4a+b=5,\\ 28a-3b=5\\Rightarrow a=\\frac12,\\ b=3"},{"id":"s12","latex":"4(b-a)=\\boxed{10}"}],"diagram":null,"contentHash":"3f7841420d8da08946897ec4cc9d384f53f1e862286b6bf957ecc563ffb7b77e","questionHtml":"\u003cp class=\"hp\">서로 다른 두 양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f(x)= -\\dfrac{ax^{3}+bx}{x^{2}+1}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하자. 모든 실수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(f'(x)\\neq 0\\)\u003c/span>이고, \u003cbr>두 함수 \u003cspan class=\"heq\">\\(g(x)=f(x)-f^{\\, -1}(x)\\)\u003c/span>, \u003cspan class=\"heq\">\\(h(x)=(\\,g ∘ f)(x)\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) \u003cspan class=\"heq\">\\(g(2)=h(0)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">(나) \u003cspan class=\"heq\">\\(g'(2)= -5h'(2)\\)\u003c/span>\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(4(b-a)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"cc5a6a996654d55af5e07f7ebcd80d819f80968d5132360fdd09f3f119f2b70d"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

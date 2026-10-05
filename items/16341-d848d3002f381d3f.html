@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16341,"sourceLabel":"2019 교육청 고3 수리가형 7월 29번","adminYear":2019,"grade":3,"month":7,"number":29,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"중심이 $O\\,$이고 반지름의 길이가 $1\\,$인 원이 있다. 양수 $x\\,$에 대하여 원 위의 서로 다른 세 점 $A\\,$, $B\\,$, $C\\,$가\n $x {\\vec{OA}} \\,+\\,5 {\\vec{OB}} \\,+\\,3 {\\vec{OC}} \\,=\\, {\\vec{0}} \\,$\n를 만족시킨다. ${\\vec{OA}}  \\cdot  {\\vec{OB}} \\,$의 값이 최대일 때, 삼각형 $ABC\\,$의 넓이를 $S\\,$라 하자. $50S\\,$의 값을 구하시오. [4점]","answer":"60","sourceHash":"9f657d955faf89e29b7f0097ae1fef202ef416c540b38df5e2fc047eed71d00c","steps":[{"id":"s1","latex":"9=x^2+25+10x(OA\\cdot OB)"},{"id":"s2","latex":"OA\\cdot OB=-\\frac1{10}(x+\\frac{16}{x})"},{"id":"s3","latex":"x+\\frac{16}{x}\\ge8\\Rightarrow\\max(OA\\cdot OB)=-\\frac45\\text{ at }x=4"},{"id":"s4","latex":"OB\\cdot OC=-\\frac35,\\quad OA\\cdot OC=0"},{"id":"s5","latex":"\\sin\\angle AOB=\\frac35,\\ \\sin\\angle BOC=\\frac45,\\ \\sin\\angle COA=1"},{"id":"s6","latex":"S=\\frac12(\\frac35+\\frac45+1)=\\frac65"},{"id":"s7","latex":"50S=60"}],"diagram":null,"contentHash":"c548ceaa14f59428e2cb3ed8989d5edcd8b338ff1a72a97863a5e6168de2af3a","questionHtml":"\u003cp class=\"hp\">중심이 \u003cspan class=\"heq\">\\(O\\,\\)\u003c/span>이고 반지름의 길이가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>인 원이 있다. \u003cbr>양수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여 원 위의 서로 다른 세 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>가\u003c/p>\u003cp class=\"hp\">&emsp;&emsp;\u003cspan class=\"heq\">\\(x {\\overrightarrow{OA}} \\,+\\,5 {\\overrightarrow{OB}} \\,+\\,3 {\\overrightarrow{OC}} \\,=\\, {\\vec{0}} \\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">를 만족시킨다. \u003cspan class=\"heq\">\\({\\overrightarrow{OA}}  \\cdot  {\\overrightarrow{OB}} \\,\\)\u003c/span>의 값이 최대일 때, 삼각형 \u003cspan class=\"heq\">\\(ABC\\,\\)\u003c/span>의 넓이를 \u003cspan class=\"heq\">\\(S\\,\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\(50S\\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"d848d3002f381d3fd58624dda852898c5a538d4b76361557f1c94a00f6d15b70"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

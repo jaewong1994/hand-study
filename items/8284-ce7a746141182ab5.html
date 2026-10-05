@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8284,"sourceLabel":"2023 교육청 고2 수학 6월 27번","adminYear":2023,"grade":2,"month":6,"number":27,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"자연수 전체의 집합의 두 부분집합\n $A= \\left\\{ a\\,,\\,b\\,,\\,c \\right\\} \\,$, $B= \\left\\{ \\log _{\\,2} \\,a\\,,\\,\\log _{\\,2} \\,b\\,,\\,\\log _{\\,2} \\,c \\right\\} \\,$\n에 대하여 $a+b=24\\,$이고 집합 $B\\,$의 모든 원소의 합이 $12\\,$일 때, 집합 $A\\,$의 모든 원소의 합을 구하시오. (단, $a\\,$, $b\\,$, $c\\,$는 서로 다른 세 자연수이다.) [4점]","answer":"56","sourceHash":"792ed07ebf6402e19271db78efb933fa0ac2694254d1cd20e1a5e6a88a2da872","steps":[{"id":"s1","latex":"a=2^x,\\ b=2^y,\\ c=2^z,\\quad x,y,z\\in\\mathbb N"},{"id":"s2","latex":"x+y+z=12,\\quad2^x+2^y=24"},{"id":"s3","latex":"x\u003cy\\Rightarrow2^x(1+2^{y-x})=2^3\\cdot3"},{"id":"s4","latex":"x=3,\\quad y-x=1\\Rightarrow y=4"},{"id":"s5","latex":"z=5\\Rightarrow a+b+c=8+16+32=56"}],"diagram":null,"contentHash":"def4353c6b35ce85db0b6158d2bd6ced96b58a7db4e87af8cc3eb9e72506ce77","questionHtml":"\u003cp class=\"hp\">자연수 전체의 집합의 두 부분집합\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(A= \\left\\{ a\\,,\\,b\\,,\\,c \\right\\} \\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(B= \\left\\{ \\log_{\\,2} \\,a\\,,\\,\\log_{\\,2} \\,b\\,,\\,\\log_{\\,2} \\,c \\right\\} \\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">에 대하여 \u003cspan class=\"heq\">\\(a+b=24\\,\\)\u003c/span>이고 집합 \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>의 모든 원소의 합이 \u003cspan class=\"heq\">\\(12\\,\\)\u003c/span>일 때, 집합 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>의 모든 원소의 합을 구하시오. (단, \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(c\\,\\)\u003c/span>는 서로 다른 세 자연수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"ce7a746141182ab535966ab9dad9fd0b53edb9520bd39f0e8f1693294ccc1919"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

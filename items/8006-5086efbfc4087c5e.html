@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8006,"sourceLabel":"2021 교육청 고2 수학 11월 19번","adminYear":2021,"grade":2,"month":11,"number":19,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"다음은 수열 $\\left\\{ a _{n} \\right\\}$이 모든 자연수 $n$에 대하여\n $\\sum _{k=1} ^{n} \\left( \\frac{1}{k} - \\frac{1}{n+1} \\right) a _{k} =n ^{2}$\n을 만족시킬 때, $\\sum _{k=1} ^{n} a _{k}$를 구하는 과정이다.\n$T _{n} = \\sum _{k=1} ^{n} \\left( \\frac{1}{k} - \\frac{1}{n+1} \\right) a _{k}$라 하자.(ⅰ) $T _{1} =1$이므로 $a _{1} =box{\\, \\left( 가 \\right) \\,}$이다.(ⅱ) $2$이상의 자연수 $n$에 대하여 $T _{n} =n ^{2}$에서 $T _{n} -T _{n-1} =2n-1$이고 $T _{n} = \\sum _{k=1} ^{n} \\frac{a _{k}}{k} - \\frac{1}{box{\\, \\left( 나 \\right) \\,}} \\times \\sum _{k=1} ^{n} a _{k}$에서 $T _{n} -T _{n-1} = \\frac{1}{box{\\, \\left( 다 \\right) \\,}} \\times \\sum _{k=1} ^{n} a _{k}$이므로 $\\sum _{k=1} ^{n} a _{k} = \\left( 2n-1 \\right) \\times \\left( box{\\, \\left( 다 \\right) \\,} \\right)$이다.(ⅰ), (ⅱ)에 의하여 모든 자연수 $n$에 대하여$\\sum _{k=1} ^{n} a _{k} = \\left( 2n-1 \\right) \\times \\left( box{\\, \\left( 다 \\right) \\,} \\right)$이다.\n(가)에 알맞은 수를 $p$, (나), (다)에 알맞은 식을 각각 $f \\left( n \\right)$, $g \\left( n \\right)$이라 할 때, $f \\left( 2p \\right) {\\times}g \\left( 3p \\right)$의 값은? [4점]\n① $190$ ② $200$ ③ $210$ ④ $220$ ⑤ $230$","answer":"③","sourceHash":"f53d98748236e7ae11ffba6ffb7fc95a88779ef83ea23e8d2c115348046c36ac","steps":[{"id":"s1","latex":"T_1=\\frac12a_1=1\\Rightarrow p=a_1=2"},{"id":"s2","latex":"S_n=\\sum_{k=1}^na_k,\\quad T_n=\\sum_{k=1}^n\\frac{a_k}{k}-\\frac{S_n}{n+1}"},{"id":"s3","latex":"f(n)=n+1"},{"id":"s4","latex":"T_n-T_{n-1}=\\frac{S_n}{n(n+1)}\\Rightarrow g(n)=n(n+1)"},{"id":"s5","latex":"f(2p)g(3p)=f(4)g(6)=5\\cdot42=210"}],"diagram":null,"contentHash":"811d6125216d5a0a24ee1deb42467ed488590e7ccdde15c83e95e305960f8e5a","questionHtml":"\u003cp class=\"hp\">다음은 수열 \u003cspan class=\"heq\">\\(\\left\\{ a_{n} \\right\\}\\)\u003c/span>이 모든 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp htall\">&emsp;&emsp;\u003cspan class=\"heq\">\\(\\sum\\limits_{k=1}^{n} \\left( \\dfrac{1}{k} - \\dfrac{1}{n+1} \\right) a_{k} =n^{2}\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">을 만족시킬 때, \u003cspan class=\"heq\">\\(\\sum\\limits_{k=1}^{n} a_{k}\\)\u003c/span>를 구하는 과정이다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(T_{n} = \\sum\\limits_{k=1}^{n} \\left( \\dfrac{1}{k} - \\dfrac{1}{n+1} \\right) a_{k}\\)\u003c/span>라 하자.\u003c/p>\u003cp class=\"hp htall\">(ⅰ) \u003cspan class=\"heq\">\\(T_{1} =1\\)\u003c/span>이므로 \u003cspan class=\"heq\">\\(a_{1} =\\boxed{\\vphantom{(}\\, \\left( \\text{가} \\right) \\,}\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp htall\">(ⅱ) \u003cspan class=\"heq\">\\(2\\)\u003c/span>이상의 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여\u003cbr>\u003cspan class=\"heq\">\\(T_{n} =n^{2}\\)\u003c/span>에서\u003cbr>\u003cspan class=\"heq\">\\(T_{n} -T_{n-1} =2n-1\\)\u003c/span>이고\u003cbr>\u003cspan class=\"heq\">\\(T_{n} = \\sum\\limits_{k=1}^{n} \\dfrac{a_{k}}{k} - \\dfrac{1}{\\boxed{\\vphantom{(}\\, \\left( \\text{나} \\right) \\,}} \\times \\sum\\limits_{k=1}^{n} a_{k}\\)\u003c/span>에서\u003cbr>\u003cspan class=\"heq\">\\(T_{n} -T_{n-1} = \\dfrac{1}{\\boxed{\\vphantom{(}\\, \\left( \\text{다} \\right) \\,}} \\times \\sum\\limits_{k=1}^{n} a_{k}\\)\u003c/span>이므로\u003cbr>\u003cspan class=\"heq\">\\(\\sum\\limits_{k=1}^{n} a_{k} = \\left( 2n-1 \\right) \\times \\left( \\boxed{\\vphantom{(}\\, \\left( \\text{다} \\right) \\,} \\right)\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">(ⅰ), (ⅱ)에 의하여 모든 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(\\sum\\limits_{k=1}^{n} a_{k} = \\left( 2n-1 \\right) \\times \\left( \\boxed{\\vphantom{(}\\, \\left( \\text{다} \\right) \\,} \\right)\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp class=\"hp\">(가)에 알맞은 수를 \u003cspan class=\"heq\">\\(p\\)\u003c/span>, (나), (다)에 알맞은 식을 각각 \u003cspan class=\"heq\">\\(f \\left( n \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( n \\right)\\)\u003c/span>이라 할 때, \u003cspan class=\"heq\">\\(f \\left( 2p \\right) {\\times}g \\left( 3p \\right)\\)\u003c/span>의 값은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">① \u003cspan class=\"heq\">\\(190\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(200\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(210\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(220\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(230\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"5086efbfc4087c5e8aaa168ecc516691f8ed2b56400fb8be868cf734495cb50b"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16460,"sourceLabel":"2019 교육청 고3 수리나형 5월 30번","adminYear":2019,"grade":3,"month":5,"number":30,"track":"수리나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"함수 $f(x)=2x ^{3} -3ax ^{2} +9\\,$에 대하여 함수\n $g(x)= {\\begin{cases}f(x)&(x \\geq 0) \\\\ -f(x)+18\\,&(x\u003c0)\\end{cases}}$\n이 다음 조건을 만족시킨다.\n(가) 곡선 $y=g(x)\\,$와 직선 $y=x\\,$의 교점의 개수는 1이다.(나) 함수 $g(x)$의 극솟값은 양수이다.\n방정식 $g(x)=x\\,$의 실근을 $k\\,$라 할 때, $12(a+k)\\,$의 값을 구하시오. (단, $a\\,$는 0이 아닌 상수이다.) [4점]","answer":"47","sourceHash":"6ef7b856eef3390685fd5939c908cc2d236fa34eb26d6efa49391b203d1534da","steps":[{"id":"s1","latex":"f'(x)=6x(x-a)"},{"id":"s2","latex":"a\u003c0\\Rightarrow g(x)-x>0\\text{이므로 교점이 없어 불가}"},{"id":"s3","latex":"a>0,\\quad g(a)=9-a^3>0"},{"id":"s4","latex":"\\text{유일한 교점에서는 접하므로 }f(k)=k,\\quad f'(k)=1"},{"id":"s5","latex":"2k^3-3ak^2+9=k,\\quad6k^2-6ak=1"},{"id":"s6","latex":"2k^3+k-18=(k-2)(2k^2+4k+9)=0"},{"id":"s7","latex":"k=2,\\quad a=\\dfrac{23}{12}"},{"id":"s8","latex":"12(a+k)=23+24=47"}],"diagram":null,"contentHash":"70ae17f5a00baffd1d3581fd1b28cf48d15327ec929a6bf689101eef816be98f","questionHtml":"\u003cp class=\"hp\">함수 \u003cspan class=\"heq\">\\(f(x)=2x^{3} -3ax^{2} +9\\,\\)\u003c/span>에 대하여 함수\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(g(x)= {\\begin{cases}f(x)&(x \\geq 0) \\\\ -f(x)+18\\,&(x\\lt 0)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이 다음 조건을 만족시킨다.\u003c/p>\u003cp class=\"hp\">\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 곡선 \u003cspan class=\"heq\">\\(y=g(x)\\,\\)\u003c/span>와 직선 \u003cspan class=\"heq\">\\(y=x\\,\\)\u003c/span>의 교점의 개수는 1이다.\u003c/p>\u003cp class=\"hp\">(나) 함수 \u003cspan class=\"heq\">\\(g(x)\\)\u003c/span>의 극솟값은 양수이다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp\">방정식 \u003cspan class=\"heq\">\\(g(x)=x\\,\\)\u003c/span>의 실근을 \u003cspan class=\"heq\">\\(k\\,\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(12(a+k)\\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>는 0이 아닌 상수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"0e3126820cc97390f379c1b21dc0d3c1b9fde91e6f7da8a64f438405812b7d77"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

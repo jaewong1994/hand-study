@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17405,"sourceLabel":"2022 교육청 고3 수학확통 10월 28번","adminYear":2022,"grade":3,"month":10,"number":28,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"정규분포를 따르는 두 확률변수 $X,\\,Y$의 확률밀도함수를 각각 $f \\left( x \\right) ,\\,g \\left( x \\right)$라 할 때, 모든 실수 $x$에 대하여\n $g \\left( x \\right) =f \\left( x+6 \\right)$\n이다. 두 확률변수 $X,\\,Y$와 상수 $k$가 다음 조건을 만족시킨다.\n(가) ${P} \\left( X \\leq 11 \\right) \\,={P} \\left( Y \\geq 23 \\right)$\n(나) ${P} \\left( X \\leq k \\right) \\,+{P} \\left( Y \\leq k \\right) \\,=1$\n오른쪽 표준정규분포표를 이용하여 구한 $P \\left( X \\leq k \\right) \\,+ P \\left( Y \\geq k \\right)$의 값이 $0.1336$ 일 때, ${E} \\left( X \\right) + \\sigma \\left( Y \\right)$의 값은? [4점]\n① $\\frac{41}{2}$ ② $21$ ③ $\\frac{43}{2}$ ④ $22$ ⑤ $\\frac{45}{2}$\n[표]\n$z$ | $P(0 \\leq Z \\leq z)$\n$0.5$ | $0.1915$\n$1.0$ | $0.3413$\n$1.5$ | $0.4332$\n$2.0$ | $0.4772$\n[/표]","answer":"④","sourceHash":"588314f0e1af6bb47805fac489cf4a7090010ecb7f2c6ad208e51d3ea5b56692","steps":[{"id":"s1","latex":"g(x)=f(x+6)\\Rightarrow \\mu_Y=\\mu_X-6,\\quad \\sigma_Y=\\sigma_X=\\sigma"},{"id":"s2","latex":"\\mu_X=m:\\quad P\\left(Z\\le\\frac{11-m}{\\sigma}\\right)=P\\left(Z\\le\\frac{m-29}{\\sigma}\\right)"},{"id":"s3","latex":"11-m=m-29\\Rightarrow m=20,\\quad \\mu_Y=14"},{"id":"s4","latex":"P(X\\le k)+P(Y\\le k)=1\\Rightarrow P(X\\le k)=P(Y\\ge k)"},{"id":"s5","latex":"k=\\frac{20+14}{2}=17"},{"id":"s6","latex":"P(X\\le17)=P(Y\\ge17)=\\frac{0.1336}{2}=0.0668"},{"id":"s7","latex":"0.5-0.0668=0.4332=P(0\\le Z\\le1.5)"},{"id":"s8","latex":"\\frac{3}{\\sigma}=1.5\\Rightarrow\\sigma=2"},{"id":"s9","latex":"E(X)+\\sigma(Y)=20+2=22"}],"diagram":null,"contentHash":"9165df3a8805107b8256ec922fcfc8d686b3419ea1ce949b14b25fc14f4cb8a9","questionHtml":"\u003cp class=\"hp\">정규분포를 따르는 두 확률변수 \u003cspan class=\"heq\">\\(X,\\,Y\\)\u003c/span>의 확률밀도함수를 각각 \u003cspan class=\"heq\">\\(f \\left( x \\right) ,\\,g \\left( x \\right)\\)\u003c/span>라 할 때, 모든 실수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp\">&emsp;&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) =f \\left( x+6 \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이다. 두 확률변수 \u003cspan class=\"heq\">\\(X,\\,Y\\)\u003c/span>와 상수 \u003cspan class=\"heq\">\\(k\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003ctable class=\"htbl\">\u003ctr>\u003ctd style=\"width:42px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(z\\,\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:106px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(P \\left( 0 \\leq Z \\leq z \\right)\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:42px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(0.5\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:106px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(0.1915\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:42px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1.0\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:106px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(0.3413\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:42px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1.5\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:106px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(0.4332\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003ctr>\u003ctd style=\"width:42px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:1px solid #333\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(2.0\\)\u003c/span>\u003c/p>\u003c/td>\u003ctd style=\"width:106px;border-top:1px solid #333;border-bottom:1px solid #333;border-left:1px solid #333;border-right:none\">\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(0.4772\\)\u003c/span>\u003c/p>\u003c/td>\u003c/tr>\u003c/table>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) \u003cspan class=\"heq\">\\({P} \\left( X \\leq 11 \\right) \\,={P} \\left( Y \\geq 23 \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">(나) \u003cspan class=\"heq\">\\({P} \\left( X \\leq k \\right) \\,+{P} \\left( Y \\leq k \\right) \\,=1\\)\u003c/span>\u003c/p>\u003c/div>\u003cp class=\"hp\">오른쪽 표준정규분포표를 이용하여 구한 \u003cspan class=\"heq\">\\(P \\left( X \\leq k \\right) \\,+ P \\left( Y \\geq k \\right)\\)\u003c/span>의 값이 \u003cspan class=\"heq\">\\(0.1336\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\({E} \\left( X \\right) + \\sigma \\left( Y \\right)\\)\u003c/span>의 값은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\dfrac{41}{2}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(21\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\dfrac{43}{2}\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(22\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(\\dfrac{45}{2}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"bcc1007ea21e6a6528a5ef52c4ec953142a837965cfd7d4cb8618e206be38dd6"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

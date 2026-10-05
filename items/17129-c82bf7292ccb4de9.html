@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17129,"sourceLabel":"2021 교육청 고3 수학확통 4월 22번","adminYear":2021,"grade":3,"month":4,"number":22,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"실수 $a$에 대하여 두 함수 $f \\left( x \\right)$, $g \\left( x \\right)$를\n $f \\left( x \\right)$$=3x+a$, $g \\left( x \\right)$$= \\int _{2} ^{x} {} \\left( t+a \\right) f \\left( t \\right) dt$\n라 하자. 함수 $h \\left( x \\right)$$=f \\left( x \\right) g \\left( x \\right)$가 다음 조건을 만족시킬 때, $h \\left( -1 \\right)$의 최솟값은 $\\frac{q}{p}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]\n(가) 곡선 $y$$=h \\left( x \\right)$ 위의 어떤 점에서의 접선이 $x$축이다.(나) 곡선 $y$$= \\left| h \\left( x \\right) \\right|$가 $x$축과 평행한 직선과 만나는 서로 다른 점의 개수의 최댓값은 $4$이다.\n 사각형입니다. 2021년 4월 고3 모의고사 문제지제 2 교시 수학 영역(확률과 통계) \n5 지선다형","answer":"251","sourceHash":"f71819f07555441e3981e71cf4ee9d86efef03df5cf68b957f1d834973c577ea","steps":[{"id":"s1","latex":"g=x(x+a)^2-2(a+2)^2,\\quad g'=(x+a)(3x+a),\\quad h=(3x+a)g"},{"id":"s2","latex":"h(c)=h'(c)=0\\Rightarrow\\begin{cases}c=-a,\\ g(-a)=-2(a+2)^2=0,\\\\c=-\\frac a3,\\ g(-\\frac a3)=-\\frac2{27}(a+6)^2(2a+3)=0\\end{cases}"},{"id":"s3","latex":"a\\in\\left\\{-2,-6,-\\frac32\\right\\}"},{"id":"s4","latex":"a=-2:\\ h=x(3x-2)(x-2)^2\\Rightarrow\\max\\#\\{\\lvert h\\rvert=c\\}=6\\quad(\\text{제외})"},{"id":"s5","latex":"a=-2:\\quad 0\u003cy\\text{가 충분히 작으면 }h(x)=y\\text{는 }4\\text{근},\\ h(x)=-y\\text{는 }2\\text{근}"},{"id":"s6","latex":"a=-6:\\ h=3(x-2)^3(x-8),\\quad h(-1)=729"},{"id":"s7","latex":"a=-\\frac32:\\ h=3(x-\\frac12)^3(x-2),\\quad h(-1)=\\frac{243}{8}"},{"id":"s8","latex":"h=3(x-r)^3(x-s),\\ r\u003cs:\\quad h^{\\prime}=3(x-r)^2(4x-r-3s)\\Rightarrow|h|\\text{의 수평선 교점은 최대 }4\\text{개}"},{"id":"s9","latex":"\\min h(-1)=\\frac{243}{8}\\Rightarrow p+q=251"}],"diagram":null,"contentHash":"9d02c79f91c258a5ac0dc76bf8876376aa8dab9a26c0ca05a54a5dab23e02133","questionHtml":"\u003cp class=\"hp\">실수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>에 대하여 두 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>를\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(=3x+a\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(= \\int_{2}^{x} {} \\left( t+a \\right) f \\left( t \\right) dt\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">라 하자. 함수 \u003cspan class=\"heq\">\\(h \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(=f \\left( x \\right) g \\left( x \\right)\\)\u003c/span>가 다음 조건을 만족시킬 때, \u003cspan class=\"heq\">\\(h \\left( -1 \\right)\\)\u003c/span>의 최솟값은 \u003cspan class=\"heq\">\\(\\dfrac{q}{p}\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(p\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\)\u003c/span>는 서로소인 자연수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 곡선 \u003cspan class=\"heq\">\\(y\\)\u003c/span>\u003cspan class=\"heq\">\\(=h \\left( x \\right)\\)\u003c/span> 위의 어떤 점에서의 접선이 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축이다.\u003c/p>\u003cp class=\"hp\">(나) 곡선 \u003cspan class=\"heq\">\\(y\\)\u003c/span>\u003cspan class=\"heq\">\\(= \\left| h \\left( x \\right) \\right|\\)\u003c/span>가 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축과 평행한 직선과 만나는 서로 다른 점의 개수의 최댓값은 \u003cspan class=\"heq\">\\(4\\)\u003c/span>이다.\u003c/p>\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"c82bf7292ccb4de9f7c06f88443a71aaf6eb77deb8291c1991ec4ab240f50fec"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

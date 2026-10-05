@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":17774,"sourceLabel":"2023 평가원 고3 수학기하 9월 22번","adminYear":2023,"grade":3,"month":9,"number":22,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 다항함수 $f(x)$, $g(x)$에 대하여 $f(x)$의 한 부정적분을 $F(x)$라 하고 $g(x)$의 한 부정적분을 $G(x)$라 할 때, 이 함수들은 모든 실수 $x$에 대하여 다음 조건을 만족시킨다.\n(가) $\\int _{1} ^{x} {} f \\left(t \\right)dt=xf \\left(x \\right)-2x ^{2} -1$ (나) $f \\left(x \\right)G \\left(x \\right)+F \\left(x \\right)g \\left(x \\right)=8x ^{3} +3x ^{2} +1$\n$\\int_{1}^{3} g(x) d x$의 값을 구하시오. [4점]\n 사각형입니다. 2023년 9월 고3 모의고사 문제지제 2 교시 수학 영역(기하) \n5 지선다형","answer":"10","sourceHash":"4909305018ef8c02e65f0b7efbe32097bc9167046a6b074d43e7bc3a53f22228","steps":[{"id":"s1","latex":"f\\prime=4,\\ f(1)=3\\Rightarrow f=4x-1"},{"id":"s2","latex":"FG=2x^4+x^3+x+C"},{"id":"s3","latex":"F=2x^2-x+k,\\ G=x^2+px+q"},{"id":"s4","latex":"p=1,\\ q=0,\\ k=10\\Rightarrow\\boxed{10}"}],"diagram":null,"contentHash":"a9075c7387fec6c2cd2b360e9e07f31f562a8eb3dbd62c8157869fc01b0a3b38","questionHtml":"\u003cp class=\"hp\">두 다항함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g(x)\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>의 한 부정적분을 \u003cspan class=\"heq\">\\(F(x)\\)\u003c/span>라 하고 \u003cspan class=\"heq\">\\(g(x)\\)\u003c/span>의 한 부정적분을 \u003cspan class=\"heq\">\\(G(x)\\)\u003c/span>라 할 때, 이 함수들은 모든 실수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) \u003cspan class=\"heq\">\\(\\int_{1}^{x} {} f \\left(t \\right)dt=xf \\left(x \\right)-2x^{2} -1\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">(나) \u003cspan class=\"heq\">\\(f \\left(x \\right)G \\left(x \\right)+F \\left(x \\right)g \\left(x \\right)=8x^{3} +3x^{2} +1\\)\u003c/span>\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(\\int_{1}^{3} g(x) d x\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"8196acf12459122409f6a8a05e3183d3257d529a486a567ddb61eb70df864723"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":18097,"sourceLabel":"2024 평가원 고3 수학확통 6월 30번","adminYear":2024,"grade":3,"month":6,"number":30,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"집합 $X= \\left\\{ -2,\\,-1,\\,0,\\,1,\\,2 \\right\\}$에 대하여 다음 조건을 만족시키는 함수 $f: X \\,\\rightarrow\\, X$의 개수를 구하시오. [4점]\n(가) $X$의 모든 원소 $x$에 대하여 $x+f(x) in X$이다.(나) $x=\\,-2$, $-1$, $0$, $1$일 때 $f(x) \\geq f(x+1)$이다.","answer":"108","sourceHash":"40d02a5b665326665f8a3cb31ee6cd5014af64d7dddd2c52144e2988883a0bad","steps":[{"id":"s1","latex":"x+f(x)\\in X\\Rightarrow\\begin{cases}f(-2)\\in\\{0,1,2\\}\\\\f(-1)\\in\\{-1,0,1,2\\}\\\\f(0)\\in X\\\\f(1)\\in\\{-2,-1,0,1\\}\\\\f(2)\\in\\{-2,-1,0\\}\\end{cases}"},{"id":"s2","latex":"f(-2)\\ge f(-1)\\ge f(0)\\ge f(1)\\ge f(2)"},{"id":"s3","latex":"f(0)=-2,-1,0,1,2\\text{일 때 왼쪽 경우의 수}=9,9,6,3,1"},{"id":"s4","latex":"f(0)=-2,-1,0,1,2\\text{일 때 오른쪽 경우의 수}=1,3,6,9,9"},{"id":"s5","latex":"9\\cdot1+9\\cdot3+6\\cdot6+3\\cdot9+1\\cdot9=108"}],"diagram":null,"contentHash":"f157b41f6d270f5332d8779ea0f15a728c4c771b6c125537ce991b86e1407c1f","questionHtml":"\u003cp class=\"hp\">집합 \u003cspan class=\"heq\">\\(X= \\left\\{ -2,\\,-1,\\,0,\\,1,\\,2 \\right\\}\\)\u003c/span>에 대하여 다음 조건을 만족시키는 함수 \u003cspan class=\"heq\">\\(f: X \\,\\rightarrow\\, X\\)\u003c/span>의 개수를 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) \u003cspan class=\"heq\">\\(X\\)\u003c/span>의 모든 원소 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(x+f(x) in X\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">(나) \u003cspan class=\"heq\">\\(x=\\,-2\\)\u003c/span>, \u003cspan class=\"heq\">\\(-1\\)\u003c/span>, \u003cspan class=\"heq\">\\(0\\)\u003c/span>, \u003cspan class=\"heq\">\\(1\\)\u003c/span>일 때 \u003cspan class=\"heq\">\\(f(x) \\geq f(x+1)\\)\u003c/span>이다.\u003c/p>\u003c/div>","preview":false,"graphPlan":{"version":1,"itemId":18097,"sourceHash":"40d02a5b665326665f8a3cb31ee6cd5014af64d7dddd2c52144e2988883a0bad","contentHash":"f157b41f6d270f5332d8779ea0f15a728c4c771b6c125537ce991b86e1407c1f","title":"2024 평가원 고3 수학확통 6월 30번 · 정확 이산도식","bounds":[-2.8,2.8,-2.8,3.5],"aspect":"free","stages":[{"stepId":"s1","title":"x별 허용 함숫값 격자","layers":[{"id":"axis-x","type":"polyline","points":[[-2.8,0.0],[2.8,0.0]],"text":"","color":"muted"},{"id":"axis-y","type":"polyline","points":[[0.0,-2.8],[0.0,3.5]],"text":"","color":"muted"},{"id":"p-2_0","type":"point","x":-2.0,"y":0.0,"text":"","color":"navy"},{"id":"p-2_1","type":"point","x":-2.0,"y":1.0,"text":"","color":"navy"},{"id":"p-2_2","type":"point","x":-2.0,"y":2.0,"text":"","color":"navy"},{"id":"p-1_-1","type":"point","x":-1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p-1_0","type":"point","x":-1.0,"y":0.0,"text":"","color":"navy"},{"id":"p-1_1","type":"point","x":-1.0,"y":1.0,"text":"","color":"navy"},{"id":"p-1_2","type":"point","x":-1.0,"y":2.0,"text":"","color":"navy"},{"id":"p0_-2","type":"point","x":0.0,"y":-2.0,"text":"","color":"navy"},{"id":"p0_-1","type":"point","x":0.0,"y":-1.0,"text":"","color":"navy"},{"id":"p0_0","type":"point","x":0.0,"y":0.0,"text":"","color":"navy"},{"id":"p0_1","type":"point","x":0.0,"y":1.0,"text":"","color":"navy"},{"id":"p0_2","type":"point","x":0.0,"y":2.0,"text":"","color":"navy"},{"id":"p1_-2","type":"point","x":1.0,"y":-2.0,"text":"","color":"navy"},{"id":"p1_-1","type":"point","x":1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p1_0","type":"point","x":1.0,"y":0.0,"text":"","color":"navy"},{"id":"p1_1","type":"point","x":1.0,"y":1.0,"text":"","color":"navy"},{"id":"p2_-2","type":"point","x":2.0,"y":-2.0,"text":"","color":"navy"},{"id":"p2_-1","type":"point","x":2.0,"y":-1.0,"text":"","color":"navy"},{"id":"p2_0","type":"point","x":2.0,"y":0.0,"text":"","color":"navy"},{"id":"grid","type":"label","x":-2.6,"y":3.1,"text":"허용 격자: x+f(x)∈X","color":"muted"}]},{"stepId":"s4","title":"f(0)별 좌우 경우 수","layers":[{"id":"axis-x","type":"polyline","points":[[-2.8,0.0],[2.8,0.0]],"text":"","color":"muted"},{"id":"axis-y","type":"polyline","points":[[0.0,-2.8],[0.0,3.5]],"text":"","color":"muted"},{"id":"p-2_0","type":"point","x":-2.0,"y":0.0,"text":"","color":"navy"},{"id":"p-2_1","type":"point","x":-2.0,"y":1.0,"text":"","color":"navy"},{"id":"p-2_2","type":"point","x":-2.0,"y":2.0,"text":"","color":"navy"},{"id":"p-1_-1","type":"point","x":-1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p-1_0","type":"point","x":-1.0,"y":0.0,"text":"","color":"navy"},{"id":"p-1_1","type":"point","x":-1.0,"y":1.0,"text":"","color":"navy"},{"id":"p-1_2","type":"point","x":-1.0,"y":2.0,"text":"","color":"navy"},{"id":"p0_-2","type":"point","x":0.0,"y":-2.0,"text":"","color":"navy"},{"id":"p0_-1","type":"point","x":0.0,"y":-1.0,"text":"","color":"navy"},{"id":"p0_0","type":"point","x":0.0,"y":0.0,"text":"","color":"navy"},{"id":"p0_1","type":"point","x":0.0,"y":1.0,"text":"","color":"navy"},{"id":"p0_2","type":"point","x":0.0,"y":2.0,"text":"","color":"navy"},{"id":"p1_-2","type":"point","x":1.0,"y":-2.0,"text":"","color":"navy"},{"id":"p1_-1","type":"point","x":1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p1_0","type":"point","x":1.0,"y":0.0,"text":"","color":"navy"},{"id":"p1_1","type":"point","x":1.0,"y":1.0,"text":"","color":"navy"},{"id":"p2_-2","type":"point","x":2.0,"y":-2.0,"text":"","color":"navy"},{"id":"p2_-1","type":"point","x":2.0,"y":-1.0,"text":"","color":"navy"},{"id":"p2_0","type":"point","x":2.0,"y":0.0,"text":"","color":"navy"},{"id":"grid","type":"label","x":-2.6,"y":3.1,"text":"허용 격자: x+f(x)∈X","color":"muted"},{"id":"L0","type":"polyline","points":[[-2.0,0.0],[-2.0,3.0]],"color":"teal","text":""},{"id":"R0","type":"polyline","points":[[-1.82,0.0],[-1.82,0.3333333333333333]],"color":"amber","text":""},{"id":"n0","type":"label","x":-2.15,"y":-0.45,"text":"-2","color":"muted"},{"id":"L1","type":"polyline","points":[[-1.0,0.0],[-1.0,3.0]],"color":"teal","text":""},{"id":"R1","type":"polyline","points":[[-0.8200000000000001,0.0],[-0.8200000000000001,1.0]],"color":"amber","text":""},{"id":"n1","type":"label","x":-1.15,"y":-0.45,"text":"-1","color":"muted"},{"id":"L2","type":"polyline","points":[[0.0,0.0],[0.0,2.0]],"color":"teal","text":""},{"id":"R2","type":"polyline","points":[[0.18,0.0],[0.18,2.0]],"color":"amber","text":""},{"id":"n2","type":"label","x":-0.15,"y":-0.45,"text":"0","color":"muted"},{"id":"L3","type":"polyline","points":[[1.0,0.0],[1.0,1.0]],"color":"teal","text":""},{"id":"R3","type":"polyline","points":[[1.18,0.0],[1.18,3.0]],"color":"amber","text":""},{"id":"n3","type":"label","x":0.85,"y":-0.45,"text":"1","color":"muted"},{"id":"L4","type":"polyline","points":[[2.0,0.0],[2.0,0.3333333333333333]],"color":"teal","text":""},{"id":"R4","type":"polyline","points":[[2.18,0.0],[2.18,3.0]],"color":"amber","text":""},{"id":"n4","type":"label","x":1.85,"y":-0.45,"text":"2","color":"muted"}]},{"stepId":"s5","title":"곱의 합","layers":[{"id":"axis-x","type":"polyline","points":[[-2.8,0.0],[2.8,0.0]],"text":"","color":"muted"},{"id":"axis-y","type":"polyline","points":[[0.0,-2.8],[0.0,3.5]],"text":"","color":"muted"},{"id":"p-2_0","type":"point","x":-2.0,"y":0.0,"text":"","color":"navy"},{"id":"p-2_1","type":"point","x":-2.0,"y":1.0,"text":"","color":"navy"},{"id":"p-2_2","type":"point","x":-2.0,"y":2.0,"text":"","color":"navy"},{"id":"p-1_-1","type":"point","x":-1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p-1_0","type":"point","x":-1.0,"y":0.0,"text":"","color":"navy"},{"id":"p-1_1","type":"point","x":-1.0,"y":1.0,"text":"","color":"navy"},{"id":"p-1_2","type":"point","x":-1.0,"y":2.0,"text":"","color":"navy"},{"id":"p0_-2","type":"point","x":0.0,"y":-2.0,"text":"","color":"navy"},{"id":"p0_-1","type":"point","x":0.0,"y":-1.0,"text":"","color":"navy"},{"id":"p0_0","type":"point","x":0.0,"y":0.0,"text":"","color":"navy"},{"id":"p0_1","type":"point","x":0.0,"y":1.0,"text":"","color":"navy"},{"id":"p0_2","type":"point","x":0.0,"y":2.0,"text":"","color":"navy"},{"id":"p1_-2","type":"point","x":1.0,"y":-2.0,"text":"","color":"navy"},{"id":"p1_-1","type":"point","x":1.0,"y":-1.0,"text":"","color":"navy"},{"id":"p1_0","type":"point","x":1.0,"y":0.0,"text":"","color":"navy"},{"id":"p1_1","type":"point","x":1.0,"y":1.0,"text":"","color":"navy"},{"id":"p2_-2","type":"point","x":2.0,"y":-2.0,"text":"","color":"navy"},{"id":"p2_-1","type":"point","x":2.0,"y":-1.0,"text":"","color":"navy"},{"id":"p2_0","type":"point","x":2.0,"y":0.0,"text":"","color":"navy"},{"id":"grid","type":"label","x":-2.6,"y":3.1,"text":"허용 격자: x+f(x)∈X","color":"muted"},{"id":"L0","type":"polyline","points":[[-2.0,0.0],[-2.0,3.0]],"color":"teal","text":""},{"id":"R0","type":"polyline","points":[[-1.82,0.0],[-1.82,0.3333333333333333]],"color":"amber","text":""},{"id":"n0","type":"label","x":-2.15,"y":-0.45,"text":"-2","color":"muted"},{"id":"L1","type":"polyline","points":[[-1.0,0.0],[-1.0,3.0]],"color":"teal","text":""},{"id":"R1","type":"polyline","points":[[-0.8200000000000001,0.0],[-0.8200000000000001,1.0]],"color":"amber","text":""},{"id":"n1","type":"label","x":-1.15,"y":-0.45,"text":"-1","color":"muted"},{"id":"L2","type":"polyline","points":[[0.0,0.0],[0.0,2.0]],"color":"teal","text":""},{"id":"R2","type":"polyline","points":[[0.18,0.0],[0.18,2.0]],"color":"amber","text":""},{"id":"n2","type":"label","x":-0.15,"y":-0.45,"text":"0","color":"muted"},{"id":"L3","type":"polyline","points":[[1.0,0.0],[1.0,1.0]],"color":"teal","text":""},{"id":"R3","type":"polyline","points":[[1.18,0.0],[1.18,3.0]],"color":"amber","text":""},{"id":"n3","type":"label","x":0.85,"y":-0.45,"text":"1","color":"muted"},{"id":"L4","type":"polyline","points":[[2.0,0.0],[2.0,0.3333333333333333]],"color":"teal","text":""},{"id":"R4","type":"polyline","points":[[2.18,0.0],[2.18,3.0]],"color":"amber","text":""},{"id":"n4","type":"label","x":1.85,"y":-0.45,"text":"2","color":"muted"},{"id":"legend","type":"label","x":-2.6,"y":3.35,"text":"청록=왼쪽 경우, 주황=오른쪽 경우","color":"muted"},{"id":"ans","type":"label","x":0.3,"y":3.05,"text":"9·1+9·3+6·6+3·9+1·9=108","color":"amber"}]}],"graphHash":"d72c6c4b06f19fd136692aaa54e4fb787e61c0b590b805721c4a6caa69afd49f"},"graphHash":"d72c6c4b06f19fd136692aaa54e4fb787e61c0b590b805721c4a6caa69afd49f","editionHash":"f1fcc2fe54b064a4d573be72c1f14a4fcd0ce012ec3a206550881cc7d3e72657"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16213,"sourceLabel":"2019 교육청 고3 수리가형 10월 21번","adminYear":2019,"grade":3,"month":10,"number":21,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"정수 $n\\,$에 대하여 점 $\\left( a,\\,0 \\right) \\,$에서 곡선 $y=(x-n)e ^{x} \\,$에 그은 접선의 개수를 $f(n)\\,$이라 하자. \u003c보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]\n\u003c 보 기 >ㄱ. $a=0\\,$일 때, $f(4)=1\\,$이다.ㄴ. $f(n)=1$인 정수 $n\\,$의 개수가 $1\\,$인 정수 $a\\,$가 존재한다. ㄷ. $\\sum _{n=1} ^{5} f(n)=5\\,$를 만족시키는 정수 $a\\,$의 값은 $-1$ 또는 $3\\,$이다.\n① ㄱ ② ㄱ, ㄴ ③ ㄱ, ㄷ\n④ ㄴ, ㄷ ⑤ ㄱ, ㄴ, ㄷ\n단답형","answer":"③","sourceHash":"c6193ec8ce9f4723df108c3bce5019c0b682e64257600ed6ec27aded17cd4fa2","steps":[{"id":"s1","latex":"\\text{접점 }t:\\quad (t-n)e^t=(t-a)(t-n+1)e^t"},{"id":"s2","latex":"u=t-n,\\ c=a-n\\Rightarrow u^2-cu-c=0"},{"id":"s3","latex":"D=c(c+4)\\Rightarrow f(n)=\\begin{cases}2&c>0\\text{ 또는 }c\u003c-4\\\\1&c=0\\text{ 또는 }c=-4\\\\0&-4\u003cc\u003c0\\end{cases}"},{"id":"s4","latex":"a=0,\\ n=4\\Rightarrow c=-4\\Rightarrow f(4)=1\\quad(\\mathrm I)"},{"id":"s5","latex":"f(n)=1\\Longleftrightarrow n=a\\text{ 또는 }n=a+4\\Rightarrow\\#=2\\quad(\\mathrm{II}\\text{ 거짓})"},{"id":"s6","latex":"\\sum_{n=1}^{5}f(n)=5\\Longleftrightarrow a\\in\\{-1,3\\}\\quad(\\mathrm{III})"},{"id":"s7","latex":"\\boxed{\\mathrm{I,III}}"}],"diagram":null,"contentHash":"1c3ad05490e2fbf2e4fc44062d5ba57c8763c39040d3b26faa68b38d6914f003","questionHtml":"\u003cp class=\"hp\">정수 \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>에 대하여 점 \u003cspan class=\"heq\">\\(\\left( a,\\,0 \\right) \\,\\)\u003c/span>에서 곡선 \u003cspan class=\"heq\">\\(y=(x-n)e^{x} \\,\\)\u003c/span>에 그은 접선의 개수를 \u003cspan class=\"heq\">\\(f(n)\\,\\)\u003c/span>이라 하자. &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cdiv style=\"text-align:center;font-weight:700;margin:0 0 6px\">&lt; 보 기 &gt;\u003c/div>\u003cp class=\"hp\">ㄱ.\u003cspan class=\"heq\">\\(a=0\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(f(4)=1\\,\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">ㄴ.\u003cspan class=\"heq\">\\(f(n)=1\\)\u003c/span>인 정수 \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>의 개수가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>인 정수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>가 존재한다.\u003c/p>\u003cp class=\"hp htall\">ㄷ.\u003cspan class=\"heq\">\\(\\sum\\limits_{n=1}^{5} f(n)=5\\,\\)\u003c/span>를 만족시키는 정수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>의 값은 \u003cbr>\u003cspan class=\"heq\">\\(-1\\)\u003c/span> 또는 \u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp class=\"hp\">① ㄱ&emsp;② ㄱ, ㄴ&emsp;③ ㄱ, ㄷ\u003c/p>\u003cp class=\"hp\">④ ㄴ, ㄷ&emsp;⑤ ㄱ, ㄴ, ㄷ\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"7f76acec6490f4d0fcdb39c4b2253066df0b613e51de5fc74fffdada691ba823"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

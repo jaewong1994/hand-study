@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":11989,"sourceLabel":"2023 교육청 고1 수학 9월 30번","adminYear":2023,"grade":1,"month":9,"number":30,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"이차함수 $y=f \\left(x \\right)$가 있다. 중심이 함수 $y=f \\left(x \\right)$의 그래프 위에 있고 반지름의 길이가 $1$인 원 중에서 다음 조건을 만족시키는 중심이 서로 다른 원의 개수는 $5$이다.\n 원을 $x$축의 방향으로 $m$만큼, $y$축의 방향으로 $m$만큼 평행이동한 원이 $x$축과 $y$축에 동시에 접하도록 하는 실수 $m$의 값이 $1$개 이상 존재한다.\n이 $5$개의 원의 중심의 $x$좌표를 작은 수부터 크기 순서대로 $x _{1}$, $x _{2}$, $x _{3}$, $x _{4}$, $x _{5}$라 하자.\n $x _{1} =0$, $x _{2} +x _{3} +x _{4} +x _{5} =20$\n이고 $x _{1} \\leq x \\leq x _{5}$에서 함수 $f \\left(x \\right)$의 최솟값이 $0$보다 클 때, $f \\left(20 \\right)$의 값을 구하시오. [4점]","answer":"82","sourceHash":"58d42f5a4e31ac68d379daf46f4877383a0db681ea50c993d2d10857b6df5380","steps":[{"id":"s1","latex":"(u+m,f(u)+m)\\in\\{(1,1),(1,-1),(-1,1),(-1,-1)\\}"},{"id":"s2","latex":"g(x)=f(x)-x,\\quad g(x)\\in\\{-2,0,2\\}"},{"id":"s3","latex":"\\#\\{x:g(x)\\in\\{-2,0,2\\}\\}=5\\Rightarrow g(t)\\in\\{-2,2\\}"},{"id":"s4","latex":"x_1+\\cdots+x_5=5t=20\\Rightarrow t=4"},{"id":"s5","latex":"x_1=0\\Rightarrow x_5=8"},{"id":"s6","latex":"|g(0)-g(4)|=4\\Rightarrow16|p|=4\\Rightarrow|p|=\\frac14"},{"id":"s7","latex":"g(x)=\\frac14(x-4)^2-2\\quad\\text{or}\\quad g(x)=-\\frac14(x-4)^2+2"},{"id":"s8","latex":"\\begin{array}{c|c}g(x)&\\min_{[0,8]}\\{g(x)+x\\}\\\\\\hline\\frac14(x-4)^2-2&1\\\\-\\frac14(x-4)^2+2&-2\\end{array}"},{"id":"s9","latex":"f(20)=g(20)+20=64-2+20=82"}],"diagram":null,"contentHash":"0fa413e8384e9447b5fcdacc87d1a2b8c759d0891701f02d25f05f0ffe291f1d","questionHtml":"\u003cp class=\"hp\">이차함수 \u003cspan class=\"heq\">\\(y=f \\left(x \\right)\\)\u003c/span>가 있다. 중심이 함수 \u003cspan class=\"heq\">\\(y=f \\left(x \\right)\\)\u003c/span>의 그래프 위에 있고 반지름의 길이가 \u003cspan class=\"heq\">\\(1\\)\u003c/span>인 원 중에서 다음 조건을 만족시키는 중심이 서로 다른 원의 개수는 \u003cspan class=\"heq\">\\(5\\)\u003c/span>이다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">원을 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축의 방향으로 \u003cspan class=\"heq\">\\(m\\)\u003c/span>만큼, \u003cspan class=\"heq\">\\(y\\)\u003c/span>축의 방향으로 \u003cspan class=\"heq\">\\(m\\)\u003c/span>만큼 평행이동한 원이 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축과 \u003cspan class=\"heq\">\\(y\\)\u003c/span>축에 동시에 접하도록 하는 실수 \u003cspan class=\"heq\">\\(m\\)\u003c/span>의 값이 \u003cspan class=\"heq\">\\(1\\)\u003c/span>개 이상 존재한다.\u003c/p>\u003c/div>\u003cp class=\"hp\">이 \u003cspan class=\"heq\">\\(5\\)\u003c/span>개의 원의 중심의 \u003cspan class=\"heq\">\\(x\\)\u003c/span>좌표를 작은 수부터 크기 순서대로\u003cbr>\u003cspan class=\"heq\">\\(x_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{3}\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{4}\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{5}\\)\u003c/span>라 하자.\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(x_{1} =0\\)\u003c/span>, \u003cspan class=\"heq\">\\(x_{2} +x_{3} +x_{4} +x_{5} =20\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이고 \u003cspan class=\"heq\">\\(x_{1} \\leq x \\leq x_{5}\\)\u003c/span>에서 함수 \u003cspan class=\"heq\">\\(f \\left(x \\right)\\)\u003c/span>의 최솟값이 \u003cspan class=\"heq\">\\(0\\)\u003c/span>보다 클 때, \u003cspan class=\"heq\">\\(f \\left(20 \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"291071422d65ba019ca5ed8d0c7c0df2fa6b99fe6f6a3cacfad52f7f6ceb7591"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

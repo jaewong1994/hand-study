@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":16282,"sourceLabel":"2019 교육청 고3 수리가형 4월 30번","adminYear":2019,"grade":3,"month":4,"number":30,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"삼차함수 $f \\left( x \\right) =x ^{3} +ax ^{2} +bx$($a$, $b$는 정수)에 대하여 함수 $g \\left( x \\right) =e ^{f\\, \\left( x \\right)} -f \\left( x \\right)$는 $x= \\alpha$, $x=-1$, $x=\\beta$ $\\left( \\alpha \u003c -1\u003c \\beta \\right)$에서만 극값을 갖는다. 함수 $y= \\left| g \\left( x \\right) -g \\left( \\alpha \\right) \\right|$가 미분가능하지 않은 점의 개수가 $2$일 때, $\\left\\{ f \\left( -1 \\right) \\right\\} ^{2}$의 최댓값을 구하시오. [4점]","answer":"9","sourceHash":"0aaf8bc3eabe92b3568136ea74b5515670d1e70e46800c71961407b58dee7090","steps":[{"id":"s1","latex":"g'(x)=f'(x)(e^{f(x)}-1),\\quad\\operatorname{sgn}g'=\\operatorname{sgn}(ff')"},{"id":"s2","latex":"g(x)\\ge1,\\quad g(x)=1\\Leftrightarrow f(x)=0"},{"id":"s3","latex":"f(-1)=0\\Rightarrow f(x)=x(x+1)(x-r)"},{"id":"s4","latex":"r\\notin\\{-1,0\\}\\Rightarrow3\\text{개의 영점과 그 사이의 }2\\text{개의 }f'\\text{의 근}\\Rightarrow g\\text{의 극값이 }5\\text{개}"},{"id":"s5","latex":"r\\in\\{-1,0\\}\\Rightarrow g\\text{의 모든 극값 위치가 }-1\\text{ 이상}\\Rightarrow\\alpha\u003c-1\\text{과 모순}"},{"id":"s6","latex":"\\therefore f'(-1)=0,\\quad f(-1)\\ne0"},{"id":"s7","latex":"f'\\text{의 다른 근을 }c\\text{라 하면 극값 세 점은 }c,-1,0\\Rightarrow c\u003c-1"},{"id":"s8","latex":"f(x)=x(x^2+ax+b),\\quad f'(-1)=0\\Rightarrow b=2a-3"},{"latex":"x^2+ax+b\\text{의 서로 다른 두 근이 모두 }0\\text{이 아니면}\\quad g\\text{의 극값은 }5\\text{개}","id":"s9"},{"latex":"b=0:\\quad f=x^2(x+a),\\quad f\\prime=x(3x+2a)","id":"s10"},{"latex":"f\\prime(-1)=0\\Rightarrow a=3/2\\notin\\mathbb Z\\quad\\text{이므로 제외}","id":"s11"},{"id":"s12","latex":"x^2+ax+b=(x-c)^2\\Rightarrow f=x(x-c)^2,\\quad Z_{f'}=\\left\\{c,\\dfrac c3\\right\\}"},{"id":"s13","latex":"f(-1)\\ne0,\\ f'(-1)=0\\Rightarrow c=-3"},{"id":"s14","latex":"c=-3\\Rightarrow g(c)=1\\Rightarrow|g-g(c)|=g-1\\text{은 모든 점에서 미분가능}"},{"id":"s15","latex":"\\therefore x^2+ax+b\\text{는 실근이 없고 }a^2-4b\u003c0"},{"id":"s16","latex":"c+(-1)=-\\dfrac{2a}{3}\\Rightarrow c=1-\\dfrac{2a}{3}\u003c-1\\Rightarrow a>3"},{"id":"s17","latex":"a^2-4(2a-3)\u003c0\\Rightarrow2\u003ca\u003c6"},{"id":"s18","latex":"a\\in\\mathbb Z\\Rightarrow a\\in\\{4,5\\},\\quad f(-1)=2-a"},{"latex":"a=4,5:\\quad g(c)>1;\\quad g(x)=g(c)\\text{는 }(-1,0),\\ (0,\\infty)\\text{에서 각각 한 번 횡단}","id":"s19"},{"id":"s20","latex":"\\max\\{f(-1)^2\\}=\\max\\{4,9\\}=9"}],"diagram":null,"contentHash":"7f5773ff0f10f0aa8d89c70884eebfdf5857bf7e335722704a246b804bb5fb0e","questionHtml":"\u003cp class=\"hp\">삼차함수 \u003cspan class=\"heq\">\\(f \\left( x \\right) =x^{3} +ax^{2} +bx\\)\u003c/span>(\u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>는 정수)에 대하여 \u003cbr>함수 \u003cspan class=\"heq\">\\(g \\left( x \\right) =e^{f\\, \\left( x \\right)} -f \\left( x \\right)\\)\u003c/span>는 \u003cbr>\u003cspan class=\"heq\">\\(x= \\alpha\\)\u003c/span>, \u003cspan class=\"heq\">\\(x=-1\\)\u003c/span>, \u003cspan class=\"heq\">\\(x=\\beta\\)\u003c/span> \u003cspan class=\"heq\">\\(\\left( \\alpha \\lt  -1\\lt  \\beta \\right)\\)\u003c/span>에서만 극값을 갖는다. \u003cbr>함수 \u003cspan class=\"heq\">\\(y= \\left| g \\left( x \\right) -g \\left( \\alpha \\right) \\right|\\)\u003c/span>가 미분가능하지 않은 점의 개수가 \u003cspan class=\"heq\">\\(2\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(\\left\\{ f \\left( -1 \\right) \\right\\}^{2}\\)\u003c/span>의 최댓값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"d095263553dee98dcea009a2aade6e4521cede8ce7c620478c75c7342b276dc1"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

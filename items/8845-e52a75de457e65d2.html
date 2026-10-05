@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8845,"sourceLabel":"2022 교육청 고2 수학 6월 19번","adminYear":2022,"grade":2,"month":6,"number":19,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 중심이 $O\\,$, 반지름의 길이가 $1\\,$이고 중심각의 크기가 $\\theta\\,$인 부채꼴 $O A B\\,$가 있다. 호 $A B\\,$의 삼등분점 중 점 $A\\,$에 가까운 점을 $C\\,$라 하고, 직선 $O A\\,$와 직선 $BC\\,$가 만나는 점을 $D\\,$라 하자. 다음은 두 선분 $AD\\,$, $CD\\,$와 호 $AC\\,$로 둘러싸인 부분의 넓이 $S\\, \\left( \\theta \\right) \\,$를 구하는 과정이다. (단, $0\\lt \\theta \\lt \\dfrac{3}{4} \\pi\\,$)\n[그림 1]\n점 $C\\,$가 호 $A B\\,$의 삼등분점 중 점 $A\\,$에 가까운 점이므로\n$\\angle BOC= {\\boxed{\\vphantom{(}\\,(\\text{가})\\,}} \\,$\n이다. 또한, 삼각형 $BOC\\,$에서 \n $\\angle OBC= \\angle OCB= \\dfrac{1}{2} \\left( \\pi - {\\boxed{\\vphantom{(}\\, \\left( \\text{가} \\right) \\,}} \\,\\right)\\,$\n이다. 한편, 삼각형 $BOD\\,$에서 사인법칙에 의하여\n${\\overline{OD }} = \\dfrac{\\cos\\, \\dfrac{\\theta }{3}}{\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{나} \\right) \\,}} \\, }$\n이다. $S\\, \\left( \\theta \\right) \\,$는 삼각형 $COD\\,$의 넓이에서 부채꼴 $O A C\\,$의 넓이를 뺀 값이므로\n$S\\, \\left( \\theta \\right) =\\, \\dfrac{1}{2} \\times \\dfrac{\\cos\\, \\dfrac{\\theta }{3}}{\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{나} \\right) \\,}} \\, } \\times \\sin \\dfrac{\\theta }{3} \\,-\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{다} \\right) \\,}}$\n이다.\n위의 (가), (나), (다)에 알맞은 식을 각각 $f \\left( \\theta \\right) \\,$, $g \\left( \\theta \\right) \\,$, $h \\left( \\theta \\right) \\,$라 할 때, $\\dfrac{f \\left( \\dfrac{\\pi }{2} \\right) \\times g \\left( \\dfrac{\\pi }{4} \\right)}{h \\left( \\dfrac{\\pi }{8} \\right)} \\,$의 값은? [4점]\n① $8 \\sqrt{3}$ ② $\\dfrac{17 \\sqrt{3}}{2}$ ③ $9 \\sqrt{3}$ ④ $\\dfrac{19 \\sqrt{3}}{2}$ ⑤ $10 \\sqrt{3}$","answer":"①","sourceHash":"7cd4a87646aba8eeb623df8e3f067bbc23fe0881f5606c49510d432dbdeb34f9","steps":[{"id":"s1","latex":"f(\\theta)=\\angle BOC=\\frac{2\\theta}{3}"},{"id":"s2","latex":"\\angle BDO=\\frac\\pi2-\\frac{2\\theta}{3}"},{"id":"s3","latex":"OD=\\frac{\\cos(\\theta/3)}{\\cos(2\\theta/3)}\\Rightarrow g(\\theta)=\\cos\\frac{2\\theta}{3}"},{"id":"s4","latex":"h(\\theta)=[\\text{sector }OAC]=\\frac\\theta6"},{"id":"s5","latex":"f(\\pi/2)=\\frac\\pi3,\\quad g(\\pi/4)=\\frac{\\sqrt3}{2},\\quad h(\\pi/8)=\\frac\\pi{48}"},{"id":"s6","latex":"\\frac{f(\\pi/2)g(\\pi/4)}{h(\\pi/8)}=8\\sqrt3"}],"diagram":null,"contentHash":"9562a3181d843c36db09fe99b0252dd09de23b61ae518a13d6419d7818deb57a","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 중심이 \u003cspan class=\"heq\">\\(O\\,\\)\u003c/span>, 반지름의 길이가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>이고 중심각의 크기가 \u003cspan class=\"heq\">\\(\\theta\\,\\)\u003c/span>인 부채꼴 \u003cspan class=\"heq\">\\(O A B\\,\\)\u003c/span>가 있다. 호 \u003cspan class=\"heq\">\\(A B\\,\\)\u003c/span>의 삼등분점 중 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>에 가까운 점을 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>라 하고, 직선 \u003cspan class=\"heq\">\\(O A\\,\\)\u003c/span>와 직선 \u003cspan class=\"heq\">\\(BC\\,\\)\u003c/span>가 만나는 점을 \u003cspan class=\"heq\">\\(D\\,\\)\u003c/span>라 하자. 다음은 두 선분 \u003cspan class=\"heq\">\\(AD\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(CD\\,\\)\u003c/span>와 호 \u003cspan class=\"heq\">\\(AC\\,\\)\u003c/span>로 둘러싸인 부분의 넓이 \u003cspan class=\"heq\">\\(S\\, \\left( \\theta \\right) \\,\\)\u003c/span>를 구하는 과정이다. (단, \u003cspan class=\"heq\">\\(0\\lt  \\theta \\lt  \\dfrac{3}{4} \\pi\\,\\)\u003c/span>)\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hfigwrap\" style=\"position:relative;display:inline-block;width:235px;aspect-ratio:17652/12678;max-width:100%;vertical-align:middle\">\u003cimg class=\"hfig\" src=\"../assets/figures/92a3173d7e111e5fcb16a128.png\" style=\"width:100%;height:100%;object-fit:fill;display:block\">\u003cspan style=\"position:absolute;left:57.91%;top:41.07%;line-height:1\">\u003cspan class=\"heq\">\\(C\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:61.75%;top:86.48%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:88.76%;top:86.04%;line-height:1\">\u003cspan class=\"heq\">\\(D\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:-6.89%;top:86.04%;line-height:1\">\u003cspan class=\"heq\">\\(O\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:1.81%;top:74.55%;line-height:1\">\u003cspan class=\"heq\">\\(\\theta\\)\u003c/span>\u003c/span>\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">점 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>가 호 \u003cspan class=\"heq\">\\(A B\\,\\)\u003c/span>의 삼등분점 중 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>에 가까운 점이므로\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(\\angle BOC= {\\boxed{\\vphantom{(}\\,(\\text{가})\\,}} \\,\\)\u003c/span>\u003cbr>이다. 또한, 삼각형 \u003cspan class=\"heq\">\\(BOC\\,\\)\u003c/span>에서 \u003cbr>    \u003cspan class=\"heq\">\\(\\angle OBC= \\angle OCB= \\dfrac{1}{2} \\left( \\pi - {\\boxed{\\vphantom{(}\\, \\left( \\text{가} \\right) \\,}} \\,\\right)\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이다. 한편, 삼각형 \u003cspan class=\"heq\">\\(BOD\\,\\)\u003c/span>에서 사인법칙에 의하여\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\({\\overline{OD }} = \\dfrac{\\cos\\, \\dfrac{\\theta }{3}}{\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{나} \\right) \\,}} \\, }\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이다. \u003cspan class=\"heq\">\\(S\\, \\left( \\theta \\right) \\,\\)\u003c/span>는 삼각형 \u003cspan class=\"heq\">\\(COD\\,\\)\u003c/span>의 넓이에서 부채꼴 \u003cspan class=\"heq\">\\(O A C\\,\\)\u003c/span>의 넓이를 뺀 값이므로\u003c/p>\u003cp class=\"hp htall\">\u003cspan class=\"heq\">\\(S\\, \\left( \\theta \\right) =\\, \\dfrac{1}{2} \\times \\dfrac{\\cos\\, \\dfrac{\\theta }{3}}{\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{나} \\right) \\,}} \\, } \\times \\sin \\dfrac{\\theta }{3} \\,-\\, {\\boxed{\\vphantom{(}\\, \\left( \\text{다} \\right) \\,}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이다.\u003c/p>\u003c/div>\u003cp class=\"hp htall\">위의 (가), (나), (다)에 알맞은 식을 각각 \u003cspan class=\"heq\">\\(f \\left( \\theta \\right) \\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( \\theta \\right) \\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(h \\left( \\theta \\right) \\,\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(\\dfrac{f \\left( \\dfrac{\\pi }{2} \\right) \\times g \\left( \\dfrac{\\pi }{4} \\right)}{h \\left( \\dfrac{\\pi }{8} \\right)} \\,\\)\u003c/span>의 값은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(8 \\sqrt{3}\\)\u003c/span>   ② \u003cspan class=\"heq\">\\(\\dfrac{17 \\sqrt{3}}{2}\\)\u003c/span>   ③ \u003cspan class=\"heq\">\\(9 \\sqrt{3}\\)\u003c/span>   ④ \u003cspan class=\"heq\">\\(\\dfrac{19 \\sqrt{3}}{2}\\)\u003c/span>   ⑤ \u003cspan class=\"heq\">\\(10 \\sqrt{3}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"e52a75de457e65d2221b8102ca2b23a3e4ed29a9bd2d12a53fdfca1b703f2d00"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

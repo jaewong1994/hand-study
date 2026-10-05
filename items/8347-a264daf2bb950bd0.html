@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=3f1777153b074b81">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"itemId":8347,"sourceLabel":"2024 교육청 고2 수학 10월 30번","adminYear":2024,"grade":2,"month":10,"number":30,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 양수 $a$, $b\\,$와 최고차항의 계수가 $1\\,$인 이차함수 $f \\left(x \\right)\\,$에 대하여 집합 $\\{x \\,|\\, x \\neq\\,-a$, $x\\,$는 실수$\\}\\,$에서 정의된 함수 $g \\left(x \\right)\\,$를 \n $g \\left( x \\right) = \\begin{cases} \\dfrac{bx}{x+a} & \\left( x\u003c-a,\\ -a\u003cx\u003c1 \\right) \\\\ f \\left( x \\right) & \\left( x \\geq 1 \\right) \\end{cases}$\n이라 할 때, 함수 $g \\left(x \\right)\\,$는 $x=1\\,$에서 연속이다. 실수 $t\\,$에 대하여 함수 $y= \\left|\\, g \\left( x \\right) \\,\\right| \\,$의 그래프와 직선 $y=t\\,$가 만나는 점의 개수를 $h \\left(t \\right)\\,$라 할 때, 함수 $h \\left(t \\right)\\,$가 다음 조건을 만족시킨다.\n(가) 임의의 두 양수 $t_{1}$, $t_{2}\\,$에 대하여 $t_{1}\u003ct_{2}\\,$이면 $h \\left(t_{1} \\right) \\geq h \\left(t_{2} \\right)\\,$이다.\n(나) 함수 $h \\left(t \\right)\\,$는 $t=0$, $t= \\alpha$, $t= \\beta \\, \\left( 0\u003c \\alpha \u003c \\beta \\right)\\,$에서만 불연속이며 $h \\left(0 \\right)= \\alpha$, $h \\left( \\alpha \\right)= \\beta-1\\,$이다.\n$f \\left(a-b \\right)\\,$의 값을 구하시오. [4점]","answer":"75","sourceHash":"a96f3960a5d7ac11eeb733ebd1e5fc8879d89f5e8e648dce86d01017dacd57f8","steps":[{"id":"s1","latex":"c=f(1)=\\frac{b}{1+a}"},{"id":"s2","latex":"\\mathcal R_{x\u003c-a}(g)=(b,\\infty),\\quad\\mathcal R_{-a\u003cx\u003c1}(g)=(-\\infty,c)"},{"id":"s3","latex":"h(t)\\text{ nonincreasing}\\Rightarrow b=-\\min f,\\quad(\\alpha,\\beta)=(c,b)"},{"id":"s4","latex":"h(0)=1+2=3\\Rightarrow c=\\alpha=3"},{"id":"s5","latex":"h(3)=1+4=5=\\beta-1\\Rightarrow b=6,\\quad a=1"},{"id":"s6","latex":"f(1)=3,\\quad\\min f=-6\\Rightarrow f(x)=(x-4)^2-6"},{"id":"s7","latex":"f(a-b)=f(-5)=81-6=75"}],"diagram":null,"contentHash":"cde822d376df19d40d829e5c1c901c60575c88639b7786775f3532a7c8784d15","questionHtml":"\u003cp class=\"hp\">두 양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\,\\)\u003c/span>와 최고차항의 계수가 \u003cspan class=\"heq\">\\(1\\,\\)\u003c/span>인 이차함수 \u003cspan class=\"heq\">\\(f \\left(x \\right)\\,\\)\u003c/span>에 대하여 집합 \u003cspan class=\"heq\">\\(\\{x \\,|\\, x \\neq\\,-a\\)\u003c/span>, \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>는 실수\u003cspan class=\"heq\">\\(\\}\\,\\)\u003c/span>에서 정의된 함수 \u003cspan class=\"heq\">\\(g \\left(x \\right)\\,\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) = {\\begin{cases}\\,\\dfrac{bx}{x+a}&&\\left( x\\lt \\,-a,\\,-a\\lt x\\lt 1 \\right) \\\\ \\,f \\left( x \\right)&&\\left( x \\geq 1 \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이라 할 때, 함수 \u003cspan class=\"heq\">\\(g \\left(x \\right)\\,\\)\u003c/span>는 \u003cspan class=\"heq\">\\(x=1\\,\\)\u003c/span>에서 연속이다. 실수 \u003cspan class=\"heq\">\\(t\\,\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(y= \\left|\\, g \\left( x \\right) \\,\\right| \\,\\)\u003c/span>의 그래프와 직선 \u003cspan class=\"heq\">\\(y=t\\,\\)\u003c/span>가 만나는 점의 개수를 \u003cspan class=\"heq\">\\(h \\left(t \\right)\\,\\)\u003c/span>라 할 때, 함수 \u003cspan class=\"heq\">\\(h \\left(t \\right)\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 임의의 두 양수 \u003cspan class=\"heq\">\\(t_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(t_{2}\\,\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(t_{1}\\lt t_{2}\\,\\)\u003c/span>이면 \u003cbr>\u003cspan class=\"heq\">\\(h \\left(t_{1} \\right) \\geq h \\left(t_{2} \\right)\\,\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hp\">(나) 함수 \u003cspan class=\"heq\">\\(h \\left(t \\right)\\,\\)\u003c/span>는 \u003cspan class=\"heq\">\\(t=0\\)\u003c/span>, \u003cspan class=\"heq\">\\(t= \\alpha\\)\u003c/span>, \u003cspan class=\"heq\">\\(t= \\beta \\, \\left( 0\\lt  \\alpha \\lt  \\beta \\right)\\,\\)\u003c/span>에서만 \u003cbr>불연속이며 \u003cspan class=\"heq\">\\(h \\left(0 \\right)= \\alpha\\)\u003c/span>, \u003cspan class=\"heq\">\\(h \\left( \\alpha \\right)= \\beta-1\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(f \\left(a-b \\right)\\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"a264daf2bb950bd06ed326e3ba6201fefb8aee755e858a450ae51401ee88db8b"};</script>
+  <script defer src="../assets/hand-typography.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-graph.js?v=3f1777153b074b81"></script>
+  <script defer src="../assets/hand-study.js?v=3f1777153b074b81"></script>
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+
