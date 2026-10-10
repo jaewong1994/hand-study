@@ -2186,7 +2186,7 @@
   {
     "sourceKey": "ebsi:2026:g3:03:calculus:q28",
     "sourceHash": "956d731ecf762af02a7db527ce7ca5a7873a2990652dcf2a42850527e6b20872",
-    "contentHash": "24f81edf7827470817047f9c4753fdd66e7b5b97b98c02d81a8e44f4b15daf15",
+    "contentHash": "f0f22edf6ce748545bb061c9aaf1e946164704ef8075a4240d995a07892e667f",
     "adminYear": 2026,
     "grade": 3,
     "month": 3,
@@ -2198,7 +2198,7 @@
   {
     "sourceKey": "ebsi:2026:g3:03:calculus:q30",
     "sourceHash": "19f09da89329cbe2bd81574bb9e36d5bee1e05b2902d6580c50ce0ad032b1ea5",
-    "contentHash": "f2110bb33e7c1bc224efa6922cd10894def8e3cb70779686eed37f3c719e189c",
+    "contentHash": "4177d73542bc96bbfb5af74eac00a53a418dfa5d5e4538a1429c94ae9c833c3e",
     "adminYear": 2026,
     "grade": 3,
     "month": 3,
@@ -2414,7 +2414,7 @@
   {
     "sourceKey": "ebsi:2026:g3:05:calculus:q28",
     "sourceHash": "0ae025742c041604c0f60fd31a866f21a69ad71140e56a8a7f327021e3445984",
-    "contentHash": "788c5f16ee32b43f59f8ad1204e027ed359e0c50711084a5b5bf8b4399d8603f",
+    "contentHash": "604e0fe9e4964c5316717813ab7a9bf7dbe9bd79dc71164f40cc5535e6133261",
     "adminYear": 2026,
     "grade": 3,
     "month": 5,
@@ -2666,7 +2666,7 @@
   {
     "sourceKey": "ebsi:2026:g3:07:calculus:q29",
     "sourceHash": "80574fde81a50e540817f5381945d8ee156cde1c6b2bff026316f4540e0b02f6",
-    "contentHash": "fc08341c44f1a8d67f87a7e84a51f680f134c5f5900e1feb12d2fb0a5859e28a",
+    "contentHash": "532de9a9c367e528528f5345eeb91ac117753686068689e3f434cc2c842c0bf4",
     "adminYear": 2026,
     "grade": 3,
     "month": 7,
