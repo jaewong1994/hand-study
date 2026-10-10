@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2020,"answer":"③","contentHash":"e04d66248200b6d295b87aabea8904057f6ab3c1aa4045ab199188bebdaa6a78","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24718,"month":12,"number":17,"points":4,"preview":false,"questionHtml":"\u003cp>좌표평면의 원점에 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp>주사위를 한 번 던져 나온 눈의 수가\u003cspan class=\"heq\">\\(2\\)\u003c/span>이하이면 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>를 \u003cspan class=\"heq\">\\(x\\)\u003c/span>축의 양의 방향으로 \u003cspan class=\"heq\">\\(3\\)\u003c/span>만큼,\u003cspan class=\"heq\">\\(3\\)\u003c/span>이상이면 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>를 \u003cspan class=\"heq\">\\(y\\)\u003c/span>축의 양의 방향으로 \u003cspan class=\"heq\">\\(1\\)\u003c/span>만큼 이동시킨다.\u003c/p>\u003c/div>\u003cp>이 시행을 \u003cspan class=\"heq\">\\(15\\)\u003c/span>번 반복하여 이동된 점 \u003cspan class=\"heq\">\\(P\\)\u003c/span>와 직선 \u003cspan class=\"heq\">\\(3x + 4y = 0\\)\u003c/span> 사이의 거리를 확률변수 \u003cspan class=\"heq\">\\(X\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\({ E }(X)\\)\u003c/span>의 값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(13\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(15\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(17\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(19\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(21\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"좌표평면의 원점에 점 $P$가 있다. 한 개의 주사위를 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가$2$이하이면 점 $P$를 $x$축의 양의 방향으로 $3$만큼,$3$이상이면 점 $P$를 $y$축의 양의 방향으로 $1$만큼 이동시킨다.\n이 시행을 $15$번 반복하여 이동된 점 $P$와 직선 $3x + 4y = 0$ 사이의 거리를 확률변수 $X$라 하자. ${ E }(X)$의 값은? [4점]\n① $13$ ② $15$ ③ $17$ ④ $19$ ⑤ $21$","sourceHash":"2959608f83e09ee1f31fee8075707cd6e7c57e1ef53f1e07aa6530562e80b467","sourceKind":"csat","sourceLabel":"2020년 시행 수능 · 2021학년도 · 가형 · 17번","steps":[{"id":"s1","latex":"Y=\\text{15번 중 2 이하의 눈이 나온 횟수},\\quad Y\\sim\\mathrm B(15,\\tfrac13)"},{"id":"s2","latex":"\\mathrm E(Y)=15\\cdot\\frac13=5"},{"id":"s3","latex":"\\mathrm P=(3Y,15-Y)"},{"id":"s4","latex":"X=\\frac{|3(3Y)+4(15-Y)|}{\\sqrt{3^2+4^2}}=\\frac{|5Y+60|}{5}"},{"id":"s5","latex":"Y\\ge0\\ \\Rightarrow\\ X=Y+12"},{"id":"s6","latex":"\\mathrm E(X)=\\mathrm E(Y)+12=\\boxed{17}\\quad\\text{③}"}],"track":"가형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

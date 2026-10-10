@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2025,"answer":"11","contentHash":"138597c05089d76b919b60ab0afc97f39487d5f189901b7db8f62b6617cd411a","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24983,"month":11,"number":30,"points":4,"preview":false,"questionHtml":"\u003cp>실수 전체의 집합에서 증가하는 연속함수 \u003cspan class=\"heq\">\\(f \\left(x \\right)\\,\\)\u003c/span>의 역함수 \u003cspan class=\"heq\">\\(f^{-1} \\left(x \\right)\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(\\left|\\, x\\,\\right| \\leq 1\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(4 \\times \\left(f^{-1} \\left(x \\right) \\right)^{2}=x^{2} \\left(x^{2}-5 \\right)^{2}\\,\\)\u003c/span>이다\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(\\left|\\, x\\,\\right| &gt; 1\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(\\left|\\, f^{-1} \\left(x \\right)\\,\\right| =e^{ \\left|\\, x\\,\\right| -1}+1\\,\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp>실수 \u003cspan class=\"heq\">\\(m\\,\\)\u003c/span>에 대하여 기울기가 \u003cspan class=\"heq\">\\(m\\,\\)\u003c/span>이고 점 \u003cspan class=\"heq\">\\(\\left(1,\\,0 \\right)\\,\\)\u003c/span>을 지나는 직선이 곡선 \u003cspan class=\"heq\">\\(y=f \\left(x \\right)\\,\\)\u003c/span>와 만나는 점의 개수를 \u003cspan class=\"heq\">\\(g \\left(m \\right)\\,\\)\u003c/span>이라 하자. 함수 \u003cspan class=\"heq\">\\(g \\left(m \\right)\\,\\)\u003c/span>이 \u003cspan class=\"heq\">\\(m=a\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(m=b\\, \\left(a &lt; b \\right)\\,\\)\u003c/span>에서 불연속일 때, \u003cspan class=\"heq\">\\(g \\left(a \\right) \\times \\left( \\lim_{m\\,\\rightarrow\\, a+}g \\left(m \\right) \\right)+g \\left(b \\right) \\times \\left(\\frac{ \\ln\\, b}{b} \\right)^{2}\\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(\\lim_{x\\,\\rightarrow\\, \\infty }\\frac{ \\ln\\, x}{x}=0\\)\u003c/span>) [4점]\u003c/p>","questionText":"실수 전체의 집합에서 증가하는 연속함수 $f \\left(x \\right)\\,$의 역함수 $f\\,^{-1} \\left(x \\right)\\,$가 다음 조건을 만족시킨다.\n(가) $\\left|\\, x\\,\\right| \\leq 1\\,$일 때, $4 \\times \\left(f\\,^{-1} \\left(x \\right) \\right)^{2}=x\\,^{2} \\left(x^{2}-5 \\right)^{2}\\,$이다(나) $\\left|\\, x\\,\\right| > 1\\,$일 때, $\\left|\\, f\\,^{-1} \\left(x \\right)\\,\\right| =e^{ \\left|\\, x\\,\\right| -1}+1\\,$이다.\n실수 $m\\,$에 대하여 기울기가 $m\\,$이고 점 $\\left(1,\\,0 \\right)\\,$을 지나는 직선이 곡선 $y=f \\left(x \\right)\\,$와 만나는 점의 개수를 $g \\left(m \\right)\\,$이라 하자. 함수 $g \\left(m \\right)\\,$이 $m=a\\,$, $m=b\\, \\left(a \u003c b \\right)\\,$에서 불연속일 때, $g \\left(a \\right) \\times \\left( \\lim_{m\\,\\rightarrow\\, a+}g \\left(m \\right) \\right)+g \\left(b \\right) \\times \\left(\\frac{ \\ln\\, b}{b} \\right)^{2}\\,$의 값을 구하시오. $\\left( \\pi \\leq {\\,#\\,} \\right.$단, $\\lim_{x\\,\\rightarrow\\, \\infty }\\frac{ \\ln\\, x}{x}=0 \\pi \\leq {\\,#\\,} \\right)$ [4점]","sourceHash":"546eebd2ac89c3f9d30d0e4cad754e6525d2f9f65d884dabb99de159c9503cae","sourceKind":"csat","sourceLabel":"2025년 시행 수능 · 2026학년도 · 미적분 · 30번","steps":[{"explanation":{"body":"조건은 \\(|f^{-1}(x)|\\)만 알려 주지만 역함수 자체는 증가해야 합니다. 각 구간에서 증가하도록 만드는 부호를 고르고, \\(x=\\pm1\\)에서 값이 이어지는지 확인하면 세 조각이 하나로 정해집니다.","skillTags":["역함수","부호선택","연속성"],"title":"제곱식에서 부호를 고르는 기준"},"id":"s1","latex":"f^{-1}\\text{가 증가하므로 }f^{-1}(x)=\\begin{cases}-e^{-x-1}-1&(x\u003c-1)\\\\-\\frac12x^{3}+\\frac52x&(|x|\\le1)\\\\e^{x-1}+1&(x>1)\\end{cases}"},{"id":"s2","latex":"f^{-1}(-1)=-2,\\ f^{-1}(1)=2\\Rightarrow f(-2)=-1,\\ f(2)=1"},{"id":"s3","latex":"x\u003c-2\\text{에서 }f(x)=-\\ln(-x-1)-1,\\quad f'(x)=-\\frac1{x+1}"},{"id":"s4","latex":"t\u003c-2\\text{인 접점에서 접선이 }(1,0)\\text{을 지나면 }\\frac{f(t)}{t-1}=f'(t)"},{"id":"s5","latex":"\\ln(-t-1)=-\\frac2{t+1}"},{"id":"s6","latex":"b=-\\frac1{t+1}=\\frac12\\ln(-t-1)>0"},{"id":"s7","latex":"\\begin{aligned}&R(x)=\\frac{f(x)}{x-1}\\text{라 하면 직선 }y=m(x-1)\\text{과}\\\\&y=f(x)\\text{의 교점 수가 }g(m)\\text{이다.}\\\\&m\\le0\\text{에서는 증가함수 }f\\text{와 증가하지 않는 직선이}\\\\&\\text{만나는 점이 하나이다.}\\end{aligned}"},{"id":"s8","latex":"\\begin{aligned}&x>1\\text{에서 }R\\text{은 }\\infty\\text{에서 }0\\text{으로 감소한다.}\\\\&1\u003cx\\le2\\text{에서는 }x=i(y)=-\\frac12y^3+\\frac52y\\text{라 두면}\\\\&\\frac{d}{dy}\\frac{y}{i(y)-1}\\text{의 분자는}\\\\&i-1-yi'=y^3-1\\le0.\\end{aligned}"},{"id":"s9","latex":"x>2\\text{에서는 }R(x)=\\frac{\\ln(x-1)+1}{x-1},\\quad R'(x)=\\frac{-\\ln(x-1)}{(x-1)^2}\\le0\\text{이므로 }m>0\\text{인 오른쪽 교점은 하나이다.}"},{"id":"s10","latex":"-2\\le x\u003c0\\text{의 중앙 조각에서도 }i-1-yi'=y^3-1\u003c0\\text{이므로 }R\\text{는 }\\frac13\\text{에서 }0\\text{까지 감소한다.}"},{"id":"s11","latex":"x\u003c-2\\text{에서 }u=-x-1>1\\text{로 두면 }R=\\frac{\\ln u+1}{u+2},\\quad\\frac{dR}{du}\\text{의 분자는 }\\frac2u-\\ln u\\text{로 한 번만 부호가 바뀌어 }R\\text{의 최댓값 }b\\text{가 하나이다.}"},{"id":"s12","latex":"\\text{따라서 }g(m)=1\\ (m\\le0),\\ 3\\ (0\u003cm\u003cb),\\ 2\\ (m=b),\\ 1\\ (m>b)"},{"id":"s13","latex":"\\text{불연속점은 }a=0,\\ b\\text{이고 }g(a)=1,\\ \\lim_{m\\to a+}g(m)=3,\\ g(b)=2"},{"id":"s14","latex":"-t-1=\\frac1b,\\quad \\ln\\frac1b=2b\\Rightarrow \\frac{\\ln b}{b}=-2"},{"id":"s15","latex":"1\\cdot3+2\\cdot(-2)^{2}=11"},{"id":"s16","latex":"\\therefore\\ \\boxed{11}"}],"track":"미적분"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

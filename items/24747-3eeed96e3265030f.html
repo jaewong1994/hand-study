@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2020,"answer":"②","contentHash":"6c68b42e5f0beeca1992ef0586d0b9e7195a99f3664bf40de3f37abda5455583","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24747,"month":12,"number":16,"points":4,"preview":false,"questionHtml":"\u003cp>\u003cspan class=\"heq\">\\(0 \\leq x \\leq 4 \\pi\\)\u003c/span>일 때, 방정식\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(4 \\sin^2 x - 4 \\cos \\left( \\frac{\\pi}{2} + x \\right) - 3 =0\\)\u003c/span>\u003c/p>\u003cp>의 모든 해의 합은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(5 \\pi\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(6 \\pi\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(7 \\pi\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(8 \\pi\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(9 \\pi\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"$0 \\leq x \\leq 4 \\pi$일 때, 방정식\n $4 \\sin^2 x - 4 \\cos \\left( \\frac{\\pi}{2} + x \\right) - 3 =0$\n의 모든 해의 합은? [4점]\n① $5 \\pi$ ② $6 \\pi$ ③ $7 \\pi$ ④ $8 \\pi$ ⑤ $9 \\pi$","sourceHash":"fa08a50924366933019f73903dd74699d1d702f62f4f63bae731a92434e404f4","sourceKind":"csat","sourceLabel":"2020년 시행 수능 · 2021학년도 · 나형 · 16번","steps":[{"id":"s1","latex":"\\cos(\\tfrac\\pi2+x)=-\\sin x\\ \\Rightarrow\\ 4\\sin^2x+4\\sin x-3=0"},{"id":"s2","latex":"(2\\sin x-1)(2\\sin x+3)=0"},{"id":"s3","latex":"-1\\le\\sin x\\le1\\ \\Rightarrow\\ \\sin x=\\frac12\\quad(-\\tfrac32\\text{ 제외})"},{"id":"s4","latex":"0\\le x\\le4\\pi\\ \\Rightarrow\\ x=\\frac\\pi6,\\frac{5\\pi}6,\\frac{13\\pi}6,\\frac{17\\pi}6"},{"id":"s5","latex":"\\frac{(1+5+13+17)\\pi}6=\\boxed{6\\pi}\\quad\\text{②}"}],"track":"나형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

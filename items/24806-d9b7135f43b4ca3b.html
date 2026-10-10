@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2021,"answer":"31","contentHash":"dc871ca042c4566a80f06772cea3b3342bf77525f8fe13197b8185e7fab869fe","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24806,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>두 연속확률변수 \u003cspan class=\"heq\">\\(X\\)\u003c/span>와 \u003cspan class=\"heq\">\\(Y\\)\u003c/span>가 갖는 값의 범위는 \u003cspan class=\"heq\">\\(0 \\leq X \\leq 6\\)\u003c/span>, \u003cspan class=\"heq\">\\(0 \\leq Y \\leq 6\\)\u003c/span>이고, \u003cspan class=\"heq\">\\(X\\)\u003c/span>와 \u003cspan class=\"heq\">\\(Y\\)\u003c/span>의 확률밀도함수는 각각 \u003cspan class=\"heq\">\\(f \\left( x \\right) ,\\,g \\left( x \\right)\\)\u003c/span>이다. 확률변수 \u003cspan class=\"heq\">\\(X\\)\u003c/span>의 확률밀도함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>의 그래프는 그림과 같다.\u003c/p>\u003cp>\u003cspan class=\"heq\">\\(0 \\leq x \\leq 6\\)\u003c/span>인 모든 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(f \\left( x \\right) +g \\left( x \\right) =k\\)\u003c/span> (\u003cspan class=\"heq\">\\(k\\)\u003c/span>는 상수)\u003c/p>\u003cp>를 만족시킬 때, \u003cspan class=\"heq\">\\(P \\left( 6k \\leq Y \\leq 15k \\right) = \\frac{q}{p}\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(p\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\)\u003c/span>는 서로소인 자연수이다.) [4점]\u003c/p>\u003cfigure>\u003cimg class=\"hfig\" src=\"../assets/csat/24806-8c80999618f7cc28.png\" alt=\"2021년 시행 수능 29번 문항 그림 \" style=\"max-width:100%;width:420px\">\u003c/figure>","questionText":"두 연속확률변수 $X$와 $Y$가 갖는 값의 범위는 $0 \\leq X \\leq 6$, $0 \\leq Y \\leq 6$이고, $X$와 $Y$의 확률밀도함수는 각각 $f \\left( x \\right) ,\\,g \\left( x \\right)$이다. 확률변수 $X$의 확률밀도함수 $f \\left( x \\right)$의 그래프는 그림과 같다.\n$0 \\leq x \\leq 6$인 모든 $x$에 대하여\n $f \\left( x \\right) +g \\left( x \\right) =k$ ($k$는 상수)\n를 만족시킬 때, $P \\left( 6k \\leq Y \\leq 15k \\right) = \\frac{q}{p}$이다. $p+q$의 값을 구하시오. (단, $p$와 $q$는 서로소인 자연수이다.) [4점]","sourceHash":"041cf1ceb20948e7d79387e19a2fbe1b925a708937d93ab3a51c8f7d44c7b7b8","sourceKind":"csat","sourceLabel":"2021년 시행 수능 · 2022학년도 · 확률과 통계 · 29번","steps":[{"id":"s1","latex":"\\int_0^6f(x)\\,dx=\\int_0^6g(x)\\,dx=1,\\quad g(x)=k-f(x)"},{"id":"s2","latex":"1=6k-1\\quad\\Rightarrow\\quad k=\\frac13"},{"id":"s3","latex":"2\\le x\\le3:\\ f(x)=\\frac{x}{12},\\qquad3\\le x\\le5:\\ f(x)=\\frac14"},{"id":"s4","latex":"\\int_2^5f(x)\\,dx=\\frac12\\left(\\frac16+\\frac14\\right)\\cdot1+\\frac14\\cdot2=\\frac{17}{24}"},{"id":"s5","latex":"\\mathrm P(2\\le Y\\le5)=\\int_2^5\\left(\\frac13-f(x)\\right)\\,dx=1-\\frac{17}{24}=\\frac7{24}"},{"id":"s6","latex":"p+q=24+7=31"}],"track":"확률과 통계"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

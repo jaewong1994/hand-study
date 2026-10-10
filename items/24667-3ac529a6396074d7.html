@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2019,"answer":"5","contentHash":"67bad86eed45591aab88039728d4560826676e130f137df25948a615dcb70b6e","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24667,"month":11,"number":26,"points":4,"preview":false,"questionHtml":"\u003cp>함수 \u003cspan class=\"heq\">\\(f(x)=(x^{2}+2)e^{- x}\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(g(x)\\)\u003c/span>가 미분가능하고\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(g \\left(\\frac{x +8}{10}\\right)=f^{\\,- 1}(x)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g(1)=0\\)\u003c/span>\u003c/p>\u003cp>을 만족시킬 때, \u003cspan class=\"heq\">\\(\\left|\\, g &#x27; (1) \\, \\right|\\)\u003c/span>의 값을 구하시오. [4점]\u003c/p>","questionText":"함수 $f(x)=(x^{2}+2)e^{- x}$에 대하여 함수 $g(x)$가 미분가능하고\n $g \\left(\\frac{x +8}{10}\\right)=f^{\\,- 1}(x)$, $g(1)=0$\n을 만족시킬 때, $\\left|\\, g ' (1) \\, \\right|$의 값을 구하시오. [4점]","sourceHash":"17a305fe051e3561e7e0ef9722676d5435d5debe5141628671bdea193eb1cf15","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 가형 · 26번","steps":[{"id":"s1","latex":"f\\prime(x)=(2x-x^2-2)e^{-x}=-\\{(x-1)^2+1\\}e^{-x}\u003c0"},{"id":"s2","latex":"f\\left(g\\left(\\frac{x+8}{10}\\right)\\right)=x"},{"explanation":{"body":"바깥쪽 \\(f\\), 그 안의 \\(g\\), 가장 안의 \\((x+8)/10\\)을 차례로 미분해 곱한 식이에요. 마지막 식의 기울기가 \\(1/10\\)이므로 이 인수를 빠뜨리면 답이 10배 달라져요. 먼저 \\(f(g((x+8)/10))=x\\)를 쓰고 미분하면 역함수 미분 공식을 따로 외우지 않아도 돼요.","skillTags":["derivatives.inverse-chain"],"title":"역함수 미분에 앞의 1/10도 들어가요"},"id":"s3","latex":"f\\prime\\left(g\\left(\\frac{x+8}{10}\\right)\\right)g\\prime\\left(\\frac{x+8}{10}\\right)\\frac1{10}=1"},{"id":"s4","latex":"x=2:\\quad f\\prime(g(1))g\\prime(1)=10"},{"id":"s5","latex":"g(1)=0,\\quad f\\prime(0)=-2\\ \\Rightarrow\\ g\\prime(1)=-5"},{"id":"s6","latex":"\\boxed{|g\\prime(1)|=5}"}],"track":"가형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2023,"answer":"162","contentHash":"81a17c49454972cd9d6caeaae510e27db45fe255fbb14e609978e68f4d72110c","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24890,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>첫째항과 공비가 각각 \u003cspan class=\"heq\">\\(0\\)\u003c/span>이 아닌 두 등비수열 \u003cspan class=\"heq\">\\(\\left\\{ a_{n} \\right\\}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\left\\{ b_{n} \\right\\}\\)\u003c/span>에 대하여 두 급수 \u003cspan class=\"heq\">\\(\\sum_{n=1}^{ \\infty } a_{n}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\sum_{n=1}^{ \\infty } b_{n}\\)\u003c/span>이 각각 수렴하고\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(\\sum _{n=1} ^{\\infty } a _{n} b _{n} = \\left( \\sum _{n=1} ^{\\infty } a _{n} \\right) \\times \\left( \\sum _{n=1} ^{\\infty } b _{n} \\right)\\)\u003c/span>,\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(3 \\times \\sum _{n=1} ^{\\infty } \\left| a _{2n} \\right| =7 \\times \\sum _{n=1} ^{\\infty } \\left| a _{3n} \\right|\\)\u003c/span>\u003c/p>\u003cp>이 성립한다. \u003cspan class=\"heq\">\\(\\sum _{n=1} ^{\\infty } \\frac{b _{2n-1} +b _{3n+1}}{b _{n}} =S\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(120 S\\)\u003c/span>의 값을 구하시오.\u003c/p>\u003cp>[4점]\u003c/p>","questionText":"첫째항과 공비가 각각 $0$이 아닌 두 등비수열 $\\left\\{ a_{n} \\right\\}$, $\\left\\{ b_{n} \\right\\}$에 대하여 두 급수 $\\sum_{n=1}^{ \\infty } a_{n}$, $\\sum_{n=1}^{ \\infty } b_{n}$이 각각 수렴하고\n $\\sum _{n=1} ^{\\infty } a _{n} b _{n} = \\left( \\sum _{n=1} ^{\\infty } a _{n} \\right) \\times \\left( \\sum _{n=1} ^{\\infty } b _{n} \\right)$,\n $3 \\times \\sum _{n=1} ^{\\infty } \\left| a _{2n} \\right| =7 \\times \\sum _{n=1} ^{\\infty } \\left| a _{3n} \\right|$\n이 성립한다. $\\sum _{n=1} ^{\\infty } \\frac{b _{2n-1} +b _{3n+1}}{b _{n}} =S$일 때, $120 S$의 값을 구하시오.\n[4점]","sourceHash":"b790bd918718bc0f9659d1693114a9329fd7b4329e14c2268d43a3907c2d9086","sourceKind":"csat","sourceLabel":"2023년 시행 수능 · 2024학년도 · 미적분 · 29번","steps":[{"id":"s1","latex":"a_n=a_1r^{n-1},\\ b_n=b_1s^{n-1},\\quad |r|\u003c1,\\ |s|\u003c1"},{"explanation":{"body":"두 수열의 공비를 \\(r,s\\)라 하면 곱수열의 공비는 \\(rs\\)입니다. 세 급수의 합 공식을 대입한 뒤 첫째항 \\(a_1b_1\\)을 약분하면 공비끼리의 관계 \\(r+s=2rs\\)만 남습니다.","skillTags":["무한등비급수","공비관계"],"title":"무한등비급수 식을 비교하기"},"id":"s2","latex":"\\frac{a_1b_1}{1-rs}=\\frac{a_1}{1-r}\\frac{b_1}{1-s}\\Rightarrow r+s=2rs"},{"id":"s3","latex":"3\\frac{|a_1r|}{1-r^{2}}=7\\frac{|a_1r^{2}|}{1-|r|^{3}}"},{"id":"s4","latex":"r>0\\text{이면 }r=\\frac12\\text{이나 }r+s=2rs\\text{를 만족하는 }s\\text{가 없다.}"},{"id":"s5","latex":"r\u003c0\\text{이면 }r=-\\frac12,\\quad -\\frac12+s=-s\\Rightarrow s=\\frac14"},{"explanation":{"body":"\\(b_j=b_1s^{j-1}\\)이므로 \\(b_{3n+1}/b_n=s^{(3n+1-1)-(n-1)}=s^{2n+1}\\)입니다. 지수의 \\(+1\\)을 놓치면 둘째 급수의 첫 항이 달라집니다.","skillTags":["등비수열","첨자계산"],"title":"첨자 차이가 곧 공비의 지수"},"id":"s6","latex":"\\frac{b_{2n-1}}{b_n}=s^{n-1},\\qquad \\frac{b_{3n+1}}{b_n}=s^{2n+1}"},{"id":"s7","latex":"S=\\sum_{n=1}^{\\infty}\\left\\{\\left(\\frac14\\right)^{n-1}+\\left(\\frac14\\right)^{2n+1}\\right\\}"},{"id":"s8","latex":"=\\frac1{1-1/4}+\\frac{1/64}{1-1/16}=\\frac43+\\frac1{60}=\\frac{27}{20}"},{"id":"s9","latex":"120S=120\\cdot\\frac{27}{20}=162"},{"id":"s10","latex":"\\therefore\\ \\boxed{162}"}],"track":"미적분"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

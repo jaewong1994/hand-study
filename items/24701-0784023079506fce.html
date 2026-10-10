@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2019,"answer":"51","contentHash":"c8ffdfe58450c79b1d69e06a7a88b76bcb7411e7cbc9ae6771a8a5b4f652dc7a","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24701,"month":11,"number":30,"points":4,"preview":false,"questionHtml":"\u003cp>최고차항의 계수가 양수인 삼차함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) 방정식 \u003cspan class=\"heq\">\\(f(x)- x=0\\)\u003c/span>의 서로 다른 실근의 개수는 \u003cspan class=\"heq\">\\(2\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hcondr\">(나) 방정식 \u003cspan class=\"heq\">\\(f(x)+x=0\\)\u003c/span>의 서로 다른 실근의 개수는 \u003cspan class=\"heq\">\\(2\\)\u003c/span>이다.\u003c/p>\u003c/div>\u003cp>\u003cspan class=\"heq\">\\(f(0)=0\\)\u003c/span>, \u003cspan class=\"heq\">\\(f&#x27; (1)=1\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(f(3)\\)\u003c/span>의 값을 구하시오. [4점]\u003c/p>","questionText":"최고차항의 계수가 양수인 삼차함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) 방정식 $f(x)- x=0$의 서로 다른 실근의 개수는 $2$이다.(나) 방정식 $f(x)+x=0$의 서로 다른 실근의 개수는 $2$이다.\n$f(0)=0$, $f\\,' (1)=1$일 때, $f(3)$의 값을 구하시오. [4점]","sourceHash":"b650e8e370cec0bfca6735447b2f5bbb6aad41747eaf43ef760f101fc31d8a85","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 30번","steps":[{"id":"s1","latex":"f(x)=ax^3+bx^2+cx,\\quad a>0,\\quad3a+2b+c=1"},{"id":"s2","latex":"f(x)-x=x(ax^2+bx+c-1),\\quad f(x)+x=x(ax^2+bx+c+1)"},{"id":"s3","latex":"\\text{서로 다른 근이 2개이려면 이차식은 }0\\text{과 다른 근을 가지거나, }0\\text{이 아닌 중근을 갖는다.}"},{"id":"s4","latex":"f-x:\\quad c=1\\ (b\\ne0)\\ \\text{또는 }b^2-4a(c-1)=0\\ (b\\ne0)"},{"id":"s5","latex":"f+x:\\quad c=-1\\ (b\\ne0)\\ \\text{또는 }b^2-4a(c+1)=0\\ (b\\ne0)"},{"id":"s6","latex":"\\text{두 판별식이 모두 }0\\text{이면 차 }8a=0\\text{이므로 불가능}"},{"id":"s7","latex":"c=-1\\text{이면 }b^2-4a(c-1)=b^2+8a>0\\text{이므로 불가능}"},{"id":"s8","latex":"c=1,\\quad b^2=8a,\\quad3a+2b=0"},{"id":"s9","latex":"b=-\\frac32a\\ \\Rightarrow\\ \\frac94a^2=8a\\ \\Rightarrow\\ a=\\frac{32}9,\\quad b=-\\frac{16}3"},{"id":"s10","latex":"f(x)=\\frac{32}9x^3-\\frac{16}3x^2+x"},{"id":"s11","latex":"f-x=\\frac{16}9x^2(2x-3),\\quad f+x=\\frac29x(4x-3)^2"},{"id":"s12","latex":"\\text{각각 서로 다른 근 2개이며 }f\\prime(1)=1,\\quad\\boxed{f(3)=51}"}],"track":"나형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

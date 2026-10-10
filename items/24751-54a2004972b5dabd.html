@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2020,"answer":"④","contentHash":"f49aae11cbeb43261b7edf94c76486176bfd2a2f3a33cc9e462b426bf6d98d14","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24751,"month":12,"number":20,"points":4,"preview":false,"questionHtml":"\u003cp>실수 \u003cspan class=\"heq\">\\(a (a&gt;1)\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>를\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(f(x) = (x+1)(x-1)(x-a)\\)\u003c/span>\u003c/p>\u003cp>라 하자. 함수\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(g(x) = x^2 \\int_0^x f(t) dt - \\int_0^x t^2 f(t) dt\\)\u003c/span>\u003c/p>\u003cp>가 오직 하나의 극값을 갖도록 하는 \u003cspan class=\"heq\">\\(a\\)\u003c/span>의 최댓값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(\\frac{9 \\sqrt{2} }{8}\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(\\frac{ 3 \\sqrt{6} }{4}\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(\\frac{ 3 \\sqrt{2} }{2}\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(\\sqrt{6}\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(2 \\sqrt{2}\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"실수 $a (a>1)$에 대하여 함수 $f(x)$를\n $f(x) = (x+1)(x-1)(x-a)$\n라 하자. 함수\n $g(x) = x^2 \\int_0^x f(t) dt - \\int_0^x t^2 f(t) dt$\n가 오직 하나의 극값을 갖도록 하는 $a$의 최댓값은? [4점]\n① $\\frac{9 \\sqrt{2} }{8}$ ② $\\frac{ 3 \\sqrt{6} }{4}$ ③ $\\frac{ 3 \\sqrt{2} }{2}$ ④ $\\sqrt{6}$ ⑤ $2 \\sqrt{2}$","sourceHash":"76c9b02cdbb4c1c3a376cdfbfe099f52226bab32be5520320b18c5eaf9d15419","sourceKind":"csat","sourceLabel":"2020년 시행 수능 · 2021학년도 · 나형 · 20번","steps":[{"explanation":{"body":"첫 항 \\(x^2\\int_0^x f(t)dt\\)는 곱이므로 미분하면 \\(2x\\int_0^x f(t)dt+x^2f(x)\\)예요. 둘째 적분을 미분하면 안의 \\(t\\)를 끝점 \\(x\\)로 바꾼 \\(x^2f(x)\\)가 나와요. 둘째 항 앞에 빼기가 있어 이 두 항이 없어지고 \\(2x\\int_0^x f(t)dt\\)만 남는 거예요.","skillTags":["integration.product-cancellation"],"title":"두 끝점 항이 서로 없어져요"},"id":"s1","latex":"\\mathrm F(x)=\\int_0^xf(t)\\,dt,\\quad g\\prime(x)=2x\\mathrm F(x)+x^2f(x)-x^2f(x)=2x\\mathrm F(x)"},{"id":"s2","latex":"\\mathrm F(x)=\\frac{x^4}4-\\frac{ax^3}3-\\frac{x^2}2+ax"},{"id":"s3","latex":"x\u003c-1:\\ f(x)\u003c0;\\quad-1\u003cx\u003c1:\\ f(x)>0"},{"id":"s4","latex":"\\mathrm F(-1)\u003c0,\\quad\\mathrm F(0)=0,\\quad\\lim_{x\\to-\\infty}\\mathrm F(x)=\\infty"},{"id":"s5","latex":"\\mathrm F\\text{는 }x\u003c-1\\text{에서 감소하므로 음의 근 }r\u003c-1\\text{을 하나만 갖는다.}"},{"id":"s6","latex":"g\\prime(x)=2x\\mathrm F(x)\\text{는 }r\\text{에서 음에서 양으로 바뀌므로 극값이 하나 존재}"},{"id":"s7","latex":"\\mathrm F(x)=ax+\\cdots\\ \\Rightarrow\\ g\\prime(x)=2ax^2+\\cdots\\text{이므로 }x=0\\text{에서는 극값이 없다.}"},{"id":"s8","latex":"x>0:\\quad\\mathrm F\\text{는 }(0,1)\\text{에서 증가, }(1,a)\\text{에서 감소, }(a,\\infty)\\text{에서 증가}"},{"id":"s9","latex":"\\mathrm F(a)\u003c0\\text{이면 양의 근 두 개에서 }g\\prime\\text{의 부호가 바뀌어 극값 두 개가 추가된다.}"},{"id":"s10","latex":"\\mathrm F(a)\\ge0\\text{이면 }x>0\\text{에서 }g\\prime(x)\\ge0\\text{이므로 추가 극값이 없다.}"},{"id":"s11","latex":"\\mathrm F(a)=-\\frac{a^4}{12}+\\frac{a^2}2=\\frac{a^2(6-a^2)}{12}\\ge0"},{"id":"s12","latex":"1\u003ca\\le\\sqrt6\\ \\Rightarrow\\ a\\text{의 최댓값은 }\\boxed{\\sqrt6}\\quad\\text{④}"}],"track":"나형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

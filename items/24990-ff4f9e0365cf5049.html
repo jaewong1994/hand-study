@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2025,"answer":"977","contentHash":"b1b347d93b27a1d3e8a99fbe81a14b93dc58c7744d1177f90963bd07257a4e38","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24990,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>\u003cspan class=\"heq\">\\(6\\)\u003c/span> 이하의 자연수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>에 대하여 한 개의 주사위와 한 개의 동전을 사용하여 다음 시행을 한다.\u003c/p>\u003cdiv class=\"hbox\">\u003cp>주사위를 한 번 던져 나온 눈의 수가 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>보다 작거나 같으면 동전을 \u003cspan class=\"heq\">\\(5\\,\\)\u003c/span>번 던져 앞면이 나온 횟수를 기록하고, 나온 눈의 수가 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>보다 크면 동전을 \u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>번 던져 앞면이 나온 횟수를 기록한다.\u003c/p>\u003c/div>\u003cp>이 시행을 \u003cspan class=\"heq\">\\(19200\\,\\)\u003c/span>번 반복하여 기록한 수가 \u003cspan class=\"heq\">\\(3\\,\\)\u003c/span>인 횟수를 확률변수 \u003cspan class=\"heq\">\\(X\\,\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\({{E}} \\left(X\\, \\right)=4800\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\({{P}} \\left(X\\, \\leq 4800+30a \\right)\\,\\)\u003c/span>의 값을 오른쪽 표준정규분포표를 이용하여 구한 값이 \u003cspan class=\"heq\">\\(k\\,\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(1000 \\times k\\,\\)\u003c/span>의 값을 구하시오. [4점]\u003c/p>\u003cp>[표] z=0.5: 0.191, z=1.0: 0.341, z=1.5: 0.433, z=2.0: 0.477, z=2.5: 0.494, z=3.0: 0.499\u003c/p>","questionText":"$6$ 이하의 자연수 $a\\,$에 대하여 한 개의 주사위와 한 개의 동전을 사용하여 다음 시행을 한다.\n주사위를 한 번 던져 나온 눈의 수가 $a\\,$보다 작거나 같으면 동전을 $5\\,$번 던져 앞면이 나온 횟수를 기록하고, 나온 눈의 수가 $a\\,$보다 크면 동전을 $3\\,$번 던져 앞면이 나온 횟수를 기록한다.\n이 시행을 $19200\\,$번 반복하여 기록한 수가 $3\\,$인 횟수를 확률변수 $X\\,$라 하자. ${{E}} \\left(X\\, \\right)=4800\\,$일 때, ${{P}} \\left(X\\, \\leq 4800+30a \\right)\\,$의 값을 오른쪽 표준정규분포표를 이용하여 구한 값이 $k\\,$이다. $1000 \\times k\\,$의 값을 구하시오. [4점]\n[표] z=0.5: 0.191, z=1.0: 0.341, z=1.5: 0.433, z=2.0: 0.477, z=2.5: 0.494, z=3.0: 0.499","sourceHash":"b3e0909432d0f76caf39006da507231c61b8900d38ec0d673627821f332f1c54","sourceKind":"csat","sourceLabel":"2025년 시행 수능 · 2026학년도 · 확률과 통계 · 29번","steps":[{"id":"s1","latex":"\\text{한 시행에서 기록값이 }3\\text{일 확률을 }p\\text{라 한다.}"},{"id":"s2","latex":"p=\\frac a6\\cdot{}_5C_3\\left(\\frac12\\right)^5+\\frac{6-a}{6}\\cdot{}_3C_3\\left(\\frac12\\right)^3"},{"id":"s3","latex":"=\\frac{5a}{96}+\\frac{6-a}{48}=\\frac{a+4}{32}"},{"id":"s4","latex":"X\\sim B(19200,p),\\quad E(X)=19200p=600(a+4)=4800"},{"id":"s5","latex":"a=4,\\quad p=\\frac14"},{"id":"s6","latex":"V(X)=19200\\cdot\\frac14\\cdot\\frac34=3600=60^{2}"},{"explanation":{"body":"시행 횟수 19200이 충분히 크므로 문제의 표를 쓰기 위해 평균 \\(np=4800\\), 표준편차 \\(\\sqrt{np(1-p)}=60\\)인 정규분포로 근사합니다. 그 뒤 \\(Z=(X-4800)/60\\)으로 표준화합니다.","skillTags":["이항분포","정규근사","표준화"],"title":"이항분포를 정규분포로 바꾸기"},"id":"s7","latex":"X\\text{를 }N(4800,60^{2})\\text{으로 근사하면 }Z=\\frac{X-4800}{60}\\sim N(0,1)"},{"id":"s8","latex":"P(X\\le4800+30a)=P(X\\le4920)=P(Z\\le2)"},{"id":"s9","latex":"P(Z\\le2)=0.5+0.477=0.977"},{"id":"s10","latex":"1000k=977"},{"id":"s11","latex":"\\therefore\\ \\boxed{977}"}],"track":"확률과 통계"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

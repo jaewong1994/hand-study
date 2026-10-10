@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2019,"answer":"②","contentHash":"9ef887f5ffe228e6cb775628816265a94f2db1f9e7d793eed6148a43ff9e8146","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24691,"month":11,"number":20,"points":4,"preview":false,"questionHtml":"\u003cp>함수\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(f(x)=\\begin{cases}\\, - x \\,&amp; (x≤ 0) \\\\ \\, x - 1 \\,&amp; (0 &lt; x≤ 2) \\\\ \\, 2x - 3 \\,&amp; (x&gt; 2)\\end{cases}\\)\u003c/span>\u003c/p>\u003cp>와 상수가 아닌 다항식 \u003cspan class=\"heq\">\\(p(x)\\)\u003c/span>에 대하여 &lt;보기&gt;에서 옳은 것만을 있는 대로 고른 것은? [4점]\u003c/p>\u003cp>&lt;보 기&gt;ㄱ. 함수 \u003cspan class=\"heq\">\\(p(x)f(x)\\)\u003c/span>가 실수 전체의 집합에서 연속이면 \u003cspan class=\"heq\">\\(p(0)=0\\)\u003c/span>이다.ㄴ. 함수 \u003cspan class=\"heq\">\\(p(x)f(x)\\)\u003c/span>가 실수 전체의 집합에서 미분가능하면 \u003cspan class=\"heq\">\\(p(2)=0\\)\u003c/span>이다.ㄷ. 함수 \u003cspan class=\"heq\">\\(p(x) \\left\\{\\,f(x) \\right\\}^{2}\\)\u003c/span>이 실수 전체의 집합에서 미분가능하면 \u003cspan class=\"heq\">\\(p(x)\\)\u003c/span>는 \u003cspan class=\"heq\">\\(x^{2}(x-2)^{2}\\)\u003c/span>으로 나누어떨어진다.\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① ㄱ\u003c/div>\u003cdiv class=\"hch\">② ㄱ, ㄴ\u003c/div>\u003cdiv class=\"hch\">③ ㄱ, ㄷ\u003c/div>\u003cdiv class=\"hch\">④ ㄴ, ㄷ\u003c/div>\u003cdiv class=\"hch\">⑤ ㄱ, ㄴ, ㄷ\u003c/div>\u003c/div>","questionText":"함수\n $f(x)=\\begin{cases}\\, - x \\,& (x≤ 0) \\\\ \\, x - 1 \\,& (0 \u003c x≤ 2) \\\\ \\, 2x - 3 \\,& (x> 2)\\end{cases}$\n와 상수가 아닌 다항식 $p(x)$에 대하여 \u003c보기>에서 옳은 것만을 있는 대로 고른 것은? [4점]\n\u003c보 기>ㄱ. 함수 $p(x)f(x)$가 실수 전체의 집합에서 연속이면 $p(0)=0$이다.ㄴ. 함수 $p(x)f(x)$가 실수 전체의 집합에서 미분가능하면 $p(2)=0$이다.ㄷ. 함수 $p(x) \\left\\{\\,f(x) \\right\\}^{2}$이 실수 전체의 집합에서 미분가능하면 $p(x)$는 $x^{2}(x-2)^{2}$으로 나누어떨어진다.\n① ㄱ ② ㄱ, ㄴ ③ ㄱ, ㄷ\n④ ㄴ, ㄷ ⑤ ㄱ, ㄴ, ㄷ","sourceHash":"e1cc4d6c2e066bcecefdc0ac7363fb22f6e1f17163798a4b0d2551927d89b1fd","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 20번","steps":[{"id":"s1","latex":"\\text{ㄱ: }\\lim_{x\\to0-}p(x)f(x)=0,\\quad\\lim_{x\\to0+}p(x)f(x)=-p(0)"},{"id":"s2","latex":"\\text{연속이면 }-p(0)=0\\ \\Rightarrow\\ p(0)=0\\quad\\text{참}"},{"id":"s3","latex":"\\text{ㄴ: }x=2\\text{에서 왼쪽 미분계수}=p\\prime(2)+p(2)"},{"id":"s4","latex":"\\text{오른쪽 미분계수}=p\\prime(2)+2p(2)"},{"id":"s5","latex":"\\text{두 값이 같으면 }p(2)=0\\quad\\text{참}"},{"id":"s6","latex":"\\text{ㄷ: }p(x)=x^2(x-2),\\quad h(x)=p(x)f(x)^2\\text{로 둔다.}"},{"id":"s7","latex":"h(0)=0,\\quad\\lim_{x\\to0-}\\frac{h(x)}x=\\lim_{x\\to0+}\\frac{h(x)}x=0"},{"id":"s8","latex":"h(2)=0,\\quad\\lim_{x\\to2-}\\frac{h(x)}{x-2}=\\lim_{x\\to2+}\\frac{h(x)}{x-2}=4"},{"id":"s9","latex":"\\text{그 밖에서는 다항식이므로 }h\\text{는 모든 실수에서 미분가능}"},{"id":"s10","latex":"p(x)=x^2(x-2)\\text{는 }x^2(x-2)^2\\text{으로 나누어떨어지지 않는다.}\\quad\\text{ㄷ 거짓}"},{"id":"s11","latex":"\\boxed{\\text{ㄱ, ㄴ}}\\quad\\text{②}"}],"track":"나형"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+

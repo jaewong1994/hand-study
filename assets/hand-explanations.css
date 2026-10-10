@@ -1,0 +1,7 @@
+.hs-explanation { margin: 12px 0 6px; padding: 15px 18px; border: 1px solid #d8ded9; border-left: 3px solid #708a76; border-radius: 6px; background: #f5f7f3; color: #34433b; font-family: "Noto Sans KR", sans-serif; font-size: 14px; line-height: 1.85; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+.hs-explanation-title { margin: 0 0 6px; font-family: inherit; font-size: 14px; line-height: 1.6; font-weight: 700; color: #284533; }
+.hs-explanation p { margin: 0; }
+.hs-explanation p + p { margin-top: 9px; }
+.hs-explanation .katex { font-size: 1.06em; }
+.hs-explanation .katex-display { margin: .65em 0; overflow-x: auto; overflow-y: hidden; }
+@media(max-width: 600px) { .hs-explanation { padding: 12px 13px; font-size: 13px; } }

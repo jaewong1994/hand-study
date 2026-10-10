@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>손풀이 노트</title>
+  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>window.HandStudyRecord={"adminYear":2022,"answer":"100","contentHash":"d6b3d064590c0e26477055078cebc187f11b4781bd48cf6f24e5c03961eee2d0","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24853,"month":11,"number":30,"points":4,"preview":false,"questionHtml":"\u003cp>집합 \u003cspan class=\"heq\">\\(X=\\{x\\mid x\\text{는 }10\\text{ 이하의 자연수}\\}\\)\u003c/span>에 대하여 다음 조건을 만족시키는 함수 \u003cspan class=\"heq\">\\(f\\,:\\,X\\, \\rightarrow \\,X\\,\\)\u003c/span>의 개수를 구하시오. [4점]\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(9\\)\u003c/span> 이하의 모든 자연수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(f \\left( x \\right) \\leq f \\left( x+1 \\right)\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(1 \\leq x \\leq 5\\)\u003c/span>일 때 \u003cspan class=\"heq\">\\(f \\left( x \\right) \\leq x\\)\u003c/span>이고, \u003cspan class=\"heq\">\\(6 \\leq x \\leq 10\\)\u003c/span>일 때 \u003cspan class=\"heq\">\\(f \\left( x \\right) \\geq x\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hcondr\">(다) \u003cspan class=\"heq\">\\(f \\left( 6 \\right) =f \\left( 5 \\right) +6\\)\u003c/span>\u003c/p>\u003c/div>","questionText":"집합 $X=\\left\\{x \\, \\left| \\,x$는 $10$ 이하의 자연수$\\left. \\right\\}$에 대하여 다음 조건을 만족시키는 함수 $f\\,:\\,X\\, \\rightarrow \\,X\\,$의 개수를 구하시오. [4점]\n(가) $9$ 이하의 모든 자연수 $x$에 대하여 $f \\left( x \\right) \\leq f \\left( x+1 \\right)$이다.(나) $1 \\leq x \\leq 5$일 때 $f \\left( x \\right) \\leq x$이고, $6 \\leq x \\leq 10$일 때 $f \\left( x \\right) \\geq x$이다.(다) $f \\left( 6 \\right) =f \\left( 5 \\right) +6$","sourceHash":"485f697d3a781d908f1bc789efe6ea46e7e70a020bae2be2bc3244f35a6f2b21","sourceKind":"csat","sourceLabel":"2022년 시행 수능 · 2023학년도 · 확률과 통계 · 30번","steps":[{"id":"s1","latex":"f(1)=1,\\quad f(10)=10,\\quad k=f(5),\\quad f(6)=k+6\\le10\\ \\Rightarrow\\ k=1,2,3,4"},{"id":"s2","latex":"L_k=\\text{앞 다섯 함숫값을 정하는 경우의 수},\\quad R_k=\\text{뒤 다섯 함숫값을 정하는 경우의 수}"},{"id":"s3","latex":"L_1=1\\quad\\text{모두 1}"},{"id":"s4","latex":"L_2={}_4\\mathrm C_3=4\\quad\\text{1,2 중 중복하여 세 값을 골라 작은 값부터 나열}"},{"id":"s5","latex":"L_3={}_5\\mathrm C_3-1=9\\quad\\text{1,2,3의 작은 값부터 놓은 세 값 중 }(3,3,3)\\text{ 제외}"},{"id":"s6","latex":"L_4={}_6\\mathrm C_3-{}_4\\mathrm C_3-2=20-4-2=14"},{"id":"s7","latex":"\\text{제외한 네 경우는 }f(2)\\ge3;\\quad\\text{추가 두 경우는 }(f(2),f(3),f(4))=(1,4,4),(2,4,4)"},{"id":"s8","latex":"b_i=11-f(11-i)\\quad(i=1,\\ldots,5)\\text{로 두면 }1=b_1\\le\\cdots\\le b_5=5-k,\\quad b_i\\le i"},{"id":"s9","latex":"\\text{이 대응은 되돌릴 수 있으므로 }R_k=L_{5-k}"},{"id":"s10","latex":"\\sum_{k=1}^4L_kR_k=1\\cdot14+4\\cdot9+9\\cdot4+14\\cdot1=\\boxed{100}"}],"track":"확률과 통계"};</script>
+  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
+  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
+<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
+</head>
+<body>
+  <header class="hs-appbar">
+    <span class="hs-brand">손풀이 노트</span>
+    <span class="hs-section-name">수학 기출 학습</span>
+    <small class="hs-source-mini" id="hs-source-mini"></small>
+  </header>
+  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
+  <main class="hs-shell">
+    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
+    <header class="hs-heading">
+      <div>
+        <p class="hs-source" id="hs-source"></p>
+        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
+      </div>
+      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
+    </header>
+
+    <section class="hs-question" aria-labelledby="hs-question-title">
+      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
+      <div class="hs-question-body" id="hs-question-body"></div>
+    </section>
+
+    <div class="hs-controls" aria-label="손풀이 조작">
+      <button class="hs-button" id="hs-reset" type="button">가리기</button>
+      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
+      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
+      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
+      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
+      <label class="hs-speed-wrap" for="hs-speed">속도
+        <select class="hs-speed" id="hs-speed">
+          <option value="4000">천천히</option>
+          <option value="2200" selected>보통</option>
+          <option value="1200">빠르게</option>
+        </select>
+      </label>
+    </div>
+
+    <article class="hs-paper" aria-label="순차 손풀이">
+      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
+      <div class="hs-steps" id="hs-steps"></div>
+      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
+      <div class="hs-answer" id="hs-answer" hidden></div>
+    </article>
+    <p class="hs-error" id="hs-error" role="alert"></p>
+    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
+
+    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
+  </main>
+</body>
+</html>
+
