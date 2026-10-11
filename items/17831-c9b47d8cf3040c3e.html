@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":17831,"sourceLabel":"2024 교육청 고3 수학기하 10월 13번","adminYear":2024,"grade":3,"month":10,"number":13,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 한 원에 내접하는 사각형 $ABCD\\,$에 대하여\n ${\\overline{ AB }} =4$, ${\\overline{ BC }} =2 \\sqrt{30}$, ${\\overline{ CD }} =8$\n이다. $\\angle BAC= \\alpha$, $\\angle ACD= \\beta \\,$라 할 때, $\\cos\\, \\left( \\alpha + \\beta \\right) =\\,- \\frac{5}{12}\\,$이다. 두 선분 $AC\\,$와 $BD\\,$의 교점을 $E\\,$라 할 때, 선분 $AE\\,$의 길이는? $\\left(\\begin{matrix} \\\\ \\end{matrix}$단, $\\left. 0\u003c \\alpha \u003c \\frac{\\pi }{2} ,\\, 0\u003c \\beta \u003c \\frac{\\pi }{2} \\right)$ [4점]\n① $\\sqrt{6}$ ② $\\frac{\\sqrt{26}}{2}$ ③ $\\sqrt{7}$\n④ $\\frac{\\sqrt{30}}{2}$ ⑤ $2 \\sqrt{2}$","answer":"⑤","sourceHash":"2afe3dad7ba6278b21e32202697077518a21960aa8580859a94d1a17c5c956e4","steps":[{"id":"s1","latex":"BE:CE=AB:CD=1:2\\Rightarrow BE=k,\\ CE=2k"},{"id":"s2","latex":"BC^2=k^2+4k^2-4k^2\\cos(\\alpha+\\beta)=120\\Rightarrow k=3\\sqrt2"},{"id":"s3","latex":"t=AE:\\quad AB^2=t^2+18-6\\sqrt2t\\cos(\\pi-\\alpha-\\beta)"},{"id":"s4","latex":"16=t^2+18-\\frac{5\\sqrt2}{2}t\\Rightarrow(2t-\\sqrt2)(t-2\\sqrt2)=0"},{"id":"s5","latex":"\\cos\\alpha=\\frac{t^2-2}{8t}>0\\Rightarrow t>\\sqrt2\\Rightarrow AE=2\\sqrt2"}],"diagram":null,"contentHash":"600ddb8aa4ac32dfd39c15a953584f03696bc0be8a92b7fd39de5187af803dcc","questionHtml":"\u003cp class=\"hp\">그림과 같이 한 원에 내접하는 사각형 \u003cspan class=\"heq\">\\(ABCD\\,\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\({\\overline{AB }} =4\\)\u003c/span>, \u003cspan class=\"heq\">\\({\\overline{BC }} =2 \\sqrt{30}\\)\u003c/span>, \u003cspan class=\"heq\">\\({\\overline{CD }} =8\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">이다. \u003cspan class=\"heq\">\\(\\angle BAC= \\alpha\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\angle ACD= \\beta \\,\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(\\cos\\, \\left( \\alpha + \\beta \\right) =\\,- \\dfrac{5}{12}\\,\\)\u003c/span>이다. 두 선분 \u003cspan class=\"heq\">\\(AC\\,\\)\u003c/span>와 \u003cspan class=\"heq\">\\(BD\\,\\)\u003c/span>의 교점을 \u003cspan class=\"heq\">\\(E\\,\\)\u003c/span>라 할 때, 선분 \u003cspan class=\"heq\">\\(AE\\,\\)\u003c/span>의 길이는?\u003cbr>\u003cspan class=\"heq\">\\((\\begin{matrix} \\\\ \\end{matrix}\\)\u003c/span>단, \u003cspan class=\"heq\">\\(\\left. 0\\lt  \\alpha \\lt  \\dfrac{\\pi }{2} ,\\, 0\\lt  \\beta \\lt  \\dfrac{\\pi }{2} \\right)\\)\u003c/span> \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/4e606d6c554a47a6c50d778e.png\" style=\"width:231px;max-width:100%\">\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\sqrt{6}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\dfrac{\\sqrt{26}}{2}\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\sqrt{7}\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">④ \u003cspan class=\"heq\">\\(\\dfrac{\\sqrt{30}}{2}\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(2 \\sqrt{2}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":{"version":1,"itemId":17831,"sourceHash":"2afe3dad7ba6278b21e32202697077518a21960aa8580859a94d1a17c5c956e4","contentHash":"600ddb8aa4ac32dfd39c15a953584f03696bc0be8a92b7fd39de5187af803dcc","title":"두 대각선과 AE 후보의 실제 배치","bounds":[-7,6,-5,10],"aspect":"equal","stages":[{"stepId":"s4","title":"AE 두 후보 판별","layers":[{"id":"AC","type":"polyline","points":[[1.178511,-2.571208],[-3.535534,7.713624]],"color":"navy","text":""},{"id":"BD","type":"polyline","points":[[4.242641,0],[-5.656854,0]],"color":"teal","text":""},{"id":"A","type":"point","x":1.178511,"y":-2.571208,"text":"A","color":"teal"},{"id":"B","type":"point","x":4.242641,"y":0,"text":"B","color":"teal"},{"id":"C","type":"point","x":-3.535534,"y":7.713624,"text":"C","color":"teal"},{"id":"D","type":"point","x":-5.656854,"y":0,"text":"D","color":"teal"},{"id":"E","type":"point","x":0,"y":0,"text":"E","color":"teal"},{"id":"AE","type":"polyline","points":[[1.178511,-2.571208],[0,0]],"color":"amber","text":""}]},{"stepId":"s5","title":"AE=2sqrt2","layers":[{"id":"AC","type":"polyline","points":[[1.178511,-2.571208],[-3.535534,7.713624]],"color":"navy","text":""},{"id":"BD","type":"polyline","points":[[4.242641,0],[-5.656854,0]],"color":"teal","text":""},{"id":"A","type":"point","x":1.178511,"y":-2.571208,"text":"A","color":"teal"},{"id":"B","type":"point","x":4.242641,"y":0,"text":"B","color":"teal"},{"id":"C","type":"point","x":-3.535534,"y":7.713624,"text":"C","color":"teal"},{"id":"D","type":"point","x":-5.656854,"y":0,"text":"D","color":"teal"},{"id":"E","type":"point","x":0,"y":0,"text":"E","color":"teal"},{"id":"AEv","type":"label","x":0.2,"y":-1.5,"text":"AE=2sqrt2","color":"amber"}]}],"graphHash":"5ca17b96b3d0c0072dd9653b83332e8bb00347b20e56c3151b3fa2ea8749fd51"},"graphHash":"5ca17b96b3d0c0072dd9653b83332e8bb00347b20e56c3151b3fa2ea8749fd51","editionHash":"c9b47d8cf3040c3ebae3049acc77f3f2f4d6e6aa839079c8fd186c7a5d578b7c"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2024 교육청 고3 수학기하 10월 13번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":17831,"sourceLabel":"2024 교육청 고3 수학기하 10월 13번","adminYear":2024,"grade":3,"month":10,"number":13,"track":"기하","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 한 원에 내접하는 사각형 $ABCD\\,$에 대하여\n ${\\overline{ AB }} =4$, ${\\overline{ BC }} =2 \\sqrt{30}$, ${\\overline{ CD }} =8$\n이다. $\\angle BAC= \\alpha$, $\\angle ACD= \\beta \\,$라 할 때, $\\cos\\, \\left( \\alpha + \\beta \\right) =\\,- \\frac{5}{12}\\,$이다. 두 선분 $AC\\,$와 $BD\\,$의 교점을 $E\\,$라 할 때, 선분 $AE\\,$의 길이는? $\\left(\\begin{matrix} \\\\ \\end{matrix}$단, $\\left. 0\u003c \\alpha \u003c \\frac{\\pi }{2} ,\\, 0\u003c \\beta \u003c \\frac{\\pi }{2} \\right)$ [4점]\n① $\\sqrt{6}$ ② $\\frac{\\sqrt{26}}{2}$ ③ $\\sqrt{7}$\n④ $\\frac{\\sqrt{30}}{2}$ ⑤ $2 \\sqrt{2}$","answer":"⑤","sourceHash":"2afe3dad7ba6278b21e32202697077518a21960aa8580859a94d1a17c5c956e4","steps":[{"id":"s1","latex":"BE:CE=AB:CD=1:2\\Rightarrow BE=k,\\ CE=2k"},{"id":"s2","latex":"BC^2=k^2+4k^2-4k^2\\cos(\\alpha+\\beta)=120\\Rightarrow k=3\\sqrt2"},{"id":"s3","latex":"t=AE:\\quad AB^2=t^2+18-6\\sqrt2t\\cos(\\pi-\\alpha-\\beta)"},{"id":"s4","latex":"16=t^2+18-\\frac{5\\sqrt2}{2}t\\Rightarrow(2t-\\sqrt2)(t-2\\sqrt2)=0"},{"id":"s5","latex":"\\cos\\alpha=\\frac{t^2-2}{8t}>0\\Rightarrow t>\\sqrt2\\Rightarrow AE=2\\sqrt2"}],"diagram":null,"contentHash":"600ddb8aa4ac32dfd39c15a953584f03696bc0be8a92b7fd39de5187af803dcc","questionHtml":"\u003cp class=\"hp\">그림과 같이 한 원에 내접하는 사각형 \u003cspan class=\"heq\">\\(ABCD\\,\\)\u003c/span>에 대하여\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\({\\overline{AB }} =4\\)\u003c/span>, \u003cspan class=\"heq\">\\({\\overline{BC }} =2 \\sqrt{30}\\)\u003c/span>, \u003cspan class=\"heq\">\\({\\overline{CD }} =8\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">이다. \u003cspan class=\"heq\">\\(\\angle BAC= \\alpha\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\angle ACD= \\beta \\,\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(\\cos\\, \\left( \\alpha + \\beta \\right) =\\,- \\dfrac{5}{12}\\,\\)\u003c/span>이다. 두 선분 \u003cspan class=\"heq\">\\(AC\\,\\)\u003c/span>와 \u003cspan class=\"heq\">\\(BD\\,\\)\u003c/span>의 교점을 \u003cspan class=\"heq\">\\(E\\,\\)\u003c/span>라 할 때, 선분 \u003cspan class=\"heq\">\\(AE\\,\\)\u003c/span>의 길이는?\u003cbr>\u003cspan class=\"heq\">\\((\\begin{matrix} \\\\ \\end{matrix}\\)\u003c/span>단, \u003cspan class=\"heq\">\\(\\left. 0\\lt  \\alpha \\lt  \\dfrac{\\pi }{2} ,\\, 0\\lt  \\beta \\lt  \\dfrac{\\pi }{2} \\right)\\)\u003c/span> \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/4e606d6c554a47a6c50d778e.png\" style=\"width:231px;max-width:100%\">\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\sqrt{6}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\dfrac{\\sqrt{26}}{2}\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\sqrt{7}\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">④ \u003cspan class=\"heq\">\\(\\dfrac{\\sqrt{30}}{2}\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(2 \\sqrt{2}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":{"version":1,"itemId":17831,"sourceHash":"2afe3dad7ba6278b21e32202697077518a21960aa8580859a94d1a17c5c956e4","contentHash":"600ddb8aa4ac32dfd39c15a953584f03696bc0be8a92b7fd39de5187af803dcc","title":"두 대각선과 AE 후보의 실제 배치","bounds":[-7,6,-5,10],"aspect":"equal","stages":[{"stepId":"s4","title":"AE 두 후보 판별","layers":[{"id":"AC","type":"polyline","points":[[1.178511,-2.571208],[-3.535534,7.713624]],"color":"navy","text":""},{"id":"BD","type":"polyline","points":[[4.242641,0],[-5.656854,0]],"color":"teal","text":""},{"id":"A","type":"point","x":1.178511,"y":-2.571208,"text":"A","color":"teal"},{"id":"B","type":"point","x":4.242641,"y":0,"text":"B","color":"teal"},{"id":"C","type":"point","x":-3.535534,"y":7.713624,"text":"C","color":"teal"},{"id":"D","type":"point","x":-5.656854,"y":0,"text":"D","color":"teal"},{"id":"E","type":"point","x":0,"y":0,"text":"E","color":"teal"},{"id":"AE","type":"polyline","points":[[1.178511,-2.571208],[0,0]],"color":"amber","text":""}]},{"stepId":"s5","title":"AE=2sqrt2","layers":[{"id":"AC","type":"polyline","points":[[1.178511,-2.571208],[-3.535534,7.713624]],"color":"navy","text":""},{"id":"BD","type":"polyline","points":[[4.242641,0],[-5.656854,0]],"color":"teal","text":""},{"id":"A","type":"point","x":1.178511,"y":-2.571208,"text":"A","color":"teal"},{"id":"B","type":"point","x":4.242641,"y":0,"text":"B","color":"teal"},{"id":"C","type":"point","x":-3.535534,"y":7.713624,"text":"C","color":"teal"},{"id":"D","type":"point","x":-5.656854,"y":0,"text":"D","color":"teal"},{"id":"E","type":"point","x":0,"y":0,"text":"E","color":"teal"},{"id":"AEv","type":"label","x":0.2,"y":-1.5,"text":"AE=2sqrt2","color":"amber"}]}],"graphHash":"5ca17b96b3d0c0072dd9653b83332e8bb00347b20e56c3151b3fa2ea8749fd51"},"graphHash":"5ca17b96b3d0c0072dd9653b83332e8bb00347b20e56c3151b3fa2ea8749fd51","editionHash":"c9b47d8cf3040c3ebae3049acc77f3f2f4d6e6aa839079c8fd186c7a5d578b7c"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

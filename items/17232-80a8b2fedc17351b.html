@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":17232,"sourceLabel":"2021 평가원 고3 수학확통 6월 29번","adminYear":2021,"grade":3,"month":6,"number":29,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"$1$부터 $6$까지의 자연수가 하나씩 적혀 있는 $6$개의 의자가 있다. 이 $6$개의 의자를 일정한 간격을 두고 원형으로 배열할 때, 서로 이웃한 $2$개의 의자에 적혀 있는 수의 곱이 $12$가 되지 않도록 배열하는 경우의 수를 구하시오. (단, 회전하여 일치하는 것은 같은 것으로 본다.) [4점]","answer":"48","sourceHash":"58d29eb4ba6a14b59069702408eba8b7460610a3ef950dd64b5a3e6ba09e3606","steps":[{"id":"s1","latex":"ij=12:\\quad\\{i,j\\}=\\{2,6\\}\\text{ 또는 }\\{3,4\\}"},{"id":"s2","latex":"\\#\\text{전체 원순열}=(6-1)!=120"},{"id":"s3","latex":"A:\\ 2,6\\text{ 이웃}\\Rightarrow n(A)=4!\\cdot2=48"},{"id":"s4","latex":"B:\\ 3,4\\text{ 이웃}\\Rightarrow n(B)=48"},{"id":"s5","latex":"n(A\\cap B)=3!\\cdot2\\cdot2=24"},{"id":"s6","latex":"n(A\\cup B)=48+48-24=72"},{"id":"s7","latex":"120-72=48"}],"diagram":null,"contentHash":"3f368161f0ebde4b1b3ebe47fd3223453580a24efb900d88052aff36f2e3054e","questionHtml":"\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\)\u003c/span>부터 \u003cspan class=\"heq\">\\(6\\)\u003c/span>까지의 자연수가 하나씩 적혀 있는 \u003cspan class=\"heq\">\\(6\\)\u003c/span>개의 의자가 있다. 이 \u003cspan class=\"heq\">\\(6\\)\u003c/span>개의 의자를 일정한 간격을 두고 원형으로 배열할 때, 서로 이웃한 \u003cspan class=\"heq\">\\(2\\)\u003c/span>개의 의자에 적혀 있는 수의 곱이 \u003cspan class=\"heq\">\\(12\\)\u003c/span>가 되지 않도록 배열하는 경우의 수를 구하시오. (단, 회전하여 일치하는 것은 같은 것으로 본다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/6204a4ed076146e0dd2ef7fa.png\" style=\"width:277px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"80a8b2fedc17351b30f87a7ad19677dc5e466d0a452a379cdc1e528e33e4f8dc"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2021 평가원 고3 수학확통 6월 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":17232,"sourceLabel":"2021 평가원 고3 수학확통 6월 29번","adminYear":2021,"grade":3,"month":6,"number":29,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"$1$부터 $6$까지의 자연수가 하나씩 적혀 있는 $6$개의 의자가 있다. 이 $6$개의 의자를 일정한 간격을 두고 원형으로 배열할 때, 서로 이웃한 $2$개의 의자에 적혀 있는 수의 곱이 $12$가 되지 않도록 배열하는 경우의 수를 구하시오. (단, 회전하여 일치하는 것은 같은 것으로 본다.) [4점]","answer":"48","sourceHash":"58d29eb4ba6a14b59069702408eba8b7460610a3ef950dd64b5a3e6ba09e3606","steps":[{"id":"s1","latex":"ij=12:\\quad\\{i,j\\}=\\{2,6\\}\\text{ 또는 }\\{3,4\\}"},{"id":"s2","latex":"\\#\\text{전체 원순열}=(6-1)!=120"},{"id":"s3","latex":"A:\\ 2,6\\text{ 이웃}\\Rightarrow n(A)=4!\\cdot2=48"},{"id":"s4","latex":"B:\\ 3,4\\text{ 이웃}\\Rightarrow n(B)=48"},{"id":"s5","latex":"n(A\\cap B)=3!\\cdot2\\cdot2=24"},{"id":"s6","latex":"n(A\\cup B)=48+48-24=72"},{"id":"s7","latex":"120-72=48"}],"diagram":null,"contentHash":"3f368161f0ebde4b1b3ebe47fd3223453580a24efb900d88052aff36f2e3054e","questionHtml":"\u003cp class=\"hp\">\u003cspan class=\"heq\">\\(1\\)\u003c/span>부터 \u003cspan class=\"heq\">\\(6\\)\u003c/span>까지의 자연수가 하나씩 적혀 있는 \u003cspan class=\"heq\">\\(6\\)\u003c/span>개의 의자가 있다. 이 \u003cspan class=\"heq\">\\(6\\)\u003c/span>개의 의자를 일정한 간격을 두고 원형으로 배열할 때, 서로 이웃한 \u003cspan class=\"heq\">\\(2\\)\u003c/span>개의 의자에 적혀 있는 수의 곱이 \u003cspan class=\"heq\">\\(12\\)\u003c/span>가 되지 않도록 배열하는 경우의 수를 구하시오. (단, 회전하여 일치하는 것은 같은 것으로 본다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/6204a4ed076146e0dd2ef7fa.png\" style=\"width:277px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"80a8b2fedc17351b30f87a7ad19677dc5e466d0a452a379cdc1e528e33e4f8dc"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

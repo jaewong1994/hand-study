@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":16649,"sourceLabel":"2020 교육청 고3 수리가형 3월 14번","adminYear":2020,"grade":3,"month":3,"number":14,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"함수 $y= \\log_{\\,3}\\, \\left| 2x \\right|$의 그래프와 함수 $y = \\log_{\\,3} \\,\\left(x+3 \\right)\\,$의 그래프가 만나는 서로 다른 두 점을 각각 $A$, $B\\,$라 하자. 점 $A\\,$를 지나고 직선 $AB\\,$와 수직인 직선이 $y\\,$축과 만나는 점을 $C\\,$라 할 때, 삼각형 $ABC\\,$의 넓이는? (단, 점 $\\A\\,$의 $x\\,$좌표는 점 $\\B\\,$의 $x\\,$좌표보다 작다.) [4점]\n① $\\frac{13}{2}$ ② $7$ ③ $\\frac{15}{2}$ ④ $8$ ⑤ $\\frac{17}{2}\\,$","answer":"⑤","sourceHash":"2bb6054633a8e6714f8bf16fddc86446e084d7900f26921ca1177746041e79ee","steps":[{"id":"s1","latex":"\\log_3|2x|=\\log_3(x+3)\\Rightarrow |2x|=x+3,\\quad x>-3"},{"id":"s2","latex":"x=-1,3;\\quad l=\\log_3 2,\\quad A(-1,l),\\ B(3,l+1)"},{"id":"s3","latex":"\\text{직선 }AB\\text{의 기울기}=\\frac14\\Rightarrow \\text{직선 }AC\\text{의 기울기}=-4"},{"id":"s4","latex":"C(0,l-4),\\quad AB=\\sqrt{4^2+1^2}=\\sqrt{17},\\quad AC=\\sqrt{1^2+(-4)^2}=\\sqrt{17}"},{"id":"s5","latex":"\\triangle ABC=\\frac12 AB\\cdot AC=\\frac{17}{2}"}],"diagram":null,"contentHash":"c4153a55569899d4c9d09da08cbc6e1e83ce508548ab92e816962f9ab0a2ce62","questionHtml":"\u003cp class=\"hp\">함수 \u003cspan class=\"heq\">\\(y= \\log_{\\,3}\\, \\left| 2x \\right|\\)\u003c/span>의 그래프와 함수 \u003cspan class=\"heq\">\\(y = \\log_{\\,3} \\,\\left(x+3 \\right)\\,\\)\u003c/span>의 그래프가 만나는 서로 다른 두 점을 각각 \u003cspan class=\"heq\">\\(A\\)\u003c/span>, \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>라 하자. 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>를 지나고 직선 \u003cspan class=\"heq\">\\(AB\\,\\)\u003c/span>와 수직인 직선이 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>축과 만나는 점을 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>라 할 때, 삼각형 \u003cspan class=\"heq\">\\(ABC\\,\\)\u003c/span>의 넓이는? (단, 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표는 점 \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표보다 작다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\dfrac{13}{2}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(7\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\dfrac{15}{2}\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(8\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(\\dfrac{17}{2}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/721ec2462fe4b4e3bca44cd1.png\" style=\"width:416px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"ee22189102b7a58282935d77a8d737f02fc6bc841ec533dbfe46c047e0b3cb7c"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2020 교육청 고3 수리가형 3월 14번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":16649,"sourceLabel":"2020 교육청 고3 수리가형 3월 14번","adminYear":2020,"grade":3,"month":3,"number":14,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"함수 $y= \\log_{\\,3}\\, \\left| 2x \\right|$의 그래프와 함수 $y = \\log_{\\,3} \\,\\left(x+3 \\right)\\,$의 그래프가 만나는 서로 다른 두 점을 각각 $A$, $B\\,$라 하자. 점 $A\\,$를 지나고 직선 $AB\\,$와 수직인 직선이 $y\\,$축과 만나는 점을 $C\\,$라 할 때, 삼각형 $ABC\\,$의 넓이는? (단, 점 $\\A\\,$의 $x\\,$좌표는 점 $\\B\\,$의 $x\\,$좌표보다 작다.) [4점]\n① $\\frac{13}{2}$ ② $7$ ③ $\\frac{15}{2}$ ④ $8$ ⑤ $\\frac{17}{2}\\,$","answer":"⑤","sourceHash":"2bb6054633a8e6714f8bf16fddc86446e084d7900f26921ca1177746041e79ee","steps":[{"id":"s1","latex":"\\log_3|2x|=\\log_3(x+3)\\Rightarrow |2x|=x+3,\\quad x>-3"},{"id":"s2","latex":"x=-1,3;\\quad l=\\log_3 2,\\quad A(-1,l),\\ B(3,l+1)"},{"id":"s3","latex":"\\text{직선 }AB\\text{의 기울기}=\\frac14\\Rightarrow \\text{직선 }AC\\text{의 기울기}=-4"},{"id":"s4","latex":"C(0,l-4),\\quad AB=\\sqrt{4^2+1^2}=\\sqrt{17},\\quad AC=\\sqrt{1^2+(-4)^2}=\\sqrt{17}"},{"id":"s5","latex":"\\triangle ABC=\\frac12 AB\\cdot AC=\\frac{17}{2}"}],"diagram":null,"contentHash":"c4153a55569899d4c9d09da08cbc6e1e83ce508548ab92e816962f9ab0a2ce62","questionHtml":"\u003cp class=\"hp\">함수 \u003cspan class=\"heq\">\\(y= \\log_{\\,3}\\, \\left| 2x \\right|\\)\u003c/span>의 그래프와 함수 \u003cspan class=\"heq\">\\(y = \\log_{\\,3} \\,\\left(x+3 \\right)\\,\\)\u003c/span>의 그래프가 만나는 서로 다른 두 점을 각각 \u003cspan class=\"heq\">\\(A\\)\u003c/span>, \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>라 하자. 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>를 지나고 직선 \u003cspan class=\"heq\">\\(AB\\,\\)\u003c/span>와 수직인 직선이 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>축과 만나는 점을 \u003cspan class=\"heq\">\\(C\\,\\)\u003c/span>라 할 때, 삼각형 \u003cspan class=\"heq\">\\(ABC\\,\\)\u003c/span>의 넓이는? (단, 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표는 점 \u003cspan class=\"heq\">\\(B\\,\\)\u003c/span>의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표보다 작다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\dfrac{13}{2}\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(7\\)\u003c/span>&emsp;③ \u003cspan class=\"heq\">\\(\\dfrac{15}{2}\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(8\\)\u003c/span>&emsp;⑤ \u003cspan class=\"heq\">\\(\\dfrac{17}{2}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/721ec2462fe4b4e3bca44cd1.png\" style=\"width:416px;max-width:100%\">\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"ee22189102b7a58282935d77a8d737f02fc6bc841ec533dbfe46c047e0b3cb7c"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

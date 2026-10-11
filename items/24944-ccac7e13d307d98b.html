@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2024,"answer":"25","contentHash":"775e036d67b2128694c4520533ea8b5c32b068f8a84d84228188a9cd48637c72","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24944,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>정규분포 \u003cspan class=\"heq\">\\({{N}} \\left(m_{1},\\, \\sigma_{1}^{2} \\right)\\,\\)\u003c/span>을 따르는 확률변수 \u003cspan class=\"heq\">\\(X\\,\\)\u003c/span>와 정규분포 \u003cspan class=\"heq\">\\({{N}} \\left(m_{2},\\, \\sigma_{2}^{2} \\right)\\,\\)\u003c/span>을 따르는 확률변수 \u003cspan class=\"heq\">\\(Y\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cp>모든 실수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여\u003cspan class=\"heq\">\\({{P}} \\left(X\\, \\leq x \\right)={{P}} \\left(X\\, \\geq 40-x \\right)\\,\\)\u003c/span>이고 \u003cspan class=\"heq\">\\({{P}} \\left(Y\\, \\leq x \\right)={{P}} \\left(X\\, \\leq x+10 \\right)\\,\\)\u003c/span>이다.\u003c/p>\u003cp>\u003cspan class=\"heq\">\\({{P}} \\left(15 \\leq X\\, \\leq 20 \\right)+{{P}} \\left(15 \\leq Y\\, \\leq 20 \\right)\\,\\)\u003c/span> 의 값을 다음 표준정규분포표를 이용하여 구한 것이 \u003cspan class=\"heq\">\\(0.4772\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(m_{1}+ \\sigma_{2}\\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(\\sigma_{1}\\,\\)\u003c/span>과 \u003cspan class=\"heq\">\\(\\sigma_{2}\\,\\)\u003c/span>는 양수이다.) [4점]\u003c/p>\u003cp>[표] z=0.5: 0.1915, z=1.0: 0.3413, z=1.5: 0.4332, z=2.0: 0.4772\u003c/p>","questionText":"정규분포 ${{N}} \\left(m_{1},\\, \\sigma_{1}^{2} \\right)\\,$을 따르는 확률변수 $X\\,$와 정규분포 ${{N}} \\left(m_{2},\\, \\sigma_{2}^{2} \\right)\\,$을 따르는 확률변수 $Y\\,$가 다음 조건을 만족시킨다.\n모든 실수 $x\\,$에 대하여${{P}} \\left(X\\, \\leq x \\right)={{P}} \\left(X\\, \\geq 40-x \\right)\\,$이고 ${{P}} \\left(Y\\, \\leq x \\right)={{P}} \\left(X\\, \\leq x+10 \\right)\\,$이다.\n${{P}} \\left(15 \\leq X\\, \\leq 20 \\right)+{{P}} \\left(15 \\leq Y\\, \\leq 20 \\right)\\,$ 의 값을 다음 표준정규분포표를 이용하여 구한 것이 $0.4772\\,$일 때, $m_{1}+ \\sigma_{2}\\,$의 값을 구하시오. (단, $\\sigma_{1}\\,$과 $\\sigma_{2}\\,$는 양수이다.) [4점]\n[표] z=0.5: 0.1915, z=1.0: 0.3413, z=1.5: 0.4332, z=2.0: 0.4772","sourceHash":"e2adc8844ff45b3472a44f56ab9cf4b71e069db9db471debd8cec11a2d8917f2","sourceKind":"csat","sourceLabel":"2024년 시행 수능 · 2025학년도 · 확률과 통계 · 29번","steps":[{"id":"s1","latex":"\\mathrm P(X\\le20)=\\mathrm P(X\\ge20)=\\frac12\\quad\\Rightarrow\\quad m_1=20"},{"id":"s2","latex":"\\mathrm P(Y\\le x)=\\mathrm P(X\\le x+10)\\quad\\Rightarrow\\quad m_2=10,\\quad\\sigma_2=\\sigma_1"},{"id":"s3","latex":"\\mathrm P(15\\le X\\le20)=\\mathrm P(5\\le Y\\le10)=\\mathrm P(10\\le Y\\le15)"},{"id":"s4","latex":"\\mathrm P(10\\le Y\\le20)=0.4772"},{"id":"s5","latex":"Z=\\frac{Y-10}{\\sigma_2}\\quad\\Rightarrow\\quad\\mathrm P\\left(0\\le Z\\le\\frac{10}{\\sigma_2}\\right)=0.4772"},{"id":"s6","latex":"\\frac{10}{\\sigma_2}=2\\quad\\Rightarrow\\quad\\sigma_2=5"},{"id":"s7","latex":"m_1+\\sigma_2=20+5=25"}],"track":"확률과 통계"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2024년 시행 수능 · 2025학년도 · 확률과 통계 · 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2024,"answer":"25","contentHash":"775e036d67b2128694c4520533ea8b5c32b068f8a84d84228188a9cd48637c72","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24944,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>정규분포 \u003cspan class=\"heq\">\\({{N}} \\left(m_{1},\\, \\sigma_{1}^{2} \\right)\\,\\)\u003c/span>을 따르는 확률변수 \u003cspan class=\"heq\">\\(X\\,\\)\u003c/span>와 정규분포 \u003cspan class=\"heq\">\\({{N}} \\left(m_{2},\\, \\sigma_{2}^{2} \\right)\\,\\)\u003c/span>을 따르는 확률변수 \u003cspan class=\"heq\">\\(Y\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cp>모든 실수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여\u003cspan class=\"heq\">\\({{P}} \\left(X\\, \\leq x \\right)={{P}} \\left(X\\, \\geq 40-x \\right)\\,\\)\u003c/span>이고 \u003cspan class=\"heq\">\\({{P}} \\left(Y\\, \\leq x \\right)={{P}} \\left(X\\, \\leq x+10 \\right)\\,\\)\u003c/span>이다.\u003c/p>\u003cp>\u003cspan class=\"heq\">\\({{P}} \\left(15 \\leq X\\, \\leq 20 \\right)+{{P}} \\left(15 \\leq Y\\, \\leq 20 \\right)\\,\\)\u003c/span> 의 값을 다음 표준정규분포표를 이용하여 구한 것이 \u003cspan class=\"heq\">\\(0.4772\\,\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(m_{1}+ \\sigma_{2}\\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(\\sigma_{1}\\,\\)\u003c/span>과 \u003cspan class=\"heq\">\\(\\sigma_{2}\\,\\)\u003c/span>는 양수이다.) [4점]\u003c/p>\u003cp>[표] z=0.5: 0.1915, z=1.0: 0.3413, z=1.5: 0.4332, z=2.0: 0.4772\u003c/p>","questionText":"정규분포 ${{N}} \\left(m_{1},\\, \\sigma_{1}^{2} \\right)\\,$을 따르는 확률변수 $X\\,$와 정규분포 ${{N}} \\left(m_{2},\\, \\sigma_{2}^{2} \\right)\\,$을 따르는 확률변수 $Y\\,$가 다음 조건을 만족시킨다.\n모든 실수 $x\\,$에 대하여${{P}} \\left(X\\, \\leq x \\right)={{P}} \\left(X\\, \\geq 40-x \\right)\\,$이고 ${{P}} \\left(Y\\, \\leq x \\right)={{P}} \\left(X\\, \\leq x+10 \\right)\\,$이다.\n${{P}} \\left(15 \\leq X\\, \\leq 20 \\right)+{{P}} \\left(15 \\leq Y\\, \\leq 20 \\right)\\,$ 의 값을 다음 표준정규분포표를 이용하여 구한 것이 $0.4772\\,$일 때, $m_{1}+ \\sigma_{2}\\,$의 값을 구하시오. (단, $\\sigma_{1}\\,$과 $\\sigma_{2}\\,$는 양수이다.) [4점]\n[표] z=0.5: 0.1915, z=1.0: 0.3413, z=1.5: 0.4332, z=2.0: 0.4772","sourceHash":"e2adc8844ff45b3472a44f56ab9cf4b71e069db9db471debd8cec11a2d8917f2","sourceKind":"csat","sourceLabel":"2024년 시행 수능 · 2025학년도 · 확률과 통계 · 29번","steps":[{"id":"s1","latex":"\\mathrm P(X\\le20)=\\mathrm P(X\\ge20)=\\frac12\\quad\\Rightarrow\\quad m_1=20"},{"id":"s2","latex":"\\mathrm P(Y\\le x)=\\mathrm P(X\\le x+10)\\quad\\Rightarrow\\quad m_2=10,\\quad\\sigma_2=\\sigma_1"},{"id":"s3","latex":"\\mathrm P(15\\le X\\le20)=\\mathrm P(5\\le Y\\le10)=\\mathrm P(10\\le Y\\le15)"},{"id":"s4","latex":"\\mathrm P(10\\le Y\\le20)=0.4772"},{"id":"s5","latex":"Z=\\frac{Y-10}{\\sigma_2}\\quad\\Rightarrow\\quad\\mathrm P\\left(0\\le Z\\le\\frac{10}{\\sigma_2}\\right)=0.4772"},{"id":"s6","latex":"\\frac{10}{\\sigma_2}=2\\quad\\Rightarrow\\quad\\sigma_2=5"},{"id":"s7","latex":"m_1+\\sigma_2=20+5=25"}],"track":"확률과 통계"};</script>
+<script>window.HandStudyGuide={"itemId":24944,"sourceHash":"e2adc8844ff45b3472a44f56ab9cf4b71e069db9db471debd8cec11a2d8917f2","contentHash":"775e036d67b2128694c4520533ea8b5c32b068f8a84d84228188a9cd48637c72","overview":{"goal":"정규분포의 대칭성과 평행이동으로 두 확률을 하나로 합친 뒤 표준화하여 표준편차를 구해요.","firstLook":"모든 실수에 대한 확률 등식을 바로 표준화하기 전에, 가운데가 되는 값 \\(x=20\\)을 먼저 넣어 보세요.","conditions":[{"label":"\\(\\mathrm P(X\\le x)=\\mathrm P(X\\ge40-x)\\)","meaning":"20을 기준으로 좌우 꼬리의 확률이 같다는 뜻이에요. 정규분포의 평균을 찾을 수 있어요."},{"label":"\\(\\mathrm P(Y\\le x)=\\mathrm P(X\\le x+10)\\)","meaning":"\\(Y\\)의 분포는 \\(X\\)의 분포를 왼쪽으로 10만큼 옮긴 모습이에요. 평균만 바뀌고 표준편차는 같아요."},{"label":"두 구간 확률의 합이 0.4772","meaning":"두 확률을 모두 \\(Y\\)로 나타내고 대칭성을 이용하면 평균에서 한쪽으로 이어진 구간의 확률이 돼요."}]},"chapters":[{"id":"c1","label":"평균과 분포의 이동 읽기","stepIds":["s1","s2"],"question":"첫 확률 등식에 \\(x=20\\)을 넣으면 평균에 관해 무엇을 알 수 있을까요?","hint":"정규분포에서는 평균의 왼쪽과 오른쪽 확률이 각각 절반이라는 점을 떠올려 보세요.","explanation":"\\(\\mathrm P(X\\le20)=\\mathrm P(X\\ge20)\\)이고 한 점의 확률은 0이므로 두 확률은 각각 \\(1/2\\)예요. 정규분포의 대칭 중심이 평균이므로 \\(m_1=20\\)이에요. 두 번째 등식에서 \\(Y\\)는 \\(X-10\\)과 같은 분포를 가지므로 평균은 \\(m_2=10\\), 표준편차는 \\(\\sigma_2=\\sigma_1\\)이에요. 같은 분포라는 사실만 쓰면 되고, 두 확률변수를 같은 값으로 둘 필요는 없어요.","check":{"prompt":"분포를 왼쪽으로 10만큼 옮기면 표준편차도 10만큼 줄어드나요?","answer":"아니요. 평균에서 떨어진 정도는 변하지 않아서 표준편차는 그대로예요."}},{"id":"c2","label":"대칭으로 두 구간 이어 붙이기","stepIds":["s3","s4"],"question":"\\(15\\le X\\le20\\)의 확률을 \\(Y\\)로 바꾸면 어느 구간일까요?","hint":"양 끝값을 각각 10씩 줄인 다음 평균 10을 기준으로 반사해 보세요.","explanation":"\\(X\\)의 15부터 20까지는 \\(Y\\)의 5부터 10까지와 확률이 같아요. \\(Y\\)의 평균이 10이므로 이 구간은 10부터 15까지와도 확률이 같아요. 이제 문제의 다른 구간 15부터 20까지와 이어 붙이면 \\(\\mathrm P(10\\le Y\\le20)=0.4772\\)예요. 두 구간이 만나는 한 점 15의 확률은 0이므로 중복 때문에 빼 줄 값은 없어요.","check":{"prompt":"\\(\\mathrm P(15\\le X\\le20)\\)를 바로 \\(\\mathrm P(15\\le Y\\le20)\\)와 같다고 해도 되나요?","answer":"안 돼요. 먼저 10만큼 이동해 \\(5\\le Y\\le10\\)으로 바꾸고, 대칭으로 \\(10\\le Y\\le15\\)에 대응시켜야 해요."}},{"id":"c3","label":"표의 구간과 표준화한 구간 맞추기","stepIds":["s5","s6","s7"],"question":"표의 확률 0.4772는 표준정규분포에서 어느 구간의 확률인가요?","hint":"표가 주는 확률은 0부터 양수 \\(z\\)까지예요. \\(Y=10,20\\)을 각각 표준화해 보세요.","explanation":"\\(Z=(Y-10)/\\sigma_2\\)로 표준화하면 구간은 0부터 \\(10/\\sigma_2\\)까지가 돼요. 표에서 \\(\\mathrm P(0\\le Z\\le2)=0.4772\\)이므로 \\(10/\\sigma_2=2\\), \\(\\sigma_2=5\\)예요. 원래 구간의 두 끝은 평균과 평균보다 표준편차의 두 배만큼 큰 값이어서 표와 맞아요. 따라서 \\(m_1+\\sigma_2=20+5=25\\)예요.","check":{"prompt":"마지막에 구한 5는 분산인가요, 표준편차인가요?","answer":"표준화할 때 나누는 값 \\(\\sigma_2\\), 즉 표준편차예요. 분산은 \\(\\sigma_2^2=25\\)이지만 문제에서는 표준편차를 더해요."}}],"takeaway":["확률 등식에 대칭의 가운데 값을 넣으면 평균을 바로 읽을 수 있어요.","서로 다른 정규분포의 구간은 이동과 대칭으로 같은 분포에 모은 뒤 표준화해요."]};</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

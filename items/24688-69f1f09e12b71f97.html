@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2019,"answer":"①","contentHash":"549ac8b3e067a452c3d5f6b10a9462cf3f094dfd07d0f65fde4f5e4746d71125","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24688,"month":11,"number":17,"points":4,"preview":false,"questionHtml":"\u003cp>자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>의 양의 약수의 개수를 \u003cspan class=\"heq\">\\(f(n)\\)\u003c/span>이라 하고, \u003cspan class=\"heq\">\\(36\\)\u003c/span>의 모든 양의 약수를 \u003cspan class=\"heq\">\\(a_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{3}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\cdots\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{9}\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\(\\sum _{k=1} ^{9} \\, \\left\\{ (-1) ^{f(a _{k} )} \\times \\log\\,a _{k} \\right\\}\\)\u003c/span>의 값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(\\log\\,2 +\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(2\\,\\log\\,2 +\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(2\\,\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(3\\,\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"자연수 $n$의 양의 약수의 개수를 $f(n)$이라 하고, $36$의 모든 양의 약수를 $a_{1}$, $a_{2}$, $a_{3}$, $\\cdots\\,$, $a_{9}$라 하자. $\\sum _{k=1} ^{9} \\, \\left\\{ (-1) ^{f(a _{k} )} \\times \\log\\,a _{k} \\right\\}$의 값은? [4점]\n① $\\log\\,2 +\\log 3$ ② $2\\,\\log\\,2 +\\log 3$\n③ $\\log\\,2 +2\\,\\log 3$ ④ $2\\,\\log\\,2 +2\\,\\log 3$\n⑤ $3\\,\\log\\,2 +2\\,\\log 3$","sourceHash":"0a445e0fec6e3e28b32bd7ec2995430485add3e6d295d59cf492690b0db7f040","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 17번","steps":[{"id":"s1","latex":"n\\text{이 제곱수일 때에만 약수가 짝을 이루고 하나가 남으므로 }f(n)\\text{은 홀수}"},{"id":"s2","latex":"36\\text{의 약수}:\\quad1,2,3,4,6,9,12,18,36"},{"id":"s3","latex":"\\text{제곱수}:1,4,9,36\\quad\\Rightarrow\\quad(-1)^{f(n)}=-1"},{"id":"s4","latex":"\\text{나머지 약수}:2,3,6,12,18\\quad\\Rightarrow\\quad(-1)^{f(n)}=1"},{"id":"s5","latex":"\\sum_{k=1}^9(-1)^{f(a_k)}\\log a_k=\\log\\frac{2\\cdot3\\cdot6\\cdot12\\cdot18}{1\\cdot4\\cdot9\\cdot36}"},{"id":"s6","latex":"=\\log6=\\boxed{\\log2+\\log3}\\quad\\text{①}"}],"track":"나형"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2019년 시행 수능 · 2020학년도 · 나형 · 17번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2019,"answer":"①","contentHash":"549ac8b3e067a452c3d5f6b10a9462cf3f094dfd07d0f65fde4f5e4746d71125","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24688,"month":11,"number":17,"points":4,"preview":false,"questionHtml":"\u003cp>자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>의 양의 약수의 개수를 \u003cspan class=\"heq\">\\(f(n)\\)\u003c/span>이라 하고, \u003cspan class=\"heq\">\\(36\\)\u003c/span>의 모든 양의 약수를 \u003cspan class=\"heq\">\\(a_{1}\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{2}\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{3}\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\cdots\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(a_{9}\\)\u003c/span>라 하자. \u003cspan class=\"heq\">\\(\\sum _{k=1} ^{9} \\, \\left\\{ (-1) ^{f(a _{k} )} \\times \\log\\,a _{k} \\right\\}\\)\u003c/span>의 값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(\\log\\,2 +\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(2\\,\\log\\,2 +\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(2\\,\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(3\\,\\log\\,2 +2\\,\\log 3\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"자연수 $n$의 양의 약수의 개수를 $f(n)$이라 하고, $36$의 모든 양의 약수를 $a_{1}$, $a_{2}$, $a_{3}$, $\\cdots\\,$, $a_{9}$라 하자. $\\sum _{k=1} ^{9} \\, \\left\\{ (-1) ^{f(a _{k} )} \\times \\log\\,a _{k} \\right\\}$의 값은? [4점]\n① $\\log\\,2 +\\log 3$ ② $2\\,\\log\\,2 +\\log 3$\n③ $\\log\\,2 +2\\,\\log 3$ ④ $2\\,\\log\\,2 +2\\,\\log 3$\n⑤ $3\\,\\log\\,2 +2\\,\\log 3$","sourceHash":"0a445e0fec6e3e28b32bd7ec2995430485add3e6d295d59cf492690b0db7f040","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 17번","steps":[{"id":"s1","latex":"n\\text{이 제곱수일 때에만 약수가 짝을 이루고 하나가 남으므로 }f(n)\\text{은 홀수}"},{"id":"s2","latex":"36\\text{의 약수}:\\quad1,2,3,4,6,9,12,18,36"},{"id":"s3","latex":"\\text{제곱수}:1,4,9,36\\quad\\Rightarrow\\quad(-1)^{f(n)}=-1"},{"id":"s4","latex":"\\text{나머지 약수}:2,3,6,12,18\\quad\\Rightarrow\\quad(-1)^{f(n)}=1"},{"id":"s5","latex":"\\sum_{k=1}^9(-1)^{f(a_k)}\\log a_k=\\log\\frac{2\\cdot3\\cdot6\\cdot12\\cdot18}{1\\cdot4\\cdot9\\cdot36}"},{"id":"s6","latex":"=\\log6=\\boxed{\\log2+\\log3}\\quad\\text{①}"}],"track":"나형"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

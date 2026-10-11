@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=bf41b07fdc22efdd">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"11","contentHash":"41211bb37c5ed4387b5361cdce223923a61953ba6403cac3bbaac5791836cbf0","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"baf0e7b99decf10e57c5dd709770b806574546fba5a7fb0e1120a187602b7a5e","month":3,"number":29,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-03-calculus-q29-7c27835a3884b29f.png\" alt=\"2026년 3월 29번 문제\">\u003c/figure>","sourceHash":"1039392a6a1af856f85400d3bd983cdb1115320fcbd1650d77b7bbc806314770","sourceKey":"ebsi:2026:g3:03:calculus:q29","sourceLabel":"서울특별시교육청 2026-03-24","stepExplanations":{"s1":{"body":"\\(\\overline{\\mathrm{AC}}=\\overline{\\mathrm{BC}}\\)이고 \\(\\mathrm{P}\\)가 밑변 \\(\\mathrm{AB}\\)의 중점이므로 \\(\\mathrm{CP}\\)는 \\(\\mathrm{AB}\\)에 수직이에요. 직각삼각형 \\(\\mathrm{CPB}\\)에 피타고라스 정리를 쓰면 \\(\\overline{\\mathrm{BP}}^2=(4n+2)^2-(15n^2+16n+4)=n^2\\)입니다. 길이는 양수이므로 \\(\\overline{\\mathrm{BP}}=n\\), 따라서 \\(\\overline{\\mathrm{AB}}=2n\\)이에요.","skillTags":["geometry.isosceles","geometry.pythagoras"],"title":"이등변삼각형의 중선은 높이이기도 해요"},"s3":{"body":"삼각형 \\(\\mathrm{ABC}\\)의 두 변의 중점을 잇는 \\(\\mathrm{PQ}\\)는 \\(\\mathrm{AC}\\)와 평행해요. 여기에 \\(\\angle\\mathrm{CAB}=\\angle\\mathrm{PQR}\\)를 적용하면 \\(\\mathrm{QR}\\)이 \\(\\mathrm{AB}\\)와 평행하다는 것을 알 수 있어요. \\(\\mathrm{Q}\\)가 \\(\\mathrm{BC}\\)의 중점이므로 \\(\\mathrm{R}\\)도 \\(\\mathrm{AC}\\)의 중점이고, \\(\\overline{\\mathrm{RQ}}=\\frac12\\overline{\\mathrm{AB}}=n\\)입니다.","skillTags":["geometry.parallel","geometry.midpoint"],"title":"주어진 각의 등식으로 평행선을 알아내요"},"s7":{"body":"\\(\\overline{\\mathrm{DR}}=x\\)라 놓으면 비례 조건에서 \\(\\overline{\\mathrm{DC}}=2x\\)이고, \\(\\mathrm{D},\\mathrm{R},\\mathrm{Q}\\)가 이 순서로 놓여 \\(\\overline{\\mathrm{DQ}}=x+n\\)이에요. 평행선 때문에 \\(\\angle\\mathrm{DQC}=\\angle\\mathrm{PBC}\\)이고, 직각삼각형 \\(\\mathrm{PBC}\\)에서 그 코사인은 \\(\\frac{n}{4n+2}\\)입니다. 이제 삼각형 \\(\\mathrm{DQC}\\)에 코사인법칙을 쓰면 이 줄의 식이 나와요.","skillTags":["geometry.cosine-rule"],"title":"알려진 각의 코사인을 다른 삼각형에 옮겨요"},"s8":{"body":"코사인법칙 식에서 마지막 항은 \\(n(x+n)\\)이므로 \\(4x^2=(x+n)^2+(2n+1)^2-n(x+n)\\)입니다. 정리하면 \\(3x^2-nx-(2n+1)^2=0\\)이에요. 근의 공식의 판별식은 \\(n^2+12(2n+1)^2=49n^2+48n+12\\)이고, 길이 \\(x>0\\)이므로 더하기 부호인 해만 남깁니다.","skillTags":["equation.quadratic","equation.domain-check"],"title":"길이 조건으로 이차방정식의 해를 골라요"},"s9":{"body":"구하려는 식은 \\(\\frac{\\sqrt{49n^2+48n+12}-7n}{6}\\)이에요. 분자와 분모에 \\(\\sqrt{49n^2+48n+12}+7n\\)을 곱하면 \\(\\frac{48n+12}{6(\\sqrt{49n^2+48n+12}+7n)}\\)가 됩니다. 이제 분자와 분모를 \\(n\\)으로 나누면 \\(\\frac{48+12/n}{6(\\sqrt{49+48/n+12/n^2}+7)}\\)이고, 극한은 \\(\\frac{48}{84}=\\frac47\\)이에요.","skillTags":["limit.rationalization"],"title":"큰 두 수를 바로 빼지 말고 유리화해요"}},"steps":[{"id":"s1","latex":"CP\\perp AB,\\quad BP^2=BC^2-CP^2=n^2\\Rightarrow AP=BP=n"},{"id":"s2","latex":"P,Q\\text{는 중점}\\Rightarrow PQ\\parallel AC"},{"id":"s3","latex":"AB\\parallel DQ,\\quad Q,R\\text{는 }BC,AC\\text{의 중점}"},{"id":"s4","latex":"RQ=n,\\quad CQ=2n+1"},{"id":"s5","latex":"DR=x,\\ DC=2x,\\quad DQ=x+n"},{"id":"s6","latex":"\\cos\\angle DQC=\\cos\\angle PBC=\\frac{n}{4n+2}"},{"id":"s7","latex":"(2x)^2=(x+n)^2+(2n+1)^2-2(x+n)(2n+1)\\frac n{4n+2}"},{"id":"s8","latex":"x=\\frac{n+\\sqrt{49n^2+48n+12}}6"},{"id":"s9","latex":"\\lim_{n\\to\\infty}\\left(x-\\frac43n\\right)=\\frac47\\Rightarrow p+q=11"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-structure.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-graph.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-explanations.js?v=372f3ddd6911ccf0"></script>
-  <script defer src="../assets/external-hand-study-learning.js?v=bf41b07fdc22efdd"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=6d62c18f876c57f6">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>서울특별시교육청 2026-03-24 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"11","contentHash":"41211bb37c5ed4387b5361cdce223923a61953ba6403cac3bbaac5791836cbf0","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"baf0e7b99decf10e57c5dd709770b806574546fba5a7fb0e1120a187602b7a5e","month":3,"number":29,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-03-calculus-q29-7c27835a3884b29f.png\" alt=\"2026년 3월 29번 문제\">\u003c/figure>","sourceHash":"1039392a6a1af856f85400d3bd983cdb1115320fcbd1650d77b7bbc806314770","sourceKey":"ebsi:2026:g3:03:calculus:q29","sourceLabel":"서울특별시교육청 2026-03-24","stepExplanations":{"s1":{"body":"\\(\\overline{\\mathrm{AC}}=\\overline{\\mathrm{BC}}\\)이고 \\(\\mathrm{P}\\)가 밑변 \\(\\mathrm{AB}\\)의 중점이므로 \\(\\mathrm{CP}\\)는 \\(\\mathrm{AB}\\)에 수직이에요. 직각삼각형 \\(\\mathrm{CPB}\\)에 피타고라스 정리를 쓰면 \\(\\overline{\\mathrm{BP}}^2=(4n+2)^2-(15n^2+16n+4)=n^2\\)입니다. 길이는 양수이므로 \\(\\overline{\\mathrm{BP}}=n\\), 따라서 \\(\\overline{\\mathrm{AB}}=2n\\)이에요.","skillTags":["geometry.isosceles","geometry.pythagoras"],"title":"이등변삼각형의 중선은 높이이기도 해요"},"s3":{"body":"삼각형 \\(\\mathrm{ABC}\\)의 두 변의 중점을 잇는 \\(\\mathrm{PQ}\\)는 \\(\\mathrm{AC}\\)와 평행해요. 여기에 \\(\\angle\\mathrm{CAB}=\\angle\\mathrm{PQR}\\)를 적용하면 \\(\\mathrm{QR}\\)이 \\(\\mathrm{AB}\\)와 평행하다는 것을 알 수 있어요. \\(\\mathrm{Q}\\)가 \\(\\mathrm{BC}\\)의 중점이므로 \\(\\mathrm{R}\\)도 \\(\\mathrm{AC}\\)의 중점이고, \\(\\overline{\\mathrm{RQ}}=\\frac12\\overline{\\mathrm{AB}}=n\\)입니다.","skillTags":["geometry.parallel","geometry.midpoint"],"title":"주어진 각의 등식으로 평행선을 알아내요"},"s7":{"body":"\\(\\overline{\\mathrm{DR}}=x\\)라 놓으면 비례 조건에서 \\(\\overline{\\mathrm{DC}}=2x\\)이고, \\(\\mathrm{D},\\mathrm{R},\\mathrm{Q}\\)가 이 순서로 놓여 \\(\\overline{\\mathrm{DQ}}=x+n\\)이에요. 평행선 때문에 \\(\\angle\\mathrm{DQC}=\\angle\\mathrm{PBC}\\)이고, 직각삼각형 \\(\\mathrm{PBC}\\)에서 그 코사인은 \\(\\frac{n}{4n+2}\\)입니다. 이제 삼각형 \\(\\mathrm{DQC}\\)에 코사인법칙을 쓰면 이 줄의 식이 나와요.","skillTags":["geometry.cosine-rule"],"title":"알려진 각의 코사인을 다른 삼각형에 옮겨요"},"s8":{"body":"코사인법칙 식에서 마지막 항은 \\(n(x+n)\\)이므로 \\(4x^2=(x+n)^2+(2n+1)^2-n(x+n)\\)입니다. 정리하면 \\(3x^2-nx-(2n+1)^2=0\\)이에요. 근의 공식의 판별식은 \\(n^2+12(2n+1)^2=49n^2+48n+12\\)이고, 길이 \\(x>0\\)이므로 더하기 부호인 해만 남깁니다.","skillTags":["equation.quadratic","equation.domain-check"],"title":"길이 조건으로 이차방정식의 해를 골라요"},"s9":{"body":"구하려는 식은 \\(\\frac{\\sqrt{49n^2+48n+12}-7n}{6}\\)이에요. 분자와 분모에 \\(\\sqrt{49n^2+48n+12}+7n\\)을 곱하면 \\(\\frac{48n+12}{6(\\sqrt{49n^2+48n+12}+7n)}\\)가 됩니다. 이제 분자와 분모를 \\(n\\)으로 나누면 \\(\\frac{48+12/n}{6(\\sqrt{49+48/n+12/n^2}+7)}\\)이고, 극한은 \\(\\frac{48}{84}=\\frac47\\)이에요.","skillTags":["limit.rationalization"],"title":"큰 두 수를 바로 빼지 말고 유리화해요"}},"steps":[{"id":"s1","latex":"CP\\perp AB,\\quad BP^2=BC^2-CP^2=n^2\\Rightarrow AP=BP=n"},{"id":"s2","latex":"P,Q\\text{는 중점}\\Rightarrow PQ\\parallel AC"},{"id":"s3","latex":"AB\\parallel DQ,\\quad Q,R\\text{는 }BC,AC\\text{의 중점}"},{"id":"s4","latex":"RQ=n,\\quad CQ=2n+1"},{"id":"s5","latex":"DR=x,\\ DC=2x,\\quad DQ=x+n"},{"id":"s6","latex":"\\cos\\angle DQC=\\cos\\angle PBC=\\frac{n}{4n+2}"},{"id":"s7","latex":"(2x)^2=(x+n)^2+(2n+1)^2-2(x+n)(2n+1)\\frac n{4n+2}"},{"id":"s8","latex":"x=\\frac{n+\\sqrt{49n^2+48n+12}}6"},{"id":"s9","latex":"\\lim_{n\\to\\infty}\\left(x-\\frac43n\\right)=\\frac47\\Rightarrow p+q=11"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-external-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

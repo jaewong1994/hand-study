@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=bf41b07fdc22efdd">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"59","contentHash":"c58fc5ef35d162435decc85dd84ec4728444aa2f8581ff4326d902a8fce80156","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"b61df43ed517b4e7a1df9829d1c866549a2201d197472dca5d359e16c3190c83","month":7,"number":30,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-07-calculus-q30-aa6f48c1830f4251.png\" alt=\"2026년 7월 30번 문제\">\u003c/figure>","sourceHash":"e0e1a952a8893d1950cca8c90608e875d1d42bce7cf6cc1e05e18febbc23936a","sourceKey":"ebsi:2026:g3:07:calculus:q30","sourceLabel":"인천광역시교육청 2026-07-08","stepExplanations":{"s2":{"body":"연속인 함수가 실수 전체에서 역함수를 가지려면 계속 증가하거나 계속 감소해야 해요. 앞 줄에서 \\(x=0\\)을 넣으면 \\((3f(0)^2+1)f^{\\prime}(0)=-b\u003c0\\)이므로 \\(f^{\\prime}(0)\u003c0\\)입니다. 증가하는 경우는 불가능하니 \\(f\\)는 감소하고, 모든 실수에서 \\(f^{\\prime}(x)\\le0\\)이에요. 또한 \\(3f(x)^2+1>0\\)이므로 \\(g(x)\\le0\\)입니다.","skillTags":["function.inverse","derivative.monotonicity"],"title":"역함수 존재와 한 점의 기울기를 연결해요"},"s4":{"body":"\\(a>0\\)이므로 \\(g^{\\prime}(x)\\)는 \\(x\u003c-2\\)에서 양수, \\(-2\u003cx\u003c2\\)에서 음수, \\(x>2\\)에서 양수예요. 양쪽으로 멀리 갈 때 \\(g(x)\\)는 \\(-b\u003c0\\)에 가까워지고, \\(g(-2)=\\frac a{64}-b>-b\\)이므로 가장 큰 값은 \\(x=-2\\)에서 나옵니다. 모든 값이 0 이하인데 어떤 \\(k\\)에서 0이 되어야 하므로 바로 이 가장 큰 값이 0이어야 해요. 따라서 \\(k=-2\\), \\(a=64b\\)입니다.","skillTags":["derivative.global-extrema","limit.endpoint"],"title":"0에 닿는 위치는 가장 큰 함숫값을 갖는 곳이에요"},"s6":{"body":"교점의 가로좌표를 \\(t\\)라 하면 \\(f(t)=-bt\\)예요. (가)에 \\(a=64b\\)와 함께 넣으면 \\(-b^3t^3=\\frac{64b}{t^2+12}-\\frac{16b}{3}\\)입니다. \\(b>0\\)으로 나누고 오른쪽을 통분하면 \\(-b^2t^3=-\\frac{16t^2}{3(t^2+12)}\\)예요. 분모를 곱해 한쪽으로 모으면 \\(t^2(3b^2t^3+36b^2t-16)=0\\)이 됩니다. 여기서 \\(t^2\\)로 나누면 교점 \\(t=0\\)을 놓치므로 인수로 남겨 둬요.","skillTags":["equation.substitution","equation.zero-product"],"title":"교점 조건을 넣고 0인 해를 버리지 않아요"},"s8":{"body":"\\(h^{\\prime}(t)=9b^2t^2+36b^2>0\\)이라 \\(h\\)는 계속 증가해요. 또 \\(h(0)=-16\u003c0\\)이고 양의 방향으로 한없이 커지므로 0이 되는 양수 \\(t_1\\)이 딱 하나 있어요. 그러므로 서로 다른 교점의 가로좌표는 \\(0,t_1\\) 두 개뿐입니다. 그 합이 \\(k+8=-2+8=6\\)이므로 \\(t_1=6\\)을 넣어 \\(b^2\\)를 구할 수 있어요.","skillTags":["equation.root-count","derivative.monotonicity"],"title":"나머지 해가 하나라는 이유도 확인해요"}},"steps":[{"id":"s1","latex":"\\{3f(x)^2+1\\}f'(x)=\\frac{-2ax}{(x^2+12)^2}-b=:g(x)"},{"id":"s2","latex":"b>0\\Rightarrow f'(0)\u003c0\\Rightarrow f'(x)\\le0\\ (\\forall x)"},{"id":"s3","latex":"g'(x)=\\frac{6a(x+2)(x-2)}{(x^2+12)^3}"},{"id":"s4","latex":"g(x)\\le0,\\ g(k)=0\\Rightarrow k=-2,\\quad g(-2)=0"},{"id":"s5","latex":"a=64b"},{"id":"s6","latex":"f(t)=-bt\\Rightarrow t^2\\{3b^2t^3+36b^2t-16\\}=0"},{"id":"s7","latex":"h(t)=3b^2t^3+36b^2t-16,\\quad h'(t)>0"},{"id":"s8","latex":"\\text{두 교점의 }x\\text{좌표는 }0,t_1,\\quad t_1=k+8=6"},{"id":"s9","latex":"h(6)=864b^2-16=0\\Rightarrow b^2=\\frac1{54}"},{"id":"s10","latex":"ab=64b^2=\\frac{32}{27}\\Rightarrow p+q=59"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-structure.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-graph.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-explanations.js?v=372f3ddd6911ccf0"></script>
-  <script defer src="../assets/external-hand-study-learning.js?v=bf41b07fdc22efdd"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=6d62c18f876c57f6">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>인천광역시교육청 2026-07-08 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"59","contentHash":"c58fc5ef35d162435decc85dd84ec4728444aa2f8581ff4326d902a8fce80156","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"b61df43ed517b4e7a1df9829d1c866549a2201d197472dca5d359e16c3190c83","month":7,"number":30,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-07-calculus-q30-aa6f48c1830f4251.png\" alt=\"2026년 7월 30번 문제\">\u003c/figure>","sourceHash":"e0e1a952a8893d1950cca8c90608e875d1d42bce7cf6cc1e05e18febbc23936a","sourceKey":"ebsi:2026:g3:07:calculus:q30","sourceLabel":"인천광역시교육청 2026-07-08","stepExplanations":{"s2":{"body":"연속인 함수가 실수 전체에서 역함수를 가지려면 계속 증가하거나 계속 감소해야 해요. 앞 줄에서 \\(x=0\\)을 넣으면 \\((3f(0)^2+1)f^{\\prime}(0)=-b\u003c0\\)이므로 \\(f^{\\prime}(0)\u003c0\\)입니다. 증가하는 경우는 불가능하니 \\(f\\)는 감소하고, 모든 실수에서 \\(f^{\\prime}(x)\\le0\\)이에요. 또한 \\(3f(x)^2+1>0\\)이므로 \\(g(x)\\le0\\)입니다.","skillTags":["function.inverse","derivative.monotonicity"],"title":"역함수 존재와 한 점의 기울기를 연결해요"},"s4":{"body":"\\(a>0\\)이므로 \\(g^{\\prime}(x)\\)는 \\(x\u003c-2\\)에서 양수, \\(-2\u003cx\u003c2\\)에서 음수, \\(x>2\\)에서 양수예요. 양쪽으로 멀리 갈 때 \\(g(x)\\)는 \\(-b\u003c0\\)에 가까워지고, \\(g(-2)=\\frac a{64}-b>-b\\)이므로 가장 큰 값은 \\(x=-2\\)에서 나옵니다. 모든 값이 0 이하인데 어떤 \\(k\\)에서 0이 되어야 하므로 바로 이 가장 큰 값이 0이어야 해요. 따라서 \\(k=-2\\), \\(a=64b\\)입니다.","skillTags":["derivative.global-extrema","limit.endpoint"],"title":"0에 닿는 위치는 가장 큰 함숫값을 갖는 곳이에요"},"s6":{"body":"교점의 가로좌표를 \\(t\\)라 하면 \\(f(t)=-bt\\)예요. (가)에 \\(a=64b\\)와 함께 넣으면 \\(-b^3t^3=\\frac{64b}{t^2+12}-\\frac{16b}{3}\\)입니다. \\(b>0\\)으로 나누고 오른쪽을 통분하면 \\(-b^2t^3=-\\frac{16t^2}{3(t^2+12)}\\)예요. 분모를 곱해 한쪽으로 모으면 \\(t^2(3b^2t^3+36b^2t-16)=0\\)이 됩니다. 여기서 \\(t^2\\)로 나누면 교점 \\(t=0\\)을 놓치므로 인수로 남겨 둬요.","skillTags":["equation.substitution","equation.zero-product"],"title":"교점 조건을 넣고 0인 해를 버리지 않아요"},"s8":{"body":"\\(h^{\\prime}(t)=9b^2t^2+36b^2>0\\)이라 \\(h\\)는 계속 증가해요. 또 \\(h(0)=-16\u003c0\\)이고 양의 방향으로 한없이 커지므로 0이 되는 양수 \\(t_1\\)이 딱 하나 있어요. 그러므로 서로 다른 교점의 가로좌표는 \\(0,t_1\\) 두 개뿐입니다. 그 합이 \\(k+8=-2+8=6\\)이므로 \\(t_1=6\\)을 넣어 \\(b^2\\)를 구할 수 있어요.","skillTags":["equation.root-count","derivative.monotonicity"],"title":"나머지 해가 하나라는 이유도 확인해요"}},"steps":[{"id":"s1","latex":"\\{3f(x)^2+1\\}f'(x)=\\frac{-2ax}{(x^2+12)^2}-b=:g(x)"},{"id":"s2","latex":"b>0\\Rightarrow f'(0)\u003c0\\Rightarrow f'(x)\\le0\\ (\\forall x)"},{"id":"s3","latex":"g'(x)=\\frac{6a(x+2)(x-2)}{(x^2+12)^3}"},{"id":"s4","latex":"g(x)\\le0,\\ g(k)=0\\Rightarrow k=-2,\\quad g(-2)=0"},{"id":"s5","latex":"a=64b"},{"id":"s6","latex":"f(t)=-bt\\Rightarrow t^2\\{3b^2t^3+36b^2t-16\\}=0"},{"id":"s7","latex":"h(t)=3b^2t^3+36b^2t-16,\\quad h'(t)>0"},{"id":"s8","latex":"\\text{두 교점의 }x\\text{좌표는 }0,t_1,\\quad t_1=k+8=6"},{"id":"s9","latex":"h(6)=864b^2-16=0\\Rightarrow b^2=\\frac1{54}"},{"id":"s10","latex":"ab=64b^2=\\frac{32}{27}\\Rightarrow p+q=59"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide={"sourceKey":"ebsi:2026:g3:07:calculus:q30","sourceHash":"e0e1a952a8893d1950cca8c90608e875d1d42bce7cf6cc1e05e18febbc23936a","contentHash":"c58fc5ef35d162435decc85dd84ec4728444aa2f8581ff4326d902a8fce80156","overview":{"goal":"역함수가 존재하는 \\(f\\)의 단조성과 \\(f^{\\prime}(k)=0\\)을 이용해 \\(a=64b\\)를 얻고, 직선 \\(y=-bx\\)와의 교점 좌표 합으로 \\(b\\)를 정해요.","firstLook":"주어진 식을 미분하면 \\((3f^2+1)f^{\\prime}\\)의 부호를 간단한 함수 \\(g(x)\\)가 결정해요. 역함수가 존재하므로 \\(f\\)는 한 방향으로 움직여야 하고, \\(x=0\\)에서의 부호가 그 방향을 정합니다.","conditions":[{"label":"역함수 존재","meaning":"연속인 \\(f\\)는 실수 전체에서 같은 값을 반복하지 않으므로 한 방향으로 움직여요."},{"label":"수평 접선","meaning":"어떤 \\(k\\)에서 \\(f^{\\prime}(k)=0\\)이므로 \\(g(k)=0\\)이에요."},{"label":"교점 좌표 합","meaning":"\\(f(x)=-bx\\)의 서로 다른 교점들의 x좌표 합이 \\(k+8\\)이에요."}]},"chapters":[{"id":"c1","label":"미분식의 부호로 단조 방향 정하기","stepIds":["s1","s2"],"question":"역함수 존재 조건이 \\(f^{\\prime}\\)의 부호에 어떤 제한을 주나요?","hint":"\\(x=0\\)에서 미분식의 오른쪽 부호를 먼저 보세요.","explanation":"주어진 식을 미분하면 \\((3f(x)^2+1)f^{\\prime}(x)=-2ax/(x^2+12)^2-b=:g(x)\\)예요. \\(3f^2+1>0\\)이고 \\(g(0)=-b<0\\)이므로 \\(f^{\\prime}(0)<0\\)입니다. 역함수가 존재하는 연속함수는 한 방향으로 움직여야 하므로 증가로 바뀔 수 없고, 모든 \\(x\\)에서 \\(f^{\\prime}(x)\\le0\\), 따라서 \\(g(x)\\le0\\)입니다.","check":{"prompt":"\\(g(x)\\)와 \\(f^{\\prime}(x)\\)의 부호가 같은 이유는 무엇인가요?","answer":"둘 사이의 곱인수 \\(3f(x)^2+1\\)이 항상 양수이기 때문입니다."}},{"id":"c2","label":"g가 0이 되는 위치와 a,b 관계 찾기","stepIds":["s3","s4","s5"],"question":"\\(g(k)=0\\)이면서 모든 곳에서 \\(g\\le0\\)이면 \\(k\\)는 어디여야 할까요?","hint":"\\(g^{\\prime}(x)=6a(x+2)(x-2)/(x^2+12)^3\\)의 부호로 가장 큰 위치를 찾으세요.","explanation":"\\(a>0\\)이므로 \\(g\\)는 \\(x=-2\\)까지 증가하고 \\(-2<x<2\\)에서 감소한 뒤 다시 증가하지만 양 끝에서는 \\(-b<0\\)에 가까워져요. 가장 큰 값은 \\(x=-2\\)에서 나옵니다. 모든 값이 0 이하인데 어떤 점에서는 0이어야 하므로 \\(k=-2\\), \\(g(-2)=0\\)입니다. 이를 계산하면 \\(a/64-b=0\\), 즉 \\(a=64b\\)예요.","check":{"prompt":"\\(x=2\\)도 \\(g^{\\prime}(x)=0\\)인데 \\(k\\)가 될 수 없는 이유는 무엇인가요?","answer":"\\(x=2\\)에서는 \\(g\\)가 감소에서 증가로 바뀌어 가장 작은 쪽이고, 0은 전체에서 가장 큰 값이어야 하기 때문입니다."}},{"id":"c3","label":"직선과의 교점 방정식 만들기","stepIds":["s6","s7","s8"],"question":"\\(f(t)=-bt\\)를 원래 식에 넣으면 왜 \\(t=0\\)을 따로 보존해야 할까요?","hint":"정리된 식이 \\(t^2h(t)=0\\) 꼴이 되는지 확인하세요.","explanation":"\\(a=64b\\), \\(f(t)=-bt\\)를 넣어 정리하면 \\(t^2\\{3b^2t^3+36b^2t-16\\}=0\\)이에요. 따라서 \\(t=0\\)도 실제 교점이고, 나머지는 \\(h(t)=3b^2t^3+36b^2t-16=0\\)에서 나옵니다. \\(h^{\\prime}(t)=9b^2t^2+36b^2>0\\)이므로 \\(h\\)는 계속 증가해요. 또 \\(h(0)=-16<0\\)이고 \\(t\\to\\infty\\)일 때 \\(h(t)\\to\\infty\\)이므로 양의 실근 \\(t_1\\)이 정확히 하나 있어요. 서로 다른 교점의 x좌표는 \\(0,t_1\\)입니다.","check":{"prompt":"교점의 x좌표 합 조건으로 \\(t_1\\)은 얼마인가요?","answer":"\\(0+t_1=k+8=-2+8=6\\)이므로 \\(t_1=6\\)입니다."}},{"id":"c4","label":"b와 ab 계산하기","stepIds":["s9","s10"],"question":"찾은 교점 \\(t_1=6\\)을 어디에 대입해야 할까요?","hint":"\\(h(t_1)=0\\)을 사용하세요.","explanation":"\\(h(6)=3b^2\\cdot216+36b^2\\cdot6-16=864b^2-16=0\\)이므로 \\(b^2=1/54\\)예요. \\(a=64b\\)라서 \\(ab=64b^2=32/27\\)입니다.","check":{"prompt":"\\(ab=q/p\\)일 때 \\(p+q\\)는 얼마인가요?","answer":"\\(p=27,q=32\\)이므로 59입니다."}}],"takeaway":["역함수 존재와 한 점에서의 도함수 부호를 함께 쓰면 함수의 전체 단조 방향을 정할 수 있어요.","전체가 0 이하인 함수가 어느 점에서 0이면 그 점은 가장 큰 값을 갖는 위치여야 해요.","교점 방정식을 인수분해할 때 이미 알고 있는 해를 나누어 없애지 말고 서로 다른 교점 목록에 남겨요."]};</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-external-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

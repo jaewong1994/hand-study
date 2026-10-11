@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2026,"answer":"49","contentHash":"1bf01b5c641b1bf6a3d66474f11f8dc29608b6284a6e3091a24947ecb3ec2fe6","diagram":null,"editionHash":"f14149c1a577473487b1aaf6da7e713f3adbc3f467c59fcd48f5d195e1986787","grade":3,"graphHash":"","graphPlan":null,"itemId":27045,"learningHash":"1f62b16d3680b83550952da62c4f0abd9fc122e11df901ed9529614f70129119","month":9,"number":30,"points":4,"preview":false,"questionHtml":"\u003cdiv>함수 $f \\left(x \\right)=2^{2x+\\frac{1}{2} \\cos\\, \\pi x}\\,$의 역함수 $g \\left(x \\right)\\,$는 양의 실수 전체의 집합에서 연속인 도함수를 갖는다.\u003cbr>$\\frac{1}{4} \\int_{f \\left(1 \\right)}^{f \\left(3 \\right)}g \\left(x \\right)\\,dx+ \\int_{f \\left(0 \\right)}^{f \\left(2 \\right)}\\frac{2^{4g \\left(x \\right)}g&#x27; \\left(x \\right)}{x}\\,dx=\\frac{q}{p} \\sqrt{2}$\u003cbr>일 때, $p+q\\,$의 값을 구하시오. (단, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]\u003c/div>","questionText":"함수 $f \\left(x \\right)=2^{2x+\\frac{1}{2} \\cos\\, \\pi x}\\,$의 역함수 $g \\left(x \\right)\\,$는 양의 실수 전체의 집합에서 연속인 도함수를 갖는다.\n$\\frac{1}{4} \\int_{f \\left(1 \\right)}^{f \\left(3 \\right)}g \\left(x \\right)\\,dx+ \\int_{f \\left(0 \\right)}^{f \\left(2 \\right)}\\frac{2^{4g \\left(x \\right)}g\\,' \\left(x \\right)}{x}\\,dx=\\frac{q}{p} \\sqrt{2}$\n일 때, $p+q\\,$의 값을 구하시오. (단, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]","scoreStatus":"confirmed_4_direct","sourceHash":"efc0cb1bdd5e22672af44923ac5a39b3fd31df62f6bced6d2d70e314a86057d7","sourceLabel":"2026 평가원 고3 수학미적분 9월 30번","stepExplanations":{"s1":{"body":"\\(t=g(x)\\)로 놓으면 역함수 관계에 의해 \\(x=f(t)\\)예요. 따라서 첫 적분의 \\(dx\\)는 \\(f^{\\prime}(t)\\,dt\\)가 되고, 끝점 \\(f(1),f(3)\\)은 \\(1,3\\)으로 바뀝니다. 역함수를 직접 구할 필요가 없어요.","skillTags":["integration.inverse-function","integration.substitution"],"title":"역함수 적분에서는 x=f(t)로 돌려놓아요"},"s2":{"body":"\\(\\int_1^3tf^{\\prime}(t)\\,dt\\)를 부분적분해요. \\(t\\)를 미분하면 1, \\(f^{\\prime}\\)를 적분하면 \\(f\\)이므로 \\([tf(t)]_1^3-\\int_1^3f(t)\\,dt\\)가 됩니다. 앞의 \\(\\frac14\\)는 두 항 모두에 곱해져요.","skillTags":["integration.by-parts"],"title":"곱에서 t를 미분하면 남는 적분이 단순해져요"},"s4":{"body":"이번에는 이미 분자에 \\(g^{\\prime}(x)\\,dx\\)가 있어요. \\(t=g(x)\\)로 놓으면 이 부분 전체가 \\(dt\\)가 됩니다. 분모 \\(x\\)는 \\(f(t)\\), 끝점 \\(f(0),f(2)\\)는 \\(0,2\\)로 바뀌어요. 첫 적분과 달리 \\(f^{\\prime}(t)\\)를 다시 곱하면 안 됩니다.","skillTags":["integration.substitution","integration.differential"],"title":"두 번째 적분에서는 g′(x)dx가 곧 dt예요"},"s5":{"body":"첫 적분에 남은 \\(\\int_1^3f(t)\\,dt\\)에서 \\(t=s+1\\)로 치환해요. \\(\\cos\\pi(s+1)=-\\cos\\pi s\\)이고 \\(2^{2(s+1)}=4\\cdot2^{2s}\\)이므로 이 적분은 \\(4I_2\\)가 됩니다. 따라서 \\(I_1\\)에 있는 \\(-\\frac14\\int_1^3f\\)와 \\(+I_2\\)가 서로 없어져요. 복잡한 적분을 각각 끝까지 계산할 필요가 없는 이유예요.","skillTags":["integration.translation","integration.cancellation"],"title":"두 적분을 같은 모양으로 맞추면 계산이 사라져요"}},"steps":[{"id":"s1","latex":"t=g(x),\\quad x=f(t),\\quad dx=f'(t)\\,dt"},{"id":"s2","latex":"I_1=\\frac14\\int_1^3tf'(t)\\,dt=\\frac14[tf(t)]_1^3-\\frac14\\int_1^3f(t)\\,dt"},{"id":"s3","latex":"=\\frac{47\\sqrt2}{2}-\\frac14\\int_1^3f(t)\\,dt"},{"id":"s4","latex":"I_2=\\int_0^2\\frac{2^{4t}}{f(t)}\\,dt=\\int_0^2 2^{2t-\\frac12\\cos\\pi t}\\,dt"},{"id":"s5","latex":"t=s+1:\\quad\\int_1^3f(t)\\,dt=4\\int_0^2 2^{2s-\\frac12\\cos\\pi s}\\,ds=4I_2"},{"id":"s6","latex":"I_1+I_2=\\frac{47\\sqrt2}{2}\\Rightarrow p+q=49"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2026 평가원 고3 수학미적분 9월 30번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2026,"answer":"49","contentHash":"1bf01b5c641b1bf6a3d66474f11f8dc29608b6284a6e3091a24947ecb3ec2fe6","diagram":null,"editionHash":"f14149c1a577473487b1aaf6da7e713f3adbc3f467c59fcd48f5d195e1986787","grade":3,"graphHash":"","graphPlan":null,"itemId":27045,"learningHash":"1f62b16d3680b83550952da62c4f0abd9fc122e11df901ed9529614f70129119","month":9,"number":30,"points":4,"preview":false,"questionHtml":"\u003cdiv>함수 $f \\left(x \\right)=2^{2x+\\frac{1}{2} \\cos\\, \\pi x}\\,$의 역함수 $g \\left(x \\right)\\,$는 양의 실수 전체의 집합에서 연속인 도함수를 갖는다.\u003cbr>$\\frac{1}{4} \\int_{f \\left(1 \\right)}^{f \\left(3 \\right)}g \\left(x \\right)\\,dx+ \\int_{f \\left(0 \\right)}^{f \\left(2 \\right)}\\frac{2^{4g \\left(x \\right)}g&#x27; \\left(x \\right)}{x}\\,dx=\\frac{q}{p} \\sqrt{2}$\u003cbr>일 때, $p+q\\,$의 값을 구하시오. (단, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]\u003c/div>","questionText":"함수 $f \\left(x \\right)=2^{2x+\\frac{1}{2} \\cos\\, \\pi x}\\,$의 역함수 $g \\left(x \\right)\\,$는 양의 실수 전체의 집합에서 연속인 도함수를 갖는다.\n$\\frac{1}{4} \\int_{f \\left(1 \\right)}^{f \\left(3 \\right)}g \\left(x \\right)\\,dx+ \\int_{f \\left(0 \\right)}^{f \\left(2 \\right)}\\frac{2^{4g \\left(x \\right)}g\\,' \\left(x \\right)}{x}\\,dx=\\frac{q}{p} \\sqrt{2}$\n일 때, $p+q\\,$의 값을 구하시오. (단, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]","scoreStatus":"confirmed_4_direct","sourceHash":"efc0cb1bdd5e22672af44923ac5a39b3fd31df62f6bced6d2d70e314a86057d7","sourceLabel":"2026 평가원 고3 수학미적분 9월 30번","stepExplanations":{"s1":{"body":"\\(t=g(x)\\)로 놓으면 역함수 관계에 의해 \\(x=f(t)\\)예요. 따라서 첫 적분의 \\(dx\\)는 \\(f^{\\prime}(t)\\,dt\\)가 되고, 끝점 \\(f(1),f(3)\\)은 \\(1,3\\)으로 바뀝니다. 역함수를 직접 구할 필요가 없어요.","skillTags":["integration.inverse-function","integration.substitution"],"title":"역함수 적분에서는 x=f(t)로 돌려놓아요"},"s2":{"body":"\\(\\int_1^3tf^{\\prime}(t)\\,dt\\)를 부분적분해요. \\(t\\)를 미분하면 1, \\(f^{\\prime}\\)를 적분하면 \\(f\\)이므로 \\([tf(t)]_1^3-\\int_1^3f(t)\\,dt\\)가 됩니다. 앞의 \\(\\frac14\\)는 두 항 모두에 곱해져요.","skillTags":["integration.by-parts"],"title":"곱에서 t를 미분하면 남는 적분이 단순해져요"},"s4":{"body":"이번에는 이미 분자에 \\(g^{\\prime}(x)\\,dx\\)가 있어요. \\(t=g(x)\\)로 놓으면 이 부분 전체가 \\(dt\\)가 됩니다. 분모 \\(x\\)는 \\(f(t)\\), 끝점 \\(f(0),f(2)\\)는 \\(0,2\\)로 바뀌어요. 첫 적분과 달리 \\(f^{\\prime}(t)\\)를 다시 곱하면 안 됩니다.","skillTags":["integration.substitution","integration.differential"],"title":"두 번째 적분에서는 g′(x)dx가 곧 dt예요"},"s5":{"body":"첫 적분에 남은 \\(\\int_1^3f(t)\\,dt\\)에서 \\(t=s+1\\)로 치환해요. \\(\\cos\\pi(s+1)=-\\cos\\pi s\\)이고 \\(2^{2(s+1)}=4\\cdot2^{2s}\\)이므로 이 적분은 \\(4I_2\\)가 됩니다. 따라서 \\(I_1\\)에 있는 \\(-\\frac14\\int_1^3f\\)와 \\(+I_2\\)가 서로 없어져요. 복잡한 적분을 각각 끝까지 계산할 필요가 없는 이유예요.","skillTags":["integration.translation","integration.cancellation"],"title":"두 적분을 같은 모양으로 맞추면 계산이 사라져요"}},"steps":[{"id":"s1","latex":"t=g(x),\\quad x=f(t),\\quad dx=f'(t)\\,dt"},{"id":"s2","latex":"I_1=\\frac14\\int_1^3tf'(t)\\,dt=\\frac14[tf(t)]_1^3-\\frac14\\int_1^3f(t)\\,dt"},{"id":"s3","latex":"=\\frac{47\\sqrt2}{2}-\\frac14\\int_1^3f(t)\\,dt"},{"id":"s4","latex":"I_2=\\int_0^2\\frac{2^{4t}}{f(t)}\\,dt=\\int_0^2 2^{2t-\\frac12\\cos\\pi t}\\,dt"},{"id":"s5","latex":"t=s+1:\\quad\\int_1^3f(t)\\,dt=4\\int_0^2 2^{2s-\\frac12\\cos\\pi s}\\,ds=4I_2"},{"id":"s6","latex":"I_1+I_2=\\frac{47\\sqrt2}{2}\\Rightarrow p+q=49"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

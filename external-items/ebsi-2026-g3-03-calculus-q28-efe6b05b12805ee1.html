@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=bf41b07fdc22efdd">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"③","contentHash":"f0f22edf6ce748545bb061c9aaf1e946164704ef8075a4240d995a07892e667f","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"fc80f190c63be5b6b1faeaa97d36126da75080bae1bdc0e49ac4b534d0649d40","month":3,"number":28,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-03-calculus-q28-6779286e2e724034.png\" alt=\"2026년 3월 28번 문제\">\u003c/figure>","sourceHash":"956d731ecf762af02a7db527ce7ca5a7873a2990652dcf2a42850527e6b20872","sourceKey":"ebsi:2026:g3:03:calculus:q28","sourceLabel":"서울특별시교육청 2026-03-24","stepExplanations":{"s2":{"body":"분자와 분모를 \\(5^{2n}\\)으로 나누면 \\(\\frac{f(x)(f(x)/5)^{2n}+g(x)}{(f(x)/5)^{2n}+1}\\)이에요. \\(|f(x)|\u003c5\\)이면 거듭제곱이 0으로 가서 \\(g(x)\\)가 남아요. \\(|f(x)|>5\\)이면 이번에는 그 거듭제곱으로 나누어 \\(f(x)\\)를 얻고, \\(|f(x)|=5\\)이면 거듭제곱이 항상 1이어서 두 값의 평균이 됩니다. 짝수 거듭제곱이므로 \\(f(x)\\)의 부호보다 절댓값을 비교해야 해요.","skillTags":["limit.geometric","function.piecewise"],"title":"극한은 절댓값의 크기에 따라 나눠요"},"s3":{"body":"\\(f\\)의 증감과 첫 줄의 함숫값을 보면 \\(x\u003c-2\\), \\(x>3\\)에서는 \\(|f(x)|>5\\)이고, \\(-2\u003cx\u003c0\\), \\(0\u003cx\u003c3\\)에서는 \\(|f(x)|\u003c5\\)예요. 따라서 \\(x=-2\\)에서 왼쪽은 \\(f(-2)=-5\\), 오른쪽은 \\(g(-2)=2p-q+5\\)로 가까워져요. 연속이려면 둘이 같아야 하고, 이때 경계에서의 평균값도 같아집니다. \\(x=0,3\\)에서는 두 식이 이미 5로 이어져요.","skillTags":["continuity.boundary"],"title":"이어지는 두 식의 값이 같아야 해요"},"s5":{"body":"직선의 기울기를 \\(m>0\\)이라 해 볼게요. 원점의 위쪽 점 \\((0,5)\\)은 항상 교점이고, \\(x>3\\)에서 \\(f(x)=mx+5\\)는 \\(x^2-3x=2m\\)의 양수 해 한 개를 줍니다. \\(0\u003cx\\le3\\)에서는 \\(h(x)=5\u003cmx+5\\)이므로 교점이 없어요. 이제 음수 쪽에서 추가 교점이 몇 개인지 세면 됩니다.","skillTags":["equation.root-count","line.slope"],"title":"교점 수가 바뀌는 기울기를 찾아요"},"s6":{"body":"\\(x\u003c-2\\)의 교점은 \\(x=\\frac{3-\\sqrt{9+8m}}2\\)이고, 이것이 \\(-2\\)보다 작을 조건은 \\(m>5\\)예요. \\(-2\\le x\u003c0\\)의 이차식과 직선을 같게 놓으면 0이 아닌 해는 \\(x=\\frac{2m-q}{p}\\)입니다. 이 해가 이번 범위에 있을 조건은 \\(5\\le m\u003c\\frac q2\\)예요. 따라서 \\(5\u003cm\u003c\\frac q2\\)일 때만 음수 쪽에 두 교점이 생겨 전체가 4개예요. \\(m=5\\)에서는 \\(-2\\)의 점 하나를 두 번 세면 안 되고, \\(m=\\frac q2\\)에서는 새 해가 이미 센 \\(x=0\\)과 겹쳐요.\n\n여기서는 \\(m=k-\\frac1{2n}\\)이 \\(k\\)보다 작은 쪽에서 가까워집니다. 그래서 \\(k=5\\)는 빠지고 \\(k=\\frac q2\\)는 포함되어 \\(5\u003ck\\le\\frac q2\\)가 됩니다.","skillTags":["equation.root-count","limit.one-sided","equation.boundary"],"title":"음수 쪽 교점과 경계의 중복을 따로 세어요"},"s8":{"body":"\\(5\u003ck\\le\\frac q2\\)를 만족하는 자연수가 일곱 개라면 그 값은 \\(6,7,8,9,10,11,12\\)예요. 12는 들어가고 13은 들어가지 않아야 하므로 \\(12\\le\\frac q2\u003c13\\), 즉 \\(24\\le q\u003c26\\)입니다. 또 \\(q=2p+10\\)은 짝수이므로 \\(q=24\\), \\(p=7\\)만 남아요.","skillTags":["integer.count","inequality.endpoint"],"title":"자연수 일곱 개를 실제로 써 봐요"}},"steps":[{"id":"s1","latex":"f'(x)=\\frac32x(x-2),\\quad f(-2)=-5,\\ f(0)=5,\\ f(2)=3,\\ f(3)=5"},{"id":"s2","latex":"h(x)=\\begin{cases}f(x)&|f(x)|>5\\\\\\dfrac{f(x)+g(x)}2&|f(x)|=5\\\\g(x)&|f(x)|\u003c5\\end{cases}"},{"id":"s3","latex":"h\\text{가 }x=-2\\text{에서 연속}\\Rightarrow-5=2p-q+5\\Rightarrow q=2p+10"},{"id":"s4","latex":"y=\\left(k-\\frac1{2n}\\right)x+5,\\quad m_n=k-\\frac1{2n}\\to k^{-}"},{"id":"s5","latex":"\\dfrac{5-(-5)}{0-(-2)}=5,\\quad h^{\\prime}(0-)=\\dfrac q2"},{"id":"s6","latex":"k\\le5:\\ a_n\\to2,\\qquad5\u003ck\\le\\frac q2:\\ a_n\\to4,\\qquad k>\\frac q2:\\ a_n\\to3"},{"id":"s7","latex":"\\therefore\\lim_{n\\to\\infty}a_n=4\\iff5\u003ck\\le\\frac q2"},{"id":"s8","latex":"12\\le\\dfrac q2\u003c13\\quad\\Rightarrow\\quad24\\le q\u003c26"},{"id":"s9","latex":"p,q\\in\\mathbb N,\\ q=2p+10\\Rightarrow(p,q)=(7,24)"},{"id":"s10","latex":"h(4)=f(4)=13\\Rightarrow p+q+h(4)=44"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-structure.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-graph.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-explanations.js?v=372f3ddd6911ccf0"></script>
-  <script defer src="../assets/external-hand-study-learning.js?v=bf41b07fdc22efdd"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=6d62c18f876c57f6">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>서울특별시교육청 2026-03-24 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.ExternalHandStudyRecord={"adminYear":2026,"answer":"③","contentHash":"f0f22edf6ce748545bb061c9aaf1e946164704ef8075a4240d995a07892e667f","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"learningHash":"fc80f190c63be5b6b1faeaa97d36126da75080bae1bdc0e49ac4b534d0649d40","month":3,"number":28,"preview":false,"questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-03-calculus-q28-6779286e2e724034.png\" alt=\"2026년 3월 28번 문제\">\u003c/figure>","sourceHash":"956d731ecf762af02a7db527ce7ca5a7873a2990652dcf2a42850527e6b20872","sourceKey":"ebsi:2026:g3:03:calculus:q28","sourceLabel":"서울특별시교육청 2026-03-24","stepExplanations":{"s2":{"body":"분자와 분모를 \\(5^{2n}\\)으로 나누면 \\(\\frac{f(x)(f(x)/5)^{2n}+g(x)}{(f(x)/5)^{2n}+1}\\)이에요. \\(|f(x)|\u003c5\\)이면 거듭제곱이 0으로 가서 \\(g(x)\\)가 남아요. \\(|f(x)|>5\\)이면 이번에는 그 거듭제곱으로 나누어 \\(f(x)\\)를 얻고, \\(|f(x)|=5\\)이면 거듭제곱이 항상 1이어서 두 값의 평균이 됩니다. 짝수 거듭제곱이므로 \\(f(x)\\)의 부호보다 절댓값을 비교해야 해요.","skillTags":["limit.geometric","function.piecewise"],"title":"극한은 절댓값의 크기에 따라 나눠요"},"s3":{"body":"\\(f\\)의 증감과 첫 줄의 함숫값을 보면 \\(x\u003c-2\\), \\(x>3\\)에서는 \\(|f(x)|>5\\)이고, \\(-2\u003cx\u003c0\\), \\(0\u003cx\u003c3\\)에서는 \\(|f(x)|\u003c5\\)예요. 따라서 \\(x=-2\\)에서 왼쪽은 \\(f(-2)=-5\\), 오른쪽은 \\(g(-2)=2p-q+5\\)로 가까워져요. 연속이려면 둘이 같아야 하고, 이때 경계에서의 평균값도 같아집니다. \\(x=0,3\\)에서는 두 식이 이미 5로 이어져요.","skillTags":["continuity.boundary"],"title":"이어지는 두 식의 값이 같아야 해요"},"s5":{"body":"직선의 기울기를 \\(m>0\\)이라 해 볼게요. 원점의 위쪽 점 \\((0,5)\\)은 항상 교점이고, \\(x>3\\)에서 \\(f(x)=mx+5\\)는 \\(x^2-3x=2m\\)의 양수 해 한 개를 줍니다. \\(0\u003cx\\le3\\)에서는 \\(h(x)=5\u003cmx+5\\)이므로 교점이 없어요. 이제 음수 쪽에서 추가 교점이 몇 개인지 세면 됩니다.","skillTags":["equation.root-count","line.slope"],"title":"교점 수가 바뀌는 기울기를 찾아요"},"s6":{"body":"\\(x\u003c-2\\)의 교점은 \\(x=\\frac{3-\\sqrt{9+8m}}2\\)이고, 이것이 \\(-2\\)보다 작을 조건은 \\(m>5\\)예요. \\(-2\\le x\u003c0\\)의 이차식과 직선을 같게 놓으면 0이 아닌 해는 \\(x=\\frac{2m-q}{p}\\)입니다. 이 해가 이번 범위에 있을 조건은 \\(5\\le m\u003c\\frac q2\\)예요. 따라서 \\(5\u003cm\u003c\\frac q2\\)일 때만 음수 쪽에 두 교점이 생겨 전체가 4개예요. \\(m=5\\)에서는 \\(-2\\)의 점 하나를 두 번 세면 안 되고, \\(m=\\frac q2\\)에서는 새 해가 이미 센 \\(x=0\\)과 겹쳐요.\n\n여기서는 \\(m=k-\\frac1{2n}\\)이 \\(k\\)보다 작은 쪽에서 가까워집니다. 그래서 \\(k=5\\)는 빠지고 \\(k=\\frac q2\\)는 포함되어 \\(5\u003ck\\le\\frac q2\\)가 됩니다.","skillTags":["equation.root-count","limit.one-sided","equation.boundary"],"title":"음수 쪽 교점과 경계의 중복을 따로 세어요"},"s8":{"body":"\\(5\u003ck\\le\\frac q2\\)를 만족하는 자연수가 일곱 개라면 그 값은 \\(6,7,8,9,10,11,12\\)예요. 12는 들어가고 13은 들어가지 않아야 하므로 \\(12\\le\\frac q2\u003c13\\), 즉 \\(24\\le q\u003c26\\)입니다. 또 \\(q=2p+10\\)은 짝수이므로 \\(q=24\\), \\(p=7\\)만 남아요.","skillTags":["integer.count","inequality.endpoint"],"title":"자연수 일곱 개를 실제로 써 봐요"}},"steps":[{"id":"s1","latex":"f'(x)=\\frac32x(x-2),\\quad f(-2)=-5,\\ f(0)=5,\\ f(2)=3,\\ f(3)=5"},{"id":"s2","latex":"h(x)=\\begin{cases}f(x)&|f(x)|>5\\\\\\dfrac{f(x)+g(x)}2&|f(x)|=5\\\\g(x)&|f(x)|\u003c5\\end{cases}"},{"id":"s3","latex":"h\\text{가 }x=-2\\text{에서 연속}\\Rightarrow-5=2p-q+5\\Rightarrow q=2p+10"},{"id":"s4","latex":"y=\\left(k-\\frac1{2n}\\right)x+5,\\quad m_n=k-\\frac1{2n}\\to k^{-}"},{"id":"s5","latex":"\\dfrac{5-(-5)}{0-(-2)}=5,\\quad h^{\\prime}(0-)=\\dfrac q2"},{"id":"s6","latex":"k\\le5:\\ a_n\\to2,\\qquad5\u003ck\\le\\frac q2:\\ a_n\\to4,\\qquad k>\\frac q2:\\ a_n\\to3"},{"id":"s7","latex":"\\therefore\\lim_{n\\to\\infty}a_n=4\\iff5\u003ck\\le\\frac q2"},{"id":"s8","latex":"12\\le\\dfrac q2\u003c13\\quad\\Rightarrow\\quad24\\le q\u003c26"},{"id":"s9","latex":"p,q\\in\\mathbb N,\\ q=2p+10\\Rightarrow(p,q)=(7,24)"},{"id":"s10","latex":"h(4)=f(4)=13\\Rightarrow p+q+h(4)=44"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-external-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

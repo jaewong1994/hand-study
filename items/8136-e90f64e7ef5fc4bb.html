@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":8136,"sourceLabel":"2022 교육청 고2 수학 11월 29번","adminYear":2022,"grade":2,"month":11,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 자연수 $a$, $b$에 대하여 두 함수 $f \\left( x \\right)$, $g \\left( x \\right)$를\n $f \\left( x \\right) = {\\begin{cases}x+5&\\, \\left( x\u003c5 \\right) \\\\ \\left| \\,2x-a\\, \\right|&\\, \\left( x \\geq 5 \\right)\\end{cases}}$\n $g \\left( x \\right) = \\left( x-5 \\right) \\left( x-b \\right)$\n라 하자. 함수 $f \\left( x \\right) g \\left( x \\right)$가 실수 전체의 집합에서 미분가능하도록 하는 $a$, $b$의 모든 순서쌍 $\\left( a,\\,b \\right)$의 개수를 구하시오. [4점]","answer":"11","sourceHash":"b07c1631aca0012cbdfc0de667329f694e6ab5028e29ae9b3b595cc5838f1429","steps":[{"id":"s1","latex":"h(x)=f(x)g(x)"},{"id":"s2","latex":"x=5:\\quad h^\\prime_-(5)=10(5-b),\\quad h^\\prime_+(5)=|10-a|(5-b)"},{"id":"s3","latex":"(5-b)(10-|10-a|)=0\\Rightarrow b=5\\ \\text{또는}\\ a=20"},{"id":"s4","latex":"a\\le10:\\ \\text{추가 꺾임 없음}\\Rightarrow b=5"},{"id":"s5","latex":"a\\in\\{1,2,\\ldots,10\\}\\Rightarrow10\\text{쌍}"},{"id":"s6","latex":"a>10:\\ x=\\frac a2\\text{에서 미분가능}\\Rightarrow g\\left(\\frac a2\\right)=0"},{"id":"s7","latex":"b=\\frac a2>5"},{"id":"s8","latex":"x=5\\text{ 조건과 결합}\\Rightarrow(a,b)=(20,10)"},{"id":"s9","latex":"10+1=11"}],"diagram":null,"contentHash":"924e94f1b73933daf7ae0bca21fd6bf6e692e4ae423234af03ab71b3d9ff104b","questionHtml":"\u003cp class=\"hp\">두 자연수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>에 대하여 두 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = {\\begin{cases}x+5&\\, \\left( x\\lt 5 \\right) \\\\ \\left| \\,2x-a\\, \\right|&\\, \\left( x \\geq 5 \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) = \\left( x-5 \\right) \\left( x-b \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하자. 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right) g \\left( x \\right)\\)\u003c/span>가 실수 전체의 집합에서 미분가능하도록 하는 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>의 모든 순서쌍 \u003cspan class=\"heq\">\\(\\left( a,\\,b \\right)\\)\u003c/span>의 개수를 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"e90f64e7ef5fc4bbee1137b30fbbf2d55dd0e0f4c4d1e10ac69780dd45ed5f09"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2022 교육청 고2 수학 11월 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":8136,"sourceLabel":"2022 교육청 고2 수학 11월 29번","adminYear":2022,"grade":2,"month":11,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 자연수 $a$, $b$에 대하여 두 함수 $f \\left( x \\right)$, $g \\left( x \\right)$를\n $f \\left( x \\right) = {\\begin{cases}x+5&\\, \\left( x\u003c5 \\right) \\\\ \\left| \\,2x-a\\, \\right|&\\, \\left( x \\geq 5 \\right)\\end{cases}}$\n $g \\left( x \\right) = \\left( x-5 \\right) \\left( x-b \\right)$\n라 하자. 함수 $f \\left( x \\right) g \\left( x \\right)$가 실수 전체의 집합에서 미분가능하도록 하는 $a$, $b$의 모든 순서쌍 $\\left( a,\\,b \\right)$의 개수를 구하시오. [4점]","answer":"11","sourceHash":"b07c1631aca0012cbdfc0de667329f694e6ab5028e29ae9b3b595cc5838f1429","steps":[{"id":"s1","latex":"h(x)=f(x)g(x)"},{"id":"s2","latex":"x=5:\\quad h^\\prime_-(5)=10(5-b),\\quad h^\\prime_+(5)=|10-a|(5-b)"},{"id":"s3","latex":"(5-b)(10-|10-a|)=0\\Rightarrow b=5\\ \\text{또는}\\ a=20"},{"id":"s4","latex":"a\\le10:\\ \\text{추가 꺾임 없음}\\Rightarrow b=5"},{"id":"s5","latex":"a\\in\\{1,2,\\ldots,10\\}\\Rightarrow10\\text{쌍}"},{"id":"s6","latex":"a>10:\\ x=\\frac a2\\text{에서 미분가능}\\Rightarrow g\\left(\\frac a2\\right)=0"},{"id":"s7","latex":"b=\\frac a2>5"},{"id":"s8","latex":"x=5\\text{ 조건과 결합}\\Rightarrow(a,b)=(20,10)"},{"id":"s9","latex":"10+1=11"}],"diagram":null,"contentHash":"924e94f1b73933daf7ae0bca21fd6bf6e692e4ae423234af03ab71b3d9ff104b","questionHtml":"\u003cp class=\"hp\">두 자연수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>에 대하여 두 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>, \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = {\\begin{cases}x+5&\\, \\left( x\\lt 5 \\right) \\\\ \\left| \\,2x-a\\, \\right|&\\, \\left( x \\geq 5 \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) = \\left( x-5 \\right) \\left( x-b \\right)\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">라 하자. 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right) g \\left( x \\right)\\)\u003c/span>가 실수 전체의 집합에서 미분가능하도록 하는 \u003cspan class=\"heq\">\\(a\\)\u003c/span>, \u003cspan class=\"heq\">\\(b\\)\u003c/span>의 모든 순서쌍 \u003cspan class=\"heq\">\\(\\left( a,\\,b \\right)\\)\u003c/span>의 개수를 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"e90f64e7ef5fc4bbee1137b30fbbf2d55dd0e0f4c4d1e10ac69780dd45ed5f09"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

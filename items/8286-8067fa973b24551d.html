@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":8286,"sourceLabel":"2023 교육청 고2 수학 6월 29번","adminYear":2023,"grade":2,"month":6,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 $\\overline{AB}=\\overline{AC}=1\\,$, $\\angle BAC= \\frac{\\pi }{2}\\,$인 삼각형 $ABC$ 모양의 종이가 있다. 선분 $BC$ 위의 점 $D\\,$, 선분 $AB$ 위의 점 $E\\,$, 선분 $AC$ 위의 점 $F\\,$에 대하여 선분 $EF\\,$를 접는 선으로 하여 점 $A\\,$가 점 $D\\,$와 겹쳐지도록 접었다. 삼각형 $BDE\\,$와 삼각형 $DCF\\,$의 외접원의 반지름의 길이의 비가 $2:1\\,$일 때, 선분 $DF\\,$의 길이는 $\\frac{q}{p} \\,$이다. $p+q\\,$의 값을 구하시오. (단, 종이의 두께는 고려하지 않으며, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]\n $A$$B$$C$$E$$F$$D$$A$$B$$C$","answer":"17","sourceHash":"55830e38ffce4dfecdb4237ca8644d3ef174b5ba168746cdb9e2799e7d6b5812","steps":[{"id":"s1","latex":"AE=DE=x,\\quad AF=DF=y"},{"id":"s2","latex":"R_{BDE}=\\frac{DE}{2\\sin45^\\circ}=\\frac{x}{\\sqrt2}"},{"id":"s3","latex":"R_{DCF}=\\frac{DF}{2\\sin45^\\circ}=\\frac{y}{\\sqrt2}"},{"id":"s4","latex":"R_{BDE}:R_{DCF}=2:1\\Rightarrow x=2y"},{"id":"s5","latex":"D=(u,1-u),\\ E=(2y,0),\\ F=(0,y)"},{"id":"s6","latex":"DE=2y\\Rightarrow2u^2-4uy-2u+1=0"},{"id":"s7","latex":"DF=y\\Rightarrow2u^2+2uy-2u-2y+1=0"},{"id":"s8","latex":"(u,y)=\\left(\\frac13,\\frac5{12}\\right)"},{"id":"s9","latex":"DF=\\frac5{12}\\Rightarrow p+q=17"}],"diagram":null,"contentHash":"08fd12bfde61a3a13554c176877f852bd1a024dcff52895509ca3ecab9540081","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 \u003cspan class=\"heq\">\\(\\overline{AB}=\\overline{AC}=1\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\angle BAC= \\dfrac{\\pi }{2}\\,\\)\u003c/span>인 삼각형 \u003cspan class=\"heq\">\\(A B C\\)\u003c/span> 모양의 종이가 있다. 선분 \u003cspan class=\"heq\">\\(B C\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(D\\,\\)\u003c/span>, 선분 \u003cspan class=\"heq\">\\(A B\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(E\\,\\)\u003c/span>, 선분 \u003cspan class=\"heq\">\\(A C\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(F\\,\\)\u003c/span>에 대하여 선분 \u003cspan class=\"heq\">\\(E F\\,\\)\u003c/span>를 접는 선으로 하여 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>가 점 \u003cspan class=\"heq\">\\(D\\,\\)\u003c/span>와 겹쳐지도록 접었다. 삼각형 \u003cspan class=\"heq\">\\(B D E\\,\\)\u003c/span>와 삼각형 \u003cspan class=\"heq\">\\(D C F\\,\\)\u003c/span>의 외접원의 반지름의 길이의 비가 \u003cspan class=\"heq\">\\(2:1\\,\\)\u003c/span>일 때, 선분 \u003cspan class=\"heq\">\\(D F\\,\\)\u003c/span>의 길이는 \u003cspan class=\"heq\">\\(\\dfrac{q}{p} \\,\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\,\\)\u003c/span>의 값을 구하시오. (단, 종이의 두께는 고려하지 않으며, \u003cspan class=\"heq\">\\(p\\,\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\,\\)\u003c/span>는 서로소인 자연수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hfigwrap\" style=\"position:relative;display:inline-block;width:315px;aspect-ratio:23628/27359;max-width:100%;vertical-align:middle\">\u003cimg class=\"hfig\" src=\"../assets/figures/b89181691ce331f8cf897f43.png\" style=\"width:100%;height:100%;object-fit:fill;display:block\">\u003cspan style=\"position:absolute;left:43.61%;top:-6.03%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:-5.15%;top:39.42%;line-height:1\">\u003cspan class=\"heq\">\\(B\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:91.84%;top:39.42%;line-height:1\">\u003cspan class=\"heq\">\\(C\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:1.83%;top:82.04%;line-height:1\">\u003cspan class=\"heq\">\\(E\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:65.61%;top:64.63%;line-height:1\">\u003cspan class=\"heq\">\\(F\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:58.81%;top:92.75%;line-height:1\">\u003cspan class=\"heq\">\\(D\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:43.61%;top:46.99%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:-5.15%;top:92.44%;line-height:1\">\u003cspan class=\"heq\">\\(B\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:91.84%;top:92.44%;line-height:1\">\u003cspan class=\"heq\">\\(C\\)\u003c/span>\u003c/span>\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"8067fa973b24551de5ed25d10c1380fac39a63a43c109462f8f351a94413f210"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2023 교육청 고2 수학 6월 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":8286,"sourceLabel":"2023 교육청 고2 수학 6월 29번","adminYear":2023,"grade":2,"month":6,"number":29,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 $\\overline{AB}=\\overline{AC}=1\\,$, $\\angle BAC= \\frac{\\pi }{2}\\,$인 삼각형 $ABC$ 모양의 종이가 있다. 선분 $BC$ 위의 점 $D\\,$, 선분 $AB$ 위의 점 $E\\,$, 선분 $AC$ 위의 점 $F\\,$에 대하여 선분 $EF\\,$를 접는 선으로 하여 점 $A\\,$가 점 $D\\,$와 겹쳐지도록 접었다. 삼각형 $BDE\\,$와 삼각형 $DCF\\,$의 외접원의 반지름의 길이의 비가 $2:1\\,$일 때, 선분 $DF\\,$의 길이는 $\\frac{q}{p} \\,$이다. $p+q\\,$의 값을 구하시오. (단, 종이의 두께는 고려하지 않으며, $p\\,$와 $q\\,$는 서로소인 자연수이다.) [4점]\n $A$$B$$C$$E$$F$$D$$A$$B$$C$","answer":"17","sourceHash":"55830e38ffce4dfecdb4237ca8644d3ef174b5ba168746cdb9e2799e7d6b5812","steps":[{"id":"s1","latex":"AE=DE=x,\\quad AF=DF=y"},{"id":"s2","latex":"R_{BDE}=\\frac{DE}{2\\sin45^\\circ}=\\frac{x}{\\sqrt2}"},{"id":"s3","latex":"R_{DCF}=\\frac{DF}{2\\sin45^\\circ}=\\frac{y}{\\sqrt2}"},{"id":"s4","latex":"R_{BDE}:R_{DCF}=2:1\\Rightarrow x=2y"},{"id":"s5","latex":"D=(u,1-u),\\ E=(2y,0),\\ F=(0,y)"},{"id":"s6","latex":"DE=2y\\Rightarrow2u^2-4uy-2u+1=0"},{"id":"s7","latex":"DF=y\\Rightarrow2u^2+2uy-2u-2y+1=0"},{"id":"s8","latex":"(u,y)=\\left(\\frac13,\\frac5{12}\\right)"},{"id":"s9","latex":"DF=\\frac5{12}\\Rightarrow p+q=17"}],"diagram":null,"contentHash":"08fd12bfde61a3a13554c176877f852bd1a024dcff52895509ca3ecab9540081","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 \u003cspan class=\"heq\">\\(\\overline{AB}=\\overline{AC}=1\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\angle BAC= \\dfrac{\\pi }{2}\\,\\)\u003c/span>인 삼각형 \u003cspan class=\"heq\">\\(A B C\\)\u003c/span> 모양의 종이가 있다. 선분 \u003cspan class=\"heq\">\\(B C\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(D\\,\\)\u003c/span>, 선분 \u003cspan class=\"heq\">\\(A B\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(E\\,\\)\u003c/span>, 선분 \u003cspan class=\"heq\">\\(A C\\)\u003c/span> 위의 점 \u003cspan class=\"heq\">\\(F\\,\\)\u003c/span>에 대하여 선분 \u003cspan class=\"heq\">\\(E F\\,\\)\u003c/span>를 접는 선으로 하여 점 \u003cspan class=\"heq\">\\(A\\,\\)\u003c/span>가 점 \u003cspan class=\"heq\">\\(D\\,\\)\u003c/span>와 겹쳐지도록 접었다. 삼각형 \u003cspan class=\"heq\">\\(B D E\\,\\)\u003c/span>와 삼각형 \u003cspan class=\"heq\">\\(D C F\\,\\)\u003c/span>의 외접원의 반지름의 길이의 비가 \u003cspan class=\"heq\">\\(2:1\\,\\)\u003c/span>일 때, 선분 \u003cspan class=\"heq\">\\(D F\\,\\)\u003c/span>의 길이는 \u003cspan class=\"heq\">\\(\\dfrac{q}{p} \\,\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\,\\)\u003c/span>의 값을 구하시오. (단, 종이의 두께는 고려하지 않으며, \u003cspan class=\"heq\">\\(p\\,\\)\u003c/span>와 \u003cspan class=\"heq\">\\(q\\,\\)\u003c/span>는 서로소인 자연수이다.) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cspan class=\"hfigwrap\" style=\"position:relative;display:inline-block;width:315px;aspect-ratio:23628/27359;max-width:100%;vertical-align:middle\">\u003cimg class=\"hfig\" src=\"../assets/figures/b89181691ce331f8cf897f43.png\" style=\"width:100%;height:100%;object-fit:fill;display:block\">\u003cspan style=\"position:absolute;left:43.61%;top:-6.03%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:-5.15%;top:39.42%;line-height:1\">\u003cspan class=\"heq\">\\(B\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:91.84%;top:39.42%;line-height:1\">\u003cspan class=\"heq\">\\(C\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:1.83%;top:82.04%;line-height:1\">\u003cspan class=\"heq\">\\(E\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:65.61%;top:64.63%;line-height:1\">\u003cspan class=\"heq\">\\(F\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:58.81%;top:92.75%;line-height:1\">\u003cspan class=\"heq\">\\(D\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:43.61%;top:46.99%;line-height:1\">\u003cspan class=\"heq\">\\(A\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:-5.15%;top:92.44%;line-height:1\">\u003cspan class=\"heq\">\\(B\\)\u003c/span>\u003c/span>\u003cspan style=\"position:absolute;left:91.84%;top:92.44%;line-height:1\">\u003cspan class=\"heq\">\\(C\\)\u003c/span>\u003c/span>\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"8067fa973b24551de5ed25d10c1380fac39a63a43c109462f8f351a94413f210"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

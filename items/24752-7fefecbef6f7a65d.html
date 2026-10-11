@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2020,"answer":"③","contentHash":"a91b234ba113e244063d0e007412245f464c375cbb511d4c046090b54b522043","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24752,"month":12,"number":21,"points":4,"preview":false,"questionHtml":"\u003cp>수열 \u003cspan class=\"heq\">\\(\\left\\{ a_n \\right\\}\\)\u003c/span>은 \u003cspan class=\"heq\">\\(0 \\,&lt;\\, a_1 \\,&lt;\\, 1\\)\u003c/span>이고, 모든 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(a_{2n} \\,=\\, a_2 \\times a_n +1\\)\u003c/span>\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(a_{2n +1} \\,=\\, a_2 \\times a_n -2\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>\u003cspan class=\"heq\">\\(a_7 \\,=\\, 2\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(a_{25}\\)\u003c/span>의 값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(78\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(80\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(82\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(84\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(86\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"수열 $\\left\\{ a_n \\right\\}$은 $0 \\,\u003c\\, a_1 \\,\u003c\\, 1$이고, 모든 자연수 $n$에 대하여 다음 조건을 만족시킨다.\n(가) $a_2n \\,=\\, a_2 \\times a_n +1$(나) $a_{2n +1} \\,=\\, a_2 \\times a_n -2$\n$a_7 \\,=\\, 2$일 때, $a_25$의 값은? [4점]\n① $78$ ② $80$ ③ $82$ ④ $84$ ⑤ $86$\n단답형","sourceHash":"edafd4a0d83fac91550ef5cf3983b2e3bdd5e516a52c335164ef09a127106339","sourceKind":"csat","sourceLabel":"2020년 시행 수능 · 2021학년도 · 나형 · 21번","steps":[{"id":"s1","latex":"r=a_2,\\quad r=ra_1+1\\ \\Rightarrow\\ r=\\frac1{1-a_1}>1"},{"id":"s2","latex":"a_3=ra_1-2=r-3"},{"id":"s3","latex":"a_7=ra_3-2=r^2-3r-2=2"},{"id":"s4","latex":"(r-4)(r+1)=0,\\quad r>1\\ \\Rightarrow\\ r=4,\\quad a_1=\\frac34"},{"id":"s5","latex":"a_3=1,\\quad a_6=4a_3+1=5,\\quad a_{12}=4a_6+1=21"},{"id":"s6","latex":"a_{25}=4a_{12}-2=\\boxed{82}\\quad\\text{③}"}],"track":"나형"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2020년 시행 수능 · 2021학년도 · 나형 · 21번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2020,"answer":"③","contentHash":"a91b234ba113e244063d0e007412245f464c375cbb511d4c046090b54b522043","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24752,"month":12,"number":21,"points":4,"preview":false,"questionHtml":"\u003cp>수열 \u003cspan class=\"heq\">\\(\\left\\{ a_n \\right\\}\\)\u003c/span>은 \u003cspan class=\"heq\">\\(0 \\,&lt;\\, a_1 \\,&lt;\\, 1\\)\u003c/span>이고, 모든 자연수 \u003cspan class=\"heq\">\\(n\\)\u003c/span>에 대하여 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(a_{2n} \\,=\\, a_2 \\times a_n +1\\)\u003c/span>\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(a_{2n +1} \\,=\\, a_2 \\times a_n -2\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>\u003cspan class=\"heq\">\\(a_7 \\,=\\, 2\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(a_{25}\\)\u003c/span>의 값은? [4점]\u003c/p>\u003cdiv class=\"hchoices\">\u003cdiv class=\"hch\">① \u003cspan class=\"heq\">\\(78\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">② \u003cspan class=\"heq\">\\(80\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">③ \u003cspan class=\"heq\">\\(82\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">④ \u003cspan class=\"heq\">\\(84\\)\u003c/span>\u003c/div>\u003cdiv class=\"hch\">⑤ \u003cspan class=\"heq\">\\(86\\)\u003c/span>\u003c/div>\u003c/div>","questionText":"수열 $\\left\\{ a_n \\right\\}$은 $0 \\,\u003c\\, a_1 \\,\u003c\\, 1$이고, 모든 자연수 $n$에 대하여 다음 조건을 만족시킨다.\n(가) $a_2n \\,=\\, a_2 \\times a_n +1$(나) $a_{2n +1} \\,=\\, a_2 \\times a_n -2$\n$a_7 \\,=\\, 2$일 때, $a_25$의 값은? [4점]\n① $78$ ② $80$ ③ $82$ ④ $84$ ⑤ $86$\n단답형","sourceHash":"edafd4a0d83fac91550ef5cf3983b2e3bdd5e516a52c335164ef09a127106339","sourceKind":"csat","sourceLabel":"2020년 시행 수능 · 2021학년도 · 나형 · 21번","steps":[{"id":"s1","latex":"r=a_2,\\quad r=ra_1+1\\ \\Rightarrow\\ r=\\frac1{1-a_1}>1"},{"id":"s2","latex":"a_3=ra_1-2=r-3"},{"id":"s3","latex":"a_7=ra_3-2=r^2-3r-2=2"},{"id":"s4","latex":"(r-4)(r+1)=0,\\quad r>1\\ \\Rightarrow\\ r=4,\\quad a_1=\\frac34"},{"id":"s5","latex":"a_3=1,\\quad a_6=4a_3+1=5,\\quad a_{12}=4a_6+1=21"},{"id":"s6","latex":"a_{25}=4a_{12}-2=\\boxed{82}\\quad\\text{③}"}],"track":"나형"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

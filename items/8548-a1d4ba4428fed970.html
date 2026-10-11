@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":8548,"sourceLabel":"2025 교육청 고2 수학 9월 21번","adminYear":2025,"grade":2,"month":9,"number":21,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 반지름의 길이가 $\\frac{ \\sqrt{21}}{3}\\,$인 원 $C_{1}\\,$에 내접하고 ${ \\overline{{AB}}}=2\\,$, ${ \\overline{{AC}}}= \\sqrt{7}\\,$인 사각형 ${{ABCD}}\\,$가 있다. 선분 ${{AC}}\\,$가 삼각형 ${{BCD}}\\,$에 내접하는 원 $C_{2}\\,$의 넓이를 이등분할 때, 원 $C_{2}\\,$의 반지름의 길이는? (단, ${ \\overline{{BC}}} > { \\overline{{CD}}}\\,$) [4점]\n① $\\sqrt{3}-\\frac{2}{7} \\sqrt{21}\\,$ ② $\\sqrt{3}-\\frac{5}{21} \\sqrt{21}\\,$\n③ $\\sqrt{3}-\\frac{4}{21} \\sqrt{21}\\,$ ④ $2 \\sqrt{3}-\\frac{5}{9} \\sqrt{21}\\,$\n⑤ $2 \\sqrt{3}-\\frac{4}{9} \\sqrt{21}$\n단답형","answer":"①","sourceHash":"d15208251e65a1bff6df4cbbf4b082b21b43ec2cbb271507aa16986bf849d401","steps":[{"id":"s1","latex":"AC\\text{가 내접원 넓이를 이등분}\\Rightarrow AC\\text{는 }\\angle BCD\\text{의 이등분선}"},{"id":"s2","latex":"AB=AD=2"},{"id":"s3","latex":"AC=2R\\sin\\angle ABC,\\quad R=\\frac{\\sqrt{21}}3\\Rightarrow\\sin\\angle ABC=\\frac{\\sqrt3}{2}"},{"id":"s4","latex":"BC>CD\\Rightarrow\\angle ABC=60^\\circ,\\ \\angle ADC=120^\\circ"},{"id":"s5","latex":"7=4+BC^2-2\\cdot2\\cdot BC\\cos60^\\circ\\Rightarrow BC=3"},{"id":"s6","latex":"7=4+CD^2-2\\cdot2\\cdot CD\\cos120^\\circ\\Rightarrow CD=1"},{"id":"s7","latex":"AC\\cdot BD=AB\\cdot CD+AD\\cdot BC\\Rightarrow BD=\\frac{8\\sqrt7}{7}"},{"id":"s8","latex":"\\cos\\angle BCD=\\frac{BC^2+CD^2-BD^2}{2BC\\cdot CD}=\\frac17"},{"id":"s9","latex":"[\\triangle BCD]=\\frac12\\cdot3\\cdot1\\cdot\\frac{4\\sqrt3}{7}=\\frac{6\\sqrt3}{7}"},{"id":"s10","latex":"s=\\frac{3+1+8/\\sqrt7}{2}=2+\\frac4{\\sqrt7}"},{"id":"s11","latex":"r=\\frac{[\\triangle BCD]}s=\\sqrt3-\\frac{2\\sqrt{21}}7"}],"diagram":null,"contentHash":"36ec132d9175eb9538ebe727f0bb992ae0a2c4b2b851d0928682067c20388990","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 반지름의 길이가 \u003cspan class=\"heq\">\\(\\dfrac{ \\sqrt{21}}{3}\\,\\)\u003c/span>인 원 \u003cspan class=\"heq\">\\(C_{1}\\,\\)\u003c/span>에 내접하고 \u003cspan class=\"heq\">\\({ \\overline{{AB}}}=2\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\({ \\overline{{AC}}}= \\sqrt{7}\\,\\)\u003c/span>인 사각형 \u003cspan class=\"heq\">\\({{ABCD}}\\,\\)\u003c/span>가 있다. 선분 \u003cspan class=\"heq\">\\({{AC}}\\,\\)\u003c/span>가 삼각형 \u003cspan class=\"heq\">\\({{BCD}}\\,\\)\u003c/span>에 내접하는 원 \u003cspan class=\"heq\">\\(C_{2}\\,\\)\u003c/span>의 넓이를 이등분할 때, 원 \u003cspan class=\"heq\">\\(C_{2}\\,\\)\u003c/span>의 반지름의 길이는? (단, \u003cspan class=\"heq\">\\({ \\overline{{BC}}} \\gt  { \\overline{{CD}}}\\,\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/d91a3c8974d78eb053eca39d.png\" style=\"width:266px;max-width:100%\">\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{2}{7} \\sqrt{21}\\,\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{5}{21} \\sqrt{21}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">③ \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{4}{21} \\sqrt{21}\\,\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(2 \\sqrt{3}-\\dfrac{5}{9} \\sqrt{21}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">⑤ \u003cspan class=\"heq\">\\(2 \\sqrt{3}-\\dfrac{4}{9} \\sqrt{21}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"a1d4ba4428fed970886fd7d019c3376f579516f3493579c2889e9260904ae965"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2025 교육청 고2 수학 9월 21번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":8548,"sourceLabel":"2025 교육청 고2 수학 9월 21번","adminYear":2025,"grade":2,"month":9,"number":21,"track":"수학","points":4,"scoreStatus":"confirmed_4_direct","questionText":"그림과 같이 반지름의 길이가 $\\frac{ \\sqrt{21}}{3}\\,$인 원 $C_{1}\\,$에 내접하고 ${ \\overline{{AB}}}=2\\,$, ${ \\overline{{AC}}}= \\sqrt{7}\\,$인 사각형 ${{ABCD}}\\,$가 있다. 선분 ${{AC}}\\,$가 삼각형 ${{BCD}}\\,$에 내접하는 원 $C_{2}\\,$의 넓이를 이등분할 때, 원 $C_{2}\\,$의 반지름의 길이는? (단, ${ \\overline{{BC}}} > { \\overline{{CD}}}\\,$) [4점]\n① $\\sqrt{3}-\\frac{2}{7} \\sqrt{21}\\,$ ② $\\sqrt{3}-\\frac{5}{21} \\sqrt{21}\\,$\n③ $\\sqrt{3}-\\frac{4}{21} \\sqrt{21}\\,$ ④ $2 \\sqrt{3}-\\frac{5}{9} \\sqrt{21}\\,$\n⑤ $2 \\sqrt{3}-\\frac{4}{9} \\sqrt{21}$\n단답형","answer":"①","sourceHash":"d15208251e65a1bff6df4cbbf4b082b21b43ec2cbb271507aa16986bf849d401","steps":[{"id":"s1","latex":"AC\\text{가 내접원 넓이를 이등분}\\Rightarrow AC\\text{는 }\\angle BCD\\text{의 이등분선}"},{"id":"s2","latex":"AB=AD=2"},{"id":"s3","latex":"AC=2R\\sin\\angle ABC,\\quad R=\\frac{\\sqrt{21}}3\\Rightarrow\\sin\\angle ABC=\\frac{\\sqrt3}{2}"},{"id":"s4","latex":"BC>CD\\Rightarrow\\angle ABC=60^\\circ,\\ \\angle ADC=120^\\circ"},{"id":"s5","latex":"7=4+BC^2-2\\cdot2\\cdot BC\\cos60^\\circ\\Rightarrow BC=3"},{"id":"s6","latex":"7=4+CD^2-2\\cdot2\\cdot CD\\cos120^\\circ\\Rightarrow CD=1"},{"id":"s7","latex":"AC\\cdot BD=AB\\cdot CD+AD\\cdot BC\\Rightarrow BD=\\frac{8\\sqrt7}{7}"},{"id":"s8","latex":"\\cos\\angle BCD=\\frac{BC^2+CD^2-BD^2}{2BC\\cdot CD}=\\frac17"},{"id":"s9","latex":"[\\triangle BCD]=\\frac12\\cdot3\\cdot1\\cdot\\frac{4\\sqrt3}{7}=\\frac{6\\sqrt3}{7}"},{"id":"s10","latex":"s=\\frac{3+1+8/\\sqrt7}{2}=2+\\frac4{\\sqrt7}"},{"id":"s11","latex":"r=\\frac{[\\triangle BCD]}s=\\sqrt3-\\frac{2\\sqrt{21}}7"}],"diagram":null,"contentHash":"36ec132d9175eb9538ebe727f0bb992ae0a2c4b2b851d0928682067c20388990","questionHtml":"\u003cp class=\"hp htall\">그림과 같이 반지름의 길이가 \u003cspan class=\"heq\">\\(\\dfrac{ \\sqrt{21}}{3}\\,\\)\u003c/span>인 원 \u003cspan class=\"heq\">\\(C_{1}\\,\\)\u003c/span>에 내접하고 \u003cspan class=\"heq\">\\({ \\overline{{AB}}}=2\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\({ \\overline{{AC}}}= \\sqrt{7}\\,\\)\u003c/span>인 사각형 \u003cspan class=\"heq\">\\({{ABCD}}\\,\\)\u003c/span>가 있다. 선분 \u003cspan class=\"heq\">\\({{AC}}\\,\\)\u003c/span>가 삼각형 \u003cspan class=\"heq\">\\({{BCD}}\\,\\)\u003c/span>에 내접하는 원 \u003cspan class=\"heq\">\\(C_{2}\\,\\)\u003c/span>의 넓이를 이등분할 때, 원 \u003cspan class=\"heq\">\\(C_{2}\\,\\)\u003c/span>의 반지름의 길이는? (단, \u003cspan class=\"heq\">\\({ \\overline{{BC}}} \\gt  { \\overline{{CD}}}\\,\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/d91a3c8974d78eb053eca39d.png\" style=\"width:266px;max-width:100%\">\u003c/p>\u003cp class=\"hp htall\">① \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{2}{7} \\sqrt{21}\\,\\)\u003c/span>&emsp;② \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{5}{21} \\sqrt{21}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">③ \u003cspan class=\"heq\">\\(\\sqrt{3}-\\dfrac{4}{21} \\sqrt{21}\\,\\)\u003c/span>&emsp;④ \u003cspan class=\"heq\">\\(2 \\sqrt{3}-\\dfrac{5}{9} \\sqrt{21}\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">⑤ \u003cspan class=\"heq\">\\(2 \\sqrt{3}-\\dfrac{4}{9} \\sqrt{21}\\)\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"a1d4ba4428fed970886fd7d019c3376f579516f3493579c2889e9260904ae965"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

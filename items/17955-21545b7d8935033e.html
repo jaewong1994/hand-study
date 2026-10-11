@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2024,"answer":"270","contentHash":"1bec45f8007b706ae6d8ed09824483015c52e5e9271b07c0b08197aabc1738c1","diagram":null,"editionHash":"21545b7d8935033ebab1b741faab50a26f6064cf730e48b0e34d302bb3459e59","grade":3,"graphHash":"","graphPlan":null,"itemId":17955,"learningHash":"71b84be557f36dadd20c3276c45dd015d905efdb25f61d50c08df5150e45134c","month":3,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp class=\"hp\">자연수 \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\,\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = \\dfrac{4}{n^{3}} x^{3} +1\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이라 하자. 원점에서 곡선 \u003cspan class=\"heq\">\\(y=f \\left(x \\right)\\,\\)\u003c/span>에 그은 접선을 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>, 접선 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>의 접점을 \u003cspan class=\"heq\">\\({{P}}_{n}\\,\\)\u003c/span>이라 하자. \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>축과 직선 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>에 동시에 접하고 점 \u003cspan class=\"heq\">\\({{P}}_{n}\\,\\)\u003c/span>을 지나는 원 중 중심의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표가 양수인 것을 \u003cspan class=\"heq\">\\(C_{n}\\,\\)\u003c/span>이라 하자. 원 \u003cspan class=\"heq\">\\(C_{n}\\,\\)\u003c/span>의 반지름의 길이를 \u003cspan class=\"heq\">\\(r_{n}\\,\\)\u003c/span>이라 할 때, \u003cspan class=\"heq\">\\(40 \\times \\lim\\limits_{n\\, \\rightarrow \\, \\infty } {} n^{2} \\left( 4r_{n} -3 \\right)\\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/9f9d4bc310e0af42991888c1.png\" style=\"width:272px;max-width:100%\">\u003c/p>","questionText":"자연수 $n\\,$에 대하여 함수 $f \\left( x \\right)\\,$를\n $f \\left( x \\right) = \\frac{4}{n ^{3}} x ^{3} +1\\,$\n이라 하자. 원점에서 곡선 $y=f \\left(x \\right)\\,$에 그은 접선을 $l_{n}\\,$, 접선 $l_{n}\\,$의 접점을 ${{P}} _{n}\\,$이라 하자. $x\\,$축과 직선 $l_{n}\\,$에 동시에 접하고 점 ${{P}} _{n}\\,$을 지나는 원 중 중심의 $x\\,$좌표가 양수인 것을 $C_{n}\\,$이라 하자. 원 $C_{n}\\,$의 반지름의 길이를 $r_{n}\\,$이라 할 때, $40 \\times \\lim _{n\\, \\rightarrow \\, \\infty } {} n ^{2} \\left( 4r _{n} -3 \\right)\\,$의 값을 구하시오. [4점]","scoreStatus":"confirmed_4_direct","sourceHash":"0c6ca23c54a0fd558ce51b9a26bd7987a5b7eaa2184d32f8bd4514fe75af84a0","sourceLabel":"2024 교육청 고3 수학미적분 3월 29번","stepExplanations":{"s1":{"body":"접점의 \\(x\\)좌표를 \\(t\\)라 하면 접선은 \\(y-f(t)=f^{\\prime}(t)(x-t)\\)예요. 원점 \\((0,0)\\)을 넣으면 \\(f(t)=tf^{\\prime}(t)\\)이므로 \\(\\frac{4t^3}{n^3}+1=\\frac{12t^3}{n^3}\\)이에요. 따라서 \\(t=\\frac n2\\), \\(f(t)=\\frac{3}{2}\\)이고 접점은 \\(P_n=(\\frac n2,\\frac{3}{2})\\)예요.","skillTags":["algebra.calculation"],"title":"원점을 지나는 접선 조건을 식으로 써요"},"s4":{"body":"\\(u=\\sqrt{n^2+9}\\)로 놓고 원의 중심을 \\((c,r_n)\\)이라 해요. 원은 \\(x\\)축에 접하면서 \\(y=\\frac{3}{2}\\)인 점을 지나므로 중심은 축 위쪽에 있고, 조건에 따라 \\(c>0\\)이에요. 원점에서 원에 그은 접선의 접점은 \\(x\\)축 위의 \\((c,0)\\)와 \\(P_n\\)이므로 두 접선의 길이가 같아 \\(c=OP_n=\\frac u2\\)예요. 중심과 \\(P_n\\)을 잇는 반지름은 기울기 \\(\\frac3n\\)인 접선에 수직이므로 \\(n(c-\\frac n2)+3(r_n-\\frac{3}{2})=0\\)이에요. \\(c=\\frac u2\\)를 넣으면 \\(r_n=\\frac{u^2-nu}{6}=\\frac{3u}{2(u+n)}\\)을 얻어요.","skillTags":["geometry.reasoning","reasoning.casework","algebra.calculation"],"title":"같은 점에서 그은 두 접선의 길이를 이용해요"},"s5":{"body":"\\(4r_n-3=\\frac{6u}{u+n}-3=\\frac{3(u-n)}{u+n}\\)이에요. \\(u^2-n^2=9\\)이므로 \\(u-n=\\frac9{u+n}\\)을 넣으면 \\(4r_n-3=\\frac{27}{(u+n)^2}\\)가 돼요. 따라서 \\(n^2(4r_n-3)=\\frac{27}{(\\sqrt{1+\\frac9{n^2}}+1)^2}\\to\\frac{27}4\\)이고, 40을 곱하면 270이에요.","skillTags":["algebra.calculation","calculus.limit"],"title":"0으로 가는 차는 먼저 유리화해요"}},"steps":[{"id":"s1","latex":"f(t)=tf^{\\prime}(t)\\Rightarrow t=n/2"},{"id":"s2","latex":"P_n=(n/2,3/2)"},{"id":"s3","latex":"\\text{직선 }OP_n\\text{의 기울기}=\\dfrac3n"},{"id":"s4","latex":"4r_n-3=\\dfrac{27}{(\\sqrt{n^2+9}+n)^2}"},{"id":"s5","latex":"\\lim n^2(4r_n-3)=27/4"},{"id":"s6","latex":"40\\cdot27/4=\\boxed{270}"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-explanations.js?v=372f3ddd6911ccf0"></script>
-  <script defer src="../assets/hand-study-csat.js?v=cd446f5ae8531c4f"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=6d62c18f876c57f6">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2024 교육청 고3 수학미적분 3월 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2024,"answer":"270","contentHash":"1bec45f8007b706ae6d8ed09824483015c52e5e9271b07c0b08197aabc1738c1","diagram":null,"editionHash":"21545b7d8935033ebab1b741faab50a26f6064cf730e48b0e34d302bb3459e59","grade":3,"graphHash":"","graphPlan":null,"itemId":17955,"learningHash":"71b84be557f36dadd20c3276c45dd015d905efdb25f61d50c08df5150e45134c","month":3,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp class=\"hp\">자연수 \u003cspan class=\"heq\">\\(n\\,\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\,\\)\u003c/span>를\u003c/p>\u003cp class=\"hp htall\">&emsp;&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = \\dfrac{4}{n^{3}} x^{3} +1\\,\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">이라 하자. 원점에서 곡선 \u003cspan class=\"heq\">\\(y=f \\left(x \\right)\\,\\)\u003c/span>에 그은 접선을 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>, 접선 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>의 접점을 \u003cspan class=\"heq\">\\({{P}}_{n}\\,\\)\u003c/span>이라 하자. \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>축과 직선 \u003cspan class=\"heq\">\\(l_{n}\\,\\)\u003c/span>에 동시에 접하고 점 \u003cspan class=\"heq\">\\({{P}}_{n}\\,\\)\u003c/span>을 지나는 원 중 중심의 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>좌표가 양수인 것을 \u003cspan class=\"heq\">\\(C_{n}\\,\\)\u003c/span>이라 하자. 원 \u003cspan class=\"heq\">\\(C_{n}\\,\\)\u003c/span>의 반지름의 길이를 \u003cspan class=\"heq\">\\(r_{n}\\,\\)\u003c/span>이라 할 때, \u003cspan class=\"heq\">\\(40 \\times \\lim\\limits_{n\\, \\rightarrow \\, \\infty } {} n^{2} \\left( 4r_{n} -3 \\right)\\,\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">\u003cimg class=\"hfig\" src=\"../assets/figures/9f9d4bc310e0af42991888c1.png\" style=\"width:272px;max-width:100%\">\u003c/p>","questionText":"자연수 $n\\,$에 대하여 함수 $f \\left( x \\right)\\,$를\n $f \\left( x \\right) = \\frac{4}{n ^{3}} x ^{3} +1\\,$\n이라 하자. 원점에서 곡선 $y=f \\left(x \\right)\\,$에 그은 접선을 $l_{n}\\,$, 접선 $l_{n}\\,$의 접점을 ${{P}} _{n}\\,$이라 하자. $x\\,$축과 직선 $l_{n}\\,$에 동시에 접하고 점 ${{P}} _{n}\\,$을 지나는 원 중 중심의 $x\\,$좌표가 양수인 것을 $C_{n}\\,$이라 하자. 원 $C_{n}\\,$의 반지름의 길이를 $r_{n}\\,$이라 할 때, $40 \\times \\lim _{n\\, \\rightarrow \\, \\infty } {} n ^{2} \\left( 4r _{n} -3 \\right)\\,$의 값을 구하시오. [4점]","scoreStatus":"confirmed_4_direct","sourceHash":"0c6ca23c54a0fd558ce51b9a26bd7987a5b7eaa2184d32f8bd4514fe75af84a0","sourceLabel":"2024 교육청 고3 수학미적분 3월 29번","stepExplanations":{"s1":{"body":"접점의 \\(x\\)좌표를 \\(t\\)라 하면 접선은 \\(y-f(t)=f^{\\prime}(t)(x-t)\\)예요. 원점 \\((0,0)\\)을 넣으면 \\(f(t)=tf^{\\prime}(t)\\)이므로 \\(\\frac{4t^3}{n^3}+1=\\frac{12t^3}{n^3}\\)이에요. 따라서 \\(t=\\frac n2\\), \\(f(t)=\\frac{3}{2}\\)이고 접점은 \\(P_n=(\\frac n2,\\frac{3}{2})\\)예요.","skillTags":["algebra.calculation"],"title":"원점을 지나는 접선 조건을 식으로 써요"},"s4":{"body":"\\(u=\\sqrt{n^2+9}\\)로 놓고 원의 중심을 \\((c,r_n)\\)이라 해요. 원은 \\(x\\)축에 접하면서 \\(y=\\frac{3}{2}\\)인 점을 지나므로 중심은 축 위쪽에 있고, 조건에 따라 \\(c>0\\)이에요. 원점에서 원에 그은 접선의 접점은 \\(x\\)축 위의 \\((c,0)\\)와 \\(P_n\\)이므로 두 접선의 길이가 같아 \\(c=OP_n=\\frac u2\\)예요. 중심과 \\(P_n\\)을 잇는 반지름은 기울기 \\(\\frac3n\\)인 접선에 수직이므로 \\(n(c-\\frac n2)+3(r_n-\\frac{3}{2})=0\\)이에요. \\(c=\\frac u2\\)를 넣으면 \\(r_n=\\frac{u^2-nu}{6}=\\frac{3u}{2(u+n)}\\)을 얻어요.","skillTags":["geometry.reasoning","reasoning.casework","algebra.calculation"],"title":"같은 점에서 그은 두 접선의 길이를 이용해요"},"s5":{"body":"\\(4r_n-3=\\frac{6u}{u+n}-3=\\frac{3(u-n)}{u+n}\\)이에요. \\(u^2-n^2=9\\)이므로 \\(u-n=\\frac9{u+n}\\)을 넣으면 \\(4r_n-3=\\frac{27}{(u+n)^2}\\)가 돼요. 따라서 \\(n^2(4r_n-3)=\\frac{27}{(\\sqrt{1+\\frac9{n^2}}+1)^2}\\to\\frac{27}4\\)이고, 40을 곱하면 270이에요.","skillTags":["algebra.calculation","calculus.limit"],"title":"0으로 가는 차는 먼저 유리화해요"}},"steps":[{"id":"s1","latex":"f(t)=tf^{\\prime}(t)\\Rightarrow t=n/2"},{"id":"s2","latex":"P_n=(n/2,3/2)"},{"id":"s3","latex":"\\text{직선 }OP_n\\text{의 기울기}=\\dfrac3n"},{"id":"s4","latex":"4r_n-3=\\dfrac{27}{(\\sqrt{n^2+9}+n)^2}"},{"id":"s5","latex":"\\lim n^2(4r_n-3)=27/4"},{"id":"s6","latex":"40\\cdot27/4=\\boxed{270}"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

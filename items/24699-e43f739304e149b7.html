@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2019,"answer":"7","contentHash":"02ab849fdf07497aa499012edcaef2ca8e0bcc0eeb53e6e2f25ab8fc84dee361","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24699,"month":11,"number":28,"points":4,"preview":false,"questionHtml":"\u003cp>다항함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) 모든 실수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(\\int_{1}^{x} {\\,}f(t)\\,dt=\\frac{x - 1}{2} \\left\\{\\,f(x)+f(1) \\right\\}\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(\\int_{0}^{2} {\\,}f(x)\\,dx=5 \\int_{- 1}^{1} {\\,}x f(x)\\,dx\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>\u003cspan class=\"heq\">\\(f(0)=1\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(f(4)\\)\u003c/span>의 값을 구하시오. [4점]\u003c/p>","questionText":"다항함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) 모든 실수 $x$에 대하여 $\\int_{1}^{x} {\\,}f(t)\\,dt=\\frac{x - 1}{2} \\left\\{\\,f(x)+f(1) \\right\\}$이다.(나) $\\int_{0}^{2} {\\,}f(x)\\,dx=5 \\int_{- 1}^{1} {\\,}x f(x)\\,dx$\n$f(0)=1$일 때, $f(4)$의 값을 구하시오. [4점]","sourceHash":"5395ed0352fa4ee6b6fe3ae441c269d2021c77e95a20eb6913469466b93803f8","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 28번","steps":[{"explanation":{"body":"왼쪽은 아래 끝점이 1로 고정되고 위 끝점이 \\(x\\)인 적분이므로 미분하면 \\(f(x)\\)예요. 오른쪽은 \\((x-1)/2\\)와 \\(f(x)+f(1)\\)의 곱이라 곱의 미분법을 써야 해요. 이때 \\(f(1)\\)은 상수라서 미분값이 0이에요. 두 쪽을 미분한 뒤 2를 곱하면 다음 관계식이 나와요.","skillTags":["integration.fundamental-theorem"],"title":"움직이는 끝점을 미분해요"},"id":"s1","latex":"\\text{(가)를 미분하면 }2f(x)=f(x)+f(1)+(x-1)f\\prime(x)"},{"id":"s2","latex":"f(x)=f(1)+(x-1)f\\prime(x)"},{"id":"s3","latex":"\\text{다시 미분하면 }(x-1)f\\prime\\prime(x)=0\\ \\Rightarrow\\ f\\prime\\prime(x)=0"},{"id":"s4","latex":"f(0)=1\\ \\Rightarrow\\ f(x)=ax+1\\quad(\\text{상수함수도 }a=0\\text{에 포함})"},{"id":"s5","latex":"\\int_0^2f(x)\\,dx=2a+2,\\quad\\int_{-1}^1xf(x)\\,dx=\\frac{2a}3"},{"id":"s6","latex":"2a+2=5\\cdot\\frac{2a}3\\ \\Rightarrow\\ a=\\frac32"},{"id":"s7","latex":"f(x)=\\frac32x+1\\text{은 (가)를 만족하고 }\\boxed{f(4)=7}"}],"track":"나형"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2019년 시행 수능 · 2020학년도 · 나형 · 28번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2019,"answer":"7","contentHash":"02ab849fdf07497aa499012edcaef2ca8e0bcc0eeb53e6e2f25ab8fc84dee361","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24699,"month":11,"number":28,"points":4,"preview":false,"questionHtml":"\u003cp>다항함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) 모든 실수 \u003cspan class=\"heq\">\\(x\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(\\int_{1}^{x} {\\,}f(t)\\,dt=\\frac{x - 1}{2} \\left\\{\\,f(x)+f(1) \\right\\}\\)\u003c/span>이다.\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(\\int_{0}^{2} {\\,}f(x)\\,dx=5 \\int_{- 1}^{1} {\\,}x f(x)\\,dx\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>\u003cspan class=\"heq\">\\(f(0)=1\\)\u003c/span>일 때, \u003cspan class=\"heq\">\\(f(4)\\)\u003c/span>의 값을 구하시오. [4점]\u003c/p>","questionText":"다항함수 $f(x)$가 다음 조건을 만족시킨다.\n(가) 모든 실수 $x$에 대하여 $\\int_{1}^{x} {\\,}f(t)\\,dt=\\frac{x - 1}{2} \\left\\{\\,f(x)+f(1) \\right\\}$이다.(나) $\\int_{0}^{2} {\\,}f(x)\\,dx=5 \\int_{- 1}^{1} {\\,}x f(x)\\,dx$\n$f(0)=1$일 때, $f(4)$의 값을 구하시오. [4점]","sourceHash":"5395ed0352fa4ee6b6fe3ae441c269d2021c77e95a20eb6913469466b93803f8","sourceKind":"csat","sourceLabel":"2019년 시행 수능 · 2020학년도 · 나형 · 28번","steps":[{"explanation":{"body":"왼쪽은 아래 끝점이 1로 고정되고 위 끝점이 \\(x\\)인 적분이므로 미분하면 \\(f(x)\\)예요. 오른쪽은 \\((x-1)/2\\)와 \\(f(x)+f(1)\\)의 곱이라 곱의 미분법을 써야 해요. 이때 \\(f(1)\\)은 상수라서 미분값이 0이에요. 두 쪽을 미분한 뒤 2를 곱하면 다음 관계식이 나와요.","skillTags":["integration.fundamental-theorem"],"title":"움직이는 끝점을 미분해요"},"id":"s1","latex":"\\text{(가)를 미분하면 }2f(x)=f(x)+f(1)+(x-1)f\\prime(x)"},{"id":"s2","latex":"f(x)=f(1)+(x-1)f\\prime(x)"},{"id":"s3","latex":"\\text{다시 미분하면 }(x-1)f\\prime\\prime(x)=0\\ \\Rightarrow\\ f\\prime\\prime(x)=0"},{"id":"s4","latex":"f(0)=1\\ \\Rightarrow\\ f(x)=ax+1\\quad(\\text{상수함수도 }a=0\\text{에 포함})"},{"id":"s5","latex":"\\int_0^2f(x)\\,dx=2a+2,\\quad\\int_{-1}^1xf(x)\\,dx=\\frac{2a}3"},{"id":"s6","latex":"2a+2=5\\cdot\\frac{2a}3\\ \\Rightarrow\\ a=\\frac32"},{"id":"s7","latex":"f(x)=\\frac32x+1\\text{은 (가)를 만족하고 }\\boxed{f(4)=7}"}],"track":"나형"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

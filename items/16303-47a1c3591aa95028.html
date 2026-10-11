@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":16303,"sourceLabel":"2019 교육청 고3 수리가형 5월 21번","adminYear":2019,"grade":3,"month":5,"number":21,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"양의 실수 전체의 집합에서 이계도함수가 존재하는 함수 $f(x)\\,$와 미분가능한 함수 $g(x)\\,$가 다음 조건을 만족시킨다.\n(가) $\\lim _{h-> 0} {} \\frac{f'(4+h)-1}{h} =1$ (나) 모든 양수 $x\\,$에 대하여 $\\int _{4} ^{x} {} f(t)dt= \\int _{4} ^{x} {} \\left\\{ \\frac{g \\left( \\sqrt{t} \\right)}{x} - \\frac{g \\left( \\sqrt{t} \\right)}{t} \\right\\} dt$ 이다.\n곡선 $y=g(x)\\,$위의 점 $\\left( \\,2\\,,\\,g(2) \\right)$에서의 접선의 $y\\,$절편은? [4점]\n① 232 ② 234 ③ 236 ④ 238 ⑤ 240\n단답형","answer":"⑤","sourceHash":"704c6b38ea6276967aa65cbf97752de3e34389683c302ac4c8efd08485aa943d","steps":[{"id":"s1","latex":"\\lim_{h\\to0}\\dfrac{f'(4+h)-1}{h}=1\\Rightarrow f'(4)=1,\\quad f''(4)=1"},{"id":"s2","latex":"G(x)=\\int_4^xg(\\sqrt t)\\,dt"},{"id":"s3","latex":"\\int_4^xf(t)dt=\\dfrac{G(x)}x-\\int_4^x\\dfrac{g(\\sqrt t)}t\\,dt"},{"id":"s4","latex":"f(x)=-\\dfrac{G(x)}{x^2}\\Rightarrow x^2f(x)=-G(x)"},{"id":"s5","latex":"2xf+x^2f'=-g(\\sqrt x)"},{"id":"s6","latex":"2f+4xf'+x^2f''=-\\dfrac{g'(\\sqrt x)}{2\\sqrt x}"},{"id":"s7","latex":"f(4)=0\\Rightarrow g(2)=-16,\\quad g'(2)=-128"},{"id":"s8","latex":"y=-128(x-2)-16\\Rightarrow y\\text{절편}=240"}],"diagram":null,"contentHash":"4a9557b199e85d2493ce0d0b35d9ae6c67df3fb3bb61aca979a67046b889a214","questionHtml":"\u003cp class=\"hp\">양의 실수 전체의 집합에서 이계도함수가 존재하는 함수 \u003cspan class=\"heq\">\\(f(x)\\,\\)\u003c/span>와 미분가능한 함수 \u003cspan class=\"heq\">\\(g(x)\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cp class=\"hp htall\">\u003cdiv class=\"hbox\">\u003cp class=\"hp htall\">(가) \u003cspan class=\"heq\">\\(\\lim\\limits_{h\\to  0} {} \\dfrac{f'(4+h)-1}{h} =1\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">(나) 모든 양수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여\u003cbr>\u003cspan class=\"heq\">\\(\\int_{4}^{x} {} f(t)dt= \\int_{4}^{x} {} \\left\\{ \\dfrac{g \\left( \\sqrt{t} \\right)}{x} - \\dfrac{g \\left( \\sqrt{t} \\right)}{t} \\right\\} dt\\)\u003c/span> 이다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp\">곡선 \u003cspan class=\"heq\">\\(y=g(x)\\,\\)\u003c/span>위의 점 \u003cspan class=\"heq\">\\(\\left( \\,2\\,,\\,g(2) \\right)\\)\u003c/span>에서의 접선의 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>절편은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">① 232&emsp;② 234&emsp;③ 236&emsp;④ 238&emsp;⑤ 240\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"47a1c3591aa95028b8ac645c64f220fcffa8f1fcb756318938bdae6fd1eea2c9"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2019 교육청 고3 수리가형 5월 21번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":16303,"sourceLabel":"2019 교육청 고3 수리가형 5월 21번","adminYear":2019,"grade":3,"month":5,"number":21,"track":"수리가형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"양의 실수 전체의 집합에서 이계도함수가 존재하는 함수 $f(x)\\,$와 미분가능한 함수 $g(x)\\,$가 다음 조건을 만족시킨다.\n(가) $\\lim _{h-> 0} {} \\frac{f'(4+h)-1}{h} =1$ (나) 모든 양수 $x\\,$에 대하여 $\\int _{4} ^{x} {} f(t)dt= \\int _{4} ^{x} {} \\left\\{ \\frac{g \\left( \\sqrt{t} \\right)}{x} - \\frac{g \\left( \\sqrt{t} \\right)}{t} \\right\\} dt$ 이다.\n곡선 $y=g(x)\\,$위의 점 $\\left( \\,2\\,,\\,g(2) \\right)$에서의 접선의 $y\\,$절편은? [4점]\n① 232 ② 234 ③ 236 ④ 238 ⑤ 240\n단답형","answer":"⑤","sourceHash":"704c6b38ea6276967aa65cbf97752de3e34389683c302ac4c8efd08485aa943d","steps":[{"id":"s1","latex":"\\lim_{h\\to0}\\dfrac{f'(4+h)-1}{h}=1\\Rightarrow f'(4)=1,\\quad f''(4)=1"},{"id":"s2","latex":"G(x)=\\int_4^xg(\\sqrt t)\\,dt"},{"id":"s3","latex":"\\int_4^xf(t)dt=\\dfrac{G(x)}x-\\int_4^x\\dfrac{g(\\sqrt t)}t\\,dt"},{"id":"s4","latex":"f(x)=-\\dfrac{G(x)}{x^2}\\Rightarrow x^2f(x)=-G(x)"},{"id":"s5","latex":"2xf+x^2f'=-g(\\sqrt x)"},{"id":"s6","latex":"2f+4xf'+x^2f''=-\\dfrac{g'(\\sqrt x)}{2\\sqrt x}"},{"id":"s7","latex":"f(4)=0\\Rightarrow g(2)=-16,\\quad g'(2)=-128"},{"id":"s8","latex":"y=-128(x-2)-16\\Rightarrow y\\text{절편}=240"}],"diagram":null,"contentHash":"4a9557b199e85d2493ce0d0b35d9ae6c67df3fb3bb61aca979a67046b889a214","questionHtml":"\u003cp class=\"hp\">양의 실수 전체의 집합에서 이계도함수가 존재하는 함수 \u003cspan class=\"heq\">\\(f(x)\\,\\)\u003c/span>와 미분가능한 함수 \u003cspan class=\"heq\">\\(g(x)\\,\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cp class=\"hp htall\">\u003cdiv class=\"hbox\">\u003cp class=\"hp htall\">(가) \u003cspan class=\"heq\">\\(\\lim\\limits_{h\\to  0} {} \\dfrac{f'(4+h)-1}{h} =1\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">(나) 모든 양수 \u003cspan class=\"heq\">\\(x\\,\\)\u003c/span>에 대하여\u003cbr>\u003cspan class=\"heq\">\\(\\int_{4}^{x} {} f(t)dt= \\int_{4}^{x} {} \\left\\{ \\dfrac{g \\left( \\sqrt{t} \\right)}{x} - \\dfrac{g \\left( \\sqrt{t} \\right)}{t} \\right\\} dt\\)\u003c/span> 이다.\u003c/p>\u003c/div>\u003c/p>\u003cp class=\"hp\">곡선 \u003cspan class=\"heq\">\\(y=g(x)\\,\\)\u003c/span>위의 점 \u003cspan class=\"heq\">\\(\\left( \\,2\\,,\\,g(2) \\right)\\)\u003c/span>에서의 접선의 \u003cspan class=\"heq\">\\(y\\,\\)\u003c/span>절편은? \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cp class=\"hp\">① 232&emsp;② 234&emsp;③ 236&emsp;④ 238&emsp;⑤ 240\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"47a1c3591aa95028b8ac645c64f220fcffa8f1fcb756318938bdae6fd1eea2c9"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

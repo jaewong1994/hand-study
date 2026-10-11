@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2022,"answer":"26","contentHash":"525c0837059858ff18c937ccf3d3c82a37706adf8bc039230cf05984fc028d46","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24844,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>세 상수 \u003cspan class=\"heq\">\\(a,\\,b,\\,c\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)=ae^{2x} +be^x +c\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(\\lim _{x\\, \\rightarrow \\,- \\infty } {\\,} \\frac{f \\left( x \\right) +6}{e ^{x}} =1\\)\u003c/span>\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(f \\left( \\ln\\,2 \\right)=0\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>의 역함수를 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(\\int _{ 0} ^{14 } { g(x)}\\,dx=p+q \\ln\\,2\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(p,\\,q\\)\u003c/span>는 유리수이고, \u003cspan class=\"heq\">\\(\\ln\\,2\\)\u003c/span>는 무리수이다.) [4점]\u003c/p>","questionText":"세 상수 $a,\\,b,\\,c$에 대하여 함수 $f \\left( x \\right)=ae^2x +be^x +c$가 다음 조건을 만족시킨다.\n(가) $\\lim _{x\\, \\rightarrow \\,- \\infty } {\\,} \\frac{f \\left( x \\right) +6}{e ^{x}} =1$(나) $f \\left( \\ln\\,2 \\right)=0$\n함수 $f \\left( x \\right)$의 역함수를 $g \\left( x \\right)$라 할 때, $\\int _{ 0} ^{14 } { g(x)}\\,dx=p+q \\ln\\,2$이다. $p+q$의 값을 구하시오. (단, $p,\\,q$는 유리수이고, $\\ln\\,2$는 무리수이다.) [4점]","sourceHash":"d651ae605c4c7d1586aa1db368edd0c20c896c2b8bf66fd8e6b8d889ba23c2a2","sourceKind":"csat","sourceLabel":"2022년 시행 수능 · 2023학년도 · 미적분 · 29번","steps":[{"id":"s1","latex":"\\frac{f(x)+6}{e^x}=ae^x+b+(c+6)e^{-x}"},{"id":"s2","latex":"x\\to-\\infty\\text{에서 유한한 극한 }1\\text{을 가지므로 }c=-6,\\quad b=1"},{"id":"s3","latex":"f(\\ln2)=4a+2-6=0\\ \\Rightarrow\\ a=1"},{"id":"s4","latex":"f(x)=e^{2x}+e^x-6,\\quad f\\prime(x)=2e^{2x}+e^x>0"},{"id":"s5","latex":"f(\\ln2)=0,\\quad f(\\ln4)=14\\ \\Rightarrow\\ g(0)=\\ln2,\\quad g(14)=\\ln4"},{"explanation":{"body":"\\(g(x)\\)를 직접 구하면 근호와 로그가 섞여 적분하기 복잡해져요. 대신 \\(t=g(x)\\)로 두면 역함수 관계에서 \\(x=f(t)\\)가 돼요. 따라서 \\(dx=f\\prime(t)\\,dt\\)이고 적분할 함수는 \\(t f\\prime(t)\\)로 바뀌어요. \\(f\\prime>0\\)이라 대응이 한 방향으로 이어지므로 두 끝점도 \\(0,14\\)에서 \\(\\ln2,\\ln4\\)로 바꿔야 해요.","skillTags":["integration.inverse-substitution"],"title":"왜 역함수를 새 변수로 둘까요?"},"id":"s6","latex":"t=g(x),\\quad x=f(t),\\quad dx=f\\prime(t)\\,dt"},{"id":"s7","latex":"I=\\int_0^{14}g(x)\\,dx=\\int_{\\ln2}^{\\ln4}t f\\prime(t)\\,dt"},{"explanation":{"body":"\\(t\\)는 미분하면 \\(1\\)이 되고, \\(f\\prime(t)\\)는 적분하면 이미 알고 있는 \\(f(t)\\)가 돼요. 그래서 부분적분 뒤에는 \\(\\int f(t)\\,dt\\)만 남아요. 여기서는 \\(u=t\\), \\(dv=f\\prime(t)dt\\)로 잡은 것이고, 숫자나 적분구간이 달라져도 이 두 장점이 있으면 같은 선택이 유효해요.","skillTags":["integration.by-parts"],"title":"어느 쪽을 미분하고 적분할까요?"},"id":"s8","latex":"I=[tf(t)]_{\\ln2}^{\\ln4}-\\int_{\\ln2}^{\\ln4}f(t)\\,dt"},{"id":"s9","latex":"=14\\ln4-\\left[\\frac12e^{2t}+e^t-6t\\right]_{\\ln2}^{\\ln4}"},{"explanation":{"body":"상한 \\(t=\\ln4\\)에서는 \\(e^t=4\\), \\(e^{2t}=16\\)이고, 하한 \\(t=\\ln2\\)에서는 각각 \\(2,4\\)예요. 하한의 \\(-6\\ln2\\)까지 괄호째 빼야 \\(8-6\\ln2\\)가 돼요. 마지막에는 앞의 \\(28\\ln2\\)에서 이 값을 빼므로 로그의 계수가 \\(28+6=34\\)가 돼요.","skillTags":["integration.endpoint-evaluation"],"title":"상한값에서 하한값 전체를 빼요"},"id":"s10","latex":"=28\\ln2-\\{(8+4-6\\ln4)-(2+2-6\\ln2)\\}"},{"id":"s11","latex":"=28\\ln2-(8-6\\ln2)=-8+34\\ln2"},{"id":"s12","latex":"p=-8,\\quad q=34\\ \\Rightarrow\\ \\boxed{p+q=26}"}],"track":"미적분"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2022년 시행 수능 · 2023학년도 · 미적분 · 29번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2022,"answer":"26","contentHash":"525c0837059858ff18c937ccf3d3c82a37706adf8bc039230cf05984fc028d46","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24844,"month":11,"number":29,"points":4,"preview":false,"questionHtml":"\u003cp>세 상수 \u003cspan class=\"heq\">\\(a,\\,b,\\,c\\)\u003c/span>에 대하여 함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)=ae^{2x} +be^x +c\\)\u003c/span>가 다음 조건을 만족시킨다.\u003c/p>\u003cdiv class=\"hbox hcond\">\u003cp class=\"hcondr\">(가) \u003cspan class=\"heq\">\\(\\lim _{x\\, \\rightarrow \\,- \\infty } {\\,} \\frac{f \\left( x \\right) +6}{e ^{x}} =1\\)\u003c/span>\u003c/p>\u003cp class=\"hcondr\">(나) \u003cspan class=\"heq\">\\(f \\left( \\ln\\,2 \\right)=0\\)\u003c/span>\u003c/p>\u003c/div>\u003cp>함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>의 역함수를 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>라 할 때, \u003cspan class=\"heq\">\\(\\int _{ 0} ^{14 } { g(x)}\\,dx=p+q \\ln\\,2\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(p+q\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(p,\\,q\\)\u003c/span>는 유리수이고, \u003cspan class=\"heq\">\\(\\ln\\,2\\)\u003c/span>는 무리수이다.) [4점]\u003c/p>","questionText":"세 상수 $a,\\,b,\\,c$에 대하여 함수 $f \\left( x \\right)=ae^2x +be^x +c$가 다음 조건을 만족시킨다.\n(가) $\\lim _{x\\, \\rightarrow \\,- \\infty } {\\,} \\frac{f \\left( x \\right) +6}{e ^{x}} =1$(나) $f \\left( \\ln\\,2 \\right)=0$\n함수 $f \\left( x \\right)$의 역함수를 $g \\left( x \\right)$라 할 때, $\\int _{ 0} ^{14 } { g(x)}\\,dx=p+q \\ln\\,2$이다. $p+q$의 값을 구하시오. (단, $p,\\,q$는 유리수이고, $\\ln\\,2$는 무리수이다.) [4점]","sourceHash":"d651ae605c4c7d1586aa1db368edd0c20c896c2b8bf66fd8e6b8d889ba23c2a2","sourceKind":"csat","sourceLabel":"2022년 시행 수능 · 2023학년도 · 미적분 · 29번","steps":[{"id":"s1","latex":"\\frac{f(x)+6}{e^x}=ae^x+b+(c+6)e^{-x}"},{"id":"s2","latex":"x\\to-\\infty\\text{에서 유한한 극한 }1\\text{을 가지므로 }c=-6,\\quad b=1"},{"id":"s3","latex":"f(\\ln2)=4a+2-6=0\\ \\Rightarrow\\ a=1"},{"id":"s4","latex":"f(x)=e^{2x}+e^x-6,\\quad f\\prime(x)=2e^{2x}+e^x>0"},{"id":"s5","latex":"f(\\ln2)=0,\\quad f(\\ln4)=14\\ \\Rightarrow\\ g(0)=\\ln2,\\quad g(14)=\\ln4"},{"explanation":{"body":"\\(g(x)\\)를 직접 구하면 근호와 로그가 섞여 적분하기 복잡해져요. 대신 \\(t=g(x)\\)로 두면 역함수 관계에서 \\(x=f(t)\\)가 돼요. 따라서 \\(dx=f\\prime(t)\\,dt\\)이고 적분할 함수는 \\(t f\\prime(t)\\)로 바뀌어요. \\(f\\prime>0\\)이라 대응이 한 방향으로 이어지므로 두 끝점도 \\(0,14\\)에서 \\(\\ln2,\\ln4\\)로 바꿔야 해요.","skillTags":["integration.inverse-substitution"],"title":"왜 역함수를 새 변수로 둘까요?"},"id":"s6","latex":"t=g(x),\\quad x=f(t),\\quad dx=f\\prime(t)\\,dt"},{"id":"s7","latex":"I=\\int_0^{14}g(x)\\,dx=\\int_{\\ln2}^{\\ln4}t f\\prime(t)\\,dt"},{"explanation":{"body":"\\(t\\)는 미분하면 \\(1\\)이 되고, \\(f\\prime(t)\\)는 적분하면 이미 알고 있는 \\(f(t)\\)가 돼요. 그래서 부분적분 뒤에는 \\(\\int f(t)\\,dt\\)만 남아요. 여기서는 \\(u=t\\), \\(dv=f\\prime(t)dt\\)로 잡은 것이고, 숫자나 적분구간이 달라져도 이 두 장점이 있으면 같은 선택이 유효해요.","skillTags":["integration.by-parts"],"title":"어느 쪽을 미분하고 적분할까요?"},"id":"s8","latex":"I=[tf(t)]_{\\ln2}^{\\ln4}-\\int_{\\ln2}^{\\ln4}f(t)\\,dt"},{"id":"s9","latex":"=14\\ln4-\\left[\\frac12e^{2t}+e^t-6t\\right]_{\\ln2}^{\\ln4}"},{"explanation":{"body":"상한 \\(t=\\ln4\\)에서는 \\(e^t=4\\), \\(e^{2t}=16\\)이고, 하한 \\(t=\\ln2\\)에서는 각각 \\(2,4\\)예요. 하한의 \\(-6\\ln2\\)까지 괄호째 빼야 \\(8-6\\ln2\\)가 돼요. 마지막에는 앞의 \\(28\\ln2\\)에서 이 값을 빼므로 로그의 계수가 \\(28+6=34\\)가 돼요.","skillTags":["integration.endpoint-evaluation"],"title":"상한값에서 하한값 전체를 빼요"},"id":"s10","latex":"=28\\ln2-\\{(8+4-6\\ln4)-(2+2-6\\ln2)\\}"},{"id":"s11","latex":"=28\\ln2-(8-6\\ln2)=-8+34\\ln2"},{"id":"s12","latex":"p=-8,\\quad q=34\\ \\Rightarrow\\ \\boxed{p+q=26}"}],"track":"미적분"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":17234,"sourceLabel":"2021 평가원 고3 수학확통 9월 22번","adminYear":2021,"grade":3,"month":9,"number":22,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"최고차항의 계수가 $1$인 삼차함수 $f \\left( x \\right)$에 대하여 함수\n $g \\left( x \\right) =f \\left( x-3 \\right) \\times \\lim _{h\\to 0+} {} \\frac{\\left| f(x+h) \\right| - \\left| f(x-h) \\right|}{h}$\n가 다음 조건을 만족시킬 때, $f \\left( 5 \\right)$의 값을 구하시오. [4점]\n(가) 함수 $g \\left( x \\right)$는 실수 전체의 집합에서 연속이다.(나) 방정식 $g \\left( x \\right)$$=0$은 서로 다른 네 실근 $\\alpha _{1} ,\\, \\alpha _{2} ,\\, \\alpha _{3} ,\\, \\alpha _{4}$를 갖고 $\\alpha _{1} + \\alpha _{2} + \\alpha _{3} + \\alpha _{4}$$=7$이다.","answer":"108","sourceHash":"431577d3fa03461fb2fed7bbc7a3131d077b155dace4cf24413d51a6c7596aac","steps":[{"id":"s1","latex":"L(x)=\\lim_{h\\to0+}\\frac{|f(x+h)|-|f(x-h)|}{h}=|f|_+\\prime(x)+|f|_-\\prime(x)"},{"id":"s2","latex":"f(x)\\ne0\\Rightarrow L(x)=2\\operatorname{sgn}(f(x))f\\prime(x),\\qquad f(r)=0\\Rightarrow L(r)=0"},{"id":"s3","latex":"f(r)=0,\\ f\\prime(r)\\ne0\\Rightarrow L(r-)=-2|f\\prime(r)|,\\quad L(r+)=2|f\\prime(r)|"},{"id":"s4","latex":"g(x)=f(x-3)L(x)\\text{ 연속}\\Rightarrow f(r-3)=0\\quad\\text{(모든 단순근 }r\\text{)}"},{"id":"s5","latex":"\\text{가장 작은 실근은 단순근일 수 없음}\\Rightarrow\\text{중근 또는 삼중근}"},{"id":"s6","latex":"f(x)=(x-p)^3\\Rightarrow g(x)=0\\text{의 서로 다른 근은 }p,p+3\\text{뿐}\\quad\\text{모순}"},{"id":"s7","latex":"\\therefore\\ f(x)=(x-p)^2(x-q),\\quad q>p"},{"id":"s8","latex":"q\\text{는 단순근},\\ f(q-3)=0\\Rightarrow q-3=p\\Rightarrow q=p+3"},{"id":"s9","latex":"f(x)=(x-p)^2(x-p-3),\\qquad f\\prime(x)=3(x-p)(x-p-2)"},{"id":"s10","latex":"g(x)=0\\Rightarrow x\\in\\{p,p+2,p+3,p+6\\}"},{"id":"s11","latex":"4p+11=7\\Rightarrow p=-1"},{"id":"s12","latex":"f(5)=(5+1)^2(5-2)=\\boxed{108}"}],"diagram":null,"contentHash":"6790319ea8f35d4151ed9c3cbc6f0b6a7e140040173cd7c62425b4fa6b8b99aa","questionHtml":"\u003cp class=\"hp\">최고차항의 계수가 \u003cspan class=\"heq\">\\(1\\)\u003c/span>인 삼차함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>에 대하여 함수\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) =f \\left( x-3 \\right) \\times \\lim\\limits_{h \\to  0+} {} \\dfrac{\\left| f(x+h) \\right| - \\left| f(x-h) \\right|}{h}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">가 다음 조건을 만족시킬 때, \u003cspan class=\"heq\">\\(f \\left( 5 \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 함수 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>는 실수 전체의 집합에서 연속이다.\u003c/p>\u003cp class=\"hp\">(나) 방정식 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(=0\\)\u003c/span>은 서로 다른 네 실근 \u003cspan class=\"heq\">\\(\\alpha_{1} ,\\, \\alpha_{2} ,\\, \\alpha_{3} ,\\, \\alpha_{4}\\)\u003c/span>를 갖고 \u003cspan class=\"heq\">\\(\\alpha_{1} + \\alpha_{2} + \\alpha_{3} + \\alpha_{4}\\)\u003c/span>\u003cspan class=\"heq\">\\(=7\\)\u003c/span>이다.\u003c/p>\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"1a50b7c0eef3bb18608db4ee1a8ec3f8b6a79ae557c2b7d2eb62ec62a5faa539"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2021 평가원 고3 수학확통 9월 22번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":17234,"sourceLabel":"2021 평가원 고3 수학확통 9월 22번","adminYear":2021,"grade":3,"month":9,"number":22,"track":"확통","points":4,"scoreStatus":"confirmed_4_direct","questionText":"최고차항의 계수가 $1$인 삼차함수 $f \\left( x \\right)$에 대하여 함수\n $g \\left( x \\right) =f \\left( x-3 \\right) \\times \\lim _{h\\to 0+} {} \\frac{\\left| f(x+h) \\right| - \\left| f(x-h) \\right|}{h}$\n가 다음 조건을 만족시킬 때, $f \\left( 5 \\right)$의 값을 구하시오. [4점]\n(가) 함수 $g \\left( x \\right)$는 실수 전체의 집합에서 연속이다.(나) 방정식 $g \\left( x \\right)$$=0$은 서로 다른 네 실근 $\\alpha _{1} ,\\, \\alpha _{2} ,\\, \\alpha _{3} ,\\, \\alpha _{4}$를 갖고 $\\alpha _{1} + \\alpha _{2} + \\alpha _{3} + \\alpha _{4}$$=7$이다.","answer":"108","sourceHash":"431577d3fa03461fb2fed7bbc7a3131d077b155dace4cf24413d51a6c7596aac","steps":[{"id":"s1","latex":"L(x)=\\lim_{h\\to0+}\\frac{|f(x+h)|-|f(x-h)|}{h}=|f|_+\\prime(x)+|f|_-\\prime(x)"},{"id":"s2","latex":"f(x)\\ne0\\Rightarrow L(x)=2\\operatorname{sgn}(f(x))f\\prime(x),\\qquad f(r)=0\\Rightarrow L(r)=0"},{"id":"s3","latex":"f(r)=0,\\ f\\prime(r)\\ne0\\Rightarrow L(r-)=-2|f\\prime(r)|,\\quad L(r+)=2|f\\prime(r)|"},{"id":"s4","latex":"g(x)=f(x-3)L(x)\\text{ 연속}\\Rightarrow f(r-3)=0\\quad\\text{(모든 단순근 }r\\text{)}"},{"id":"s5","latex":"\\text{가장 작은 실근은 단순근일 수 없음}\\Rightarrow\\text{중근 또는 삼중근}"},{"id":"s6","latex":"f(x)=(x-p)^3\\Rightarrow g(x)=0\\text{의 서로 다른 근은 }p,p+3\\text{뿐}\\quad\\text{모순}"},{"id":"s7","latex":"\\therefore\\ f(x)=(x-p)^2(x-q),\\quad q>p"},{"id":"s8","latex":"q\\text{는 단순근},\\ f(q-3)=0\\Rightarrow q-3=p\\Rightarrow q=p+3"},{"id":"s9","latex":"f(x)=(x-p)^2(x-p-3),\\qquad f\\prime(x)=3(x-p)(x-p-2)"},{"id":"s10","latex":"g(x)=0\\Rightarrow x\\in\\{p,p+2,p+3,p+6\\}"},{"id":"s11","latex":"4p+11=7\\Rightarrow p=-1"},{"id":"s12","latex":"f(5)=(5+1)^2(5-2)=\\boxed{108}"}],"diagram":null,"contentHash":"6790319ea8f35d4151ed9c3cbc6f0b6a7e140040173cd7c62425b4fa6b8b99aa","questionHtml":"\u003cp class=\"hp\">최고차항의 계수가 \u003cspan class=\"heq\">\\(1\\)\u003c/span>인 삼차함수 \u003cspan class=\"heq\">\\(f \\left( x \\right)\\)\u003c/span>에 대하여 함수\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(g \\left( x \\right) =f \\left( x-3 \\right) \\times \\lim\\limits_{h \\to  0+} {} \\dfrac{\\left| f(x+h) \\right| - \\left| f(x-h) \\right|}{h}\\)\u003c/span>\u003c/p>\u003cp class=\"hp\">가 다음 조건을 만족시킬 때, \u003cspan class=\"heq\">\\(f \\left( 5 \\right)\\)\u003c/span>의 값을 구하시오. \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>\u003cdiv class=\"hbox\">\u003cp class=\"hp\">(가) 함수 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>는 실수 전체의 집합에서 연속이다.\u003c/p>\u003cp class=\"hp\">(나) 방정식 \u003cspan class=\"heq\">\\(g \\left( x \\right)\\)\u003c/span>\u003cspan class=\"heq\">\\(=0\\)\u003c/span>은 서로 다른 네 실근 \u003cspan class=\"heq\">\\(\\alpha_{1} ,\\, \\alpha_{2} ,\\, \\alpha_{3} ,\\, \\alpha_{4}\\)\u003c/span>를 갖고 \u003cspan class=\"heq\">\\(\\alpha_{1} + \\alpha_{2} + \\alpha_{3} + \\alpha_{4}\\)\u003c/span>\u003cspan class=\"heq\">\\(=7\\)\u003c/span>이다.\u003c/p>\u003c/div>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"1a50b7c0eef3bb18608db4ee1a8ec3f8b6a79ae557c2b7d2eb62ec62a5faa539"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

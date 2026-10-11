@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=bf41b07fdc22efdd">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.ExternalHandStudyRecord={"sourceKey":"ebsi:2026:g3:05:common:q22","sourceHash":"10399be3a926584f8841d7005cc6ba27e521a708d10db33d7ee8df618de8f88c","contentHash":"2b5a0c58a9afcec9be5e0b0370e122bfb23949d98cea9033f4909534cd613a2e","sourceLabel":"경기도교육청 2026-05-07","adminYear":2026,"grade":3,"month":5,"number":22,"track":"공통","answer":"9","questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-05-common-q22-88be6f5e2b5b71fe.png\" alt=\"2026년 5월 22번 문제\">\u003c/figure>","steps":[{"id":"s1","latex":"A=(a,2^{a+1}+k),\\quad B=(a+2,2^{a+1}+k+2)"},{"id":"s2","latex":"B\\text{가 지수곡선 위}\\Rightarrow(2^3-2)2^a=2\\Rightarrow2^a=\\frac13"},{"id":"s3","latex":"a=-\\log_2 3"},{"id":"s4","latex":"M=(a+1,2^{a+1}+k+1)"},{"id":"s5","latex":"M\\text{을 아래로 }1\\text{ 이동한 }M'\\text{과 }C'\\text{는 }y=x\\text{ 대칭}"},{"id":"s6","latex":"C=(2^{a+1}+k,a+2)"},{"id":"s7","latex":"CM=\\sqrt6,\\ \\operatorname{slope}(CM)=-1\\Rightarrow|2^{a+1}+k-a-1|=\\sqrt3"},{"id":"s8","latex":"k_1+k_2=-2^{a+2}+2a+2"},{"id":"s9","latex":"S=-\\frac23-2\\log_23,\\quad2^{-S+2/3}=2^{2\\log_23}=9"}],"diagram":null,"preview":false,"graphPlan":null,"graphHash":""};</script>
-  <script defer src="../assets/hand-typography.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-structure.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/hand-graph.js?v=bf41b07fdc22efdd"></script>
-  <script defer src="../assets/external-hand-study.js?v=bf41b07fdc22efdd"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>경기도교육청 2026-05-07 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.ExternalHandStudyRecord={"sourceKey":"ebsi:2026:g3:05:common:q22","sourceHash":"10399be3a926584f8841d7005cc6ba27e521a708d10db33d7ee8df618de8f88c","contentHash":"2b5a0c58a9afcec9be5e0b0370e122bfb23949d98cea9033f4909534cd613a2e","sourceLabel":"경기도교육청 2026-05-07","adminYear":2026,"grade":3,"month":5,"number":22,"track":"공통","answer":"9","questionHtml":"\u003cfigure class=\"hfigwrap\">\u003cimg class=\"hfig\" src=\"../assets/external2026/ebsi-2026-g3-05-common-q22-88be6f5e2b5b71fe.png\" alt=\"2026년 5월 22번 문제\">\u003c/figure>","steps":[{"id":"s1","latex":"A=(a,2^{a+1}+k),\\quad B=(a+2,2^{a+1}+k+2)"},{"id":"s2","latex":"B\\text{가 지수곡선 위}\\Rightarrow(2^3-2)2^a=2\\Rightarrow2^a=\\frac13"},{"id":"s3","latex":"a=-\\log_2 3"},{"id":"s4","latex":"M=(a+1,2^{a+1}+k+1)"},{"id":"s5","latex":"M\\text{을 아래로 }1\\text{ 이동한 }M'\\text{과 }C'\\text{는 }y=x\\text{ 대칭}"},{"id":"s6","latex":"C=(2^{a+1}+k,a+2)"},{"id":"s7","latex":"CM=\\sqrt6,\\ \\operatorname{slope}(CM)=-1\\Rightarrow|2^{a+1}+k-a-1|=\\sqrt3"},{"id":"s8","latex":"k_1+k_2=-2^{a+2}+2a+2"},{"id":"s9","latex":"S=-\\frac23-2\\log_23,\\quad2^{-S+2/3}=2^{2\\log_23}=9"}],"diagram":null,"preview":false,"graphPlan":null,"graphHash":""};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-external-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

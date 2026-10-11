@@ -1,69 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=cd446f5ae8531c4f">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"itemId":7867,"sourceLabel":"2019 교육청 고2 수학나형 6월 30번","adminYear":2019,"grade":2,"month":6,"number":30,"track":"수학나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 양수 $a\\,$, $k\\,$($k\\,\\neq\\,1$)에 대하여 함수 \n $f \\left( x \\right) = \\begin{cases} 2\\log_{k} \\left( x-k+1 \\right) + 2^{-a} & \\left( x \\geq k \\right) \\\\ 2\\log_{\\frac{1}{k}} \\left( -x+k+1 \\right) + 2^{-a} & \\left( x\u003ck \\right) \\end{cases}$\n가 있다. $f \\left( x \\right) \\,$의 역함수를 $g \\left( x \\right) \\,$라 할 때, 방정식 $f \\left( x \\right) =g \\left( x \\right) \\,$의 해는 $- \\frac{3}{4} \\,$, $t\\,$, $\\frac{5}{4} \\,$이다. $30 \\left( a+k+t \\right) \\,$의 값을 구하시오. (단, $0\u003ct\u003c1\\,$) [4점]","answer":"75","sourceHash":"213183f5add9a9224eeda3415b44e6beadaad6166a549fcba34dd691c68f3a87","steps":[{"id":"s1","latex":"0\u003ck\u003c1,\\quad f\\left(-\\frac34\\right)=\\frac54,\\quad f\\left(\\frac54\\right)=-\\frac34,\\quad f(t)=t"},{"id":"s2","latex":"-2\\log_k\\left(k+\\frac74\\right)+2^{-a}=\\frac54"},{"id":"s3","latex":"2\\log_k\\left(\\frac94-k\\right)+2^{-a}=-\\frac34"},{"id":"s4","latex":"k\\left(k+\\frac74\\right)\\left(\\frac94-k\\right)=1"},{"id":"s5","latex":"16k^3-8k^2-63k+16=(4k-1)(4k^2-k-16)=0"},{"id":"s6","latex":"0\u003ck\u003c1\\Rightarrow k=\\frac14,\\quad2^{-a}=\\frac14\\Rightarrow a=2"},{"id":"s7","latex":"f\\left(\\frac14\\right)=\\frac14\\Rightarrow t=\\frac14"},{"id":"s8","latex":"30(a+k+t)=30\\left(2+\\frac14+\\frac14\\right)=75"}],"diagram":null,"contentHash":"a644b55ea96b2e02cada0ad53e29eb4402322a4af5f94f96ceb181e020b409ff","questionHtml":"\u003cp class=\"hp\">두 양수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(k\\,\\)\u003c/span>(\u003cspan class=\"heq\">\\(k\\,\\neq\\,1\\)\u003c/span>)에 대하여 함수\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = {\\begin{cases}{}^{{}^{{}^{{}^{{}^{{}}}}}} \\,2\\,\\log_{\\,k} \\, \\left( x-k+1 \\right) +2^{\\,-a} \\,&\\, \\left( \\,x\\, \\geq k\\, \\right) \\\\ {}^{{}}& \\\\ \\,2\\,\\log_{\\, \\dfrac{1}{k}} \\, \\left( -x+k+1 \\right) \\,+\\,2^{\\,-a}&\\, \\left( \\,x\\lt k\\, \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">가 있다. \u003cspan class=\"heq\">\\(f \\left( x \\right) \\,\\)\u003c/span>의 역함수를 \u003cspan class=\"heq\">\\(g \\left( x \\right) \\,\\)\u003c/span>라 할 때, \u003cbr>방정식 \u003cspan class=\"heq\">\\(f \\left( x \\right) =g \\left( x \\right) \\,\\)\u003c/span>의 해는 \u003cspan class=\"heq\">\\(- \\dfrac{3}{4} \\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(t\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\dfrac{5}{4} \\,\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(30 \\left( a+k+t \\right) \\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(0\\lt t\\lt 1\\,\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"7ecd704ee41145672a87a0333545c51c6eef58af8ce724efe7b98288e726c93f"};</script>
-  <script defer src="../assets/hand-typography.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-structure.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-graph.js?v=cd446f5ae8531c4f"></script>
-  <script defer src="../assets/hand-study.js?v=cd446f5ae8531c4f"></script>
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2019 교육청 고2 수학나형 6월 30번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"itemId":7867,"sourceLabel":"2019 교육청 고2 수학나형 6월 30번","adminYear":2019,"grade":2,"month":6,"number":30,"track":"수학나형","points":4,"scoreStatus":"confirmed_4_direct","questionText":"두 양수 $a\\,$, $k\\,$($k\\,\\neq\\,1$)에 대하여 함수 \n $f \\left( x \\right) = \\begin{cases} 2\\log_{k} \\left( x-k+1 \\right) + 2^{-a} & \\left( x \\geq k \\right) \\\\ 2\\log_{\\frac{1}{k}} \\left( -x+k+1 \\right) + 2^{-a} & \\left( x\u003ck \\right) \\end{cases}$\n가 있다. $f \\left( x \\right) \\,$의 역함수를 $g \\left( x \\right) \\,$라 할 때, 방정식 $f \\left( x \\right) =g \\left( x \\right) \\,$의 해는 $- \\frac{3}{4} \\,$, $t\\,$, $\\frac{5}{4} \\,$이다. $30 \\left( a+k+t \\right) \\,$의 값을 구하시오. (단, $0\u003ct\u003c1\\,$) [4점]","answer":"75","sourceHash":"213183f5add9a9224eeda3415b44e6beadaad6166a549fcba34dd691c68f3a87","steps":[{"id":"s1","latex":"0\u003ck\u003c1,\\quad f\\left(-\\frac34\\right)=\\frac54,\\quad f\\left(\\frac54\\right)=-\\frac34,\\quad f(t)=t"},{"id":"s2","latex":"-2\\log_k\\left(k+\\frac74\\right)+2^{-a}=\\frac54"},{"id":"s3","latex":"2\\log_k\\left(\\frac94-k\\right)+2^{-a}=-\\frac34"},{"id":"s4","latex":"k\\left(k+\\frac74\\right)\\left(\\frac94-k\\right)=1"},{"id":"s5","latex":"16k^3-8k^2-63k+16=(4k-1)(4k^2-k-16)=0"},{"id":"s6","latex":"0\u003ck\u003c1\\Rightarrow k=\\frac14,\\quad2^{-a}=\\frac14\\Rightarrow a=2"},{"id":"s7","latex":"f\\left(\\frac14\\right)=\\frac14\\Rightarrow t=\\frac14"},{"id":"s8","latex":"30(a+k+t)=30\\left(2+\\frac14+\\frac14\\right)=75"}],"diagram":null,"contentHash":"a644b55ea96b2e02cada0ad53e29eb4402322a4af5f94f96ceb181e020b409ff","questionHtml":"\u003cp class=\"hp\">두 양수 \u003cspan class=\"heq\">\\(a\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(k\\,\\)\u003c/span>(\u003cspan class=\"heq\">\\(k\\,\\neq\\,1\\)\u003c/span>)에 대하여 함수\u003c/p>\u003cp class=\"hp htall\">&emsp;\u003cspan class=\"heq\">\\(f \\left( x \\right) = {\\begin{cases}{}^{{}^{{}^{{}^{{}^{{}}}}}} \\,2\\,\\log_{\\,k} \\, \\left( x-k+1 \\right) +2^{\\,-a} \\,&\\, \\left( \\,x\\, \\geq k\\, \\right) \\\\ {}^{{}}& \\\\ \\,2\\,\\log_{\\, \\dfrac{1}{k}} \\, \\left( -x+k+1 \\right) \\,+\\,2^{\\,-a}&\\, \\left( \\,x\\lt k\\, \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp class=\"hp htall\">가 있다. \u003cspan class=\"heq\">\\(f \\left( x \\right) \\,\\)\u003c/span>의 역함수를 \u003cspan class=\"heq\">\\(g \\left( x \\right) \\,\\)\u003c/span>라 할 때, \u003cbr>방정식 \u003cspan class=\"heq\">\\(f \\left( x \\right) =g \\left( x \\right) \\,\\)\u003c/span>의 해는 \u003cspan class=\"heq\">\\(- \\dfrac{3}{4} \\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(t\\,\\)\u003c/span>, \u003cspan class=\"heq\">\\(\\dfrac{5}{4} \\,\\)\u003c/span>이다. \u003cspan class=\"heq\">\\(30 \\left( a+k+t \\right) \\,\\)\u003c/span>의 값을 구하시오. (단, \u003cspan class=\"heq\">\\(0\\lt t\\lt 1\\,\\)\u003c/span>) \u003cspan class=\"hscore\">[4점]\u003c/span>\u003c/p>","preview":false,"graphPlan":null,"graphHash":"","editionHash":"7ecd704ee41145672a87a0333545c51c6eef58af8ce724efe7b98288e726c93f"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>

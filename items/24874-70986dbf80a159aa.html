@@ -1,71 +1,8 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>손풀이 노트</title>
-  <meta name="description" content="수학 기출문제를 풀고, 식과 그래프를 한 단계씩 확인하는 손풀이 학습 노트">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <link rel="stylesheet" href="../assets/hand-study.css?v=0b4d003efdca8f98">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script>window.HandStudyRecord={"adminYear":2023,"answer":"10","contentHash":"b5e50c6af90d18bbe5d61213a32e365f60fd9552db5a180a954546f8c001aadb","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24874,"month":11,"number":21,"points":4,"preview":false,"questionHtml":"\u003cp>양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(x \\geq-1\\)\u003c/span>에서 정의된 함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>는\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(f \\left(x \\right)= {\\begin{cases}-x ^{2} +6x&amp;&amp; \\left(-1 \\leq x&lt;6 \\right) \\\\ a \\log_{4} \\left(x-5 \\right)&amp;&amp; \\left(x \\geq 6 \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp>이다. \u003cspan class=\"heq\">\\(t \\geq 0\\)\u003c/span>인 실수 \u003cspan class=\"heq\">\\(t\\)\u003c/span>에 대하여 닫힌구간 \u003cspan class=\"heq\">\\([t-1,\\, t+1]\\)\u003c/span>에서의 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>의 최댓값을 \u003cspan class=\"heq\">\\(g(t)\\)\u003c/span>라 하자. 구간 \u003cspan class=\"heq\">\\([0,\\, \\infty )\\)\u003c/span>에서 함수 \u003cspan class=\"heq\">\\(g(t)\\)\u003c/span>의 최솟값이 \u003cspan class=\"heq\">\\(5\\)\u003c/span>가 되도록 하는 양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>의 최솟값을 구하시오. [4점]\u003c/p>","questionText":"양수 $a$에 대하여 $x \\geq-1$에서 정의된 함수 $f(x)$는\n $f \\left(x \\right)= {\\begin{cases}-x ^{2} +6x&& \\left(-1 \\leq x\u003c6 \\right) \\\\ a \\log\\, _{4} \\left(x-5 \\right)&& \\left(x \\geq 6 \\right)\\end{cases}}$\n이다. $t \\geq 0$인 실수 $t$에 대하여 닫힌구간 $[t-1,\\, t+1]$에서의 $f(x)$의 최댓값을 $g(t)$라 하자. 구간 $[0,\\, \\infty )$에서 함수 $g(t)$의 최솟값이 $5$가 되도록 하는 양수 $a$의 최솟값을 구하시오. [4점]","sourceHash":"38cc54268a4a590a1688cb9086789362cddc6f7727b857dad2f1289a3212114e","sourceKind":"csat","sourceLabel":"2023년 시행 수능 · 2024학년도 · 공통 · 21번","steps":[{"id":"s1","latex":"-1\\le x\u003c6\\text{에서 }f(x)=-(x-3)^2+9,\\quad f(1)=f(5)=5"},{"id":"s2","latex":"0\\le t\\le2\\text{이면 }g(t)=f(t+1)\\ge g(0)=f(1)=5"},{"id":"s3","latex":"2\\le t\\le4\\text{이면 }t-1\\le3\\le t+1\\Rightarrow g(t)=9"},{"explanation":{"body":"\\(x\\ge3\\)에서 이차함수 조각은 감소하고 로그함수 조각은 증가합니다. 따라서 \\([t-1,t+1]\\) 안의 각 조각은 자기 쪽 끝점에서 가장 크므로 전체 최댓값은 \\(f(t-1)\\)과 \\(f(t+1)\\)만 비교하면 됩니다.","skillTags":["구간최댓값","단조성"],"title":"구간 최댓값이 양 끝 중 하나인 이유"},"id":"s4","latex":"t>4\\text{에서는 왼쪽 조각이 감소하고 로그 조각이 증가하므로 }g(t)\\text{는 }f(t-1),\\ f(t+1)\\text{ 중 크거나 같은 값이다.}"},{"id":"s5","latex":"4\u003ct\\le6\\text{에서는 }f(t-1)\\ge5"},{"id":"s6","latex":"t>6\\text{에서는 }f(t+1)=a\\log_4(t-4)\\text{가 증가하므로 경계 }t\\to6+\\text{만 확인하면 된다.}"},{"id":"s7","latex":"a\\log_4 2=\\frac a2\\ge5\\Rightarrow a\\ge10"},{"id":"s8","latex":"a=10\\text{이면 모든 }t\\ge0\\text{에서 }g(t)\\ge5\\text{이고 }g(0)=5"},{"id":"s9","latex":"\\therefore\\ \\boxed{10}"}],"track":"공통"};</script>
-  <script defer src="../assets/hand-typography.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-structure.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-graph.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-explanations.js?v=0b4d003efdca8f98"></script>
-  <script defer src="../assets/hand-study-csat.js?v=0b4d003efdca8f98"></script>
-<link rel="stylesheet" href="../assets/hand-explanations.css?v=0b4d003efdca8f98">
-</head>
-<body>
-  <header class="hs-appbar">
-    <span class="hs-brand">손풀이 노트</span>
-    <span class="hs-section-name">수학 기출 학습</span>
-    <small class="hs-source-mini" id="hs-source-mini"></small>
-  </header>
-  <p class="hs-preview" id="hs-preview" hidden>학생 화면 미리보기</p>
-  <main class="hs-shell">
-    <a class="hs-back-button" id="hs-back-button" href="../index.html">← 문제 고르기</a>
-    <header class="hs-heading">
-      <div>
-        <p class="hs-source" id="hs-source"></p>
-        <h1 class="hs-title" id="hs-title">손풀이 불러오는 중</h1>
-      </div>
-      <span class="hs-progress" id="hs-progress" role="status">0 / 0줄</span>
-    </header>
-
-    <section class="hs-question" aria-labelledby="hs-question-title">
-      <h2 class="hs-question-title" id="hs-question-title">문항</h2>
-      <div class="hs-question-body" id="hs-question-body"></div>
-    </section>
-
-    <div class="hs-controls" aria-label="손풀이 조작">
-      <button class="hs-button" id="hs-reset" type="button">가리기</button>
-      <button class="hs-button" id="hs-prev" type="button" aria-label="이전 풀이 줄">이전</button>
-      <button class="hs-button hs-button-primary" id="hs-next" type="button">다음 줄</button>
-      <button class="hs-button" id="hs-all" type="button">전체 보기</button>
-      <button class="hs-button" id="hs-play" type="button" aria-pressed="false">무음 재생</button>
-      <label class="hs-speed-wrap" for="hs-speed">속도
-        <select class="hs-speed" id="hs-speed">
-          <option value="4000">천천히</option>
-          <option value="2200" selected>보통</option>
-          <option value="1200">빠르게</option>
-        </select>
-      </label>
-    </div>
-
-    <article class="hs-paper" aria-label="순차 손풀이">
-      <figure class="hs-diagram" id="hs-diagram" hidden></figure>
-      <div class="hs-steps" id="hs-steps"></div>
-      <p class="hs-prompt" id="hs-prompt">먼저 풀어 보세요.<br>다음 줄을 눌러 한 단계씩 확인합니다.</p>
-      <div class="hs-answer" id="hs-answer" hidden></div>
-    </article>
-    <p class="hs-error" id="hs-error" role="alert"></p>
-    <p class="hs-sr-only" id="hs-live" aria-live="polite"></p>
-
-    <p class="hs-help"><kbd>→</kbd> 다음 · <kbd>←</kbd> 이전 · <kbd>H</kbd> 가리기 · <kbd>A</kbd> 전체 · <kbd>P</kbd> 재생</p>
-  </main>
-</body>
-</html>
-
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>2023년 시행 수능 · 2024학년도 · 공통 · 21번 · 손풀이 노트</title><meta name="description" content="문제의 조건을 읽고, 풀이를 선택한 이유를 이해하고, 한 단계씩 직접 확인하는 수학 학습">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><link rel="stylesheet" href="../assets/hand-study.css"><link rel="stylesheet" href="../assets/learning-shell.css?v=11eb8512486173c0">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script>window.HandStudyRecord={"adminYear":2023,"answer":"10","contentHash":"b5e50c6af90d18bbe5d61213a32e365f60fd9552db5a180a954546f8c001aadb","diagram":null,"grade":3,"graphHash":"","graphPlan":null,"itemId":24874,"month":11,"number":21,"points":4,"preview":false,"questionHtml":"\u003cp>양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>에 대하여 \u003cspan class=\"heq\">\\(x \\geq-1\\)\u003c/span>에서 정의된 함수 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>는\u003c/p>\u003cp> \u003cspan class=\"heq\">\\(f \\left(x \\right)= {\\begin{cases}-x ^{2} +6x&amp;&amp; \\left(-1 \\leq x&lt;6 \\right) \\\\ a \\log_{4} \\left(x-5 \\right)&amp;&amp; \\left(x \\geq 6 \\right)\\end{cases}}\\)\u003c/span>\u003c/p>\u003cp>이다. \u003cspan class=\"heq\">\\(t \\geq 0\\)\u003c/span>인 실수 \u003cspan class=\"heq\">\\(t\\)\u003c/span>에 대하여 닫힌구간 \u003cspan class=\"heq\">\\([t-1,\\, t+1]\\)\u003c/span>에서의 \u003cspan class=\"heq\">\\(f(x)\\)\u003c/span>의 최댓값을 \u003cspan class=\"heq\">\\(g(t)\\)\u003c/span>라 하자. 구간 \u003cspan class=\"heq\">\\([0,\\, \\infty )\\)\u003c/span>에서 함수 \u003cspan class=\"heq\">\\(g(t)\\)\u003c/span>의 최솟값이 \u003cspan class=\"heq\">\\(5\\)\u003c/span>가 되도록 하는 양수 \u003cspan class=\"heq\">\\(a\\)\u003c/span>의 최솟값을 구하시오. [4점]\u003c/p>","questionText":"양수 $a$에 대하여 $x \\geq-1$에서 정의된 함수 $f(x)$는\n $f \\left(x \\right)= {\\begin{cases}-x ^{2} +6x&& \\left(-1 \\leq x\u003c6 \\right) \\\\ a \\log\\, _{4} \\left(x-5 \\right)&& \\left(x \\geq 6 \\right)\\end{cases}}$\n이다. $t \\geq 0$인 실수 $t$에 대하여 닫힌구간 $[t-1,\\, t+1]$에서의 $f(x)$의 최댓값을 $g(t)$라 하자. 구간 $[0,\\, \\infty )$에서 함수 $g(t)$의 최솟값이 $5$가 되도록 하는 양수 $a$의 최솟값을 구하시오. [4점]","sourceHash":"38cc54268a4a590a1688cb9086789362cddc6f7727b857dad2f1289a3212114e","sourceKind":"csat","sourceLabel":"2023년 시행 수능 · 2024학년도 · 공통 · 21번","steps":[{"id":"s1","latex":"-1\\le x\u003c6\\text{에서 }f(x)=-(x-3)^2+9,\\quad f(1)=f(5)=5"},{"id":"s2","latex":"0\\le t\\le2\\text{이면 }g(t)=f(t+1)\\ge g(0)=f(1)=5"},{"id":"s3","latex":"2\\le t\\le4\\text{이면 }t-1\\le3\\le t+1\\Rightarrow g(t)=9"},{"explanation":{"body":"\\(x\\ge3\\)에서 이차함수 조각은 감소하고 로그함수 조각은 증가합니다. 따라서 \\([t-1,t+1]\\) 안의 각 조각은 자기 쪽 끝점에서 가장 크므로 전체 최댓값은 \\(f(t-1)\\)과 \\(f(t+1)\\)만 비교하면 됩니다.","skillTags":["구간최댓값","단조성"],"title":"구간 최댓값이 양 끝 중 하나인 이유"},"id":"s4","latex":"t>4\\text{에서는 왼쪽 조각이 감소하고 로그 조각이 증가하므로 }g(t)\\text{는 }f(t-1),\\ f(t+1)\\text{ 중 크거나 같은 값이다.}"},{"id":"s5","latex":"4\u003ct\\le6\\text{에서는 }f(t-1)\\ge5"},{"id":"s6","latex":"t>6\\text{에서는 }f(t+1)=a\\log_4(t-4)\\text{가 증가하므로 경계 }t\\to6+\\text{만 확인하면 된다.}"},{"id":"s7","latex":"a\\log_4 2=\\frac a2\\ge5\\Rightarrow a\\ge10"},{"id":"s8","latex":"a=10\\text{이면 모든 }t\\ge0\\text{에서 }g(t)\\ge5\\text{이고 }g(0)=5"},{"id":"s9","latex":"\\therefore\\ \\boxed{10}"}],"track":"공통"};</script>
+<script>window.HandStudyGuide=null;</script>
+<script defer src="../assets/hand-typography.js"></script><script defer src="../assets/hand-structure.js"></script><script defer src="../assets/hand-explanations.js"></script><script defer src="../assets/hand-graph.js"></script><script defer src="../assets/learning-core.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-store.js?v=11eb8512486173c0"></script><script defer src="../assets/learning-shell.js?v=11eb8512486173c0"></script>
+</head><body class="learning-page"><a class="skip-link" href="#learning-main">학습 내용으로 건너뛰기</a><div id="learning-app"><p class="boot-message" role="status">학습 노트를 준비하고 있어요.</p></div><noscript>이 학습 노트를 보려면 자바스크립트를 켜 주세요.</noscript></body></html>
