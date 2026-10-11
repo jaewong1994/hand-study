@@ -36,28 +36,67 @@ problem.append(problemDetails);grid.append(problem);
 const workspace=make('section','workspace');workspace.setAttribute('aria-label','풀이 학습');
 const nav=make('div','study-toolbar');const modes=make('div','mode-switch');modes.setAttribute('role','group');modes.setAttribute('aria-label','풀이 보기 방식');
 const focusButton=button('따라 풀기',()=>{mode='focus';render();}),wholeButton=button('전체 풀이',()=>{mode='whole';render();});modes.append(focusButton,wholeButton);nav.append(modes);const progress=make('span','study-progress');progress.setAttribute('role','status');nav.append(progress);workspace.append(nav);
-const route=make('nav','lesson-route');route.setAttribute('aria-label','풀이 단계');const select=make('select','chapter-select');select.setAttribute('aria-label','학습 단계 선택');chapters.forEach((c,i)=>{const o=make('option','',`${i+1}. ${c.label}`);o.value=i;select.append(o);});select.addEventListener('change',()=>go(Number(select.value)));route.append(select);workspace.append(route);
 const body=make('div','study-body');body.id='study-body';workspace.append(body);
-const pager=make('div','study-pager');const prev=button('이전 단계',()=>go(index-1),'quiet-button'),next=button('다음 단계',()=>go(index+1),'primary-button');pager.append(prev,next);workspace.append(pager);
+const lineIds=record.steps.map(s=>s.id);
+let revealed=Number.isInteger(state.revealedLines)?Math.max(0,Math.min(lineIds.length,state.revealedLines)):0;
+if(!Number.isInteger(state.revealedLines)){for(const c of chapters){if(!opened.has(c.id))break;revealed+=c.stepIds.length;}}
+if(fromHash>0&&fromHash<=chapters.length)revealed=Math.max(revealed,chapters.slice(0,fromHash-1).reduce((n,c)=>n+c.stepIds.length,0));
+let lineArea,lineFooter,lineNext,lineBack;
+const parts=new Map(),finished=new Set();
+const interactive='a,button,input,textarea,select,summary,details,dialog';
+let pointerStart=null,dragged=false;
+body.addEventListener('pointerdown',e=>{pointerStart={x:e.clientX,y:e.clientY};dragged=false;});
+body.addEventListener('pointermove',e=>{if(pointerStart&&Math.hypot(e.clientX-pointerStart.x,e.clientY-pointerStart.y)>8)dragged=true;});
+body.addEventListener('pointercancel',()=>{dragged=true;pointerStart=null;});
+body.addEventListener('click',e=>{if(mode!=='focus'||e.target.closest(interactive)||dragged||String(window.getSelection()||'').trim())return;if(e.target.closest('.line-solution'))advance();});
 const memo=make('details','personal-note');memo.append(make('summary','','내 말로 남기기'));memo.append(make('p','muted','오늘 알게 된 이유나 다시 볼 부분을 적어 보세요. 이 브라우저에만 저장돼요.'));const textarea=make('textarea');textarea.setAttribute('aria-label','나의 학습 메모');textarea.placeholder='나는 왜 이 풀이를 골랐을까?';textarea.maxLength=5000;textarea.value=state.note||'';let noteTimer;textarea.addEventListener('input',()=>{clearTimeout(noteTimer);noteTimer=setTimeout(()=>save({note:textarea.value}),350);});textarea.addEventListener('blur',()=>save({note:textarea.value}));memo.append(textarea);workspace.append(memo);
 grid.append(workspace);main.append(grid);const notice=make('p','save-notice');notice.id='save-notice';notice.setAttribute('role','status');main.append(notice);app.append(main);
 const live=make('div','sr-only');live.setAttribute('aria-live','polite');app.append(live);
 function openProblem(){const modal=make('dialog','problem-dialog');const header=make('div','panel-heading');header.append(make('h2','',api.displayTitle(record)),button('닫기',()=>modal.close(),'quiet-button'));const content=question.cloneNode(true);content.removeAttribute('id');const area=make('div','problem-zoom-area'),controls=make('div','zoom-controls');let scale=1,baseWidth=0;const scaleLabel=make('span','','100%');scaleLabel.setAttribute('role','status');function zoomTo(value){scale=Math.max(1,Math.min(3,value));if(!baseWidth)baseWidth=content.getBoundingClientRect().width;content.style.width=baseWidth+'px';content.style.zoom=scale;scaleLabel.textContent=Math.round(scale*100)+'%';}controls.append(button('축소',()=>zoomTo(scale-.25),'quiet-button'),scaleLabel,button('확대',()=>zoomTo(scale+.25),'quiet-button'));area.append(content);modal.append(header,controls,area);app.append(modal);modal.addEventListener('close',()=>{modal.remove();zoom.focus();});modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});modal.showModal();}
 function stepsInto(target,ids,withGraph=true){for(const id of ids){const s=record.steps.find(x=>x.id===id),row=make('div','solution-step');row.dataset.stepId=id;const formula=make('div','math-line');formula.tabIndex=0;formula.setAttribute('role','region');formula.setAttribute('aria-label',`풀이 ${record.steps.indexOf(s)+1} 수식`);formula.innerHTML=api.renderStep(s.latex,katex);row.append(formula);if(notes(s)){if(guide){const extra=make('details','extra-explanation');extra.append(make('summary','','이 줄을 더 자세히 이해하기'));HandStudyExplanations.append(extra,notes(s),s.id,document);row.append(extra);}else HandStudyExplanations.append(row,notes(s),s.id,document);}target.append(row);requestAnimationFrame(()=>{if(formula.scrollWidth>formula.clientWidth+2){const hint=make('p','math-scroll-note','↔ 옆으로 밀어 식 전체 보기');formula.after(hint);formula.setAttribute('aria-label',formula.getAttribute('aria-label')+' · 좌우 방향키로 식 전체 보기');}});
-if(withGraph&&record.graphPlan?.stages.some(x=>x.stepId===id)){const fig=make('figure','step-graph');target.append(fig);HandGraphTimeline.mount(fig,record.graphPlan,record.steps).setVisible(record.steps.indexOf(s)+1);}
-}if(withGraph&&record.diagram&&!record.graphPlan){const fig=make('figure','step-graph');api.drawDiagram(fig,record.diagram,document);target.append(fig);}}
+if(withGraph&&record.graphPlan?.stages.some(x=>x.stepId===id)){const fig=make('figure','step-graph');fig.tabIndex=0;fig.setAttribute('role','region');fig.setAttribute('aria-label','풀이 그림 · 작은 화면에서는 좌우로 밀어 보기');target.append(fig);HandGraphTimeline.mount(fig,record.graphPlan,record.steps).setVisible(record.steps.indexOf(s)+1);}
+}if(withGraph&&record.diagram&&!record.graphPlan&&ids.includes(record.steps[record.steps.length-1].id)){const fig=make('figure','step-graph');fig.tabIndex=0;fig.setAttribute('role','region');fig.setAttribute('aria-label','풀이 그림 · 작은 화면에서는 좌우로 밀어 보기');api.drawDiagram(fig,record.diagram,document);target.append(fig);window.HandFigureType?.apply(fig);}}
 function assessment(target,c){const section=make('section','reflection');section.append(make('h3','','이 단계, 내 힘으로 할 수 있나요?'));const buttons=make('div','reflection-options');for(const [value,label] of [['understood','혼자 할 수 있어요'],['review','다시 볼래요']]){const b=button(label,()=>{const reflection={...(state.reflection||{}),[c.id]:value};save({reflection});for(const option of buttons.children)option.setAttribute('aria-pressed',String(option===b));},'quiet-button');b.setAttribute('aria-pressed',String(state.reflection?.[c.id]===value));buttons.append(b);}section.append(buttons);const reasons=make('details','stuck-reasons');reasons.append(make('summary','','막힌 지점 표시하기'));const reasonsBox=make('div','reason-options');for(const label of ['조건의 뜻','방법 선택','중간 계산','혼자 다시 풀기']){const b=button(label,()=>{const key=c.id+':'+label,stuck={...(state.stuck||{})};if(stuck[key])delete stuck[key];else stuck[key]={chapterId:c.id,stepIds:c.stepIds,reason:label};save({stuck});b.setAttribute('aria-pressed',String(!!stuck[key]));},'reason-button');b.setAttribute('aria-pressed',String(!!state.stuck?.[c.id+':'+label]));reasonsBox.append(b);}reasons.append(reasonsBox);section.append(reasons);target.append(section);}
-function ending(target){const wrap=make('section','lesson-ending');wrap.append(make('p','eyebrow','다시 풀 때 가져갈 생각'),make('h2','','이번 풀이를 내 것으로'));if(guide?.takeaway?.length){const ul=make('ul');guide.takeaway.forEach(t=>{const li=make('li');li.append(prose(t));ul.append(li);});wrap.append(ul);}else wrap.append(make('p','','풀이를 가리고 첫 줄부터 다시 써 보세요. 막혔던 단계에서 어떤 조건을 썼는지 함께 떠올려 보세요.'));wrap.append(detail('정답 확인',String(record.answer),'answer-detail'));wrap.append(button('풀이 가리고 다시 도전',()=>{opened=new Set();save({opened:[],chapter:0});mode='focus';go(0);},'quiet-button'));target.append(wrap);}
-function render(){body.replaceChildren();select.value=String(index);focusButton.setAttribute('aria-pressed',String(mode==='focus'));wholeButton.setAttribute('aria-pressed',String(mode==='whole'));route.hidden=mode==='whole';pager.hidden=mode==='whole';progress.textContent=mode==='whole'?`${record.steps.length}줄 전체 풀이`:`${index+1} / ${chapters.length}단계`;prev.disabled=index===0;next.disabled=index===chapters.length-1;next.textContent=index===chapters.length-1?'마지막 단계':'다음 단계';
-if(mode==='whole'){const all=make('article','whole-solution');all.append(make('p','eyebrow','풀이의 흐름을 한눈에'),make('h2','','조건에서 결론까지'));if(guide){for(const c of chapters){const part=make('section','whole-part');part.append(make('h3','',c.label),prose(c.explanation,'guide-explanation'));stepsInto(part,c.stepIds);if(c.check)part.append(detail(c.check.prompt,c.check.answer,'check-detail'));all.append(part);}}else stepsInto(all,record.steps.map(s=>s.id));ending(all);body.append(all);return;}
-const c=chapters[index],card=make('article','focus-card');card.append(make('p','eyebrow',`${String(index+1).padStart(2,'0')} · ${guide?'생각하며 따라 풀기':'한 줄씩 확인하기'}`),make('h2','chapter-title',c.label));if(c.question)card.append(prose(c.question,'chapter-question'));else card.append(make('p','chapter-question','다음 줄을 먼저 생각해 보세요. 준비되면 풀이를 펼쳐 비교해요.'));
-if(c.hint)card.append(detail('막혔다면, 첫 힌트',c.hint,'hint-detail'));
-const visible=opened.has(c.id);const reveal=button(visible?'이 단계 풀이 접기':'이 단계 풀이 펼치기',()=>{if(opened.has(c.id))opened.delete(c.id);else opened.add(c.id);save({opened:[...opened]});render();live.textContent=opened.has(c.id)?'이 단계의 설명과 풀이를 펼쳤어요.':'풀이를 접었어요.';body.querySelector('.reveal-button')?.focus({preventScroll:true});},'reveal-button');reveal.setAttribute('aria-expanded',String(visible));card.append(reveal);
-if(visible){const solution=make('section','revealed-solution');solution.setAttribute('aria-label','이 단계의 풀이');if(c.explanation){const why=make('div','why-box');why.append(make('h3','','이렇게 생각하면 이어져요'),prose(c.explanation));solution.append(why);}stepsInto(solution,c.stepIds);if(c.check)solution.append(detail('스스로 확인 · '+c.check.prompt,c.check.answer,'check-detail'));assessment(solution,c);card.append(solution);if(index===chapters.length-1)ending(card);}
-body.append(card);}
-function go(i){index=Math.max(0,Math.min(chapters.length-1,i));save({chapter:index,started:true});history.replaceState(null,'',location.pathname+location.search+'#part-'+(index+1));render();live.textContent=`${index+1}단계 ${chapters[index].label}`;if(matchMedia('(max-width: 900px)').matches)workspace.scrollIntoView({behavior:'auto',block:'start'});}
+function ending(target){const wrap=make('section','lesson-ending');wrap.append(make('p','eyebrow','다시 풀 때 가져갈 생각'),make('h2','','이번 풀이를 내 것으로'));if(guide?.takeaway?.length){const ul=make('ul');guide.takeaway.forEach(t=>{const li=make('li');li.append(prose(t));ul.append(li);});wrap.append(ul);}else wrap.append(make('p','','풀이를 가리고 첫 줄부터 다시 써 보세요. 막혔던 단계에서 어떤 조건을 썼는지 함께 떠올려 보세요.'));wrap.append(detail('정답 확인',String(record.answer),'answer-detail'));wrap.append(button('풀이 가리고 다시 도전',()=>{opened=new Set();revealed=0;save({opened:[],chapter:0,revealedLines:0});mode='focus';history.replaceState(null,'',location.pathname+location.search);render();lineNext?.focus({preventScroll:true});},'quiet-button'));target.append(wrap);}
+function beginPart(c){
+if(parts.has(c.id))return parts.get(c.id);
+const part=make('section','line-part');part.dataset.chapterId=c.id;
+if(guide){part.append(make('h2','chapter-title',c.label));if(c.question)part.append(prose(c.question,'chapter-question'));if(c.hint)part.append(detail('막혔다면, 첫 힌트',c.hint,'hint-detail'));}
+lineArea.insertBefore(part,lineFooter);parts.set(c.id,part);return part;
+}
+function appendLine(n){
+const id=lineIds[n],c=chapters.find(c=>c.stepIds.includes(id)),part=beginPart(c);stepsInto(part,[id]);
+if(id===c.stepIds[c.stepIds.length-1]&&!finished.has(c.id)){
+ finished.add(c.id);if(c.explanation){const why=make('div','why-box');why.append(make('h3','','이렇게 생각하면 이어져요'),prose(c.explanation));part.append(why);}
+ if(c.check)part.append(detail('스스로 확인 · '+c.check.prompt,c.check.answer,'check-detail'));
+ if(guide)assessment(part,c);
+}
+}
+function updateLineControls(){
+progress.textContent=`${revealed} / ${lineIds.length}줄`;
+lineBack.disabled=revealed===0;lineNext.disabled=revealed===lineIds.length;
+lineNext.textContent=revealed===lineIds.length?'풀이를 끝까지 확인했어요':'풀이 영역을 누르면 다음 줄이 나와요';
+lineArea.classList.toggle('is-complete',revealed===lineIds.length);
+if(revealed===lineIds.length&&!lineArea.querySelector('.lesson-ending'))ending(lineArea);
+}
+function advance(){
+if(mode!=='focus'||revealed>=lineIds.length)return;
+const keyboard=document.activeElement===lineNext;
+appendLine(revealed++);index=chapters.findIndex(c=>c.stepIds.includes(lineIds[revealed-1]));
+save({revealedLines:revealed,chapter:index,started:true});updateLineControls();
+live.textContent=`풀이 ${revealed}줄을 확인했어요. 전체 ${lineIds.length}줄이에요.`;
+requestAnimationFrame(()=>{const row=body.querySelector(`[data-step-id="${lineIds[revealed-1]}"]`);if(row&&row.getBoundingClientRect().bottom>innerHeight)row.scrollIntoView({block:'nearest',behavior:'auto'});});
+if(keyboard&&lineNext.disabled)lineBack.focus({preventScroll:true});
+}
+function retreat(){if(revealed===0)return;revealed--;save({revealedLines:revealed});render();lineBack.focus({preventScroll:true});}
+function render(){body.replaceChildren();parts.clear();finished.clear();focusButton.setAttribute('aria-pressed',String(mode==='focus'));wholeButton.setAttribute('aria-pressed',String(mode==='whole'));
+if(mode==='whole'){progress.textContent=`${lineIds.length}줄 전체 풀이`;const all=make('article','whole-solution');all.append(make('p','eyebrow','풀이의 흐름을 한눈에'),make('h2','','조건에서 결론까지'));if(guide){for(const c of chapters){const part=make('section','whole-part');part.append(make('h3','',c.label),prose(c.explanation,'guide-explanation'));stepsInto(part,c.stepIds);if(c.check)part.append(detail(c.check.prompt,c.check.answer,'check-detail'));all.append(part);}}else stepsInto(all,record.steps.map(s=>s.id));ending(all);body.append(all);return;}
+lineArea=make('article','focus-card line-solution');lineArea.setAttribute('aria-label','한 줄씩 따라 풀기');
+lineFooter=make('div','line-controls');lineNext=button('',advance,'line-next');lineNext.setAttribute('aria-label','다음 풀이 한 줄 보기');lineBack=button('한 줄 접기',retreat,'text-button line-back');lineFooter.append(lineNext,lineBack);lineArea.append(lineFooter);body.append(lineArea);
+if(!revealed)beginPart(chapters[0]);for(let n=0;n<revealed;n++)appendLine(n);updateLineControls();
+}
 save({started:true,chapter:index});render();
 document.fonts?.ready.then(()=>HandStudyStructure.layoutChoices(question));window.addEventListener('resize',()=>HandStudyStructure.layoutChoices(question));
-document.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,textarea,select,button,a,summary,dialog,.math-line,.prose-math'))return;if(e.key==='ArrowRight'&&mode==='focus'){e.preventDefault();go(index+1);}else if(e.key==='ArrowLeft'&&mode==='focus'){e.preventDefault();go(index-1);}});
+document.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,textarea,select,button,a,summary,dialog,.math-line,.prose-math,.step-graph'))return;if(e.key==='ArrowRight'&&mode==='focus'){e.preventDefault();advance();}else if(e.key==='ArrowLeft'&&mode==='focus'){e.preventDefault();retreat();}});
 }catch(e){const app=$('#learning-app');app.replaceChildren();const box=make('main','load-error');box.append(make('h1','','학습 노트를 불러오지 못했어요'),make('p','',e.message),button('다시 불러오기',()=>location.reload(),'primary-button'));const a=make('a','text-link','문항 목록으로');a.href='../index.html';box.append(a);app.append(box);}
 })();

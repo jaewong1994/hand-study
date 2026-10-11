@@ -9,3 +9,22 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 .extra-explanation{margin-top:14px;font-size:13px;color:var(--muted)}.extra-explanation>summary{padding:10px 0;min-height:44px}.extra-explanation .hs-explanation{margin-top:6px!important}.math-scroll-note{font-size:11px;color:var(--muted);margin-top:8px}
 .question-content figure{margin:16px 0}.problem-zoom-area{overflow:auto;max-height:65vh;padding:4px}.zoom-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:18px;font-size:13px}.zoom-controls button{font-size:13px}.problem-dialog .panel-heading{position:static}
+
+/* Long formulae in authored explanation prose stay inside their reading column. */
+.prose-math{display:inline-block;max-width:100%;vertical-align:middle;padding:3px 2px;box-sizing:border-box}.prose-math-wide{display:block;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;border-bottom:1px dashed #a8c0b0}.prose-math:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* A tap adds one original solution line; controls retain their own actions. */
+.line-solution{cursor:pointer;touch-action:manipulation;min-height:180px}
+.line-solution.is-complete{cursor:auto}
+.line-part+.line-part{margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid var(--line,#dfe4eb)}
+.line-part .solution-step{margin-top:1.1rem}
+.line-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:1.6rem;border-top:1px solid #e4e8ed;padding-top:1rem}
+.line-next{flex:1;min-height:48px;padding:12px 4px;text-align:left;border:0;background:transparent;color:#425b76;font:inherit;cursor:pointer}
+.line-next:disabled{color:#687583;cursor:default}
+.line-back{min-height:44px}.line-back:disabled{opacity:.45;cursor:default}
+.line-solution details,.line-solution button{cursor:pointer}
+.line-solution button:focus-visible{outline:3px solid #187e83;outline-offset:3px}
+.line-part>.chapter-title{margin-top:0}
+
+.step-graph{overflow-x:auto;scrollbar-width:thin}.step-graph svg{min-width:480px}.step-graph:focus-visible{outline:3px solid #187e83;outline-offset:3px}
+@media(max-width:600px){.step-graph:after{content:"↔ 옆으로 밀어 그림 전체 보기";display:block;font-size:12px;color:var(--muted);padding-top:8px;width:210px}}
