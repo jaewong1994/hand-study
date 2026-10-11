@@ -12,6 +12,7 @@
 
 /* Long formulae in authored explanation prose stay inside their reading column. */
 .prose-math{display:inline-block;max-width:100%;vertical-align:middle;padding:3px 2px;box-sizing:border-box}.prose-math-wide{display:block;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;border-bottom:1px dashed #a8c0b0}.prose-math:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.prose-math.katex-display{display:block;text-align:left}.prose-math.katex-display>.katex{text-align:left}
 
 /* A tap adds one original solution line; controls retain their own actions. */
 .line-solution{cursor:pointer;touch-action:manipulation;min-height:180px}

@@ -2,7 +2,7 @@
 const $=s=>document.querySelector(s),make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function button(text,fn,cls=''){const b=make('button',cls,text);b.type='button';b.addEventListener('click',fn);return b;}
 function math(node){if(!window.renderMathInElement)throw Error('수식 표시 도구를 불러오지 못했어요. 새로고침해 주세요.');renderMathInElement(node,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false},{left:'$',right:'$',display:false}],preProcess:HandStudyTypography.inline,throwOnError:false,trust:false,strict:'ignore'});}
-function prepareProseMath(n){n.querySelectorAll('.katex').forEach(k=>{const host=k.parentElement;if(host.classList.contains('katex-display'))return;host.classList.add('prose-math');});requestAnimationFrame(()=>markProseScroll(n));}
+function prepareProseMath(n){n.querySelectorAll('.katex').forEach(k=>{k.parentElement.classList.add('prose-math');});requestAnimationFrame(()=>markProseScroll(n));}
 function markProseScroll(n){n.querySelectorAll('.prose-math').forEach(s=>{const wide=s.scrollWidth>s.clientWidth+2;s.classList.toggle('prose-math-wide',wide);if(wide){s.tabIndex=0;s.setAttribute('role','region');s.setAttribute('aria-label','설명 속 수식 · 좌우 방향키로 식 전체 보기');s.title='옆으로 밀어 식 전체 보기';}else{s.removeAttribute('tabindex');s.removeAttribute('role');s.removeAttribute('aria-label');s.removeAttribute('title');}});}
 window.addEventListener('resize',()=>markProseScroll(document));
 function prose(text,cls=''){const n=make('div',cls);String(text||'').split(/\n\s*\n/).forEach(t=>n.append(make('p','',t)));math(n);prepareProseMath(n);return n;}
