@@ -1,0 +1,52 @@
+/* 2026-11-11 사용자 지정: 손글씨 글꼴 대신 나눔고딕, 단계 제목 없음 */
+:root{--paper:#fdfcf7;--rule:#e6eef7;--margin:#f3b8b8;--ink:#1d2433;--blue:#2457c5;--red:#d2392f;--mark:#fff0a3;--green:#1f8a57;--muted:#6b7280;--card:#fff;--bg:#f2f0ea;--math:17px;
+ --font:"Nanum Gothic","나눔고딕",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font)}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+.top{font-size:14px;color:var(--muted);margin:4px 0 12px}
+.problem{background:var(--card);border:1px solid #ddd;border-radius:10px;padding:14px 16px;font-size:16px;line-height:1.8;margin-bottom:16px;overflow-x:auto}
+.problem p{margin:.2em 0}
+.problem .hbox{border:1px solid #bbb;padding:6px 10px;margin:6px 0;border-radius:4px}
+.plabel{font-size:13px;color:var(--muted);margin-bottom:4px}
+.ctags{margin-top:10px;border-top:1px dashed #ccc;padding-top:8px;font-size:14px;color:#334}
+.ctag b{color:var(--blue);font-size:16px;font-weight:800;margin-right:4px}
+.ctg{font-weight:800;padding:0 1px}
+.paper{background:var(--paper);border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);padding:18px 18px 24px 46px;position:relative;margin-bottom:16px;
+ background-image:linear-gradient(var(--rule) 1px,transparent 1px);background-size:100% 34px;background-position:0 10px}
+.paper:before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:var(--margin)}
+.step{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:6px 22px;padding:10px 0 14px;border-bottom:1px dashed #d9d4c4}
+.step:last-of-type{border-bottom:0}
+.no{grid-column:1/-1;line-height:1}
+.no b{display:inline-block;width:24px;height:24px;border:2px solid var(--ink);border-radius:50%;text-align:center;font-size:13px;line-height:20px;font-weight:800}
+.math{overflow-x:auto;overflow-y:hidden;padding-bottom:4px}
+.line{white-space:nowrap;margin:6px 0;line-height:1.5}
+.line.conclude .tx{border:2px solid var(--red);border-radius:14px;padding:2px 8px;display:inline-block}
+.line.reject{color:#8a8a8a}
+.line.reject:after{content:" ✗";color:var(--red);font-weight:800}
+.line.check:after{content:" ✓";color:var(--green);font-weight:800}
+.note{font-size:15.5px;line-height:1.75;color:var(--blue);align-self:start}
+.note p{margin:.1em 0 .6em}
+.n-when{color:#555}
+/* 수식 크기 통일: 판서·메모·표·문제 모두 같은 기준 크기 */
+.katex{font-size:var(--math)!important}
+.problem .katex{font-size:16px!important}
+.badge{display:inline-block;font-size:12.5px;font-weight:800;line-height:1;padding:4px 7px 3px;border-radius:5px;margin-right:6px;vertical-align:1px}
+.b-judge{background:#ffe1dc;color:var(--red);border:1.5px solid var(--red)}
+.b-short{background:#ddf5e8;color:var(--green);border:1.5px solid var(--green)}
+.b-trap{background:#efe7ff;color:#6a3fc4;border:1.5px solid #6a3fc4}
+.tblwrap{overflow-x:auto;margin:8px 0}
+table.g{border-collapse:collapse;background:rgba(255,255,255,.6)}
+table.g td,table.g th{border:1.5px solid #555;padding:3px 8px;text-align:center;font-weight:400;white-space:nowrap}
+.answer{margin-top:14px;font-size:22px;font-weight:800;color:var(--red)}
+.answer>span{display:inline-block;max-width:100%;border:3px solid var(--red);border-radius:12px;padding:2px 14px}
+.answer .katex{font-size:22px!important;color:var(--red)}
+.shortest{background-color:#f6fbf7}
+.sh-head{font-size:17px;font-weight:800;color:var(--green);margin-bottom:4px}
+.legend{font-size:13px;color:var(--muted);margin:10px 2px}
+.katex-error{color:var(--red);font-family:monospace;font-size:13px}
+@media (max-width:700px){.paper{padding:14px 12px 20px 28px}.paper:before{left:16px}.step{grid-template-columns:1fr}.note{border-left:3px solid #c8d6f2;padding-left:10px}}
+
+.ttl{font-size:18px;font-weight:800;margin:6px 0 14px}
+.top a{text-decoration:none}
