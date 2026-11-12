@@ -24,13 +24,23 @@ const st = {
 const app = document.querySelector('#library-app'); app.replaceChildren();
 const main = make('main', 'cards-library'); main.id = 'library-main';
 const header = make('header', 'cards-header');
-header.append(make('h1', '', '손풀이 노트'), make('p', '', `평가원 · 교육청 · 수능 기출 ${records.length.toLocaleString('ko-KR')}문항`));
+// 파종 디자인(2026-11-12): 리틱체 제목은 빌드 때 그린 윤곽선 SVG, 아래에 밭고랑과 과목 색 씨앗
+const T = window.HandStudyTitle || null;
+const h1 = make('h1', 'cards-title');
+if (T) {
+  const eb = make('div', 'cards-eyebrow'); eb.innerHTML = T.eyebrow;
+  h1.innerHTML = T.svg; h1.append(make('span', 'sr', '손풀이 노트'));
+  header.append(eb);
+} else h1.textContent = '손풀이 노트';
+header.append(h1, make('p', '', `평가원 · 교육청 · 수능 기출 ${records.length.toLocaleString('ko-KR')}문항`));
+if (T) { const fw = make('div', 'cards-furrow'); fw.innerHTML = T.furrow; header.append(fw); }
+const subjColor = s => (T && T.colors && T.colors[s]) || '#1C2532';
 main.append(header);
 
 const tabBar = make('nav', 'subject-tabs'); tabBar.setAttribute('aria-label', '과목');
 const tabBtns = {};
 for (const s of tabs) {
-  const b = make('button', 'subject-tab'); b.type = 'button';
+  const b = make('button', 'subject-tab'); b.type = 'button'; b.style.setProperty('--subj', subjColor(s));
   b.append(make('span', 'st-name', s), make('span', 'st-count', counts[s].toLocaleString('ko-KR')));
   b.addEventListener('click', () => { st.subject = s; st.grade = ''; st.month = ''; render(true); });
   tabBar.append(b); tabBtns[s] = b;
@@ -91,7 +101,7 @@ const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => {
 const PAGE = 48;
 let rows = [], shown = 0, lastGroup = null, groupGrid = null;
 function card(r) {
-  const a = make('a', 'pcard'); a.href = r.href;
+  const a = make('a', 'pcard'); a.href = r.href; a.style.setProperty('--subj', subjColor(r.subject));
   const head = make('div', 'pc-head');
   head.append(make('span', 'pc-exam', examLine(r)), make('span', 'pc-no', `${r.number}번`));
   if (r.board) head.append(make('span', 'pc-badge', '판서형'));
