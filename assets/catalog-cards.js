@@ -78,7 +78,8 @@ const options = (sel, vals, cur, all) => {
 
 // 과목별 문제 HTML은 처음 볼 때 한 번만 받는다.
 const shards = {};
-const loadShard = s => shards[s] || (shards[s] = fetch(`assets/previews/${SLUG[s]}.json`).then(r => r.ok ? r.json() : {}).catch(() => ({})));
+const previewVersion = new URL(document.currentScript.src).searchParams.get('v') || '';
+const loadShard = s => shards[s] || (shards[s] = fetch(`assets/previews/${SLUG[s]}.json?v=${encodeURIComponent(previewVersion)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})));
 const typeset = el => {
   if (!window.renderMathInElement) return false;
   try { window.renderMathInElement(el, { delimiters: [{ left: '\\(', right: '\\)', display: false }, { left: '$', right: '$', display: false }], throwOnError: false }); } catch (e) { /* 카드 하나의 수식 실패가 목록을 막지 않게 */ }
